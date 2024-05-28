@@ -23,3 +23,5 @@ if test -d "${BREW_PATH}"; then
 fi
 
 apt_prepare && homebrew
+
+printf "Homebrew Installed ✅ \n"
