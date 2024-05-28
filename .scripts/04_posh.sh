@@ -2,10 +2,6 @@
 
 set -e
 
-package_install() {
-  printf "'%s' Installed! ✅ \n" "$1"
-}
-
 oh_my_posh() {
   # Check if environment variable `$TERM` is set to `xterm-256color` or not
   printf "TERM = %s \n" "$(echo $TERM)"
@@ -31,4 +27,4 @@ printf "\n"
 
 oh_my_posh_init
 
-package_install "Oh My Posh"
+printf "'Oh My Posh' Installed! ✅ \n" "$1"
