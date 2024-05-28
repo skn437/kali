@@ -2,6 +2,10 @@
 
 set -e
 
+brew_prepare() {
+  brew update && brew upgrade && brew autoremove && brew cleanup
+}
+
 oh_my_posh() {
   # Check if environment variable `$TERM` is set to `xterm-256color` or not
   printf "TERM = %s \n" "$(echo $TERM)"
@@ -20,6 +24,8 @@ oh_my_posh_init() {
   # Install theme
   echo 'eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/kali.omp.json)"' >>~/.zshrc
 }
+
+brew_prepare
 
 oh_my_posh
 
