@@ -6,4 +6,4 @@
 
 - This repository is not meant to be used by any person other than me as the scripts contain informations relevant only to me
 - The scripts are meant to be executed in order as the number specified in their names
-- To be honest, all the scripts can be used by any `Ubuntu` user except `09_mechvibes.sh` & `10_neo4j.sh`
+- To be honest, all the scripts can be used by any `Ubuntu` user except `09_neo4j.sh`

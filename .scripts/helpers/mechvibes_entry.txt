@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Mechvibes
-Exec=/opt/Mechvibes/mechvibes %U
-Icon=/home/logno-atoshi/.intellij-idea/app-icons/mechvibes.svg
-Comment=Plays mechanical keyboard sounds as you type
-Type=Application
-Terminal=false
-StartupWMClass=Mechvibes
-Categories=Utility;
