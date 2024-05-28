@@ -17,14 +17,14 @@ devtools() {
   # YQ & XMLStarlet
   brew install yq xmlstarlet
 
-  package_install "devtools"
+  package_install "Devtools"
 }
 
 shellscript() {
   # SHFMT
   brew install shfmt
 
-  package_install "shellscript"
+  package_install "Shell Script"
 }
 
 typescript() {
@@ -35,7 +35,7 @@ typescript() {
   brew tap oven-sh/bun
   brew install bun
 
-  package_install "typescript"
+  package_install "TypeScript"
 }
 
 java() {
@@ -48,7 +48,7 @@ java() {
   # Create a maven settings XML file
   mkdir -p $HOME/.m2
 
-  package_install "java"
+  package_install "Java"
 }
 
 c_cpp() {
@@ -58,7 +58,7 @@ c_cpp() {
   # CMake
   brew install cmake
 
-  package_install "c_cpp"
+  package_install "C/C++"
 }
 
 rust() {
@@ -68,7 +68,7 @@ rust() {
   # Rustfmt & SCCache
   brew install rustfmt sccache
 
-  package_install "rust"
+  package_install "Rust"
 }
 
 go() {
@@ -81,7 +81,7 @@ go() {
   # Go Task & Lefthook
   brew install go-task lefthook
 
-  package_install "go"
+  package_install "Go"
 }
 
 kotlin() {
@@ -91,7 +91,7 @@ kotlin() {
   # Ktlint
   brew install ktlint
 
-  package_install "kotlin"
+  package_install "Kotlin"
 }
 
 csharp() {
@@ -107,7 +107,7 @@ csharp() {
   # Export `.Net Tools` to the "Path"
   echo 'export PATH="$HOME/.dotnet/tools:$PATH"' >>$HOME/.bashrc
 
-  package_install "csharp"
+  package_install "C#"
 }
 
 devops() {
@@ -118,14 +118,14 @@ devops() {
   brew tap hashicorp/tap
   brew install hashicorp/tap/terraform
 
-  package_install "devops"
+  package_install "DevOps"
 }
 
 message_broker() {
   # Kafka: It automatically installs `Zookeeper` to its latest version
   brew install kafka
 
-  package_install "message_broker"
+  package_install "Message Broker"
 }
 
 brew_prepare && devtools && shellscript && typescript && java && c_cpp && rust && go && kotlin && csharp && devops && message_broker

@@ -23,4 +23,4 @@ printf "\n"
 
 miniconda_init
 
-package_install "miniconda"
+package_install "Miniconda"

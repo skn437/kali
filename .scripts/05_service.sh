@@ -13,7 +13,7 @@ docker() {
   # Create a `Docker Group` and add linux username to it
   sudo usermod -aG docker $USER && newgrp docker
 
-  package_install "docker"
+  package_install "Docker"
 }
 
 kubernetes() {
@@ -26,7 +26,7 @@ kubernetes() {
   # Ingress
   minikube addons enable ingress
 
-  package_install "kubernetes"
+  package_install "Kubernetes"
 }
 
 docker && kubernetes
