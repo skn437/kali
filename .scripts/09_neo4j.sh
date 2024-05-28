@@ -19,7 +19,7 @@ sudo touch "${NEO4J_DESKTOP_ENTRY}"
 
 APP_ENTRY_TEMPLATE="$(curl -sSL https://raw.githubusercontent.com/skn437/ubuntu/master/.scripts/helpers/neo4j_entry.txt)"
 
-echo "${APP_ENTRY_TEMPLATE}" >"${NEO4J_DESKTOP_ENTRY}"
+sudo echo "${APP_ENTRY_TEMPLATE}" >"${NEO4J_DESKTOP_ENTRY}"
 
 echo 'export PATH="$HOME/.neo4j-desktop:$PATH"' >>$HOME/.bashrc
 
