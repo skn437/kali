@@ -43,7 +43,7 @@ java() {
   brew install maven gradle
 
   # Export `Java Home` to the "Path"
-  echo 'export JAVA_HOME="/home/linuxbrew/.linuxbrew/opt/openjdk/libexec/"' >>$HOME/.bashrc
+  echo 'export JAVA_HOME="/home/linuxbrew/.linuxbrew/opt/openjdk/libexec/"' >>$HOME/.zshrc
 
   # Create a maven settings XML file
   mkdir -p $HOME/.m2
@@ -99,13 +99,13 @@ csharp() {
   brew install dotnet
 
   # Export `.Net Core Root` to the "Path"
-  echo 'export DOTNET_ROOT="/home/linuxbrew/.linuxbrew/opt/dotnet/libexec/"' >>$HOME/.bashrc
+  echo 'export DOTNET_ROOT="/home/linuxbrew/.linuxbrew/opt/dotnet/libexec/"' >>$HOME/.zshrc
 
   # .Net Script
   dotnet tool install -g dotnet-script
 
   # Export `.Net Tools` to the "Path"
-  echo 'export PATH="$HOME/.dotnet/tools:$PATH"' >>$HOME/.bashrc
+  echo 'export PATH="$HOME/.dotnet/tools:$PATH"' >>$HOME/.zshrc
 
   package_install "C#"
 }
