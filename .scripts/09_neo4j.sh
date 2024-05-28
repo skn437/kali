@@ -32,6 +32,6 @@ fi
 
 sudo mv "${TEMPORARY_DESKTOP_ENTRY}" "${NEO4J_DESKTOP_ENTRY}"
 
-echo 'export PATH="$HOME/.neo4j-desktop:$PATH"' >>$HOME/.bashrc
+echo 'export PATH="$HOME/.neo4j-desktop:$PATH"' >>$HOME/.zshrc
 
 app_entry "Neo4j Desktop"
