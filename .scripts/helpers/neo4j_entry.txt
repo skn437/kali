@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Neo4j Desktop
+Exec=/home/logno-atoshi/.neo4j-desktop/neo4j.AppImage
+Icon=/home/logno-atoshi/.intellij-idea/app-icons/neo4j.svg
+Comment=Neo4j desktop app to manage graph database
+Type=Application
+Terminal=false
+Encoding=UTF-8
+Categories=Utility;
