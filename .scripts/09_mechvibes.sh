@@ -6,8 +6,10 @@ app_entry() {
   printf "'%s' Entry Configured! ✅ \n" "$1"
 }
 
-APP_ENTRY="$(curl -sSL https://raw.githubusercontent.com/skn437/ubuntu/master/.scripts/helpers/mechvibes_entry.txt)"
+MECHVIBES_DESKTOP_ENTRY="/usr/share/applications/mechvibes.desktop"
 
-echo "${APP_ENTRY}" >/usr/share/applications/mechvibes.desktop
+APP_ENTRY_TEMPLATE="$(curl -sSL https://raw.githubusercontent.com/skn437/ubuntu/master/.scripts/helpers/mechvibes_entry.txt)"
+
+echo "${APP_ENTRY_TEMPLATE}" >"${MECHVIBES_DESKTOP_ENTRY}"
 
 app_entry "Mechvibes"
