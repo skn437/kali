@@ -2,10 +2,6 @@
 
 set -e
 
-app_entry() {
-  printf "'%s' Entry Configured! ✅ \n" "$1"
-}
-
 NEO4J_PATH="$HOME/.neo4j-desktop"
 
 mkdir -p "${NEO4J_PATH}"
@@ -22,7 +18,7 @@ touch "${TEMPORARY_DESKTOP_ENTRY}"
 echo "${APP_ENTRY_TEMPLATE}" >"${TEMPORARY_DESKTOP_ENTRY}"
 
 mv $HOME/Downloads/neo4j.AppImage "${NEO4J_PATH}/neo4j.AppImage"
-chmod u+x "${NEO4J_PATH}/neo4j.AppImage"
+# chmod u+x "${NEO4J_PATH}/neo4j.AppImage"
 
 NEO4J_DESKTOP_ENTRY="/usr/share/applications/neo4j.desktop"
 
@@ -34,4 +30,4 @@ sudo mv "${TEMPORARY_DESKTOP_ENTRY}" "${NEO4J_DESKTOP_ENTRY}"
 
 echo 'export PATH="$HOME/.neo4j-desktop:$PATH"' >>$HOME/.zshrc
 
-app_entry "Neo4j Desktop"
+printf "'Neo4j Desktop' Entry Configured! ✅ \n"
