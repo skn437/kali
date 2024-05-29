@@ -128,7 +128,7 @@ message_broker() {
   package_install "Message Broker"
 }
 
-app_image {
+app_image() {
   # LibFuse@2
   brew install libfuse@2
 
