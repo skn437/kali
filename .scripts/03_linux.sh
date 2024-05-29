@@ -132,7 +132,7 @@ app_image() {
   # LibFuse@2
   brew install libfuse@2
 
-  package_install "App Image Enabler"
+  package_install "App Image Fuse Library"
 }
 
 brew_prepare && devtools && shellscript && typescript && java && c_cpp && rust && go && kotlin && csharp && devops && message_broker && app_image
