@@ -33,4 +33,4 @@ printf "\n"
 
 oh_my_posh_init
 
-printf "'Oh My Posh' Installed! ✅ \n" "$1"
+printf "'Oh My Posh' Installed! ✅ \n"
