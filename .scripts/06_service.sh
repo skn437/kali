@@ -11,16 +11,8 @@ package_install() {
 }
 
 docker() {
-  # Set up the `APT` repository
-  echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian bookworm stable" | \
-  sudo tee /etc/apt/sources.list.d/docker.list
-
-  # Import the `GPG` key
-  curl -fsSL https://download.docker.com/linux/debian/gpg |
-  sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-
-  # Download "docker-ce-cli", "containerd.io", "docker-ce", "docker-buildx-plugin", "docker-compose-plugin" packages
-  sudo apt install -y docker-ce-cli containerd.io docker-ce docker-buildx-plugin docker-compose-plugin
+  # docker
+  curl -sSL https://get.docker.com | bash
 
   # Create a `Docker Group` and add linux username to it
   sudo usermod -aG docker $USER && newgrp docker
