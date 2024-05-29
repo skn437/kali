@@ -2,6 +2,10 @@
 
 set -e
 
+brew_prepare() {
+  brew update && brew upgrade && brew autoremove && brew cleanup
+}
+
 package_install() {
   printf "'%s' Installed! ✅ \n" "$1"
 }
@@ -37,4 +41,4 @@ kubernetes() {
   package_install "Kubernetes"
 }
 
-docker && kubernetes
+docker && brew_prepare && kubernetes
