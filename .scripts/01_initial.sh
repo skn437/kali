@@ -2,7 +2,7 @@
 
 set -e
 
-apt_prepare {
+apt_prepare() {
   sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
 }
 
