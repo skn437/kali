@@ -24,4 +24,4 @@ fi
 
 apt_prepare && homebrew
 
-printf "Homebrew Installed ✅ \n"
+printf "Homebrew Installed! ✅ \n"
