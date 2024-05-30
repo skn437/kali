@@ -14,10 +14,20 @@ zsh() {
   # Zsh Auto Suggestions
   brew install zsh-autosuggestions
 
+  # Create shell library directories
+  SHELL_LIBRARY_DIRECTORY="$HOME/.shell-lib"
+  ZSH_LIBRARY_DIRECTORY="${SHELL_LIBRARY_DIRECTORY}/zsh"
+  mkdir -p "${SHELL_LIBRARY_DIRECTORY}"
+  mkdir -p "${ZSH_LIBRARY_DIRECTORY}"
+
+  # Zsh Syntax Highlighting
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_LIBRARY_DIRECTORY}"
+
   # Add configuration to `.zshrc`
   echo 'source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"' >>$HOME/.zshrc
+  echo 'source "$HOME/.shell-lib/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"' >>$HOME/.zshrc
 
-  package_install "Zsh Auto Suggestion"
+  package_install "Zsh Auto Suggestion & Syntax Highlighting"
 }
 
 devtools() {
