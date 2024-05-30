@@ -19,7 +19,7 @@ homebrew() {
 BREW_PATH="/home/linuxbrew"
 
 if test -d "${BREW_PATH}"; then
-  rm -rf "${BREW_PATH}"
+  sudo rm -rf "${BREW_PATH}"
 fi
 
 apt_prepare && homebrew
