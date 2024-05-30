@@ -10,6 +10,16 @@ package_install() {
   printf "'%s' Installed! ✅ \n" "$1"
 }
 
+zsh() {
+  # Zsh Auto Suggestions
+  brew install zsh-autosuggestions
+
+  # Add configuration to `.zshrc`
+  echo 'source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"' >>$HOME/.zshrc
+
+  package_install "Zsh Auto Suggestion"
+}
+
 devtools() {
   # Fastfetch
   brew install fastfetch
@@ -128,4 +138,4 @@ message_broker() {
   package_install "Message Broker"
 }
 
-brew_prepare && devtools && shellscript && typescript && java && c_cpp && rust && go && kotlin && csharp && devops && message_broker
+brew_prepare && zsh && devtools && shellscript && typescript && java && c_cpp && rust && go && kotlin && csharp && devops && message_broker
