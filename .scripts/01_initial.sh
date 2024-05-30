@@ -21,7 +21,7 @@ zsh() {
   # Change default shell to `zsh` 
   chsh -s "$(which zsh)"
 
-  message "'Zsh' Activated!"
+  message "'Zsh' Activated"
 }
 
 apt_prepare && main_package && zsh
