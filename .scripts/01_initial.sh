@@ -19,7 +19,7 @@ main_package() {
 
 zsh_init() {
   # Initialize `zsh`
-  gnome-terminal -- bash -c "printf 'zsh version: %s \n' '$(zsh --version)'; zsh; chsh -s '$(which zsh)'; read -n 1 KEY"
+  gnome-terminal -- bash -c "printf 'zsh version: %s \n' '$(zsh --version)'; zsh; chsh -s '$(which zsh)'"
 
   message "'Zsh' Initialized"
 }
