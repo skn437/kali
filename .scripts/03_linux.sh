@@ -16,7 +16,7 @@ zsh() {
 
   # Create shell library directories
   SHELL_LIBRARY_DIRECTORY="$HOME/.shell-lib"
-  ZSH_LIBRARY_DIRECTORY="${SHELL_LIBRARY_DIRECTORY}/zsh"
+  ZSH_LIBRARY_DIRECTORY="${SHELL_LIBRARY_DIRECTORY}/zsh-syntax-highlighting"
   mkdir -p "${SHELL_LIBRARY_DIRECTORY}"
   mkdir -p "${ZSH_LIBRARY_DIRECTORY}"
 
@@ -25,7 +25,7 @@ zsh() {
 
   # Add configuration to `.zshrc`
   echo 'source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"' >>$HOME/.zshrc
-  echo 'source "$HOME/.shell-lib/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"' >>$HOME/.zshrc
+  echo 'source "$HOME/.shell-lib/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"' >>$HOME/.zshrc
 
   package_install "Zsh Auto Suggestion & Syntax Highlighting"
 }
