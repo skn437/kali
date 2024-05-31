@@ -15,7 +15,7 @@ main_package() {
 
 zsh_init() {
   # Initialize `zsh`
-  gnome-terminal -- bash -c "printf 'zsh version: %s \n' '$(zsh --version)'; zsh; chsh -s '$(which zsh)'; printf 'Zsh Initialized! ✅ \n'"
+  gnome-terminal -- bash -c "printf 'zsh version: %s \n' '$(zsh --version)'; zsh; chsh -s '$(which zsh)'; printf 'Zsh Initialized! ✅ \n'; sudo reboot now"
 }
 
 apt_prepare && main_package && zsh_init
