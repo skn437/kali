@@ -19,12 +19,9 @@ main_package() {
 
 zsh_init() {
   # Initialize `zsh`
-  gnome-terminal -- bash -c "printf 'zsh version: %s \n' '$(zsh --version)'; zsh; message 'Zsh Initialized'; read -n 1 KEY"
+  gnome-terminal -- bash -c "printf 'zsh version: %s \n' '$(zsh --version)'; zsh; chsh -s '$(which zsh)'; read -n 1 KEY"
+
+  message "'Zsh' Initialized"
 }
 
-zsh() {
-  # Change default shell to `zsh`
-  gnome-terminal -- bash -c "chsh -s '$(which zsh)'; message 'Changed default shell to Zsh'; read -n 1 KEY"
-}
-
-apt_prepare && main_package && zsh_init && zsh
+apt_prepare && main_package && zsh_init
