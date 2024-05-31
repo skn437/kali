@@ -11,6 +11,7 @@ miniconda() {
 
 miniconda_init() {
   $HOME/miniconda3/bin/conda init zsh
+  $HOME/miniconda3/bin/conda init bash
 }
 
 miniconda
