@@ -64,6 +64,7 @@ java() {
 
   # Export `Java Home` to the "Path"
   echo 'export JAVA_HOME="/home/linuxbrew/.linuxbrew/opt/openjdk/libexec/"' >>$HOME/.zshrc
+  echo 'export JAVA_HOME="/home/linuxbrew/.linuxbrew/opt/openjdk/libexec/"' >>$HOME/.bashrc
 
   # Create a maven settings XML file
   mkdir -p $HOME/.m2
@@ -120,12 +121,14 @@ csharp() {
 
   # Export `.Net Core Root` to the "Path"
   echo 'export DOTNET_ROOT="/home/linuxbrew/.linuxbrew/opt/dotnet/libexec/"' >>$HOME/.zshrc
+  echo 'export DOTNET_ROOT="/home/linuxbrew/.linuxbrew/opt/dotnet/libexec/"' >>$HOME/.bashrc
 
   # .Net Script
   dotnet tool install -g dotnet-script
 
   # Export `.Net Tools` to the "Path"
   echo 'export PATH="$HOME/.dotnet/tools:$PATH"' >>$HOME/.zshrc
+  echo 'export PATH="$HOME/.dotnet/tools:$PATH"' >>$HOME/.bashrc
 
   package_install "C#"
 }
