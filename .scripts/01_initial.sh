@@ -17,11 +17,14 @@ main_package() {
   message "'Main Packages' Installed"
 }
 
-zsh() {
-  # Change default shell to `zsh` 
-  chsh -s "$(which zsh)"
-
-  message "'Zsh' Activated"
+zsh_init() {
+  # Initialize `zsh`
+  gnome-terminal -- bash -c "printf 'zsh version: %s \n' '$(zsh --version)'; zsh; message 'Zsh Initialized'; read -n 1 KEY"
 }
 
-apt_prepare && main_package && zsh
+zsh() {
+  # Change default shell to `zsh`
+  gnome-terminal -- bash -c "chsh -s '$(which zsh)'; message 'Changed default shell to Zsh'; read -n 1 KEY"
+}
+
+apt_prepare && main_package && zsh_init && zsh
