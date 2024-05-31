@@ -23,6 +23,7 @@ oh_my_posh_init() {
 
   # Install theme
   echo 'eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/kali.omp.json)"' >>$HOME/.zshrc
+  echo 'eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/kali.omp.json)"' >>$HOME/.bashrc
 }
 
 brew_prepare
