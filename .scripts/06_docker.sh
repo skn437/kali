@@ -6,10 +6,6 @@ apt_prepare() {
   sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
 }
 
-brew_prepare() {
-  brew update && brew upgrade && brew autoremove && brew cleanup
-}
-
 message() {
   printf "%s! ✅ \n" "$1"
 }
@@ -28,17 +24,8 @@ docker_init() {
   message "Docker Group Enabled"
 }
 
-kubernetes() {
-  # Minikube & Helm
-  brew install minikube helm
-
-  # Initialize Minikube
-  minikube start --driver docker
-
-  # Ingress
-  minikube addons enable ingress
-
-  message "Kubernetes Installed"
+reboot() {
+  gnome-terminal -- bash -c "printf 'The system needs a reboot to activate the changes! 📚'; printf 'Preparing to reboot... \n'; sleep 2; sudo reboot now"
 }
 
-apt_prepare && docker && docker_init && brew_prepare && kubernetes
+apt_prepare && docker && docker_init && reboot
