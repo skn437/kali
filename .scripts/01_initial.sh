@@ -19,7 +19,7 @@ zsh_init() {
 }
 
 reboot() {
-  gnome-terminal -- bash -c "printf 'The system needs a reboot to activate the changes! \n'; printf 'Preparing to reboot... \n'; sleep 2; sudo reboot now"
+  gnome-terminal -- bash -c "printf 'The system needs a reboot to activate the changes. Complete zsh initialization properly. \n'; printf 'Preparing to reboot... \n'; sleep 2; sudo reboot now"
 }
 
 apt_prepare && main_package && zsh_init && reboot
