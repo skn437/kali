@@ -17,7 +17,7 @@ oh_my_posh() {
 oh_my_posh_init() {
   # Install "FiraCode font"
   gnome-terminal -- bash -c "oh-my-posh font install; read -n 1 KEY"
-  
+
   # Get your current shell
   printf "SHELL = %s \n" "$(which $SHELL)"
 

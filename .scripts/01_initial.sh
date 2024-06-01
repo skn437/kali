@@ -9,7 +9,7 @@ apt_prepare() {
 main_package() {
   # `curl`, `git`, `build-essential`, `gnome-tweaks` & `zsh`
   sudo apt install -y curl git build-essential gnome-tweaks zsh
-  
+
   printf "'Main Packages' Installed! ✅ \n"
 }
 
@@ -19,7 +19,7 @@ zsh_init() {
 }
 
 reboot() {
-  gnome-terminal -- bash -c "printf 'The system needs a reboot to activate the changes. Reboot after initializing zsh properly. \n'; printf 'Preparing to reboot... \n'; sleep 2; sudo reboot now"
+  gnome-terminal -- bash -c "printf 'The system needs a reboot to activate the changes. Reboot after initializing zsh properly. 📚 \n'; printf 'Preparing to reboot... \n'; sleep 2; sudo reboot now"
 }
 
 apt_prepare && main_package && zsh_init && reboot
