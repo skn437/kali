@@ -151,4 +151,9 @@ message_broker() {
   package_install "Message Broker"
 }
 
-brew_prepare && zsh && devtools && shellscript && typescript && java && c_cpp && rust && go && kotlin && csharp && devops && message_broker
+app_image() {
+  # LibFuse@2
+  brew install libfuse@2
+}
+
+brew_prepare && zsh && devtools && shellscript && typescript && java && c_cpp && rust && go && kotlin && csharp && devops && message_broker && app_image
