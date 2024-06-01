@@ -15,7 +15,11 @@ main_package() {
 
 zsh_init() {
   # Initialize `zsh`
-  gnome-terminal -- bash -c "printf 'zsh version: %s \n' '$(zsh --version)'; zsh; chsh -s '$(which zsh)'; printf 'Zsh Initialized! ✅ \n'; sudo reboot now"
+  gnome-terminal -- bash -c "printf 'zsh version: %s \n' '$(zsh --version)'; zsh; chsh -s '$(which zsh)'; printf 'Zsh Initialized! ✅ \n'"
 }
 
-apt_prepare && main_package && zsh_init
+reboot() {
+  gnome-terminal -- bash -c "printf 'The system needs a reboot to activate the changes! \n'; printf 'Preparing to reboot... \n'; sleep 2; sudo reboot now"
+}
+
+apt_prepare && main_package && zsh_init && reboot
