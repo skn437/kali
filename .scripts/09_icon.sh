@@ -2,7 +2,7 @@
 
 set -e
 
-ICON_DIRECTORY="$HOME/.intellij-idea"
+ICON_DIRECTORY="$HOME/.jetbrains"
 
 if test -d "${ICON_DIRECTORY}"; then
   rm -rf "${ICON_DIRECTORY}"
