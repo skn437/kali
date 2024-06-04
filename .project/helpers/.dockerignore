@@ -1,0 +1,17 @@
+# Git
+.git
+
+# Native & desktop
+android
+*-android
+ios
+*-ios
+*-tauri
+*-desktop
+
+# Docker
+Dockerfile
+dev.Dockerfile
+prod.Dockerfile
+.dockerignore
+docker-compose.yaml
