@@ -9,7 +9,6 @@ printf "Do you want '${IGNORE_FILES_ARRAY[2]}' and '${IGNORE_FILES_ARRAY[3]}' as
 printf "Press 'y' for to say yes & 'n' to say no! \n"
 printf "Enter your choice: "
 read -n 1 KEY
-printf "\n"
 
 READ_GIT_IGNORE="$(curl -sSL "https://raw.githubusercontent.com/skn437/ubuntu/master/${IGNORE_FILES_ARRAY[0]}")"
 
@@ -36,6 +35,7 @@ update_docker_ignore() {
   echo "${READ_DOCKER_IGNORE}" >>"${DOCKER_IGNORE_PATH}"
 }
 
+printf "\n"
 echo "${READ_GIT_IGNORE}" >"./${IGNORE_FILES_ARRAY[0]}"
 update_docker_ignore
 
