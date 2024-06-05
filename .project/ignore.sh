@@ -38,13 +38,14 @@ update_docker_ignore() {
 }
 
 echo "${READ_GIT_IGNORE}" >"./${IGNORE_FILES_ARRAY[0]}"
-update_docker_ignore
+
+if test -f "./Dockerfile"; then
+  update_docker_ignore
+fi
 
 if test -f "./package.json"; then
   update_ignore "2p" "./${IGNORE_FILES_ARRAY[2]}"
   update_ignore "3p" "./${IGNORE_FILES_ARRAY[3]}"
-else
-  printf "'${IGNORE_FILES_ARRAY[0]}' & '${IGNORE_FILES_ARRAY[1]}' files are not configured! \n"
 fi
 
 rm "${TEMPORARY_GIT_IGNORE_TEXT}"
