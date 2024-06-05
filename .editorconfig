@@ -41,6 +41,10 @@ indent_size = 2
 [gradlew]
 indent_size = 2
 
+# Maven Wrapper file
+[mvnw]
+indent_size = 2
+
 # Rust files
 [*.rs]
 indent_size = 2
@@ -58,7 +62,7 @@ indent_size = 2
 indent_size = 2
 
 # TypeScript, JavaScript files
-[*.{ts,tsx,js,jsx}]
+[*.{ts,tsx,js,jsx,cts,mts,cjs,mjs}]
 indent_size = 2
 
 # Python files

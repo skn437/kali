@@ -2,6 +2,8 @@
 
 set -e
 
+LINUX="kali"
+
 IGNORE_FILES_ARRAY=(".gitignore" ".dockerignore" ".prettierignore" ".eslintignore")
 
 TEMPORARY_PATH="$HOME/.shell-lib"
@@ -10,15 +12,15 @@ mkdir -p "${TEMPORARY_PATH}"
 
 TEMPORARY_GIT_IGNORE_TEXT="${TEMPORARY_PATH}/${IGNORE_FILES_ARRAY[0]}.txt"
 
-curl -sSL "https://raw.githubusercontent.com/skn437/ubuntu/master/${IGNORE_FILES_ARRAY[0]}" >"${TEMPORARY_GIT_IGNORE_TEXT}"
+curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/${IGNORE_FILES_ARRAY[0]}" >"${TEMPORARY_GIT_IGNORE_TEXT}"
 
 READ_GIT_IGNORE="$(cat "${TEMPORARY_GIT_IGNORE_TEXT}")"
 
 TRIMMED_GIT_IGNORE="$(sed "1d" "${TEMPORARY_GIT_IGNORE_TEXT}")"
 
-curl -sSL "https://raw.githubusercontent.com/skn437/ubuntu/master/.project/helpers/${IGNORE_FILES_ARRAY[0]}" >"${TEMPORARY_GIT_IGNORE_TEXT}"
+curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/.project/helpers/${IGNORE_FILES_ARRAY[0]}" >"${TEMPORARY_GIT_IGNORE_TEXT}"
 
-READ_DOCKER_IGNORE="$(curl -sSL "https://raw.githubusercontent.com/skn437/ubuntu/master/.project/helpers/${IGNORE_FILES_ARRAY[1]}")"
+READ_DOCKER_IGNORE="$(curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/.project/helpers/${IGNORE_FILES_ARRAY[1]}")"
 
 read_ignore_info_line() {
   sed -n "$1" "${TEMPORARY_GIT_IGNORE_TEXT}" >"$2"
@@ -50,4 +52,4 @@ fi
 
 rm "${TEMPORARY_GIT_IGNORE_TEXT}"
 
-printf "Ignore Files Configuration Finished! ✅ \n"
+printf "'Ignore Files Configuration' Finished! ✅ \n"

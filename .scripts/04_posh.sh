@@ -16,14 +16,13 @@ oh_my_posh() {
 
 oh_my_posh_init() {
   # Install "FiraCode font"
-  gnome-terminal -- bash -c "oh-my-posh font install; read -n 1 KEY"
+  oh-my-posh font install
 
   # Get your current shell
-  printf "SHELL = %s \n" "$(which $SHELL)"
+  printf "SHELL = %s \n" "$(oh-my-posh get shell)"
 
   # Install theme
   echo 'eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/kali.omp.json)"' >>$HOME/.zshrc
-  echo 'eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/kali.omp.json)"' >>$HOME/.bashrc
 }
 
 brew_prepare
