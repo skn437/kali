@@ -1,0 +1,13 @@
+pre-commit:
+  commands:
+    cmd1:
+      run: printf "Pre-Commit Command1! \n"
+    cmd2:
+      run: printf "Pre-Commit Command2! \n"
+
+pre-push:
+  commands:
+    cmd1:
+      run: printf "Pre-Push Command1! \n"
+    cmd2:
+      run: printf "Pre-Push Command2! \n"

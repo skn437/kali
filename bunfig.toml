@@ -1,0 +1,16 @@
+[install]
+production = false
+peer = true
+dev = true
+optional = true
+frozenLockfile = false
+auto = "auto"
+
+[install.lockfile]
+save = true
+
+[test]
+root = "./src"
+coverage = true
+coverageThreshold = { line = 0.7, function = 0.8, statement = 0.9 }
+coverageSkipTestFiles = false
