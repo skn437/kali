@@ -21,3 +21,4 @@ fi
 homebrew
 
 printf "'Homebrew' Installed! ✅ \n"
+printf "Please reload the terminal to enable the changes! \n"
