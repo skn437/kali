@@ -59,10 +59,6 @@ rust() {
   # Rust
   brew install rustup-init
 
-  # Initialize Rust
-  printf "\n"
-  rustup-init
-
   # SCCache
   brew install sccache
 
