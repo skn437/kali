@@ -58,7 +58,7 @@ rust() {
   # SCCache
   brew install sccache
 
-  # echo 'export PATH="$HOME/.cargo/bin:$PATH"' >>$HOME/.zshrc
+  echo 'export PATH="$HOME/.cargo/bin:$PATH"' >>$HOME/.zshrc
 
   package_install "Rust"
 }
