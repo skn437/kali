@@ -2,6 +2,10 @@
 
 set -e
 
+apt_prepare() {
+  sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
+}
+
 brew_prepare() {
   brew update && brew upgrade && brew autoremove && brew cleanup
 }
@@ -53,10 +57,16 @@ java() {
 
 rust() {
   # Rust
-  brew install rust
+  brew install rustup-init
+
+  # Initialize Rust
+  printf "\n"
+  rustup-init
 
   # Rustfmt & SCCache
   brew install rustfmt sccache
+
+  echo 'export PATH="$HOME/.cargo/bin:$PATH"' >>$HOME/.zshrc
 
   package_install "Rust"
 }
@@ -84,4 +94,4 @@ kotlin() {
   package_install "Kotlin"
 }
 
-brew_prepare && devtools && shellscript && typescript && java && rust && go && kotlin
+apt_prepare && brew_prepare && devtools && shellscript && typescript && java && rust && go && kotlin
