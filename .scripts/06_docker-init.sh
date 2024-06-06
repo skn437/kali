@@ -9,4 +9,8 @@ docker_init() {
   printf "Docker Group Enabled! ✅ \n"
 }
 
-docker_init
+reboot() {
+  gnome-terminal -- bash -c "printf 'The system needs a reboot to activate the changes! 📚'; printf 'Preparing to reboot... \n'; sleep 2; sudo reboot now"
+}
+
+docker_init && reboot
