@@ -2,10 +2,6 @@
 
 set -e
 
-apt_prepare() {
-  sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
-}
-
 brew_prepare() {
   brew update && brew upgrade && brew autoremove && brew cleanup
 }
@@ -97,4 +93,4 @@ message_broker() {
   package_install "Message Broker"
 }
 
-apt_prepare && brew_prepare && devtools && shellscript && typescript && java && rust && go && kotlin && message_broker
+brew_prepare && devtools && shellscript && typescript && java && rust && go && kotlin && message_broker
