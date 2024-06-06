@@ -2,10 +2,6 @@
 
 set -e
 
-apt_prepare() {
-  sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
-}
-
 homebrew() {
   # Homebrew
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -22,6 +18,6 @@ if test -d "${BREW_PATH}"; then
   sudo rm -rf "${BREW_PATH}"
 fi
 
-apt_prepare && homebrew
+homebrew
 
 printf "'Homebrew' Installed! ✅ \n"
