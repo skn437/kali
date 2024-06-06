@@ -63,10 +63,10 @@ rust() {
   printf "\n"
   rustup-init
 
-  # Rustfmt & SCCache
-  brew install rustfmt sccache
+  # SCCache
+  brew install sccache
 
-  echo 'export PATH="$HOME/.cargo/bin:$PATH"' >>$HOME/.zshrc
+  # echo 'export PATH="$HOME/.cargo/bin:$PATH"' >>$HOME/.zshrc
 
   package_install "Rust"
 }
@@ -94,4 +94,11 @@ kotlin() {
   package_install "Kotlin"
 }
 
-apt_prepare && brew_prepare && devtools && shellscript && typescript && java && rust && go && kotlin
+message_broker() {
+  # Kafka: It automatically installs `Zookeeper` to its latest version
+  brew install kafka
+
+  package_install "Message Broker"
+}
+
+apt_prepare && brew_prepare && devtools && shellscript && typescript && java && rust && go && kotlin && message_broker
