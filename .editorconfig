@@ -45,12 +45,16 @@ indent_size = 2
 [mvnw]
 indent_size = 2
 
+# GraphQL files
+[*.{graphql,graphqls,gql}]
+indent_size = 2
+
 # Rust files
 [*.rs]
 indent_size = 2
 
-# HTML, CSS, Sass, SCSS, Markdown files
-[*.{html,css,sass,scss,md}]
+# HTML, CSS, Sass, SCSS, Markdown, MDX files
+[*.{html,css,sass,scss,md,mdx}]
 indent_size = 2
 
 # JSON, TOML, XML, YAML files

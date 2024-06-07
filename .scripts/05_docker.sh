@@ -16,7 +16,7 @@ docker() {
   # Download "docker-ce-cli", "containerd.io", "docker-ce", "docker-buildx-plugin", "docker-compose-plugin" packages
   apt_prepare
   sudo apt install -y docker-ce-cli containerd.io docker-ce
-  
+
   printf "Docker Installed! ✅ \n"
 }
 

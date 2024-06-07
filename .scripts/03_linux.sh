@@ -35,6 +35,9 @@ typescript() {
   brew tap oven-sh/bun
   brew install bun
 
+  #Prettier
+  brew install prettier
+
   package_install "TypeScript"
 }
 
@@ -51,16 +54,21 @@ java() {
   package_install "Java"
 }
 
-rust() {
-  # Rust
-  brew install rustup-init
+message_broker() {
+  # Kafka: It automatically installs `Zookeeper` to its latest version
+  brew install kafka
 
-  # SCCache
-  brew install sccache
+  package_install "Message Broker"
+}
 
-  echo 'export PATH="$HOME/.cargo/bin:$PATH"' >>$HOME/.zshrc
+kotlin() {
+  # Kotlin
+  brew install kotlin
 
-  package_install "Rust"
+  # Ktlint
+  brew install ktlint
+
+  package_install "Kotlin"
 }
 
 go() {
@@ -76,21 +84,21 @@ go() {
   package_install "Go"
 }
 
-kotlin() {
-  # Kotlin
-  brew install kotlin
+rust() {
+  # Rust
+  brew install rustup-init
 
-  # Ktlint
-  brew install ktlint
+  # SCCache
+  brew install sccache
 
-  package_install "Kotlin"
+  echo 'export PATH="$HOME/.cargo/bin:$PATH"' >>$HOME/.zshrc
+
+  package_install "Rust"
 }
 
-message_broker() {
-  # Kafka: It automatically installs `Zookeeper` to its latest version
-  brew install kafka
-
-  package_install "Message Broker"
+rust_init() {
+  # Initialize Rust toolchains
+  gnome-terminal -- bash -c "printf 'Preparing to initialize rust... \n' && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && rustup-init; read -n 1 KEY"
 }
 
-brew_prepare && devtools && shellscript && typescript && java && rust && go && kotlin && message_broker
+brew_prepare && devtools && shellscript && typescript && java && message_broker && kotlin && go && rust && rust_init
