@@ -66,7 +66,7 @@ indent_size = 2
 indent_size = 2
 
 # TypeScript, JavaScript files
-[*.{ts,tsx,js,jsx,cts,mts,cjs,mjs}]
+[*.{ts,tsx,cts,mts,js,jsx,cjs,mjs}]
 indent_size = 2
 
 # Python files
