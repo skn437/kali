@@ -35,8 +35,11 @@ typescript() {
   brew tap oven-sh/bun
   brew install bun
 
+  # Export `Bun.js Binary` to the "Path"
+  echo 'export PATH="$HOME/.bun/bin:$PATH"' >>$HOME/.zshrc
+
   #Prettier
-  brew install prettier
+  bun add -g prettier
 
   package_install "TypeScript"
 }

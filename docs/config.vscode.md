@@ -172,7 +172,7 @@
     ".github": "../../../../../../.jetbrains/custom-icons/github-folder",
     ".github/workflows": "../../../../../../.jetbrains/custom-icons/github-workflows-folder",
     "dependabot": "../../../../../../.jetbrains/custom-icons/dependabot-folder",
-    "webservices": "Job",
+    "webservices": "../../../../../../.jetbrains/custom-icons/webservice-folder",
     "hub": "../../../../../../.jetbrains/custom-icons/docker-hub-folder",
     "docker": "../../../../../../.jetbrains/custom-icons/docker-folder",
     "kubernetes": "../../../../../../.jetbrains/custom-icons/kubernetes-folder",
@@ -738,6 +738,12 @@
     "kubernetes": ["*.deployment.yaml", "*.statefulset.yaml"]
   },
   "yaml.schemaStore.enable": true,
+  "[graphql]": {
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[rust]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
@@ -831,26 +837,70 @@
   "code-runner.runInTerminal": true,
   "code-runner.defaultLanguage": "javascript",
   "emojisense.languages": {
-    "ejs": true,
-    "git-commit": true,
-    "html": true,
-    "javascript": true,
-    "json": true,
-    "markdown": true,
-    "mdx": true,
+    "ejs": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "git-commit": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "html": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "javascript": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "json": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "markdown": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "mdx": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
     "plaintext": {
       "markupCompletionsEnabled": false,
       "emojiDecoratorsEnabled": false
     },
-    "rust": true,
-    "scminput": true,
-    "shellscript": true,
-    "svg": true,
-    "toml": true,
-    "typescript": true,
-    "typescriptreact": true,
-    "xml": true,
-    "yaml": true
+    "rust": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "shellscript": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "svg": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "toml": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "typescript": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "typescriptreact": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "xml": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "yaml": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    }
   },
   "testExplorer.useNativeTesting": false,
   "auto-close-tag.activationOnLanguage": ["ejs", "plaintext", "markdown", "mdx"]
