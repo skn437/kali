@@ -90,6 +90,7 @@
   "prettier.htmlWhitespaceSensitivity": "css",
   "prettier.jsxSingleQuote": false,
   "prettier.singleAttributePerLine": true,
+  "prettier.prettierPath": "/home/logno-atoshi/.bun/install/global/node_modules/prettier",
   "workbench.colorTheme": "One dark sweet",
   "workbench.panel.defaultLocation": "right",
   "workbench.panel.opensMaximized": "always",
@@ -433,6 +434,7 @@
     "main": "../../../../.jetbrains/custom-icons/bin",
     // JavaScript & TypeScript
     "package.json": "../../../../.jetbrains/custom-icons/node-package",
+    ".npmignore": "../../../../.jetbrains/custom-icons/npm-ignore",
     ".eslintrc.json": "../../../../.jetbrains/custom-icons/eslint",
     ".eslintignore": "../../../../.jetbrains/custom-icons/eslint-ignore",
     ".prettierrc.json": "../../../../.jetbrains/custom-icons/prettier",
