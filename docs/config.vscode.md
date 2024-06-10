@@ -108,6 +108,7 @@
     ".idea": "../../../../../../.jetbrains/custom-icons/intellij-folder",
     ".idea/dictionaries": "../../../../../../.jetbrains/custom-icons/intellij-dict-folder",
     ".idea/codeStyles": "../../../../../../.jetbrains/custom-icons/intellij-style-folder",
+    ".idea/inspectionProfiles": "../../../../../../.jetbrains/custom-icons/intellij-profile-folder",
     ".apidocs": "../../../../../../.jetbrains/custom-icons/apidocs-folder",
     ".husky/_": "../../../../../../.jetbrains/custom-icons/husky-folder",
     ".codegen": "../../../../../../.jetbrains/custom-icons/codegen-folder",
@@ -435,6 +436,7 @@
     // JavaScript & TypeScript
     "package.json": "../../../../.jetbrains/custom-icons/node-package",
     ".npmignore": "../../../../.jetbrains/custom-icons/npm-ignore",
+    "npm-shrinkwrap.json": "../../../../.jetbrains/custom-icons/npm-shrinkwrap",
     ".eslintrc.json": "../../../../.jetbrains/custom-icons/eslint",
     ".eslintignore": "../../../../.jetbrains/custom-icons/eslint-ignore",
     ".prettierrc.json": "../../../../.jetbrains/custom-icons/prettier",
