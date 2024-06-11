@@ -126,7 +126,7 @@
     "redis": "../../../../../../.jetbrains/custom-icons/redis-folder",
     "relations": "Custom",
     "collections": "Rules",
-    // Spring Boot
+    // Java, Kotlin & Spring Boot
     "main": "../../../../../../.jetbrains/custom-icons/main-folder",
     ".mvn": "../../../../../../.jetbrains/custom-icons/maven-folder",
     ".mvn/wrapper": "../../../../../../.jetbrains/custom-icons/maven-wrapper-folder",
@@ -148,6 +148,8 @@
     "templates": "../../../../../../.jetbrains/custom-icons/template-folder",
     "kotlin": "../../../../../../.jetbrains/custom-icons/kotlin-folder",
     "resources": "../../../../../../.jetbrains/custom-icons/resource-folder",
+    "dokka": "../../../../../../.jetbrains/custom-icons/dokka-folder",
+    ".dokka": "../../../../../../.jetbrains/custom-icons/dokka-folder",
     // .Net
     "blueprint": "../../../../../../.jetbrains/custom-icons/blueprint-folder",
     "blueprints": "../../../../../../.jetbrains/custom-icons/blueprint-folder",
@@ -246,6 +248,7 @@
     "animation": "../../../../../../.jetbrains/custom-icons/animation-folder",
     "animations": "../../../../../../.jetbrains/custom-icons/animation-folder",
     "public": "../../../../../../.jetbrains/custom-icons/public-folder",
+    "context": "../../../../../../.jetbrains/custom-icons/context-folder",
     "rxjs": "Pipe",
     "webhooks": "Hook"
   },
@@ -384,6 +387,8 @@
     "*.Advice.kt": "../../../../.jetbrains/custom-icons/spring-controller-advice",
     "*.Property.kt": "../../../../.jetbrains/custom-icons/spring-property",
     "*.Repository.kt": "../../../../.jetbrains/custom-icons/spring-repository",
+    "dokka/module.md": "../../../../.jetbrains/custom-icons/dokka",
+    ".dokka/module.md": "../../../../.jetbrains/custom-icons/dokka",
     // Spring Boot & Build Tools
     "resources/application.yaml": "../../../../.jetbrains/custom-icons/spring-config",
     "target/application.yaml": "../../../../.jetbrains/custom-icons/spring-config",
@@ -446,7 +451,11 @@
     "*.js": "../../../../.jetbrains/custom-icons/js",
     "tsconfig.json": "../../../../.jetbrains/custom-icons/ts-config",
     "*.d.ts": "../../../../.jetbrains/custom-icons/ts-definition",
+    "*.d.cts": "../../../../.jetbrains/custom-icons/ts-definition",
+    "*.d.mts": "../../../../.jetbrains/custom-icons/ts-definition",
     "*.ts": "../../../../.jetbrains/custom-icons/ts",
+    "*.cts": "../../../../.jetbrains/custom-icons/ts",
+    "*.mts": "../../../../.jetbrains/custom-icons/ts",
     "index.ts": "../../../../.jetbrains/custom-icons/source",
     "main.ts": "../../../../.jetbrains/custom-icons/ts-main",
     "*.type.ts": "../../../../.jetbrains/custom-icons/ts-type",
