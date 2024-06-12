@@ -218,6 +218,10 @@
     "project": "../../../../../../.jetbrains/custom-icons/project-folder",
     ".project": "../../../../../../.jetbrains/custom-icons/project-folder",
     ".vscode": "../../../../../../.jetbrains/custom-icons/vscode-folder",
+    "icons": "../../../../../../.jetbrains/custom-icons/icon-folder",
+    ".icons": "../../../../../../.jetbrains/custom-icons/icon-folder",
+    "env": "../../../../../../.jetbrains/custom-icons/env-folder",
+    ".env": "../../../../../../.jetbrains/custom-icons/env-folder",
     // Python
     "python": "../../../../../../.jetbrains/custom-icons/py-folder",
     "analysis": "../../../../../../.jetbrains/custom-icons/analysis-folder",
@@ -301,7 +305,7 @@
     ".idea/web-storm-project-settings.zip": "../../../../.jetbrains/custom-icons/jetbrains-web",
     ".idea/rust-rover-settings.zip": "../../../../.jetbrains/custom-icons/jetbrains-rover",
     ".idea/rust-rover-project-settings.zip": "../../../../.jetbrains/custom-icons/jetbrains-rover",
-    // HTML, CSS, Sass & SVG
+    // HTML, CSS, Sass , SVG & Images
     "*.html": "../../../../.jetbrains/custom-icons/html",
     "*.css": "../../../../.jetbrains/custom-icons/css",
     "*.css.map": "../../../../.jetbrains/custom-icons/css-map",
@@ -317,6 +321,9 @@
     "*.page.svg": "../../../../.jetbrains/custom-icons/svg-page",
     "favicon.svg": "../../../../.jetbrains/custom-icons/svg-favicon",
     "*.ttf": "../../../../.jetbrains/custom-icons/font",
+    "*.png": "../../../../.jetbrains/custom-icons/image",
+    "*.jpg": "../../../../.jetbrains/custom-icons/image",
+    "*.jpeg": "../../../../.jetbrains/custom-icons/image",
     // Java
     "*.jar": "../../../../.jetbrains/custom-icons/java-jar",
     "*.class": "../../../../.jetbrains/custom-icons/java-class",
