@@ -77,7 +77,7 @@
     "passphrase": ""
   },
   "liveServer.settings.port": 5500,
-  "prettier.printWidth": 80,
+  "prettier.printWidth": 120,
   "prettier.tabWidth": 2,
   "prettier.useTabs": false,
   "prettier.semi": true,
@@ -150,6 +150,9 @@
     "resources": "../../../../../../.jetbrains/custom-icons/resource-folder",
     "dokka": "../../../../../../.jetbrains/custom-icons/dokka-folder",
     ".dokka": "../../../../../../.jetbrains/custom-icons/dokka-folder",
+    "mail": "../../../../../../.jetbrains/custom-icons/mail-folder",
+    "mails": "../../../../../../.jetbrains/custom-icons/mail-folder",
+    "controllers": "../../../../../../.jetbrains/custom-icons/controller-folder",
     // .Net
     "blueprint": "../../../../../../.jetbrains/custom-icons/blueprint-folder",
     "blueprints": "../../../../../../.jetbrains/custom-icons/blueprint-folder",
@@ -396,6 +399,7 @@
     "*.Repository.kt": "../../../../.jetbrains/custom-icons/spring-repository",
     "dokka/module.md": "../../../../.jetbrains/custom-icons/dokka",
     ".dokka/module.md": "../../../../.jetbrains/custom-icons/dokka",
+    "*.package.md": "../../../../.jetbrains/custom-icons/dokka",
     // Spring Boot & Build Tools
     "resources/application.yaml": "../../../../.jetbrains/custom-icons/spring-config",
     "target/application.yaml": "../../../../.jetbrains/custom-icons/spring-config",
@@ -473,6 +477,7 @@
     "jest.config.ts": "../../../../.jetbrains/custom-icons/jest-config",
     "jest.setup.ts": "../../../../.jetbrains/custom-icons/jest-setup",
     "cypress.config.ts": "../../../../.jetbrains/custom-icons/cypress-config",
+    "tsup.config.ts": "../../../../.jetbrains/custom-icons/ts-build",
     "db.ts": "Database",
     "firebase/index.ts": "../../../../.jetbrains/custom-icons/firebase",
     "firebase.ts": "../../../../.jetbrains/custom-icons/firebase",
