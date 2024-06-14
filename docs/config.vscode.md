@@ -42,6 +42,7 @@
     "**/LICENSE*": true,
     "**/next-env.d.ts": true,
     "**/node_modules/**": true,
+    "**/npm-shrinkwrap.json": true,
     "**/obj/**": true,
     "**/Schema/*.graphql": true,
     "**/target/**": true,
@@ -55,7 +56,7 @@
   "terminal.integrated.env.linux": {},
   "terminal.integrated.fontFamily": "Firacode Nerd Font",
   "editor.fontFamily": "'Firacode Nerd Font'",
-  "editor.fontSize": 15,
+  "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.linkedEditing": true,
   "editor.tabSize": 2,
@@ -164,7 +165,6 @@
     "injectors": "../../../../../../.jetbrains/custom-icons/injector-folder",
     "natives": "../../../../../../.jetbrains/custom-icons/native-folder",
     "csharp": "../../../../../../.jetbrains/custom-icons/cs-folder",
-    "fetch": "../../../../../../.jetbrains/custom-icons/fetch-folder",
     // Rust
     "structs": "../../../../../../.jetbrains/custom-icons/struct-folder",
     "traits": "../../../../../../.jetbrains/custom-icons/trait-folder",
@@ -256,6 +256,9 @@
     "animations": "../../../../../../.jetbrains/custom-icons/animation-folder",
     "public": "../../../../../../.jetbrains/custom-icons/public-folder",
     "context": "../../../../../../.jetbrains/custom-icons/context-folder",
+    "fetch": "../../../../../../.jetbrains/custom-icons/fetch-folder",
+    "query": "../../../../../../.jetbrains/custom-icons/query-folder",
+    "hooks": "../../../../../../.jetbrains/custom-icons/hook-folder",
     "rxjs": "Pipe",
     "webhooks": "Hook"
   },
@@ -639,13 +642,6 @@
     "pre-commit": "Husky",
     "pre-push": "Husky"
   },
-  "console-ninja.toolsToEnableSupportAutomaticallyFor": {
-    "live-server": true,
-    "live-server-extension": true,
-    "live-preview-extension": true
-  },
-  "console-ninja.outputMode": "In View",
-  "console-ninja.featureSet": "Community",
   "[css]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
