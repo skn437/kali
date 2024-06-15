@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 set -e
 
@@ -22,6 +22,10 @@ while getopts "tl" OPTION; do
   esac
 done
 
+message() {
+  printf "'%s' Added! ✅ \n" "$1"
+}
+
 taskfile() {
   # Task file
   TASKFILE="taskfile.yaml"
@@ -29,6 +33,8 @@ taskfile() {
 
   curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/${TASKFILE}" >"./${TASKFILE}"
   curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/${TASKFILE_ENV}" >"./${TASKFILE_ENV}"
+
+  message "Task File"
 }
 
 lefthook() {
@@ -36,6 +42,8 @@ lefthook() {
   LEFTHOOK="lefthook.yaml"
 
   curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/${LEFTHOOK}" >"./${LEFTHOOK}"
+
+  message "Lefthook File"
 }
 
 if "${GET_TASKFILE}"; then
