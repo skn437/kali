@@ -4,25 +4,63 @@ set -e
 
 LINUX="kali"
 
-# Editor Config file
-EDITOR_CONFIG=".editorconfig"
+GET_RUSTFMT=false
+GET_PRETTIER=false
 
-curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/${EDITOR_CONFIG}" >"./${EDITOR_CONFIG}"
+while getopts "rp" OPTION; do
+  case "${OPTION}" in
+  r)
+    GET_RUSTFMT=true
+    ;;
+  p)
+    GET_PRETTIER=true
+    ;;
+  ?)
+    printf "Script Usage: %s \n" "bash (script) [-r] [-p]"
+    exit 1
+    ;;
+  esac
+done
 
-# Rust Formatter file
-RUST_FORMAT="rustfmt.toml"
-RUST_ENV="rustenv.toml"
+message() {
+  printf "'%s' Added! ✅ \n" "$1"
+}
 
-if test -f "./Cargo.toml"; then
+editor_config() {
+  # Editor Config file
+  EDITOR_CONFIG=".editorconfig"
+
+  curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/${EDITOR_CONFIG}" >"./${EDITOR_CONFIG}"
+
+  message "Editor Config File"
+}
+
+rustfmt() {
+  # Rust Formatter file
+  RUST_FORMAT="rustfmt.toml"
+  RUST_ENV="rustenv.toml"
+
   curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/${RUST_FORMAT}" >"./${RUST_FORMAT}"
   curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/${RUST_ENV}" >"./${RUST_ENV}"
-fi
 
-# Prettier Formatter file
-PRETTIER_FORMAT=".prettierrc.json"
+  message "Rustfmt Config File"
+}
 
-if test -f "./package.json"; then
+prettier() {
+  # Prettier Formatter file
+  PRETTIER_FORMAT=".prettierrc.json"
+
   curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/${PRETTIER_FORMAT}" >"./${PRETTIER_FORMAT}"
+
+  message "Prettier Config File"
+}
+
+editor_config
+
+if "${GET_RUSTFMT}"; then
+  rustfmt
 fi
 
-printf "'Editor Config File(s)' Installed! ✅ \n"
+if "${GET_PRETTIER}"; then
+  prettier
+fi
