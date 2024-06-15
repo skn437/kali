@@ -154,6 +154,8 @@
     "mail": "../../../../../../.jetbrains/custom-icons/mail-folder",
     "mails": "../../../../../../.jetbrains/custom-icons/mail-folder",
     "controllers": "../../../../../../.jetbrains/custom-icons/controller-folder",
+    "class": "../../../../../../.jetbrains/custom-icons/class-folder",
+    "classes": "../../../../../../.jetbrains/custom-icons/class-folder",
     // .Net
     "blueprint": "../../../../../../.jetbrains/custom-icons/blueprint-folder",
     "blueprints": "../../../../../../.jetbrains/custom-icons/blueprint-folder",
@@ -259,6 +261,12 @@
     "fetch": "../../../../../../.jetbrains/custom-icons/fetch-folder",
     "query": "../../../../../../.jetbrains/custom-icons/query-folder",
     "hooks": "../../../../../../.jetbrains/custom-icons/hook-folder",
+    "story": "../../../../../../.jetbrains/custom-icons/storybook-folder",
+    "stories": "../../../../../../.jetbrains/custom-icons/storybook-folder",
+    "storybook": "../../../../../../.jetbrains/custom-icons/storybook-config-folder",
+    ".storybook": "../../../../../../.jetbrains/custom-icons/storybook-config-folder",
+    "asset": "../../../../../../.jetbrains/custom-icons/asset-folder",
+    "assets": "../../../../../../.jetbrains/custom-icons/asset-folder",
     "rxjs": "Pipe",
     "webhooks": "Hook"
   },
@@ -282,6 +290,7 @@
     // Config & Document Files
     ".editorconfig": "../../../../.jetbrains/custom-icons/editorconfig",
     "*.md": "../../../../.jetbrains/custom-icons/markdown",
+    "*.mdx": "../../../../.jetbrains/custom-icons/markdownx",
     "README.md": "../../../../.jetbrains/custom-icons/readme",
     "LICENSE": "../../../../.jetbrains/custom-icons/license",
     "LICENSE.md": "../../../../.jetbrains/custom-icons/license",
@@ -514,6 +523,10 @@
     "support/component.ts": "../../../../.jetbrains/custom-icons/cypress-setup",
     "support/component-index.html": "../../../../.jetbrains/custom-icons/cypress-html",
     "fixtures/example.json": "../../../../.jetbrains/custom-icons/cypress-json",
+    "*.story.ts": "../../../../.jetbrains/custom-icons/storybook",
+    "*.story.tsx": "../../../../.jetbrains/custom-icons/storybook",
+    "*.stories.ts": "../../../../.jetbrains/custom-icons/storybook",
+    "*.stories.tsx": "../../../../.jetbrains/custom-icons/storybook",
     // Rust
     "*.rs": "../../../../.jetbrains/custom-icons/rust",
     "main.rs": "../../../../.jetbrains/custom-icons/rust-main",
