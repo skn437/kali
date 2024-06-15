@@ -16,9 +16,6 @@ jetbrains() {
   # Intellij Idea Ultimate
   echo 'export PATH="$HOME/.intellij-idea/bin:$PATH"' >>$HOME/.zshrc
 
-  # Rust Rover
-  echo 'export PATH="$HOME/.rust-rover/bin:$PATH"' >>$HOME/.zshrc
-
   message "'JetBrains IDE' Configured In Path"
 }
 
