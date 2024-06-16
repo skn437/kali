@@ -27,6 +27,7 @@
     "**/_/**": true,
     "**/.apidocs/**": true,
     "**/.cache/**": true,
+    "**/.codegen/**": true,
     "**/.gen/**": true,
     "**/.gradle/**": true,
     "**/.next/**": true,
@@ -527,6 +528,9 @@
     "*.story.tsx": "../../../../.jetbrains/custom-icons/storybook",
     "*.stories.ts": "../../../../.jetbrains/custom-icons/storybook",
     "*.stories.tsx": "../../../../.jetbrains/custom-icons/storybook",
+    ".codegen/graphql.type.ts": "../../../../.jetbrains/custom-icons/graphql-codegen",
+    ".codegen/graphql.operation.ts": "../../../../.jetbrains/custom-icons/graphql-codegen",
+    ".codegen/graphql.resolver.ts": "../../../../.jetbrains/custom-icons/graphql-codegen",
     // Rust
     "*.rs": "../../../../.jetbrains/custom-icons/rust",
     "main.rs": "../../../../.jetbrains/custom-icons/rust-main",
