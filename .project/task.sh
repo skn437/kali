@@ -4,19 +4,15 @@ set -e
 
 LINUX="kali"
 
-GET_TASKFILE=false
 GET_LEFTHOOK=false
 
 while getopts "tl" OPTION; do
   case "${OPTION}" in
-  t)
-    GET_TASKFILE=true
-    ;;
   l)
     GET_LEFTHOOK=true
     ;;
   ?)
-    printf "Script Usage: %s \n" "bash (script) [-t] [-l]"
+    printf "Script Usage: %s \n" "bash (script) [-l]"
     exit 1
     ;;
   esac
@@ -46,9 +42,7 @@ lefthook() {
   message "Lefthook File"
 }
 
-if "${GET_TASKFILE}"; then
-  taskfile
-fi
+taskfile
 
 if "${GET_LEFTHOOK}"; then
   lefthook
