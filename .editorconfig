@@ -52,8 +52,8 @@ indent_size = 2
 [*.{html,css,sass,scss,md,mdx}]
 indent_size = 2
 
-# JSON, TOML, XML, YAML files
-[*.{json,toml,xml,yaml}]
+# JSON, Properties, TOML, XML, YAML files
+[*.{json,properties,toml,xml,yaml}]
 indent_size = 2
 
 # Shell Script, Text & Log files

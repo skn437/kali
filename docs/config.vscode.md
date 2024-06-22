@@ -588,6 +588,10 @@
     // Project Tools
     "taskfile.yaml": "../../../../.jetbrains/custom-icons/taskfile",
     "lefthook.yaml": "../../../../.jetbrains/custom-icons/lefthook",
+    // Database
+    "*.cypher": "../../../../.jetbrains/custom-icons/cypher",
+    "*.cyp": "../../../../.jetbrains/custom-icons/cypher",
+    "*.cql": "../../../../.jetbrains/custom-icons/cypher",
     // .Net
     "src": "../../../../.jetbrains/custom-icons/bin",
     "test": "../../../../.jetbrains/custom-icons/bin",
