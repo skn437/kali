@@ -232,6 +232,9 @@
     "python": "../../../../../../.jetbrains/custom-icons/py-folder",
     "analysis": "../../../../../../.jetbrains/custom-icons/analysis-folder",
     "csv": "../../../../../../.jetbrains/custom-icons/csv-folder",
+    // Go
+    "package": "../../../../../../.jetbrains/custom-icons/package-folder",
+    "packages": "../../../../../../.jetbrains/custom-icons/package-folder",
     // JavaScript & TypeScript
     "typescript": "../../../../../../.jetbrains/custom-icons/ts-folder",
     "types": "../../../../../../.jetbrains/custom-icons/ts-type-folder",
@@ -534,6 +537,8 @@
     "graphql.schema.ts": "../../../../.jetbrains/custom-icons/graphql-codegen",
     "graphql.operation.ts": "../../../../.jetbrains/custom-icons/graphql-codegen",
     "graphql.resolver.ts": "../../../../.jetbrains/custom-icons/graphql-codegen",
+    "*.graphql.ts": "../../../../.jetbrains/custom-icons/graphql-ts",
+    "*.gq.ts": "../../../../.jetbrains/custom-icons/graphql-ts",
     // Rust
     "*.rs": "../../../../.jetbrains/custom-icons/rust",
     "main.rs": "../../../../.jetbrains/custom-icons/rust-main",
