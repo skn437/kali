@@ -28,7 +28,7 @@ dependabot_config() {
 
   curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/.project/helpers/${DEPENDABOT_FILE}.txt" >"${DEPENDABOT_CONFIG_FILE}"
 
-  READ_CONFIG="$(cat '${DEPENDABOT_CONFIG_FILE}' | sed 's/package-manager/${DEPENDABOT}/')"
+  READ_CONFIG="$(cat ${DEPENDABOT_CONFIG_FILE} | sed s/package-manager/${DEPENDABOT}/)"
 
   GITHUB_DIRECTORY="./.github"
   mkdir -p "${GITHUB_DIRECTORY}"
