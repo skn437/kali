@@ -45,7 +45,6 @@
     "**/node_modules/**": true,
     "**/npm-shrinkwrap.json": true,
     "**/obj/**": true,
-    "**/Schema/*.graphql": true,
     "**/target/**": true,
     "**/wwwroot/**": true
   },
@@ -66,11 +65,6 @@
   "editor.stickyScroll.enabled": true,
   "editor.semanticHighlighting.enabled": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.tokenColorCustomizations": {
-    "[One dark sweet]": {
-      "keywords": "#5d70fb"
-    }
-  },
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.https": {
     "enable": false,
@@ -93,7 +87,7 @@
   "prettier.jsxSingleQuote": false,
   "prettier.singleAttributePerLine": true,
   "prettier.prettierPath": "/home/logno-atoshi/.bun/install/global/node_modules/prettier",
-  "workbench.colorTheme": "One dark sweet",
+  "workbench.colorTheme": "Default Dark Modern",
   "workbench.panel.defaultLocation": "right",
   "workbench.panel.opensMaximized": "always",
   "workbench.iconTheme": "material-icon-theme",
@@ -126,8 +120,6 @@
     "mongo": "../../../../../../.jetbrains/custom-icons/mongo-folder",
     "neo4j": "../../../../../../.jetbrains/custom-icons/neo4j-folder",
     "redis": "../../../../../../.jetbrains/custom-icons/redis-folder",
-    "relations": "Custom",
-    "collections": "Rules",
     // Java, Kotlin & Spring Boot
     "main": "../../../../../../.jetbrains/custom-icons/main-folder",
     ".mvn": "../../../../../../.jetbrains/custom-icons/maven-folder",
@@ -195,6 +187,7 @@
     "taskfiles": "../../../../../../.jetbrains/custom-icons/taskfile-folder",
     // VS Code
     "db": "../../../../../../.jetbrains/custom-icons/database-folder",
+    "data": "../../../../../../.jetbrains/custom-icons/database-folder",
     "markdown": "../../../../../../.jetbrains/custom-icons/markdown-folder",
     "src": "../../../../../../.jetbrains/custom-icons/source-folder",
     "test": "../../../../../../.jetbrains/custom-icons/test-folder",
@@ -210,11 +203,7 @@
     "message": "../../../../../../.jetbrains/custom-icons/message-folder",
     "header": "../../../../../../.jetbrains/custom-icons/header-folder",
     "web": "../../../../../../.jetbrains/custom-icons/web-folder",
-    "analytics": "Review",
-    "local": "Shared",
-    ".root": "Resolver",
-    "url": "Routes",
-    "ui": "Changesets",
+    "analytics": "../../../../../../.jetbrains/custom-icons/review-folder",
     "utils": "../../../../../../.jetbrains/custom-icons/utils-folder",
     "theme": "../../../../../../.jetbrains/custom-icons/theme-folder",
     "color": "../../../../../../.jetbrains/custom-icons/color-folder",
@@ -247,6 +236,7 @@
     "client": "../../../../../../.jetbrains/custom-icons/client-folder",
     "stores": "../../../../../../.jetbrains/custom-icons/store-folder",
     "navigation": "../../../../../../.jetbrains/custom-icons/routes-folder",
+    "navigate": "../../../../../../.jetbrains/custom-icons/routes-folder",
     "routes": "../../../../../../.jetbrains/custom-icons/routes-folder",
     "trpc": "../../../../../../.jetbrains/custom-icons/trpc-folder",
     "fixtures": "../../../../../../.jetbrains/custom-icons/fixture-folder",
@@ -271,6 +261,7 @@
     ".storybook": "../../../../../../.jetbrains/custom-icons/storybook-config-folder",
     "asset": "../../../../../../.jetbrains/custom-icons/asset-folder",
     "assets": "../../../../../../.jetbrains/custom-icons/asset-folder",
+    "apollo": "../../../../../../.jetbrains/custom-icons/apollo-folder",
     "rxjs": "Pipe",
     "webhooks": "Hook"
   },
@@ -476,6 +467,8 @@
     "bun.lockb": "../../../../.jetbrains/custom-icons/bun-lock",
     "bunfig.toml": "../../../../.jetbrains/custom-icons/bun",
     "*.js": "../../../../.jetbrains/custom-icons/js",
+    "*.cjs": "../../../../.jetbrains/custom-icons/js",
+    "*.mjs": "../../../../.jetbrains/custom-icons/js",
     "tsconfig.json": "../../../../.jetbrains/custom-icons/ts-config",
     "*.d.ts": "../../../../.jetbrains/custom-icons/ts-definition",
     "*.d.cts": "../../../../.jetbrains/custom-icons/ts-definition",
@@ -494,14 +487,16 @@
     "jest.setup.ts": "../../../../.jetbrains/custom-icons/jest-setup",
     "cypress.config.ts": "../../../../.jetbrains/custom-icons/cypress-config",
     "tsup.config.ts": "../../../../.jetbrains/custom-icons/ts-build",
-    "db.ts": "Database",
     "firebase/index.ts": "../../../../.jetbrains/custom-icons/firebase",
     "firebase.ts": "../../../../.jetbrains/custom-icons/firebase",
     "env/index.ts": "../../../../.jetbrains/custom-icons/env",
-    "url/index.ts": "Url",
-    "route/index.ts": "Routing",
+    "env.ts": "../../../../.jetbrains/custom-icons/env",
+    "url/index.ts": "../../../../.jetbrains/custom-icons/url",
+    "url.ts": "../../../../.jetbrains/custom-icons/url",
+    "navigate/index.ts": "../../../../.jetbrains/custom-icons/routes",
+    "navigate.ts": "../../../../.jetbrains/custom-icons/routes",
     "vite.config.ts": "../../../../.jetbrains/custom-icons/vite",
-    "vitest.setup.ts": "Vitest",
+    "vitest.setup.ts": "../../../../.jetbrains/custom-icons/vitest",
     "rxjs/index.ts": "../../../../.jetbrains/custom-icons/rxjs",
     "*.pipe.ts": "Pipeline",
     "trpc.ts": "../../../../.jetbrains/custom-icons/trpc",
@@ -539,6 +534,7 @@
     "graphql.resolver.ts": "../../../../.jetbrains/custom-icons/graphql-codegen",
     "*.graphql.ts": "../../../../.jetbrains/custom-icons/graphql-ts",
     "*.gq.ts": "../../../../.jetbrains/custom-icons/graphql-ts",
+    "*.apollo.ts": "../../../../.jetbrains/custom-icons/apollo",
     // Rust
     "*.rs": "../../../../.jetbrains/custom-icons/rust",
     "main.rs": "../../../../.jetbrains/custom-icons/rust-main",
@@ -555,6 +551,7 @@
     "env.rs": "../../../../.jetbrains/custom-icons/env",
     "stdio.rs": "../../../../.jetbrains/custom-icons/stdio",
     "message.rs": "../../../../.jetbrains/custom-icons/letter-close",
+    "gui": "../../../../.jetbrains/custom-icons/bin",
     "interface": "../../../../.jetbrains/custom-icons/bin",
     "Cargo.toml": "../../../../.jetbrains/custom-icons/cargo",
     "Cargo.lock": "../../../../.jetbrains/custom-icons/cargo-lock",
@@ -706,7 +703,7 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "html.format.indentInnerHtml": true,
   "[ignore]": {
@@ -785,7 +782,8 @@
   },
   "yaml.schemas": {
     "https://taskfile.dev/schema.json": ["taskfile.yaml"],
-    "kubernetes": ["*.deployment.yaml", "*.statefulset.yaml"]
+    "kubernetes": ["*.deployment.yaml", "*.statefulset.yaml"],
+    "https://json.schemastore.org/lefthook.json": ["lefthook.yaml"]
   },
   "yaml.schemaStore.enable": true,
   "[graphql]": {
@@ -881,7 +879,8 @@
     "typescript": "bun"
   },
   "code-runner.executorMapByGlob": {
-    "Cargo.toml": "cd $workspaceRoot && cargo build"
+    "Cargo.toml": "cd $workspaceRoot && cargo build",
+    "next.config.mjs": "cd $workspaceRoot && bun next build"
   },
   "code-runner.clearPreviousOutput": true,
   "code-runner.runInTerminal": true,
