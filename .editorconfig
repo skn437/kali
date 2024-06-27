@@ -11,6 +11,7 @@ insert_final_newline = true
 # (Please don't specify an indent_size here; that has too many unintended consequences.)
 
 # Kotlin files
+# noinspection EditorConfigKeyCorrectness
 [*.{kt,kts}]
 indent_size = 2
 
