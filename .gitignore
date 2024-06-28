@@ -114,3 +114,10 @@ packages
 # VS Code/JetBrains IDE
 !icon.tar.gz
 !*-settings.zip
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
