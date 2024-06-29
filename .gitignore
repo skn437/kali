@@ -111,13 +111,10 @@ wwwroot
 *.nupkg
 packages
 
-# VS Code/JetBrains IDE
-!icon.tar.gz
-!*-settings.zip
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+# JetBrains IDE
+.idea
+!.idea/icon.tar.gz
+!.idea/*-settings.zip
 *.iws
 *.iml
 *.ipr

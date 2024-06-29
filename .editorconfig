@@ -53,8 +53,8 @@ indent_size = 2
 [*.{html,css,sass,scss,md,mdx}]
 indent_size = 2
 
-# JSON, Properties, TOML, XML, YAML files
-[*.{json,properties,toml,xml,yaml}]
+# IML, JSON, Properties, TOML, XML, YAML files
+[*.{iml,json,properties,toml,xml,yaml}]
 indent_size = 2
 
 # Shell Script, Text & Log files
@@ -67,6 +67,14 @@ indent_size = 2
 
 # Python files
 [*.{py,ipynb}]
+indent_size = 2
+
+# Ignore files
+[.*ignore]
+indent_size = 2
+
+# Docker files
+[Dockerfile]
 indent_size = 2
 
 # C, C++ files
