@@ -20,6 +20,16 @@ while getopts "n:e:" OPTION; do
   esac
 done
 
+if test "${NAME}" == ""; then
+  printf "Specify username! \n"
+  exit 1
+fi
+
+if test "${EMAIL}" == ""; then
+  printf "Specify email! \n"
+  exit 1
+fi
+
 git_config() {
   git config --global user.name "${NAME}"
   git config --global user.email "${EMAIL}"
