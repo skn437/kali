@@ -17,6 +17,9 @@ devtools() {
   # YQ & XMLStarlet
   brew install yq xmlstarlet
 
+  # Dive
+  brew install dive
+
   package_install "Devtools"
 }
 
@@ -48,8 +51,11 @@ java() {
   # Maven & Gradle: It automatically installs `OpenJDK` To its latest version
   brew install maven gradle
 
+  # OpenJDK 21
+  brew install openjdk@21
+
   # Export `Java Home` to the "Path"
-  echo 'export JAVA_HOME="/home/linuxbrew/.linuxbrew/opt/openjdk/libexec/"' >>$HOME/.zshrc
+  echo 'export JAVA_HOME="/home/linuxbrew/.linuxbrew/opt/openjdk@21/libexec/"' >>$HOME/.zshrc
 
   # Create a maven settings XML file
   mkdir -p $HOME/.m2
