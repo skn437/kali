@@ -221,6 +221,8 @@
     "env": "../../../../../../.jetbrains/custom-icons/env-folder",
     ".env": "../../../../../../.jetbrains/custom-icons/env-folder",
     "shared": "../../../../../../.jetbrains/custom-icons/shared-folder",
+    "path": "../../../../../../.jetbrains/custom-icons/path-folder",
+    "paths": "../../../../../../.jetbrains/custom-icons/path-folder",
     // Python
     "python": "../../../../../../.jetbrains/custom-icons/py-folder",
     "analysis": "../../../../../../.jetbrains/custom-icons/analysis-folder",
@@ -521,6 +523,7 @@
     "error.tsx": "../../../../.jetbrains/custom-icons/tsx-error",
     "route.ts": "../../../../.jetbrains/custom-icons/next-route",
     "*.state.ts": "../../../../.jetbrains/custom-icons/ts-state",
+    "*.store.ts": "../../../../.jetbrains/custom-icons/ts-state",
     "*.anime.ts": "../../../../.jetbrains/custom-icons/ts-anime",
     "*.query.ts": "../../../../.jetbrains/custom-icons/ts-query",
     "*.native.ts": "../../../../.jetbrains/custom-icons/ts-native",
