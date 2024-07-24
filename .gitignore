@@ -115,6 +115,8 @@ packages
 .idea
 !.idea/icon.tar.gz
 !.idea/*-settings.zip
+!.idea/jsonSchemas.xml
+!.idea/prettier.xml
 *.iws
 *.iml
 *.ipr
