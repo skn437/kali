@@ -77,6 +77,10 @@ indent_size = 2
 [Dockerfile]
 indent_size = 2
 
+# Cypher files
+[*.cypher]
+indent_size = 2
+
 # C, C++ files
 [*.{c,cpp}]
 indent_size = 2
