@@ -319,10 +319,8 @@
     ".idea/icon.tar.gz": "../../../../.jetbrains/custom-icons/jetbrains-icon",
     ".idea/intellij-idea-settings.zip": "../../../../.jetbrains/custom-icons/jetbrains-idea",
     ".idea/intellij-idea-project-settings.zip": "../../../../.jetbrains/custom-icons/jetbrains-idea",
-    ".idea/web-storm-settings.zip": "../../../../.jetbrains/custom-icons/jetbrains-web",
-    ".idea/web-storm-project-settings.zip": "../../../../.jetbrains/custom-icons/jetbrains-web",
-    ".idea/rust-rover-settings.zip": "../../../../.jetbrains/custom-icons/jetbrains-rover",
-    ".idea/rust-rover-project-settings.zip": "../../../../.jetbrains/custom-icons/jetbrains-rover",
+    ".idea/rider-settings.zip": "../../../../.jetbrains/custom-icons/jetbrains-rider",
+    ".idea/rider-project-settings.zip": "../../../../.jetbrains/custom-icons/jetbrains-rider",
     // HTML, CSS, Sass , SVG & Images
     "*.html": "../../../../.jetbrains/custom-icons/html",
     "*.css": "../../../../.jetbrains/custom-icons/css",
