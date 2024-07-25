@@ -315,6 +315,7 @@
     "*.tar.gz": "../../../../.jetbrains/custom-icons/targz",
     "*.log": "../../../../.jetbrains/custom-icons/log",
     "*.code-snippets": "../../../../.jetbrains/custom-icons/vscode-snippet",
+    ".idea/jsonSchemas.xml": "../../../../.jetbrains/custom-icons/intellij-config",
     ".idea/icon.tar.gz": "../../../../.jetbrains/custom-icons/jetbrains-icon",
     ".idea/intellij-idea-settings.zip": "../../../../.jetbrains/custom-icons/jetbrains-idea",
     ".idea/intellij-idea-project-settings.zip": "../../../../.jetbrains/custom-icons/jetbrains-idea",
