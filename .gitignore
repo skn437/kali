@@ -112,10 +112,9 @@ wwwroot
 packages
 
 # JetBrains IDE
-.idea/**/*.xml
+.idea/**/*
 !.idea/icon.tar.gz
 !.idea/*-settings.zip
-!.idea/jsonSchemas.xml
 *.iws
 *.iml
 *.ipr
