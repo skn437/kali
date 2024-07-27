@@ -162,6 +162,8 @@
     "natives": "../../../../../../.jetbrains/custom-icons/native-folder",
     "csharp": "../../../../../../.jetbrains/custom-icons/cs-folder",
     // Rust
+    "enums": "../../../../../../.jetbrains/custom-icons/enum-folder",
+    "functions": "../../../../../../.jetbrains/custom-icons/function-folder",
     "structs": "../../../../../../.jetbrains/custom-icons/struct-folder",
     "traits": "../../../../../../.jetbrains/custom-icons/trait-folder",
     "rust": "../../../../../../.jetbrains/custom-icons/rust-folder",
@@ -558,6 +560,7 @@
     "*.struct.rs": "../../../../.jetbrains/custom-icons/rust-struct",
     "*.enum.rs": "../../../../.jetbrains/custom-icons/rust-enum",
     "*.trait.rs": "../../../../.jetbrains/custom-icons/rust-trait",
+    "*.function.rs": "../../../../.jetbrains/custom-icons/rust-function",
     "execution.rs": "../../../../.jetbrains/custom-icons/rust-execution",
     "color.rs": "../../../../.jetbrains/custom-icons/color",
     "args.rs": "../../../../.jetbrains/custom-icons/rust-args",
