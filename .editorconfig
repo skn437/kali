@@ -81,26 +81,212 @@ indent_size = 2
 [*.cypher]
 indent_size = 2
 
-# C, C++ files
-[*.{c,cpp}]
-indent_size = 2
-
 # Go files
 [*.go]
 indent_size = 2
 
-# .Net files
-[*.{vb,vbx,razor,cake}]
+# C# XML project files
+[*.csproj]
 indent_size = 2
 
-# .Net Xml project files
-[*.{csproj,vbproj,vcxproj,vcxproj.filters,proj,projitems,shproj}]
+# C# files
+[*.{cs,csx,razor}]
 indent_size = 2
 
-# .Net Xml config files
-[*.{props,targets,ruleset,config,nuspec,resx,vsixmanifest,vsct}]
+## Blank Lines
+### General
+resharper_keep_blank_lines_in_code = 1
+resharper_csharp_keep_blank_lines_in_code = 1
+resharper_remove_blank_lines_near_braces_in_code = true
+resharper_csharp_remove_blank_lines_near_braces_in_code = true
+### Region
+resharper_blank_lines_around_region = 1
+resharper_csharp_blank_lines_around_region = 1
+resharper_blank_lines_inside_region = 0
+resharper_csharp_blank_lines_inside_region = 0
+### Comment
+resharper_blank_lines_before_single_line_comment = 1
+resharper_csharp_blank_lines_before_single_line_comment = 1
+resharper_blank_lines_after_start_comment = 0
+resharper_csharp_blank_lines_after_start_comment = 0
+### Declaration
+resharper_keep_blank_lines_in_declarations = 1
+resharper_csharp_keep_blank_lines_in_declarations = 1
+resharper_remove_blank_lines_near_braces_in_declarations = true
+resharper_csharp_remove_blank_lines_near_braces_in_declarations = true
+### Using
+resharper_blank_lines_between_using_groups = 0
+resharper_csharp_blank_lines_between_using_groups = 0
+resharper_blank_lines_after_using_list = 1
+resharper_csharp_blank_lines_after_using_list = 1
+### Namespace
+resharper_blank_lines_around_namespace = 1
+resharper_csharp_blank_lines_around_namespace = 1
+resharper_blank_lines_inside_namespace = 0
+resharper_csharp_blank_lines_inside_namespace = 0
+resharper_blank_lines_after_file_scoped_namespace_directive = 1
+resharper_csharp_blank_lines_after_file_scoped_namespace_directive = 1
+### Type, Field, Property & Method
+resharper_blank_lines_around_type = 1
+resharper_csharp_blank_lines_around_type = 1
+resharper_blank_lines_around_single_line_type = 0
+resharper_csharp_blank_lines_around_single_line_type = 0
+resharper_blank_lines_inside_type = 0
+resharper_csharp_blank_lines_inside_type = 0
+resharper_blank_lines_around_field = 0
+resharper_csharp_blank_lines_around_field = 0
+resharper_blank_lines_around_single_line_field = 0
+resharper_csharp_blank_lines_around_single_line_field = 0
+resharper_blank_lines_around_property = 1
+resharper_csharp_blank_lines_around_property = 1
+resharper_blank_lines_around_single_line_property = 0
+resharper_csharp_blank_lines_around_single_line_property = 0
+resharper_blank_lines_around_auto_property = 0
+resharper_csharp_blank_lines_around_auto_property = 0
+resharper_blank_lines_around_single_line_auto_property = 0
+resharper_csharp_blank_lines_around_single_line_auto_property = 0
+resharper_blank_lines_around_accessor = 1
+resharper_csharp_blank_lines_around_accessor = 1
+resharper_blank_lines_around_single_line_accessor = 0
+resharper_csharp_blank_lines_around_single_line_accessor = 0
+resharper_blank_lines_around_invocable = 1
+resharper_csharp_blank_lines_around_invocable = 1
+resharper_blank_lines_around_single_line_invocable = 1
+resharper_csharp_blank_lines_around_single_line_invocable = 1
+resharper_blank_lines_around_local_method = 1
+resharper_csharp_blank_lines_around_local_method = 1
+resharper_blank_lines_around_single_line_local_method = 1
+resharper_csharp_blank_lines_around_single_line_local_method = 1
+### Statement
+resharper_blank_lines_before_control_transfer_statements = 1
+resharper_csharp_blank_lines_before_control_transfer_statements = 1
+resharper_blank_lines_after_control_transfer_statements = 1
+resharper_csharp_blank_lines_after_control_transfer_statements = 1
+resharper_blank_lines_before_block_statements = 1
+resharper_csharp_blank_lines_before_block_statements = 1
+resharper_blank_lines_after_block_statements = 1
+resharper_csharp_blank_lines_after_block_statements = 1
+resharper_blank_lines_before_multiline_statements = 1
+resharper_csharp_blank_lines_before_multiline_statements = 1
+resharper_blank_lines_after_multiline_statements = 1
+resharper_csharp_blank_lines_after_multiline_statements = 1
+resharper_blank_lines_around_block_case_section = 0
+resharper_csharp_blank_lines_around_block_case_section = 0
+resharper_blank_lines_around_multiline_case_section = 0
+resharper_csharp_blank_lines_around_multiline_case_section = 0
+resharper_blank_lines_before_case = 0
+resharper_csharp_blank_lines_before_case = 0
+resharper_blank_lines_after_case = 0
+resharper_csharp_blank_lines_after_case = 0
+
+## Braces
+### General
+resharper_brace_style = end_of_line
+resharper_csharp_brace_style = end_of_line
+resharper_empty_block_style = together_same_line
+resharper_csharp_empty_block_style = together_same_line
+### Indentation
+resharper_indent_inside_namespace = true
+resharper_csharp_indent_inside_namespace = true
+resharper_use_continuous_indent_inside_initializer_braces = true
+resharper_csharp_use_continuous_indent_inside_initializer_braces = true
+### Comment
+resharper_allow_comment_after_lbrace = false
+resharper_csharp_allow_comment_after_lbrace = false
+
+## Syntax
+### Type Declaration
+resharper_for_built_in_types = use_explicit_type
+resharper_csharp_for_built_in_types = use_explicit_type
+resharper_for_simple_types = use_explicit_type
+resharper_csharp_for_simple_types = use_explicit_type
+resharper_for_other_types = use_explicit_type
+resharper_csharp_for_other_types = use_explicit_type
+resharper_prefer_separate_deconstructed_variables_declaration = true
+resharper_csharp_prefer_separate_deconstructed_variables_declaration = true
+resharper_prefer_explicit_discard_declaration = false
+resharper_csharp_prefer_explicit_discard_declaration = false
+### Instance
+resharper_instance_members_qualify_members = all
+resharper_csharp_instance_members_qualify_members = all
+### Modifier
+resharper_default_private_modifier = implicit
+resharper_csharp_default_private_modifier = implicit
+resharper_default_internal_modifier = implicit
+resharper_csharp_default_internal_modifier = implicit
+### Argument
+resharper_arguments_literal = positional
+resharper_csharp_arguments_literal = positional
+resharper_arguments_string_literal = positional
+resharper_csharp_arguments_string_literal = positional
+resharper_arguments_named = positional
+resharper_csharp_arguments_named = positional
+resharper_arguments_anonymous_function = positional
+resharper_csharp_arguments_anonymous_function = positional
+resharper_arguments_other = positional
+resharper_csharp_arguments_other = positional
+### Parenthesis
+resharper_parentheses_non_obvious_operations = additive, arithmetic, bitwise, bitwise_and, bitwise_exclusive_or, bitwise_inclusive_or, conditional, conditional_and, conditional_or, equality, multiplicative, null_coalescing, range, relational, shift
+resharper_csharp_parentheses_non_obvious_operations = additive, arithmetic, bitwise, bitwise_and, bitwise_exclusive_or, bitwise_inclusive_or, conditional, conditional_and, conditional_or, equality, multiplicative, null_coalescing, range, relational, shift
+resharper_parentheses_group_non_obvious_operations = arithmetic, conditional, relational
+resharper_csharp_parentheses_group_non_obvious_operations = arithmetic, conditional, relational
+resharper_parentheses_same_type_operations = true
+resharper_csharp_parentheses_same_type_operations = true
+### Brace
+resharper_braces_for_ifelse = required_for_multiline
+resharper_csharp_braces_for_ifelse = required_for_multiline
+resharper_braces_for_for = required
+resharper_csharp_braces_for_for = required
+resharper_braces_for_foreach = required
+resharper_csharp_braces_for_foreach = required
+resharper_braces_for_while = required
+resharper_csharp_braces_for_while = required
+resharper_braces_for_dowhile = required
+resharper_csharp_braces_for_dowhile = required
+resharper_braces_for_using = required
+resharper_csharp_braces_for_using = required
+resharper_braces_for_lock = required
+resharper_csharp_braces_for_lock = required
+resharper_braces_for_fixed = required
+resharper_csharp_braces_for_fixed = required
+### Code Body
+resharper_method_or_operator_body = expression_body
+resharper_csharp_method_or_operator_body = expression_body
+resharper_local_function_body = expression_body
+resharper_csharp_local_function_body = expression_body
+resharper_constructor_or_destructor_body = expression_body
+resharper_csharp_constructor_or_destructor_body = expression_body
+resharper_accessor_owner_body = accessors_with_expression_body
+resharper_csharp_accessor_owner_body = accessors_with_expression_body
+resharper_namespace_body = file_scoped
+resharper_csharp_namespace_body = file_scoped
+### Attribute
+resharper_force_attribute_style = join
+resharper_csharp_force_attribute_style = join
+### Trailing Comma
+resharper_trailing_comma_in_multiline_lists = true
+resharper_csharp_trailing_comma_in_multiline_lists = true
+resharper_trailing_comma_in_singleline_lists = false
+resharper_csharp_trailing_comma_in_singleline_lists = false
+### Object Creation
+resharper_object_creation_when_type_evident = target_typed
+resharper_csharp_object_creation_when_type_evident = target_typed
+resharper_object_creation_when_type_not_evident = explicitly_typed
+resharper_csharp_object_creation_when_type_not_evident = explicitly_typed
+### Default Value
+resharper_default_value_when_type_evident = default_literal
+resharper_csharp_default_value_when_type_evident = default_literal
+resharper_default_value_when_type_not_evident = default_expression
+resharper_csharp_default_value_when_type_not_evident = default_expression
+### Pattern
+resharper_null_checking_pattern_style = not_null_pattern
+resharper_csharp_null_checking_pattern_style = not_null_pattern
+
+# C, C++ files
+[*.{c,cpp}]
 indent_size = 2
 
-# C# files:
-[*.{cs,csx}]
-indent_size = 2
+## Braces
+### General
+resharper_cpp_brace_style = end_of_line
+resharper_cpp_empty_block_style = together_same_line
