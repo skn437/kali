@@ -8,6 +8,7 @@ root = true
 indent_style = space
 end_of_line = lf
 insert_final_newline = true
+max_line_length = 120
 # (Please don't specify an indent_size here; that has too many unintended consequences.)
 
 # Kotlin files
@@ -89,7 +90,7 @@ indent_size = 2
 [*.csproj]
 indent_size = 2
 
-# C# files
+# C# files:
 [*.{cs,csx,razor}]
 indent_size = 2
 
@@ -390,6 +391,70 @@ resharper_align_multiline_comments = true
 resharper_csharp_align_multiline_comments = true
 resharper_indent_raw_literal_string = align
 resharper_csharp_indent_raw_literal_string = align
+### Align In Column
+resharper_int_align = false
+resharper_csharp_int_align = false
+
+## Line Break
+### General
+resharper_keep_existing_arrangement = true
+resharper_csharp_keep_existing_arrangement = true
+resharper_wrap_before_comma = false
+resharper_csharp_wrap_before_comma = false
+resharper_wrap_before_eq = false
+resharper_csharp_wrap_before_eq = false
+resharper_special_else_if_treatment = true
+resharper_csharp_special_else_if_treatment = true
+### Attribute
+resharper_place_attribute_on_same_line = if_owner_is_single_line
+resharper_csharp_place_attribute_on_same_line = if_owner_is_single_line
+### Method Signature
+resharper_wrap_parameters_style = chop_if_long
+resharper_csharp_wrap_parameters_style = chop_if_long
+resharper_max_formal_parameters_on_line = 3
+resharper_csharp_max_formal_parameters_on_line = 3
+resharper_wrap_before_declaration_lpar = false
+resharper_csharp_wrap_before_declaration_lpar = false
+resharper_wrap_after_declaration_lpar = true
+resharper_csharp_wrap_after_declaration_lpar = true
+resharper_wrap_before_declaration_rpar = true
+resharper_csharp_wrap_before_declaration_rpar = true
+resharper_place_constructor_initializer_on_same_line = true
+resharper_csharp_place_constructor_initializer_on_same_line = true
+### Primary Constructor Signature
+resharper_wrap_primary_constructor_parameters_style = chop_if_long
+resharper_csharp_wrap_primary_constructor_parameters_style = chop_if_long
+resharper_max_primary_constructor_parameters_on_line = 3
+resharper_csharp_max_primary_constructor_parameters_on_line = 3
+resharper_wrap_before_primary_constructor_declaration_lpar = false
+resharper_csharp_wrap_before_primary_constructor_declaration_lpar = false
+resharper_wrap_after_primary_constructor_declaration_lpar = true
+resharper_csharp_wrap_after_primary_constructor_declaration_lpar = true
+resharper_wrap_before_primary_constructor_declaration_rpar = true
+resharper_csharp_wrap_before_primary_constructor_declaration_rpar = true
+### Expression
+resharper_place_expr_method_on_single_line = if_owner_is_single_line
+resharper_csharp_place_expr_method_on_single_line = if_owner_is_single_line
+resharper_place_expr_property_on_single_line = if_owner_is_single_line
+resharper_csharp_place_expr_property_on_single_line = if_owner_is_single_line
+resharper_place_expr_accessor_on_single_line = if_owner_is_single_line
+resharper_csharp_place_expr_accessor_on_single_line = if_owner_is_single_line
+resharper_wrap_before_arrow_with_expressions = false
+resharper_csharp_wrap_before_arrow_with_expressions = false
+### Type Parameter
+resharper_place_type_constraints_on_same_line = false
+resharper_csharp_place_type_constraints_on_same_line = false
+resharper_wrap_before_first_type_parameter_constraint = true
+resharper_csharp_wrap_before_first_type_parameter_constraint = true
+resharper_wrap_multiple_type_parameter_constraints_style = chop_if_long
+resharper_csharp_wrap_multiple_type_parameter_constraints_style = chop_if_long
+resharper_wrap_before_type_parameter_langle = false
+resharper_csharp_wrap_before_type_parameter_langle = false
+resharper_wrap_before_extends_colon = true
+resharper_csharp_wrap_before_extends_colon = true
+resharper_wrap_extends_list_style = chop_if_long
+resharper_csharp_wrap_extends_list_style = chop_if_long
+### Declaration Block
 
 # C, C++ files
 [*.{c,cpp}]
