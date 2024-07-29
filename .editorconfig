@@ -16,18 +16,18 @@ max_line_length = 120
 [*.{kt,kts}]
 indent_size = 2
 
-# Ktlint official code style
+### Ktlint official code style
 ktlint_code_style = ktlint_official
 ktlint_standard = enabled
-# Removes semicolons
+### Removes semicolons
 ktlint_standard_no-semi = enabled
-# Disallows using wildcard `*` in imports
+### Disallows using wildcard `*` in imports
 ktlint_standard_no-wildcard-imports = enabled
-# Enforces naming Kotlin files according to the officially instructed conventions
+### Enforces naming Kotlin files according to the officially instructed conventions
 ktlint_standard_filename = enabled
-# Disallows `()` before trailing lambda
+### Disallows `()` before trailing lambda
 ktlint_standard_unnecessary-parentheses-before-trailing-lambda = enabled
-# Turns `${}` into `$` in string template if only the variable name is used
+### Turns `${}` into `$` in string template if only the variable name is used
 ktlint_standard_string-template = enabled
 
 # Java, Gradle files
@@ -46,28 +46,24 @@ indent_size = 2
 [*.{graphql,graphqls,gql}]
 indent_size = 2
 
+# Cypher files
+[*.cypher]
+indent_size = 2
+
 # Rust files
 [*.rs]
 indent_size = 2
 
-# HTML, CSS, Sass, SCSS, Markdown, MDX files
-[*.{html,css,sass,scss,md,mdx}]
-indent_size = 2
-
-# IML, JSON, Properties, TOML, XML, YAML files
-[*.{iml,json,properties,toml,xml,yaml}]
-indent_size = 2
-
-# Shell Script, Text & Log files
-[*.{sh,txt,log}]
-indent_size = 2
-
-# TypeScript, JavaScript files
-[*.{ts,tsx,cts,mts,js,jsx,cjs,mjs}]
+# Go files
+[*.go]
 indent_size = 2
 
 # Python files
 [*.{py,ipynb}]
+indent_size = 2
+
+# IML, JSON, Properties, TOML, XML, YAML files
+[*.{iml,json,properties,toml,xml,yaml}]
 indent_size = 2
 
 # Ignore files
@@ -78,12 +74,16 @@ indent_size = 2
 [Dockerfile]
 indent_size = 2
 
-# Cypher files
-[*.cypher]
+# Shell Script, Text & Log files
+[*.{sh,txt,log}]
 indent_size = 2
 
-# Go files
-[*.go]
+# HTML, CSS, Sass, SCSS, Markdown, MDX files
+[*.{html,css,sass,scss,md,mdx}]
+indent_size = 2
+
+# TypeScript, JavaScript files
+[*.{ts,tsx,cts,mts,js,jsx,cjs,mjs}]
 indent_size = 2
 
 # C# XML project files
@@ -397,8 +397,6 @@ resharper_csharp_int_align = false
 
 ## Line Break
 ### General
-resharper_keep_existing_arrangement = true
-resharper_csharp_keep_existing_arrangement = true
 resharper_wrap_before_comma = false
 resharper_csharp_wrap_before_comma = false
 resharper_wrap_before_eq = false
@@ -406,6 +404,8 @@ resharper_csharp_wrap_before_eq = false
 resharper_special_else_if_treatment = true
 resharper_csharp_special_else_if_treatment = true
 ### Attribute
+resharper_max_attribute_length_for_same_line = 60
+resharper_csharp_max_attribute_length_for_same_line = 60
 resharper_place_attribute_on_same_line = if_owner_is_single_line
 resharper_csharp_place_attribute_on_same_line = if_owner_is_single_line
 ### Method Signature
@@ -455,6 +455,42 @@ resharper_csharp_wrap_before_extends_colon = true
 resharper_wrap_extends_list_style = chop_if_long
 resharper_csharp_wrap_extends_list_style = chop_if_long
 ### Declaration Block
+resharper_place_abstract_accessorholder_on_single_line = true
+resharper_csharp_place_abstract_accessorholder_on_single_line = true
+resharper_place_simple_accessorholder_on_single_line = false
+resharper_csharp_place_simple_accessorholder_on_single_line = false
+resharper_place_accessor_with_attrs_holder_on_single_line = false
+resharper_csharp_place_accessor_with_attrs_holder_on_single_line = false
+resharper_place_simple_accessor_on_single_line = false
+resharper_csharp_place_simple_accessor_on_single_line = false
+resharper_place_simple_method_on_single_line = false
+resharper_csharp_place_simple_method_on_single_line = false
+### Enum
+resharper_max_enum_members_on_line = 3
+resharper_csharp_max_enum_members_on_line = 3
+resharper_place_simple_enum_on_single_line = true
+resharper_csharp_place_simple_enum_on_single_line = true
+resharper_wrap_enum_declaration = chop_if_long
+resharper_csharp_wrap_enum_declaration = chop_if_long
+### Statement
+resharper_new_line_before_else = false
+csharp_new_line_before_else = false
+resharper_new_line_before_while = false
+resharper_csharp_new_line_before_while = false
+resharper_new_line_before_catch = false
+csharp_new_line_before_catch = false
+resharper_new_line_before_finally = false
+csharp_new_line_before_finally = false
+resharper_wrap_for_stmt_header_style = chop_if_long
+resharper_csharp_wrap_for_stmt_header_style = chop_if_long
+resharper_wrap_multiple_declaration_style = chop_if_long
+resharper_csharp_wrap_multiple_declaration_style = chop_if_long
+### Embedded Statement
+resharper_place_simple_embedded_statement_on_same_line = if_owner_is_single_line
+resharper_csharp_place_simple_embedded_statement_on_same_line = if_owner_is_single_line
+resharper_place_simple_case_statement_on_same_line = false
+resharper_csharp_place_simple_case_statement_on_same_line = false
+### Embedded Block
 
 # C, C++ files
 [*.{c,cpp}]
