@@ -574,6 +574,64 @@ resharper_csharp_place_linq_into_on_new_line = true
 resharper_wrap_verbatim_interpolated_strings = no_wrap
 resharper_csharp_wrap_verbatim_interpolated_strings = no_wrap
 
+## Space
+### Extra Space
+resharper_extra_spaces = remove_all
+resharper_csharp_extra_spaces = remove_all
+### Parenthesis
+resharper_space_after_keywords_in_control_flow_statements = true
+csharp_space_after_keywords_in_control_flow_statements = true
+resharper_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
+resharper_space_between_method_declaration_name_and_open_parenthesis = false
+csharp_space_between_method_declaration_name_and_open_parenthesis = false
+### Other Parenthesis
+resharper_space_before_typeof_parentheses = false
+resharper_csharp_space_before_typeof_parentheses = false
+resharper_space_before_default_parentheses = false
+resharper_csharp_space_before_default_parentheses = false
+resharper_space_before_checked_parentheses = false
+resharper_csharp_space_before_checked_parentheses = false
+resharper_space_before_sizeof_parentheses = false
+resharper_csharp_space_before_sizeof_parentheses = false
+resharper_space_before_nameof_parentheses = false
+resharper_csharp_space_before_nameof_parentheses = false
+resharper_space_before_new_parentheses = false
+resharper_csharp_space_before_new_parentheses = false
+resharper_space_between_keyword_and_expression = true
+resharper_csharp_space_between_keyword_and_expression = true
+resharper_space_between_keyword_and_type = true
+resharper_csharp_space_between_keyword_and_type = true
+### Within Parenthesis
+resharper_space_between_parentheses_of_control_flow_statements = false
+resharper_csharp_space_between_parentheses_of_control_flow_statements = false
+### Within Other Parenthesis
+resharper_space_within_parentheses = false
+resharper_csharp_space_within_parentheses = false
+resharper_space_between_typecast_parentheses = false
+resharper_csharp_space_between_typecast_parentheses = false
+resharper_space_between_method_declaration_parameter_list_parentheses = false
+csharp_space_between_method_declaration_parameter_list_parentheses = false
+resharper_space_between_method_declaration_empty_parameter_list_parentheses = false
+csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+resharper_space_between_method_call_parameter_list_parentheses = false
+csharp_space_between_method_call_parameter_list_parentheses = false
+resharper_space_between_method_call_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_empty_parameter_list_parentheses = false
+resharper_space_within_typeof_parentheses = false
+resharper_csharp_space_within_typeof_parentheses = false
+resharper_space_within_default_parentheses = false
+resharper_csharp_space_within_default_parentheses = false
+resharper_space_within_checked_parentheses = false
+resharper_csharp_space_within_checked_parentheses = false
+resharper_space_within_sizeof_parentheses = false
+resharper_csharp_space_within_sizeof_parentheses = false
+resharper_space_within_nameof_parentheses = false
+resharper_csharp_space_within_nameof_parentheses = false
+resharper_space_within_new_parentheses = false
+resharper_csharp_space_within_new_parentheses = false
+### Array Bracket
+
 # C, C++ files
 [*.{c,cpp}]
 indent_size = 2
