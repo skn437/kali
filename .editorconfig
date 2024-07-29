@@ -727,6 +727,37 @@ resharper_csharp_space_after_operator_keyword = true
 resharper_space_within_slice_pattern = true
 resharper_csharp_space_within_slice_pattern = true
 
+# C# Razor files
+# noinspection EditorConfigKeyCorrectness
+[*.razor]
+
+## Line Break
+### Statement
+resharper_linebreaks_around_razor_statements = true
+resharper_html_linebreaks_around_razor_statements = true
+
+## Blank Line
+### `@functions`
+resharper_blank_lines_around_razor_functions = 1
+resharper_html_blank_lines_around_razor_functions = 1
+### `@helper`
+resharper_blank_lines_around_razor_helpers = 1
+resharper_html_blank_lines_around_razor_helpers = 1
+### `@section`
+resharper_blank_lines_around_razor_sections = 1
+resharper_html_blank_lines_around_razor_sections = 1
+### Remove Blank Line
+resharper_razor_remove_blank_lines_near_braces = true
+
+## Brace
+resharper_razor_always_use_end_of_line_brace_style = true
+
+## Qualifier & Directive
+### `this` Qualifier
+resharper_razor_remove_this_qualifier = false
+### `@inherits` & `@model` Directive
+resharper_razor_prefer_qualified_reference = true
+
 # C, C++ files
 [*.{c,cpp}]
 indent_size = 2
