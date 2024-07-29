@@ -51,16 +51,23 @@ java() {
   # Maven & Gradle: It automatically installs `OpenJDK` To its latest version
   brew install maven gradle
 
-  # OpenJDK 21
-  brew install openjdk@21
-
   # Export `Java Home` to the "Path"
-  echo 'export JAVA_HOME="/home/linuxbrew/.linuxbrew/opt/openjdk@21/libexec/"' >>$HOME/.zshrc
+  echo 'export JAVA_HOME="/home/linuxbrew/.linuxbrew/opt/openjdk/libexec/"' >>$HOME/.zshrc
 
   # Create a maven settings XML file
   mkdir -p $HOME/.m2
 
   package_install "Java"
+}
+
+csharp() {
+  # .Net Core
+  brew install dotnet
+
+  # Export `.Net Core Root` to the "Path"
+  echo 'export DOTNET_ROOT="/home/linuxbrew/.linuxbrew/opt/dotnet/libexec/"' >>$HOME/.zshrc
+
+  package_install "C#"
 }
 
 message_broker() {
@@ -110,4 +117,4 @@ rust_init() {
   gnome-terminal -- bash -c "printf 'Preparing to initialize rust... \n' && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && rustup-init; read -n 1 KEY"
 }
 
-brew_prepare && devtools && shellscript && typescript && java && message_broker && kotlin && go && rust && rust_init
+brew_prepare && devtools && shellscript && typescript && java && csharp && message_broker && kotlin && go && rust && rust_init

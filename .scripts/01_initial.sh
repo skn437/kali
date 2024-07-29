@@ -16,6 +16,9 @@ jetbrains() {
   # Intellij Idea Ultimate
   echo 'export PATH="$HOME/.intellij-idea/bin:$PATH"' >>$HOME/.zshrc
 
+  # Rider
+  echo 'export PATH="$HOME/.rider/bin:$PATH"' >>$HOME/.zshrc
+
   message "'JetBrains IDE' Configured In Path"
 }
 
