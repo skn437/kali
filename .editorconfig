@@ -16,18 +16,23 @@ max_line_length = 120
 [*.{kt,kts}]
 indent_size = 2
 
-### Ktlint official code style
+## Ktlint official code style
 ktlint_code_style = ktlint_official
 ktlint_standard = enabled
-### Removes semicolons
+
+## Removes semicolons
 ktlint_standard_no-semi = enabled
-### Disallows using wildcard `*` in imports
+
+## Disallows using wildcard `*` in imports
 ktlint_standard_no-wildcard-imports = enabled
-### Enforces naming Kotlin files according to the officially instructed conventions
+
+## Enforces naming Kotlin files according to the officially instructed conventions
 ktlint_standard_filename = enabled
-### Disallows `()` before trailing lambda
+
+## Disallows `()` before trailing lambda
 ktlint_standard_unnecessary-parentheses-before-trailing-lambda = enabled
-### Turns `${}` into `$` in string template if only the variable name is used
+
+## Turns `${}` into `$` in string template if only the variable name is used
 ktlint_standard_string-template = enabled
 
 # Java, Gradle files
