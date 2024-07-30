@@ -13,21 +13,15 @@ bluetooth() {
 }
 
 jetbrains() {
-  # Intellij Idea Ultimate
-  echo 'export PATH="$HOME/.intellij-idea/bin:$PATH"' >>$HOME/.zshrc
-
-  # Rider
-  echo 'export PATH="$HOME/.rider/bin:$PATH"' >>$HOME/.zshrc
+  # Intellij Idea Ultimate & Rider
+  echo 'export PATH="$HOME/.intellij-idea/bin:$HOME/.rider/bin:$PATH"' >>$HOME/.zshrc
 
   message "'JetBrains IDE' Configured In Path"
 }
 
 desktop() {
-  # Postman
-  echo 'export PATH="$HOME/.postman-desktop/app:$PATH"' >>$HOME/.zshrc
-
-  # Neo4j
-  echo 'export PATH="$HOME/.neo4j-desktop:$PATH"' >>$HOME/.zshrc
+  # Postman & Neo4j
+  echo 'export PATH="$HOME/.postman-desktop/app:$HOME/.neo4j-desktop:$PATH"' >>$HOME/.zshrc
 
   message "'Desktop App' Configured In Path"
 }

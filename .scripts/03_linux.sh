@@ -54,6 +54,9 @@ java() {
   # Export `Java Home` to the "Path"
   echo 'export JAVA_HOME="/home/linuxbrew/.linuxbrew/opt/openjdk/libexec/"' >>$HOME/.zshrc
 
+  # Add everything to the "Path"
+  echo 'export PATH="$JAVA_HOME:$PATH"' >>$HOME/.zshrc
+
   # Create a maven settings XML file
   mkdir -p $HOME/.m2
 
@@ -64,8 +67,17 @@ csharp() {
   # .Net Core
   brew install dotnet
 
-  # Export `.Net Core Root` to the "Path"
-  echo 'export DOTNET_ROOT="/home/linuxbrew/.linuxbrew/opt/dotnet/libexec/"' >>$HOME/.zshrc
+  # Export `.Net Root` to the "Path"
+  echo 'export DOTNET_ROOT="$HOME/.dotnet"' >>$HOME/.zshrc
+
+  # .Net Mono
+  brew install mono
+
+  # Export `Mono GAC Prefix` to the "Path"
+  echo 'export MONO_GAC_PREFIX="/home/linuxbrew/.linuxbrew"' >>$HOME/.zshrc
+
+  # Add everything to the "Path"
+  echo 'export PATH="$DOTNET_ROOT:$MONO_GAC_PREFIX:$PATH"' >>$HOME/.zshrc
 
   package_install "C#"
 }
