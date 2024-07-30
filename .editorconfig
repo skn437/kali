@@ -96,6 +96,7 @@ indent_size = 2
 indent_size = 2
 
 # C# files:
+# noinspection EditorConfigKeyCorrectness
 [*.{cs,csx,razor}]
 indent_size = 2
 
