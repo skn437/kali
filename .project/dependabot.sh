@@ -40,14 +40,16 @@ dependabot_config() {
   printf "'Dependabot Config File' Added! ✅"
 }
 
+PACKAGE_LIST_STRING="('npm', 'gradle', 'nuget', 'docker')"
+
 if test "${DEPENDABOT}" == ""; then
-  printf "Specify package manager: ('npm', 'gradle', 'cargo')"
+  printf "Specify package manager: %s \n" "${PACKAGE_LIST_STRING}"
   exit 1
 fi
 
-if test "${DEPENDABOT}" == "npm" || test "${DEPENDABOT}" == "gradle" || test "${DEPENDABOT}" == "cargo"; then
+if test "${DEPENDABOT}" == "npm" || test "${DEPENDABOT}" == "gradle" || test "${DEPENDABOT}" == "nuget" || test "${DEPENDABOT}" == "docker"; then
   dependabot_config
 else
-  printf "Enter a valid package manager: ('npm', 'cargo', 'gradle') \n"
+  printf "Enter a valid package manager: %s \n" "${PACKAGE_LIST_STRING}"
   exit 1
 fi
