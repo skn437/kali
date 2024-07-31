@@ -150,7 +150,11 @@
     "controllers": "../../../../../../.jetbrains/custom-icons/controller-folder",
     "class": "../../../../../../.jetbrains/custom-icons/class-folder",
     "classes": "../../../../../../.jetbrains/custom-icons/class-folder",
+    "object": "../../../../../../.jetbrains/custom-icons/singleton-folder",
+    "objects": "../../../../../../.jetbrains/custom-icons/singleton-folder",
     // .Net
+    "record": "../../../../../../.jetbrains/custom-icons/record-folder",
+    "records": "../../../../../../.jetbrains/custom-icons/record-folder",
     "blueprint": "../../../../../../.jetbrains/custom-icons/blueprint-folder",
     "blueprints": "../../../../../../.jetbrains/custom-icons/blueprint-folder",
     "bootstrap": "../../../../../../.jetbrains/custom-icons/bootstrap-folder",
