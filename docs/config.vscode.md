@@ -176,7 +176,7 @@
     ".scripts": "../../../../../../.jetbrains/custom-icons/script-folder",
     "helper": "../../../../../../.jetbrains/custom-icons/helper-folder",
     "helpers": "../../../../../../.jetbrains/custom-icons/helper-folder",
-    // Web Services
+    // Web Services/DevOps
     "github": "../../../../../../.jetbrains/custom-icons/github-folder",
     ".github": "../../../../../../.jetbrains/custom-icons/github-folder",
     ".github/workflows": "../../../../../../.jetbrains/custom-icons/github-workflows-folder",
@@ -185,10 +185,15 @@
     "hub": "../../../../../../.jetbrains/custom-icons/docker-hub-folder",
     "docker": "../../../../../../.jetbrains/custom-icons/docker-folder",
     "kubernetes": "../../../../../../.jetbrains/custom-icons/kubernetes-folder",
-    "playbooks": "Ansible",
     "prometheus": "Stack",
     "graphql": "../../../../../../.jetbrains/custom-icons/graphql-folder",
     "websocket": "../../../../../../.jetbrains/custom-icons/message-folder",
+    "terraform": "../../../../../../.jetbrains/custom-icons/terraform-folder",
+    ".terraform": "../../../../../../.jetbrains/custom-icons/terraform-folder",
+    "ansible": "../../../../../../.jetbrains/custom-icons/ansible-folder",
+    ".ansible": "../../../../../../.jetbrains/custom-icons/ansible-folder",
+    "playbook": "../../../../../../.jetbrains/custom-icons/ansible-folder",
+    "playbooks": "../../../../../../.jetbrains/custom-icons/ansible-folder",
     // Project Tools
     "taskfile": "../../../../../../.jetbrains/custom-icons/taskfile-folder",
     "taskfiles": "../../../../../../.jetbrains/custom-icons/taskfile-folder",
@@ -583,7 +588,7 @@
     "Cargo.lock": "../../../../.jetbrains/custom-icons/cargo-lock",
     "rustfmt.toml": "../../../../.jetbrains/custom-icons/rust-format",
     "rustenv.toml": "../../../../.jetbrains/custom-icons/rust-env",
-    // Webservices
+    // Webservices/DevOps
     ".dockerignore": "../../../../.jetbrains/custom-icons/docker-ignore",
     "Dockerfile": "../../../../.jetbrains/custom-icons/docker-file",
     "docker-compose.yaml": "../../../../.jetbrains/custom-icons/docker-compose",
@@ -613,6 +618,8 @@
     "*.plays.yaml": "../../../../.jetbrains/custom-icons/ansible",
     "*.prometheus.yaml": "../../../../.jetbrains/custom-icons/prometheus",
     "dependabot.yaml": "../../../../.jetbrains/custom-icons/dependabot",
+    "*.tf": "../../../../.jetbrains/custom-icons/terraform",
+    "main.tf": "../../../../.jetbrains/custom-icons/terraform-main",
     // Project Tools
     "taskfile.yaml": "../../../../.jetbrains/custom-icons/taskfile",
     "lefthook.yaml": "../../../../.jetbrains/custom-icons/lefthook",
