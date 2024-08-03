@@ -185,7 +185,6 @@
     "hub": "../../../../../../.jetbrains/custom-icons/docker-hub-folder",
     "docker": "../../../../../../.jetbrains/custom-icons/docker-folder",
     "kubernetes": "../../../../../../.jetbrains/custom-icons/kubernetes-folder",
-    "prometheus": "Stack",
     "graphql": "../../../../../../.jetbrains/custom-icons/graphql-folder",
     "websocket": "../../../../../../.jetbrains/custom-icons/message-folder",
     "terraform": "../../../../../../.jetbrains/custom-icons/terraform-folder",
