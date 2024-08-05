@@ -241,6 +241,8 @@
     // Go
     "package": "../../../../../../.jetbrains/custom-icons/package-folder",
     "packages": "../../../../../../.jetbrains/custom-icons/package-folder",
+    "pkg": "../../../../../../.jetbrains/custom-icons/package-folder",
+    "pkgs": "../../../../../../.jetbrains/custom-icons/package-folder",
     // JavaScript & TypeScript
     "typescript": "../../../../../../.jetbrains/custom-icons/ts-folder",
     "types": "../../../../../../.jetbrains/custom-icons/ts-type-folder",
@@ -315,6 +317,7 @@
     "*.toml": "../../../../.jetbrains/custom-icons/toml",
     "*.txt": "../../../../.jetbrains/custom-icons/docs",
     "*.xml": "../../../../.jetbrains/custom-icons/xml",
+    "*.xaml": "../../../../.jetbrains/custom-icons/xaml",
     "*.iml": "../../../../.jetbrains/custom-icons/iml",
     "*.yaml": "../../../../.jetbrains/custom-icons/yaml",
     "*.json": "../../../../.jetbrains/custom-icons/json",
@@ -482,7 +485,12 @@
     // JavaScript & TypeScript
     "package.json": "../../../../.jetbrains/custom-icons/node-package",
     ".npmignore": "../../../../.jetbrains/custom-icons/npm-ignore",
+    ".npmrc": "../../../../.jetbrains/custom-icons/npm-rc",
     "npm-shrinkwrap.json": "../../../../.jetbrains/custom-icons/npm-shrinkwrap",
+    "package-lock.json": "../../../../.jetbrains/custom-icons/npm-lock",
+    "yarn.lock": "../../../../.jetbrains/custom-icons/yarn",
+    "pnpm-lock.yaml": "../../../../.jetbrains/custom-icons/pnpm",
+    "pnpm-workspace.yaml": "../../../../.jetbrains/custom-icons/pnpm-workspace",
     ".eslintrc.json": "../../../../.jetbrains/custom-icons/eslint",
     ".eslintignore": "../../../../.jetbrains/custom-icons/eslint-ignore",
     ".prettierrc.json": "../../../../.jetbrains/custom-icons/prettier",
@@ -627,9 +635,9 @@
     "*.cyp": "../../../../.jetbrains/custom-icons/cypher",
     "*.cql": "../../../../.jetbrains/custom-icons/cypher",
     // .Net
-    "src": "../../../../.jetbrains/custom-icons/bin",
-    "test": "../../../../.jetbrains/custom-icons/bin",
-    "tests": "../../../../.jetbrains/custom-icons/bin",
+    "ConsoleApplication": "../../../../.jetbrains/custom-icons/bin",
+    "ConsoleProgram": "../../../../.jetbrains/custom-icons/bin",
+    "ConsoleTest": "../../../../.jetbrains/custom-icons/bin",
     "*.dll": "../../../../.jetbrains/custom-icons/dll",
     "*.pdb": "../../../../.jetbrains/custom-icons/pdb",
     "*.sln": "../../../../.jetbrains/custom-icons/dotnet-solution",
@@ -669,7 +677,6 @@
     "appsettings.json": "../../../../.jetbrains/custom-icons/razor-settings",
     "appsettings.Development.json": "../../../../.jetbrains/custom-icons/razor-settings",
     "sasscompiler.json": "../../../../.jetbrains/custom-icons/sass-settings",
-    "*.cake": "../../../../.jetbrains/custom-icons/cake",
     // Python
     "*.py": "../../../../.jetbrains/custom-icons/py",
     "main.py": "../../../../.jetbrains/custom-icons/py-main",
@@ -691,7 +698,7 @@
     // Go
     "*.go": "../../../../.jetbrains/custom-icons/go",
     "go.mod": "../../../../.jetbrains/custom-icons/go-mod",
-    "go.sum": "../../../../.jetbrains/custom-icons/go-mod",
+    "go.sum": "../../../../.jetbrains/custom-icons/go-sum",
     "main.go": "../../../../.jetbrains/custom-icons/go-main",
     "*.struct.go": "../../../../.jetbrains/custom-icons/go-type",
     "env.go": "../../../../.jetbrains/custom-icons/env",
