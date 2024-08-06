@@ -11,7 +11,7 @@ insert_final_newline = true
 max_line_length = 120
 # (Please don't specify an indent_size here; that has too many unintended consequences.)
 
-# Kotlin files
+# Kotlin Files
 # noinspection EditorConfigKeyCorrectness
 [*.{kt,kts}]
 indent_size = 2
@@ -35,69 +35,65 @@ ktlint_standard_unnecessary-parentheses-before-trailing-lambda = enabled
 ## Turns `${}` into `$` in string template if only the variable name is used
 ktlint_standard_string-template = enabled
 
-# Java, Gradle files
+# Java, Gradle Files
 [*.{java,gradle}]
 indent_size = 2
 
-# Gradle Wrapper file
+# Gradle Wrapper File
 [gradlew]
 indent_size = 2
 
-# Maven Wrapper file
+# Maven Wrapper File
 [mvnw]
 indent_size = 2
 
-# GraphQL files
+# GraphQL Files
 [*.{graphql,graphqls,gql}]
 indent_size = 2
 
-# Cypher files
+# Cypher Files
 [*.cypher]
 indent_size = 2
 
-# Rust files
-[*.rs]
+# Rust Files
+[*.{rs,lock}]
 indent_size = 2
 
-# Go files
-[*.go]
+# Go Files
+[*.{go,mod,sum}]
 indent_size = 2
 
-# Python files
+# Python Files
 [*.{py,ipynb}]
 indent_size = 2
 
-# IML, JSON, Properties, TOML, XML, YAML files
-[*.{iml,json,properties,toml,xml,yaml}]
+# IML, JSON, Properties, TOML, XAML, XML, YAML Files
+[*.{iml,json,properties,toml,xaml,xml,yaml}]
 indent_size = 2
 
-# Ignore files
+# Ignore Files
 [.*ignore]
 indent_size = 2
 
-# Docker files
+# Docker File
 [Dockerfile]
 indent_size = 2
 
-# Shell Script, Text & Log files
+# Shell Script, Text, Log Files
 [*.{sh,txt,log}]
 indent_size = 2
 
-# HTML, CSS, Sass, SCSS, Markdown, MDX files
+# HTML, CSS, Sass, SCSS, Markdown, MDX Files
 [*.{html,css,sass,scss,md,mdx}]
 indent_size = 2
 
-# TypeScript, JavaScript files
+# TypeScript, JavaScript Files
 [*.{ts,tsx,cts,mts,js,jsx,cjs,mjs}]
 indent_size = 2
 
-# C# XML project files
-[*.csproj]
-indent_size = 2
-
-# C# files:
+# C#, C, C++ Files:
 # noinspection EditorConfigKeyCorrectness
-[*.{cs,csx,razor}]
+[*.{cs,csx,razor,cshtml,c,cpp}]
 indent_size = 2
 
 ## Blank Lines
@@ -733,9 +729,9 @@ resharper_csharp_space_after_operator_keyword = true
 resharper_space_within_slice_pattern = true
 resharper_csharp_space_within_slice_pattern = true
 
-# C# Razor files
+# C# Razor/CSHTML Files
 # noinspection EditorConfigKeyCorrectness
-[*.razor]
+[*.{razor,cshtml}]
 
 ## Line Break
 ### Statement
@@ -764,6 +760,6 @@ resharper_razor_remove_this_qualifier = false
 ### `@inherits` & `@model` Directive
 resharper_razor_prefer_qualified_reference = true
 
-# C, C++ files
-[*.{c,cpp}]
+# C# XML Project Files
+[*.csproj]
 indent_size = 2
