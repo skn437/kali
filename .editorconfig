@@ -91,9 +91,13 @@ indent_size = 2
 [*.{ts,tsx,cts,mts,js,jsx,cjs,mjs}]
 indent_size = 2
 
-# C#, C, C++ Files:
+# C# XML Project Files
+[*.csproj]
+indent_size = 2
+
+# C# Files
 # noinspection EditorConfigKeyCorrectness
-[*.{cs,csx,razor,cshtml,c,cpp}]
+[*.{cs,csx,razor,cshtml}]
 indent_size = 2
 
 ## Blank Lines
@@ -760,6 +764,6 @@ resharper_razor_remove_this_qualifier = false
 ### `@inherits` & `@model` Directive
 resharper_razor_prefer_qualified_reference = true
 
-# C# XML Project Files
-[*.csproj]
+# C, C++ Files
+[*.{c,cpp}]
 indent_size = 2
