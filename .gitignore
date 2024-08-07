@@ -61,7 +61,6 @@ cypress/screenshots
 
 # Vite
 .output
-package
 
 # Svelte-Kit
 .svelte-kit
@@ -105,11 +104,12 @@ bin
 # Blazor
 *.razor.css
 *.razor.css.map
-wwwroot
+wwwroot/**/*
+!wwwroot/libs/*
+!wwwroot/assets/*
 
 # NuGet Packages
 *.nupkg
-packages
 
 # JetBrains IDE
 .idea/**/*
