@@ -104,9 +104,13 @@ bin
 # Blazor
 **/*.razor.css
 **/*.razor.css.map
-**/wwwroot/**/*
-!**/wwwroot/libs/*
-!**/wwwroot/assets/*
+**/wwwroot/**/*.css
+**/wwwroot/**/*.css.map
+**/wwwroot/css
+**/wwwroot/**/*.js
+**/wwwroot/**/*.cjs
+**/wwwroot/**/*.mjs
+**/wwwroot/js
 
 # NuGet Packages
 *.nupkg
