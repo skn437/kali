@@ -102,11 +102,11 @@ obj
 bin
 
 # Blazor
-*.razor.css
-*.razor.css.map
-wwwroot/**/*
-!wwwroot/libs/*
-!wwwroot/assets/*
+**/*.razor.css
+**/*.razor.css.map
+**/wwwroot/**/*
+!**/wwwroot/libs/*
+!**/wwwroot/assets/*
 
 # NuGet Packages
 *.nupkg
