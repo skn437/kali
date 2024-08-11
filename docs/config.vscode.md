@@ -668,6 +668,7 @@
     "*.Struct.cs": "../../../../.jetbrains/custom-icons/cs-struct",
     "*.State.cs": "../../../../.jetbrains/custom-icons/cs-state",
     "*.Dto.cs": "../../../../.jetbrains/custom-icons/cs-dto",
+    "*.Query.cs": "../../../../.jetbrains/custom-icons/cs-query",
     "Program.cs": "../../../../.jetbrains/custom-icons/cs-main",
     "GlobalSuppressions.cs": "../../../../.jetbrains/custom-icons/cs-special",
     "Namespace.cs": "../../../../.jetbrains/custom-icons/source-cs",
