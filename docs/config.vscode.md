@@ -237,6 +237,7 @@
     "shared": "../../../../../../.jetbrains/custom-icons/shared-folder",
     "path": "../../../../../../.jetbrains/custom-icons/path-folder",
     "paths": "../../../../../../.jetbrains/custom-icons/path-folder",
+    ".git": "../../../../../../.jetbrains/custom-icons/git-folder",
     // Python
     "python": "../../../../../../.jetbrains/custom-icons/py-folder",
     "analysis": "../../../../../../.jetbrains/custom-icons/analysis-folder",
