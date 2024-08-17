@@ -347,6 +347,8 @@
     ".idea/intellij-idea-project-settings.zip": "../../../../.jetbrains/custom-icons/jetbrains-idea",
     ".idea/rider-settings.zip": "../../../../.jetbrains/custom-icons/jetbrains-rider",
     ".idea/rider-project-settings.zip": "../../../../.jetbrains/custom-icons/jetbrains-rider",
+    ".idea/webstorm-settings.zip": "../../../../.jetbrains/custom-icons/jetbrains-webstorm",
+    ".idea/webstorm-project-settings.zip": "../../../../.jetbrains/custom-icons/jetbrains-webstorm",
     // HTML, CSS, Sass , SVG & Images
     "*.html": "../../../../.jetbrains/custom-icons/html",
     "*.css": "../../../../.jetbrains/custom-icons/css",
@@ -723,6 +725,7 @@
     "go.sum": "../../../../.jetbrains/custom-icons/go-sum",
     "main.go": "../../../../.jetbrains/custom-icons/go-main",
     "*.struct.go": "../../../../.jetbrains/custom-icons/go-type",
+    "*.function.go": "../../../../.jetbrains/custom-icons/go-function",
     "env.go": "../../../../.jetbrains/custom-icons/env",
     "reader.go": "../../../../.jetbrains/custom-icons/stdio",
     "mutex.go": "../../../../.jetbrains/custom-icons/go-tool",

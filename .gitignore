@@ -114,11 +114,3 @@ bin
 
 # NuGet Packages
 *.nupkg
-
-# JetBrains IDE
-.idea/**/*
-!.idea/icon.tar.gz
-!.idea/*-settings.zip
-*.iws
-*.iml
-*.ipr
