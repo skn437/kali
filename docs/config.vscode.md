@@ -116,6 +116,8 @@
     "cache": "../../../../../../.jetbrains/custom-icons/temp-folder",
     ".cache": "../../../../../../.jetbrains/custom-icons/temp-folder",
     "dist": "../../../../../../.jetbrains/custom-icons/dist-folder",
+    ".svelte": "../../../../../../.jetbrains/custom-icons/svelte-folder",
+    ".svelte-kit": "../../../../../../.jetbrains/custom-icons/svelte-folder",
     // Database
     "mongo": "../../../../../../.jetbrains/custom-icons/mongo-folder",
     "neo4j": "../../../../../../.jetbrains/custom-icons/neo4j-folder",
@@ -581,8 +583,19 @@
     "graphql.operation.ts": "../../../../.jetbrains/custom-icons/graphql-codegen",
     "graphql.resolver.ts": "../../../../.jetbrains/custom-icons/graphql-codegen",
     "*.graphql.ts": "../../../../.jetbrains/custom-icons/graphql-ts",
-    "*.gq.ts": "../../../../.jetbrains/custom-icons/graphql-ts",
+    "*.gql.ts": "../../../../.jetbrains/custom-icons/graphql-ts",
     "*.apollo.ts": "../../../../.jetbrains/custom-icons/apollo",
+    "*.svelte": "../../../../.jetbrains/custom-icons/svelte",
+    "*.svelte.ts": "../../../../.jetbrains/custom-icons/svelte-rune",
+    "+page.svelte": "../../../../.jetbrains/custom-icons/svelte-page",
+    "+page.server.ts": "../../../../.jetbrains/custom-icons/svelte-server",
+    "hooks.server.ts": "../../../../.jetbrains/custom-icons/svelte-hook",
+    "+server.ts": "../../../../.jetbrains/custom-icons/svelte-api",
+    "+layout.svelte": "../../../../.jetbrains/custom-icons/svelte-layout",
+    "+layout.server.ts": "../../../../.jetbrains/custom-icons/svelte-layout-server",
+    "svelte.config.js": "../../../../.jetbrains/custom-icons/svelte-config",
+    "app.html": "../../../../.jetbrains/custom-icons/svelte-app",
+    "app.d.ts": "../../../../.jetbrains/custom-icons/svelte-definition",
     // Rust
     "*.rs": "../../../../.jetbrains/custom-icons/rust",
     "main.rs": "../../../../.jetbrains/custom-icons/rust-main",
@@ -932,17 +945,29 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "explorer.compactFolders": true,
-  "explorer.fileNesting.enabled": false,
+  "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
     "*.ts": "${capture}.js",
     "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
     "*.jsx": "${capture}.js",
     "*.tsx": "${capture}.ts",
     "tsconfig.json": "tsconfig.*.json",
-    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb"
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, pnpm-workspace.yaml, bun.lockb",
+    ".eslintrc.json": ".eslintignore",
+    ".eslintrc.*js": ".eslintignore",
+    "eslint.config.*js": ".eslintignore",
+    ".prettierrc.json": ".prettierignore",
+    "taskfile.yaml": ".env.task",
+    "dockerfile": ".dockerignore, api.sh, interface.sh, ui.sh",
+    "go.mod": "go.sum",
+    "Cargo.toml": "Cargo.lock",
+    "next.config.mjs": "next-env.d.ts",
+    "app.html": "app.d.ts",
+    "*.razor": "${capture}.razor.scss, ${capture}.razor.css, ${capture}.razor.css.map"
   },
   "redhat.telemetry.enabled": true,
   "code-runner.executorMap": {
+    "go": "cd $dir && go run $fileName",
     "javascript": "bun",
     "rust": "cd $workspaceRoot && cargo run",
     "shellscript": "bash",
@@ -950,12 +975,26 @@
   },
   "code-runner.executorMapByGlob": {
     "Cargo.toml": "cd $workspaceRoot && cargo build",
-    "next.config.mjs": "cd $workspaceRoot && bun next build"
+    "next.config.mjs": "cd $workspaceRoot && bun next build",
+    "go.mod": "cd $workspaceRoot && go build",
+    "pom.xml": "cd $workspaceRoot && mvn clean package"
+  },
+  "code-runner.executorMapByFileExtension": {
+    ".csproj": "cd $dir && dotnet build",
+    ".csx": "csharp"
   },
   "code-runner.clearPreviousOutput": true,
   "code-runner.runInTerminal": true,
   "code-runner.defaultLanguage": "javascript",
   "emojisense.languages": {
+    "aspnetcorerazor": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "csharp": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
     "ejs": {
       "markupCompletionsEnabled": false,
       "emojiDecoratorsEnabled": false
@@ -964,7 +1003,15 @@
       "markupCompletionsEnabled": false,
       "emojiDecoratorsEnabled": false
     },
+    "go": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
     "html": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "java": {
       "markupCompletionsEnabled": false,
       "emojiDecoratorsEnabled": false
     },
@@ -993,6 +1040,10 @@
       "emojiDecoratorsEnabled": false
     },
     "shellscript": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "svelte": {
       "markupCompletionsEnabled": false,
       "emojiDecoratorsEnabled": false
     },
