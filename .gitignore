@@ -115,6 +115,6 @@ bin
 # NuGet Packages
 *.nupkg
 
-# Jetbrains IDE
+# JetBrains IDE
 !.idea/**/*.tar.gz
 !.idea/**/*.zip
