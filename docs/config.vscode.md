@@ -100,7 +100,6 @@
     "obj": "../../../../../../.jetbrains/custom-icons/object-folder",
     "target": "../../../../../../.jetbrains/custom-icons/target-folder",
     ".logs": "../../../../../../.jetbrains/custom-icons/log-folder",
-    ".gen": "Generator",
     ".idea": "../../../../../../.jetbrains/custom-icons/intellij-folder",
     ".idea/dictionaries": "../../../../../../.jetbrains/custom-icons/intellij-dict-folder",
     ".idea/codeStyles": "../../../../../../.jetbrains/custom-icons/intellij-style-folder",
@@ -123,6 +122,7 @@
     "neo4j": "../../../../../../.jetbrains/custom-icons/neo4j-folder",
     "redis": "../../../../../../.jetbrains/custom-icons/redis-folder",
     // Java, Kotlin & Spring Boot
+    "java": "../../../../../../.jetbrains/custom-icons/java-folder",
     "main": "../../../../../../.jetbrains/custom-icons/main-folder",
     ".mvn": "../../../../../../.jetbrains/custom-icons/maven-folder",
     ".mvn/wrapper": "../../../../../../.jetbrains/custom-icons/maven-wrapper-folder",
@@ -244,12 +244,15 @@
     "python": "../../../../../../.jetbrains/custom-icons/py-folder",
     "analysis": "../../../../../../.jetbrains/custom-icons/analysis-folder",
     "csv": "../../../../../../.jetbrains/custom-icons/csv-folder",
+    "jupyter": "../../../../../../.jetbrains/custom-icons/jupyter-folder",
     // Go
     "package": "../../../../../../.jetbrains/custom-icons/package-folder",
     "packages": "../../../../../../.jetbrains/custom-icons/package-folder",
     "pkg": "../../../../../../.jetbrains/custom-icons/package-folder",
     "pkgs": "../../../../../../.jetbrains/custom-icons/package-folder",
     // JavaScript & TypeScript
+    "svg": "../../../../../../.jetbrains/custom-icons/svg-folder",
+    "svgs": "../../../../../../.jetbrains/custom-icons/svg-folder",
     "css": "../../../../../../.jetbrains/custom-icons/css-folder",
     "js": "../../../../../../.jetbrains/custom-icons/js-folder",
     "javascript": "../../../../../../.jetbrains/custom-icons/js-folder",
@@ -293,8 +296,8 @@
     "asset": "../../../../../../.jetbrains/custom-icons/asset-folder",
     "assets": "../../../../../../.jetbrains/custom-icons/asset-folder",
     "apollo": "../../../../../../.jetbrains/custom-icons/apollo-folder",
-    "rxjs": "Pipe",
-    "webhooks": "Hook"
+    "snippet": "../../../../../../.jetbrains/custom-icons/snippet-folder",
+    "snippets": "../../../../../../.jetbrains/custom-icons/snippet-folder"
   },
   "material-icon-theme.files.associations": {
     // .Env
@@ -400,8 +403,8 @@
     "MailSenderService.java": "../../../../.jetbrains/custom-icons/spring-service",
     "MailSenderServiceImpl.java": "../../../../.jetbrains/custom-icons/spring-service-impl",
     "MailSenderController.java": "../../../../.jetbrains/custom-icons/spring-controller",
-    "MailSenderMessage.java": "../../../../.jetbrains/custom-icons/java-native-type",
-    "MailSenderInitializer.java": "../../../../.jetbrains/custom-icons/java-native-type",
+    "MailSenderMessage.java": "../../../../.jetbrains/custom-icons/java-native",
+    "MailSenderInitializer.java": "../../../../.jetbrains/custom-icons/java-native",
     "MailSenderConfiguration.java": "../../../../.jetbrains/custom-icons/spring-configuration",
     "MailSenderRequestInfo.java": "../../../../.jetbrains/custom-icons/java-type",
     "MailSenderInputStream.java": "../../../../.jetbrains/custom-icons/java-type",
@@ -554,6 +557,7 @@
     "layout.tsx": "../../../../.jetbrains/custom-icons/tsx-layout",
     "loading.tsx": "../../../../.jetbrains/custom-icons/tsx-loading",
     "error.tsx": "../../../../.jetbrains/custom-icons/tsx-error",
+    "*.native.tsx": "../../../../.jetbrains/custom-icons/tsx-native",
     "route.ts": "../../../../.jetbrains/custom-icons/next-route",
     "*.state.ts": "../../../../.jetbrains/custom-icons/ts-state",
     "*.store.ts": "../../../../.jetbrains/custom-icons/ts-state",
@@ -948,6 +952,7 @@
   },
   "explorer.compactFolders": true,
   "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
     "*.ts": "${capture}.js",
     "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
