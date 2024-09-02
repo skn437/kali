@@ -356,6 +356,7 @@
     ".idea/webstorm-project-settings.zip": "../../../../.jetbrains/custom-icons/jetbrains-webstorm",
     // HTML, CSS, Sass , SVG & Images
     "*.html": "../../../../.jetbrains/custom-icons/html",
+    "*.ejs": "../../../../.jetbrains/custom-icons/ejs",
     "*.css": "../../../../.jetbrains/custom-icons/css",
     "*.css.map": "../../../../.jetbrains/custom-icons/css-map",
     "*.scss": "../../../../.jetbrains/custom-icons/sass",
