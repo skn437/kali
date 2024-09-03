@@ -52,7 +52,7 @@ java() {
   brew install maven gradle
 
   # Export `Java Home` to the "Path"
-  echo 'export JAVA_HOME="/home/linuxbrew/.linuxbrew/opt/openjdk/libexec/"' >>$HOME/.zshrc
+  echo 'export JAVA_HOME="/home/linuxbrew/.linuxbrew/opt/openjdk/libexec"' >>$HOME/.zshrc
 
   # Add everything to the "Path"
   echo 'export PATH="$JAVA_HOME:$PATH"' >>$HOME/.zshrc
@@ -102,6 +102,12 @@ kotlin() {
 go() {
   #Go
   brew install go
+
+  # Export `Go Root` to the "Path"
+  echo 'export GOROOT="/home/linuxbrew/.linuxbrew/opt/go/libexec"' >>$HOME/.zshrc
+
+  # Add everything to the "Path"
+  echo 'export PATH="$GOROOT:$PATH"' >>$HOME/.zshrc
 
   # Go tools
   brew install gopls delve staticcheck
