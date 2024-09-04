@@ -791,6 +791,9 @@
     "execution.go": "../../../../.jetbrains/custom-icons/go-tool",
     "package.go": "../../../../.jetbrains/custom-icons/go-package",
     "color.go": "../../../../.jetbrains/custom-icons/color",
+    "application.go": "../../../../.jetbrains/custom-icons/go-app",
+    "root.go": "../../../../.jetbrains/custom-icons/go-root",
+    "*.blueprint.go": "../../../../.jetbrains/custom-icons/go-blueprint",
     "go.config.yaml": "../../../../.jetbrains/custom-icons/go-settings",
     // Miscellaneous
     "pre-commit": "Husky",
