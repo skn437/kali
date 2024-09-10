@@ -23,6 +23,16 @@ devtools() {
   package_install "Devtools"
 }
 
+c_cpp() {
+  # Clang/LLVM
+  brew install llvm
+
+  # CMake
+  brew install cmake
+
+  package_install "C/C++"
+}
+
 shellscript() {
   # SHFMT
   brew install shfmt
@@ -135,4 +145,4 @@ rust_init() {
   gnome-terminal -- bash -c "printf 'Preparing to initialize rust... \n' && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && rustup-init; read -n 1 KEY"
 }
 
-brew_prepare && devtools && shellscript && typescript && java && csharp && message_broker && kotlin && go && rust && rust_init
+brew_prepare && devtools && c_cpp && shellscript && typescript && java && csharp && message_broker && kotlin && go && rust && rust_init
