@@ -11,5 +11,14 @@
   "endOfLine": "lf",
   "htmlWhitespaceSensitivity": "css",
   "jsxSingleQuote": false,
-  "singleAttributePerLine": true
+  "singleAttributePerLine": true,
+  "plugins": ["prettier-plugin-svelte"],
+  "overrides": [
+    {
+      "files": "*.svelte",
+      "options": {
+        "parser": "svelte"
+      }
+    }
+  ]
 }
