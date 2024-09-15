@@ -110,6 +110,7 @@
     ".idea/dictionaries": "../../../../../../.jetbrains/custom-icons/intellij-dict-folder",
     ".idea/codeStyles": "../../../../../../.jetbrains/custom-icons/intellij-style-folder",
     ".idea/inspectionProfiles": "../../../../../../.jetbrains/custom-icons/intellij-profile-folder",
+    ".idea/jsLinters": "../../../../../../.jetbrains/custom-icons/intellij-linter-folder",
     ".apidocs": "../../../../../../.jetbrains/custom-icons/apidocs-folder",
     ".husky/_": "../../../../../../.jetbrains/custom-icons/husky-folder",
     ".codegen": "../../../../../../.jetbrains/custom-icons/codegen-folder",
@@ -123,6 +124,9 @@
     "dist": "../../../../../../.jetbrains/custom-icons/dist-folder",
     ".svelte": "../../../../../../.jetbrains/custom-icons/svelte-folder",
     ".svelte-kit": "../../../../../../.jetbrains/custom-icons/svelte-folder",
+    ".gen": "../../../../../../.jetbrains/custom-icons/generator-folder",
+    "generated": "../../../../../../.jetbrains/custom-icons/generator-folder",
+    "nodes": "../../../../../../.jetbrains/custom-icons/nodes-folder",
     // Database
     "mongo": "../../../../../../.jetbrains/custom-icons/mongo-folder",
     "neo4j": "../../../../../../.jetbrains/custom-icons/neo4j-folder",
@@ -374,6 +378,7 @@
     "codeStyleConfig.xml": "../../../../.jetbrains/custom-icons/intellij-config",
     "Project.xml": "../../../../.jetbrains/custom-icons/intellij-config",
     "Project_Default.xml": "../../../../.jetbrains/custom-icons/intellij-config",
+    "eslint.xml": "../../../../.jetbrains/custom-icons/intellij-config",
     "compiler.xml": "../../../../.jetbrains/custom-icons/intellij-config",
     "git_toolbox_blame.xml": "../../../../.jetbrains/custom-icons/intellij-config",
     "gradle.xml": "../../../../.jetbrains/custom-icons/intellij-config",
@@ -664,6 +669,7 @@
     "*.enum.rs": "../../../../.jetbrains/custom-icons/rust-enum",
     "*.trait.rs": "../../../../.jetbrains/custom-icons/rust-trait",
     "*.function.rs": "../../../../.jetbrains/custom-icons/rust-function",
+    "*.blueprint.rs": "../../../../.jetbrains/custom-icons/rust-blueprint",
     "execution.rs": "../../../../.jetbrains/custom-icons/rust-execution",
     "color.rs": "../../../../.jetbrains/custom-icons/color",
     "args.rs": "../../../../.jetbrains/custom-icons/rust-args",
@@ -680,7 +686,7 @@
     "Cargo.lock": "../../../../.jetbrains/custom-icons/cargo-lock",
     "rustfmt.toml": "../../../../.jetbrains/custom-icons/rust-format",
     "rustenv.toml": "../../../../.jetbrains/custom-icons/rust-env",
-    "rust_application.rs": "../../../../.jetbrains/custom-icons/rust-app",
+    "application.rs": "../../../../.jetbrains/custom-icons/rust-app",
     "root.rs": "../../../../.jetbrains/custom-icons/rust-root",
     // Webservices/DevOps
     ".dockerignore": "../../../../.jetbrains/custom-icons/docker-ignore",
@@ -944,6 +950,9 @@
   "[go]": {
     "editor.insertSpaces": false,
     "togglequotes.chars": ["\"", "'", "`"],
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
@@ -1050,6 +1059,8 @@
     "Cargo.toml": "Cargo.lock",
     "next.config.mjs": "next-env.d.ts",
     "app.html": "app.d.ts",
+    "vite.config.ts": "vitest.setup.ts",
+    "jest.config.ts": "jest.setup.ts",
     "*.razor": "${capture}.razor.scss, ${capture}.razor.css, ${capture}.razor.css.map"
   },
   "redhat.telemetry.enabled": true,
@@ -1063,10 +1074,12 @@
   "code-runner.executorMapByGlob": {
     "Cargo.toml": "cd $workspaceRoot && cargo build",
     "next.config.mjs": "cd $workspaceRoot && bun next build",
+    "svelte.config.js": "cd $workspaceRoot && bun vite build",
     "go.mod": "cd $workspaceRoot && go build",
     "pom.xml": "cd $workspaceRoot && mvn clean package"
   },
   "code-runner.executorMapByFileExtension": {
+    ".svelte": "cd $workspaceRoot && bun vite dev",
     ".csproj": "cd $dir && dotnet build",
     ".csx": "csharp"
   },
@@ -1075,6 +1088,14 @@
   "code-runner.defaultLanguage": "javascript",
   "emojisense.languages": {
     "aspnetcorerazor": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "c": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "cpp": {
       "markupCompletionsEnabled": false,
       "emojiDecoratorsEnabled": false
     },
