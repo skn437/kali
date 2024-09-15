@@ -416,6 +416,7 @@
     "_variable.scss": "../../../../.jetbrains/custom-icons/sass-util",
     "_theme.scss": "../../../../.jetbrains/custom-icons/sass-util",
     "_font.scss": "../../../../.jetbrains/custom-icons/sass-util",
+    "_tailwind.scss": "../../../../.jetbrains/custom-icons/sass-util",
     "tailwind.css": "../../../../.jetbrains/custom-icons/tailwindcss-init",
     "*.svg": "../../../../.jetbrains/custom-icons/svg",
     "*.page.svg": "../../../../.jetbrains/custom-icons/svg-page",
