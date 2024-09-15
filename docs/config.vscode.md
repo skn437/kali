@@ -316,6 +316,8 @@
     "snippets": "../../../../../../.jetbrains/custom-icons/snippet-folder",
     "param": "../../../../../../.jetbrains/custom-icons/params-folder",
     "params": "../../../../../../.jetbrains/custom-icons/params-folder",
+    "webhook": "../../../../../../.jetbrains/custom-icons/webhook-folder",
+    "webhooks": "../../../../../../.jetbrains/custom-icons/webhook-folder",
     "home": "../../../../../../.jetbrains/custom-icons/home-folder",
     "about": "../../../../../../.jetbrains/custom-icons/next-page-folder",
     "contact": "../../../../../../.jetbrains/custom-icons/next-page-folder",
@@ -662,6 +664,7 @@
     "app.d.ts": "../../../../.jetbrains/custom-icons/svelte-definition",
     "error.html": "../../../../.jetbrains/custom-icons/svelte-error",
     "playwright.config.ts": "../../../../.jetbrains/custom-icons/playwright",
+    "*.hook.ts": "../../../../.jetbrains/custom-icons/webhook",
     // Rust
     "*.rs": "../../../../.jetbrains/custom-icons/rust",
     "main.rs": "../../../../.jetbrains/custom-icons/rust-main",
