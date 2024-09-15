@@ -91,6 +91,10 @@ indent_size = 2
 [*.{ts,tsx,cts,mts,js,jsx,cjs,mjs}]
 indent_size = 2
 
+# Svelte, Vue, Astro Files
+[*.{svelte,vue,astro}]
+indent_size = 2
+
 # C# XML Project Files
 [*.csproj]
 indent_size = 2
