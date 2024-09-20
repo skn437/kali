@@ -394,7 +394,6 @@
     "prettier.xml": "../../../../.jetbrains/custom-icons/intellij-config",
     "sup-backend.iml": "../../../../.jetbrains/custom-icons/intellij-iml",
     "sup-frontend.iml": "../../../../.jetbrains/custom-icons/intellij-iml",
-    "sup-interface.iml": "../../../../.jetbrains/custom-icons/intellij-iml",
     "vcs.xml": "../../../../.jetbrains/custom-icons/intellij-config",
     "workspace.xml": "../../../../.jetbrains/custom-icons/intellij-config",
     ".idea/.name": "../../../../.jetbrains/custom-icons/intellij-name",
@@ -566,6 +565,9 @@
     "eslint.config.js": "../../../../.jetbrains/custom-icons/eslint",
     "eslint.config.cjs": "../../../../.jetbrains/custom-icons/eslint",
     "eslint.config.mjs": "../../../../.jetbrains/custom-icons/eslint",
+    "eslint.config.ts": "../../../../.jetbrains/custom-icons/eslint",
+    "eslint.config.cts": "../../../../.jetbrains/custom-icons/eslint",
+    "eslint.config.mts": "../../../../.jetbrains/custom-icons/eslint",
     ".eslintignore": "../../../../.jetbrains/custom-icons/eslint-ignore",
     ".stylelintrc.json": "../../../../.jetbrains/custom-icons/stylelint",
     ".stylelintignore": "../../../../.jetbrains/custom-icons/stylelint-ignore",
@@ -844,6 +846,7 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "tailwind-fold.foldStyle": "QUOTES",
   "[cypher]": {
     "editor.tabSize": 2,
     "editor.formatOnSave": false,
@@ -1055,6 +1058,7 @@
     ".eslintrc.json": ".eslintignore",
     ".eslintrc.*js": ".eslintignore",
     "eslint.config.*js": ".eslintignore",
+    "eslint.config.*ts": ".eslintignore",
     ".stylelintrc.json": ".stylelintignore",
     ".prettierrc.json": ".prettierignore",
     "taskfile.yaml": ".env.task",
