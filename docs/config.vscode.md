@@ -127,6 +127,7 @@
     ".gen": "../../../../../../.jetbrains/custom-icons/generator-folder",
     "generated": "../../../../../../.jetbrains/custom-icons/generator-folder",
     "nodes": "../../../../../../.jetbrains/custom-icons/nodes-folder",
+    ".kotlin": "../../../../../../.jetbrains/custom-icons/kotlin-output-folder",
     // Database
     "mongo": "../../../../../../.jetbrains/custom-icons/mongo-folder",
     "neo4j": "../../../../../../.jetbrains/custom-icons/neo4j-folder",
@@ -488,6 +489,7 @@
     "*.Dto.kt": "../../../../.jetbrains/custom-icons/kt-dto",
     "*.Test.kt": "../../../../.jetbrains/custom-icons/kt-test",
     "*.Object.kt": "../../../../.jetbrains/custom-icons/kt-object",
+    "*.Function.kt": "../../../../.jetbrains/custom-icons/kt-function",
     "Application.kt": "../../../../.jetbrains/custom-icons/spring",
     "*.Service.kt": "../../../../.jetbrains/custom-icons/spring-service",
     "*.ServiceImpl.kt": "../../../../.jetbrains/custom-icons/spring-service-impl",
@@ -1083,6 +1085,7 @@
     "Cargo.toml": "cd $workspaceRoot && cargo build",
     "next.config.mjs": "cd $workspaceRoot && bun next build",
     "svelte.config.js": "cd $workspaceRoot && bun vite build",
+    "vite.config.ts": "cd $workspaceRoot && bun vite build",
     "go.mod": "cd $workspaceRoot && go build",
     "pom.xml": "cd $workspaceRoot && mvn clean package"
   },
