@@ -1086,11 +1086,13 @@
     "next.config.mjs": "cd $workspaceRoot && bun next build",
     "svelte.config.js": "cd $workspaceRoot && bun vite build",
     "vite.config.ts": "cd $workspaceRoot && bun vite build",
+    "astro.config.mjs": "cd $workspaceRoot && bun astro build",
     "go.mod": "cd $workspaceRoot && go build",
     "pom.xml": "cd $workspaceRoot && mvn clean package"
   },
   "code-runner.executorMapByFileExtension": {
     ".svelte": "cd $workspaceRoot && bun vite dev",
+    ".astro": "cd $workspaceRoot && bun astro dev",
     ".csproj": "cd $dir && dotnet build",
     ".csx": "csharp"
   },
@@ -1099,6 +1101,10 @@
   "code-runner.defaultLanguage": "javascript",
   "emojisense.languages": {
     "aspnetcorerazor": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "astro": {
       "markupCompletionsEnabled": false,
       "emojiDecoratorsEnabled": false
     },
