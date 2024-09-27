@@ -214,6 +214,8 @@
     "taskfile": "../../../../../../.jetbrains/custom-icons/taskfile-folder",
     "taskfiles": "../../../../../../.jetbrains/custom-icons/taskfile-folder",
     // VS Code
+    "session": "../../../../../../.jetbrains/custom-icons/session-folder",
+    "sessions": "../../../../../../.jetbrains/custom-icons/session-folder",
     "language": "../../../../../../.jetbrains/custom-icons/language-folder",
     "languages": "../../../../../../.jetbrains/custom-icons/language-folder",
     "font": "../../../../../../.jetbrains/custom-icons/font-folder",
