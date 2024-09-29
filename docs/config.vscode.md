@@ -660,6 +660,7 @@
     "*.apollo.ts": "../../../../.jetbrains/custom-icons/apollo",
     "*.svelte": "../../../../.jetbrains/custom-icons/svelte",
     "*.svelte.ts": "../../../../.jetbrains/custom-icons/svelte-rune",
+    "*.svelte.js": "../../../../.jetbrains/custom-icons/svelte-rune-js",
     "+page.svelte": "../../../../.jetbrains/custom-icons/svelte-page",
     "+page.server.ts": "../../../../.jetbrains/custom-icons/svelte-server",
     "+page.ts": "../../../../.jetbrains/custom-icons/svelte-page-client",
@@ -690,6 +691,7 @@
     "*.enum.rs": "../../../../.jetbrains/custom-icons/rust-enum",
     "*.trait.rs": "../../../../.jetbrains/custom-icons/rust-trait",
     "*.function.rs": "../../../../.jetbrains/custom-icons/rust-function",
+    "*.fn.rs": "../../../../.jetbrains/custom-icons/rust-function",
     "*.blueprint.rs": "../../../../.jetbrains/custom-icons/rust-blueprint",
     "execution.rs": "../../../../.jetbrains/custom-icons/rust-execution",
     "color.rs": "../../../../.jetbrains/custom-icons/color",
@@ -1025,6 +1027,13 @@
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "svelte.enable-ts-plugin": true,
+  "[astro]": {
+    "togglequotes.chars": ["\"", "'", "`"],
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
   "[svg]": {
     "editor.autoClosingBrackets": "always",
     "files.trimFinalNewlines": true,
