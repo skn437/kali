@@ -1,6 +1,17 @@
 extends:
   - "stylelint-config-standard"
   - "stylelint-config-standard-scss"
+  - "stylelint-config-html"
 rules:
-  defaultSeverity: "error"
-  color-named: "always-where-possible"
+  color-named: always-where-possible
+overrides:
+  - files:
+      - "*.html"
+      - "*.vue"
+      - "*.astro"
+      - "*.svelte"
+    customSyntax: "postcss-html"
+
+  - files:
+      - "*.scss"
+    customSyntax: "postcss-scss"
