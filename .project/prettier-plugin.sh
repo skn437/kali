@@ -16,6 +16,10 @@ while getopts "a" OPTION; do
   esac
 done
 
+message() {
+  printf "'%s' Added! ✅ \n" "$1"
+}
+
 prettier_plugin() {
   # Prettier Formatter file
   PRETTIER_FORMAT=".prettierrc.yaml"
@@ -28,6 +32,8 @@ prettier_plugin() {
   fi
 
   curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/.project/helpers/${PRETTIER_PLUGIN_FILE}" >>"./${PRETTIER_FORMAT}"
+
+  message "Prettier Plugin Config File"
 }
 
 prettier_plugin
