@@ -2,6 +2,8 @@
 
 set -e
 
+LINUX="kali"
+
 PRETTIER_PLUGIN="svelte"
 
 while getopts "a" OPTION; do
