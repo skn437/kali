@@ -12,7 +12,7 @@ idea() {
 
   if test -d "${IDEA_DIRECTORY}"; then
     curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/.project/helpers/${JSON_SCHEMA}" >"${IDEA_DIRECTORY}/${JSON_SCHEMA}"
-    curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/.project/helpers/ideaIgnore.txt" >"${IDEA_DIRECTORY}/${GIT_IGNORE}"
+    curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/.project/helpers/idea-ignore.txt" >"${IDEA_DIRECTORY}/${GIT_IGNORE}"
 
     printf "'Intellij Idea Settings' Added! ✅ \n"
   else

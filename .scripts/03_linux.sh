@@ -52,7 +52,7 @@ typescript() {
   echo 'export PATH="$HOME/.bun/bin:$PATH"' >>$HOME/.zshrc
 
   #Prettier
-  bun add -g prettier
+  bun add -g prettier stylelint
 
   package_install "TypeScript"
 }
