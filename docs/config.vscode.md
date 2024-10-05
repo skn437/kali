@@ -840,6 +840,7 @@
     "go.sum": "../../../../.jetbrains/custom-icons/go-sum",
     "main.go": "../../../../.jetbrains/custom-icons/go-main",
     "*.struct.go": "../../../../.jetbrains/custom-icons/go-type",
+    "*.func.go": "../../../../.jetbrains/custom-icons/go-function",
     "*.function.go": "../../../../.jetbrains/custom-icons/go-function",
     "env.go": "../../../../.jetbrains/custom-icons/env",
     "reader.go": "../../../../.jetbrains/custom-icons/stdio",
@@ -1231,7 +1232,7 @@
       "emojiDecoratorsEnabled": false
     }
   },
-  "testExplorer.useNativeTesting": false,
+  "testExplorer.useNativeTesting": true,
   "auto-close-tag.activationOnLanguage": ["ejs", "plaintext", "markdown", "mdx"]
 }
 ```
