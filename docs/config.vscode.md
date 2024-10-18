@@ -569,6 +569,8 @@
     "cli": "../../../../.jetbrains/custom-icons/bin",
     "main": "../../../../.jetbrains/custom-icons/bin",
     // JavaScript & TypeScript
+    "deno.json": "../../../../.jetbrains/custom-icons/deno",
+    "deno.lock": "../../../../.jetbrains/custom-icons/deno-lock",
     "package.json": "../../../../.jetbrains/custom-icons/node-package",
     ".npmignore": "../../../../.jetbrains/custom-icons/npm-ignore",
     ".npmrc": "../../../../.jetbrains/custom-icons/npm-rc",
@@ -1011,9 +1013,9 @@
   },
   "typescript.tsdk": "/home/linuxbrew/.linuxbrew/opt/typescript/libexec/lib/node_modules/typescript/lib",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "bun.runtime": "/home/linuxbrew/.linuxbrew/bin/bun",
-  "bun.debugTerminal.enabled": true,
-  "bun.debugTerminal.stopOnEntry": false,
+  "deno.enable": true,
+  "deno.lint": true,
+  "deno.path": "/home/linuxbrew/.linuxbrew/bin/deno",
   "[typescriptreact]": {
     "togglequotes.chars": ["\"", "'", "`"],
     "editor.semanticHighlighting.enabled": true,
@@ -1090,6 +1092,7 @@
     "*.tsx": "${capture}.ts",
     "tsconfig.json": "tsconfig.*.json",
     "package.json": "package-lock.json, npm-shrinkwrap.json, yarn.lock, pnpm-lock.yaml, pnpm-workspace.yaml, bun.lockb",
+    "deno.json": "deno.lock",
     ".eslintrc.json": ".eslintignore",
     ".eslintrc.*js": ".eslintignore",
     "eslint.config.*js": ".eslintignore",
@@ -1111,23 +1114,23 @@
   "redhat.telemetry.enabled": true,
   "code-runner.executorMap": {
     "go": "cd $workspaceRoot && go run main.go",
-    "javascript": "bun",
+    "javascript": "deno run",
     "rust": "cd $workspaceRoot && cargo run",
     "shellscript": "bash",
-    "typescript": "bun"
+    "typescript": "deno run"
   },
   "code-runner.executorMapByGlob": {
     "Cargo.toml": "cd $workspaceRoot && cargo build",
-    "next.config.mjs": "cd $workspaceRoot && bun next build",
-    "svelte.config.js": "cd $workspaceRoot && bun vite build",
-    "vite.config.ts": "cd $workspaceRoot && bun vite build",
-    "astro.config.mjs": "cd $workspaceRoot && bun astro build",
+    "next.config.mjs": "cd $workspaceRoot && deno run next build",
+    "svelte.config.js": "cd $workspaceRoot && deno run vite build",
+    "vite.config.ts": "cd $workspaceRoot && deno run vite build",
+    "astro.config.mjs": "cd $workspaceRoot && deno run astro build",
     "go.mod": "cd $workspaceRoot && go build",
     "pom.xml": "cd $workspaceRoot && mvn clean package"
   },
   "code-runner.executorMapByFileExtension": {
-    ".svelte": "cd $workspaceRoot && bun vite dev",
-    ".astro": "cd $workspaceRoot && bun astro dev",
+    ".svelte": "cd $workspaceRoot && deno run vite dev",
+    ".astro": "cd $workspaceRoot && deno run astro dev",
     ".csproj": "cd $dir && dotnet build",
     ".csx": "csharp"
   },

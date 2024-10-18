@@ -51,8 +51,11 @@ typescript() {
   # Export `Bun.js Binary` to the "Path"
   echo 'export PATH="$HOME/.bun/bin:$PATH"' >>$HOME/.zshrc
 
-  #Prettier
+  # Prettier, StyleLint
   bun add -g prettier stylelint postcss-html postcss-scss
+
+  # Deno
+  brew install deno
 
   package_install "TypeScript"
 }

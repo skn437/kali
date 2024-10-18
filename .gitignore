@@ -37,7 +37,8 @@ lerna-debug.log*
 **/*.log
 **/*.bun
 
-# PNPM, NPM, YARN & Bun Lock Files
+# Deno, PNPM, NPM, YARN & Bun Lock Files
+deno.lock
 pnpm-lock.yaml
 package-lock.json
 yarn.lock
