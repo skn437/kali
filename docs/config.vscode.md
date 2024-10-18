@@ -40,6 +40,7 @@
     "**/bun.lockb": true,
     "**/Cargo.lock": true,
     "**/coverage/**": true,
+    "**/deno.lock": true,
     "**/dist/**": true,
     "**/go.sum": true,
     "**/graphql.d.ts": true,
