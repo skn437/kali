@@ -93,7 +93,7 @@
   "prettier.htmlWhitespaceSensitivity": "css",
   "prettier.jsxSingleQuote": false,
   "prettier.singleAttributePerLine": true,
-  "prettier.prettierPath": "/home/logno-atoshi/.bun/install/global/node_modules/prettier",
+  "prettier.prettierPath": "/home/linuxbrew/.linuxbrew/opt/prettier/libexec/lib/node_modules/prettier",
   "workbench.colorTheme": "Default Dark Modern",
   "workbench.panel.defaultLocation": "right",
   "workbench.panel.opensMaximized": "always",
@@ -900,6 +900,7 @@
   "scss.showErrors": true,
   "css.validate": false,
   "scss.validate": false,
+  "stylelint.enable": true,
   "stylelint.validate": ["css", "postcss", "scss"],
   "[html]": {
     "editor.semanticHighlighting.enabled": true,
