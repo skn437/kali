@@ -48,11 +48,8 @@ typescript() {
   brew tap oven-sh/bun
   brew install bun
 
-  # Export `Bun.js Binary` to the "Path"
-  echo 'export PATH="$HOME/.bun/bin:$PATH"' >>$HOME/.zshrc
-
   # Prettier, StyleLint
-  bun add -g prettier stylelint postcss-html postcss-scss
+  brew install prettier stylelint
 
   # Deno
   brew install deno
