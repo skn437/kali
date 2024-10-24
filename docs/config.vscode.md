@@ -856,6 +856,8 @@
     "root.go": "../../../../.jetbrains/custom-icons/go-root",
     "*.blueprint.go": "../../../../.jetbrains/custom-icons/go-blueprint",
     "go.config.yaml": "../../../../.jetbrains/custom-icons/go-settings",
+    "test.go": "../../../../.jetbrains/custom-icons/go-app-test",
+    "*.test.go": "../../../../.jetbrains/custom-icons/go-test",
     // Miscellaneous
     "pre-commit": "Husky",
     "pre-push": "Husky"
@@ -878,6 +880,34 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "tailwind-fold.foldStyle": "QUOTES",
+  "[postcss]": {
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "scss.lint.important": "warning",
+  "scss.lint.float": "warning",
+  "scss.lint.zeroUnits": "warning",
+  "scss.lint.duplicateProperties": "warning",
+  "scss.lint.boxModel": "ignore",
+  "scss.showErrors": true,
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": ["css", "postcss", "scss"],
+  "[html]": {
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "html.format.indentInnerHtml": true,
   "[cypher]": {
     "editor.tabSize": 2,
     "editor.formatOnSave": false,
@@ -892,13 +922,6 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
-  "[html]": {
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "html.format.indentInnerHtml": true,
   "[ignore]": {
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
@@ -909,18 +932,6 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
-  "[scss]": {
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "scss.lint.important": "warning",
-  "scss.lint.float": "warning",
-  "scss.lint.zeroUnits": "warning",
-  "scss.lint.duplicateProperties": "warning",
-  "scss.lint.boxModel": "ignore",
-  "scss.showErrors": true,
   "[shellscript]": {
     "files.eol": "\n",
     "editor.semanticHighlighting.enabled": true,
@@ -1092,7 +1103,7 @@
     "*.jsx": "${capture}.js",
     "*.tsx": "${capture}.ts",
     "tsconfig.json": "tsconfig.*.json",
-    "package.json": "package-lock.json, npm-shrinkwrap.json, yarn.lock, pnpm-lock.yaml, pnpm-workspace.yaml, bun.lockb",
+    "package.json": "package-lock.json, npm-shrinkwrap.json, yarn.lock, pnpm-lock.yaml, pnpm-workspace.yaml, bun.lockb, deno.lock",
     "deno.json": "deno.lock",
     ".eslintrc.json": ".eslintignore",
     ".eslintrc.*js": ".eslintignore",
@@ -1122,21 +1133,21 @@
   },
   "code-runner.executorMapByGlob": {
     "Cargo.toml": "cd $workspaceRoot && cargo build",
-    "next.config.mjs": "cd $workspaceRoot && deno run next build",
-    "svelte.config.js": "cd $workspaceRoot && deno run vite build",
-    "vite.config.ts": "cd $workspaceRoot && deno run vite build",
-    "astro.config.mjs": "cd $workspaceRoot && deno run astro build",
+    "next.config.mjs": "cd $workspaceRoot && bun next build",
+    "svelte.config.js": "cd $workspaceRoot && bun vite build",
+    "vite.config.ts": "cd $workspaceRoot && bun vite build",
+    "astro.config.mjs": "cd $workspaceRoot && bun astro build",
     "go.mod": "cd $workspaceRoot && go build",
     "pom.xml": "cd $workspaceRoot && mvn clean package"
   },
   "code-runner.executorMapByFileExtension": {
-    ".svelte": "cd $workspaceRoot && deno run vite dev",
-    ".astro": "cd $workspaceRoot && deno run astro dev",
+    ".svelte": "cd $workspaceRoot && bun vite dev",
+    ".astro": "cd $workspaceRoot && bun astro dev",
     ".csproj": "cd $dir && dotnet build",
     ".csx": "csharp"
   },
   "code-runner.clearPreviousOutput": true,
-  "code-runner.runInTerminal": true,
+  "code-runner.runInTerminal": false,
   "code-runner.defaultLanguage": "javascript",
   "emojisense.languages": {
     "aspnetcorerazor": {
@@ -1212,6 +1223,10 @@
       "emojiDecoratorsEnabled": false
     },
     "svg": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "svx": {
       "markupCompletionsEnabled": false,
       "emojiDecoratorsEnabled": false
     },

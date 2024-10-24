@@ -83,8 +83,8 @@ indent_size = 2
 [*.{sh,txt,log}]
 indent_size = 2
 
-# HTML, CSS, Sass, SCSS, Markdown, MDX Files
-[*.{html,css,sass,scss,md,mdx}]
+# HTML, CSS, Sass, SCSS, Markdown, MDX, MDSveX Files
+[*.{html,css,sass,scss,md,mdx,svx}]
 indent_size = 2
 
 # TypeScript, JavaScript Files

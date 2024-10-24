@@ -148,4 +148,4 @@ rust_init() {
   gnome-terminal -- bash -c "printf 'Preparing to initialize rust... \n' && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && rustup-init; read -n 1 KEY"
 }
 
-brew_prepare && devtools && c_cpp && shellscript && typescript && java && csharp && message_broker && kotlin && go && rust && rust_init
+brew_prepare && devtools && shellscript && typescript && java && message_broker && kotlin && go && rust && rust_init
