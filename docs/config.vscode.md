@@ -856,7 +856,7 @@
     "root.go": "../../../../.jetbrains/custom-icons/go-root",
     "*.blueprint.go": "../../../../.jetbrains/custom-icons/go-blueprint",
     "go.config.yaml": "../../../../.jetbrains/custom-icons/go-settings",
-    "test.go": "../../../../.jetbrains/custom-icons/go-app-test",
+    ".goreleaser.yaml": "../../../../.jetbrains/custom-icons/go-release",
     "*.test.go": "../../../../.jetbrains/custom-icons/go-test",
     // Miscellaneous
     "pre-commit": "Husky",
@@ -1095,6 +1095,12 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[svx]": {
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "explorer.compactFolders": true,
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
@@ -1135,14 +1141,14 @@
   "code-runner.executorMapByGlob": {
     "Cargo.toml": "cd $workspaceRoot && cargo build",
     "next.config.mjs": "cd $workspaceRoot && bun next build",
-    "svelte.config.js": "cd $workspaceRoot && bun vite build",
-    "vite.config.ts": "cd $workspaceRoot && bun vite build",
+    "svelte.config.js": "cd $workspaceRoot && deno run vite build",
+    "vite.config.ts": "cd $workspaceRoot && deno run vite build",
     "astro.config.mjs": "cd $workspaceRoot && bun astro build",
     "go.mod": "cd $workspaceRoot && go build",
     "pom.xml": "cd $workspaceRoot && mvn clean package"
   },
   "code-runner.executorMapByFileExtension": {
-    ".svelte": "cd $workspaceRoot && bun vite dev",
+    ".svelte": "cd $workspaceRoot && deno run vite dev",
     ".astro": "cd $workspaceRoot && bun astro dev",
     ".csproj": "cd $dir && dotnet build",
     ".csx": "csharp"
@@ -1253,6 +1259,6 @@
     }
   },
   "testExplorer.useNativeTesting": true,
-  "auto-close-tag.activationOnLanguage": ["ejs", "plaintext", "markdown", "mdx"]
+  "auto-close-tag.activationOnLanguage": ["ejs", "plaintext", "markdown", "mdx", "svx"]
 }
 ```
