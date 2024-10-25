@@ -60,6 +60,7 @@ typescript() {
 java() {
   # Maven & Gradle: It automatically installs `OpenJDK` To its latest version
   brew install maven gradle
+  brew install openjdk@21
 
   # Export `Java Home` to the "Path"
   echo 'export JAVA_HOME="/home/linuxbrew/.linuxbrew/opt/openjdk/libexec"' >>$HOME/.zshrc
@@ -122,8 +123,8 @@ go() {
   # Go tools
   brew install gopls delve staticcheck
 
-  # Go Task & Lefthook
-  brew install go-task lefthook
+  # Go Task, Lefthook & Go Releaser
+  brew install go-task lefthook goreleaser
 
   package_install "Go"
 }
@@ -145,4 +146,4 @@ rust_init() {
   gnome-terminal -- bash -c "printf 'Preparing to initialize rust... \n' && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && rustup-init; read -n 1 KEY"
 }
 
-brew_prepare && devtools && shellscript && typescript && java && message_broker && kotlin && go && rust && rust_init
+brew_prepare && devtools && shellscript && typescript && java && csharp && message_broker && kotlin && go && rust && rust_init
