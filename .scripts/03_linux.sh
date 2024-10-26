@@ -74,25 +74,6 @@ java() {
   package_install "Java"
 }
 
-csharp() {
-  # .Net Core
-  brew install dotnet
-
-  # Export `.Net Root` to the "Path"
-  echo 'export DOTNET_ROOT="$HOME/.dotnet"' >>$HOME/.zshrc
-
-  # .Net Mono
-  brew install mono
-
-  # Export `Mono GAC Prefix` to the "Path"
-  echo 'export MONO_GAC_PREFIX="/home/linuxbrew/.linuxbrew"' >>$HOME/.zshrc
-
-  # Add everything to the "Path"
-  echo 'export PATH="$DOTNET_ROOT:$MONO_GAC_PREFIX:$PATH"' >>$HOME/.zshrc
-
-  package_install "C#"
-}
-
 message_broker() {
   # Kafka: It automatically installs `Zookeeper` to its latest version
   brew install kafka
@@ -129,6 +110,30 @@ go() {
   package_install "Go"
 }
 
+csharp() {
+  # .Net Core
+  brew install dotnet
+
+  # Export `.Net Root` to the "Path"
+  echo 'export DOTNET_ROOT="$HOME/.dotnet"' >>$HOME/.zshrc
+
+  # .Net Mono
+  brew install mono
+
+  # Export `Mono GAC Prefix` to the "Path"
+  echo 'export MONO_GAC_PREFIX="/home/linuxbrew/.linuxbrew"' >>$HOME/.zshrc
+
+  # Add everything to the "Path"
+  echo 'export PATH="$DOTNET_ROOT:$MONO_GAC_PREFIX:$PATH"' >>$HOME/.zshrc
+
+  package_install "C#"
+}
+
+csharp_init() {
+  # Delete Existing .Net (If Present)
+  gnome-terminal -- bash -c "printf 'Preparing to initialize csharp... \n' && sudo rm -rfv /usr/share/dotnet; read -n 1 KEY"
+}
+
 rust() {
   # Rust
   brew install rustup-init
@@ -144,6 +149,7 @@ rust() {
 rust_init() {
   # Initialize Rust toolchains
   gnome-terminal -- bash -c "printf 'Preparing to initialize rust... \n' && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && rustup-init; read -n 1 KEY"
+
 }
 
-brew_prepare && devtools && shellscript && typescript && java && csharp && message_broker && kotlin && go && rust && rust_init
+brew_prepare && devtools && shellscript && typescript && java && message_broker && kotlin && go && csharp && csharp_init

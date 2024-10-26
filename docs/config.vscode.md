@@ -1011,12 +1011,6 @@
   "gopls": {
     "ui.semanticTokens": false
   },
-  "[rust]": {
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "statiolake.vscode-rustfmt"
-  },
   "[typescript]": {
     "togglequotes.chars": ["\"", "'", "`"],
     "editor.semanticHighlighting.enabled": true,
@@ -1141,14 +1135,14 @@
   "code-runner.executorMapByGlob": {
     "Cargo.toml": "cd $workspaceRoot && cargo build",
     "next.config.mjs": "cd $workspaceRoot && bun next build",
-    "svelte.config.js": "cd $workspaceRoot && deno run vite build",
-    "vite.config.ts": "cd $workspaceRoot && deno run vite build",
+    "svelte.config.js": "cd $workspaceRoot && bun vite build",
+    "vite.config.ts": "cd $workspaceRoot && bun vite build",
     "astro.config.mjs": "cd $workspaceRoot && bun astro build",
     "go.mod": "cd $workspaceRoot && go build",
     "pom.xml": "cd $workspaceRoot && mvn clean package"
   },
   "code-runner.executorMapByFileExtension": {
-    ".svelte": "cd $workspaceRoot && deno run vite dev",
+    ".svelte": "cd $workspaceRoot && bun vite dev",
     ".astro": "cd $workspaceRoot && bun astro dev",
     ".csproj": "cd $dir && dotnet build",
     ".csx": "csharp"
@@ -1258,7 +1252,6 @@
       "emojiDecoratorsEnabled": false
     }
   },
-  "testExplorer.useNativeTesting": true,
   "auto-close-tag.activationOnLanguage": ["ejs", "plaintext", "markdown", "mdx", "svx"]
 }
 ```
