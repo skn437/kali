@@ -49,7 +49,8 @@ typescript() {
   brew install bun
 
   # Prettier, StyleLint
-  brew install prettier stylelint
+  brew install prettier
+  bun add -g stylelint postcss-html postcss-scss
 
   # Deno
   brew install deno
