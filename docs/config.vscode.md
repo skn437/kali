@@ -101,6 +101,7 @@
   "workbench.productIconTheme": "material-product-icons",
   "material-icon-theme.folders.associations": {
     // Output
+    "publish": "../../../../../../.jetbrains/custom-icons/publish-folder",
     ".output": "../../../../../../.jetbrains/custom-icons/output-folder",
     "build": "../../../../../../.jetbrains/custom-icons/build-folder",
     "bin": "../../../../../../.jetbrains/custom-icons/bin-folder",
