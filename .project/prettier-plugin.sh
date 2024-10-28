@@ -2,24 +2,34 @@
 
 set -e
 
-LINUX="kali"
+PRETTIER_PLUGIN=""
 
-PRETTIER_PLUGIN="svelte"
-
-while getopts "a" OPTION; do
+while getopts "p:" OPTION; do
   case "$OPTION" in
-  a)
-    PRETTIER_PLUGIN="astro"
+  p)
+    PRETTIER_PLUGIN="$OPTARG"
     ;;
   ?)
-    printf "Script Usage: %s \n" "bash (script) [-a]"
+    printf "Script Usage: %s \n" "bash (script) [-p plugin-name]"
     exit 1
     ;;
   esac
 done
 
+LINUX="kali"
+
 message() {
   printf "'%s' Added! ✅ \n" "$1"
+}
+
+# Prettier Plugin array
+PRETTIER_PLUGIN_ARRAY=("svelte" "astro" "java")
+
+plugin_error_message() {
+  printf "Specify a valid prettier plugin: "
+  printf "'%s' " "$PRETTIER_PLUGIN_ARRAY[@]"
+  printf "\n"
+  exit 1
 }
 
 prettier_plugin() {
@@ -27,15 +37,20 @@ prettier_plugin() {
   PRETTIER_FORMAT=".prettierrc.yaml"
 
   # Prettier Plugin file
-  PRETTIER_PLUGIN_FILE="prettier-svelte.txt"
-
-  if test "$PRETTIER_PLUGIN" == "astro"; then
-    PRETTIER_PLUGIN_FILE="prettier-astro.txt"
-  fi
+  PRETTIER_PLUGIN_FILE="prettier-$PRETTIER_PLUGIN.txt"
 
   curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/.project/helpers/${PRETTIER_PLUGIN_FILE}" >>"./${PRETTIER_FORMAT}"
 
   message "Prettier Plugin Config File"
 }
 
-prettier_plugin
+if test "$PRETTIER_PLUGIN" == ""; then
+  plugin_error_message
+fi
+
+for element in "$PRETTIER_PLUGIN_ARRAY[@]"; do
+  if test "$PRETTIER_PLUGIN" == "$element"; then
+    prettier_plugin
+    exit
+  fi
+done

@@ -52,9 +52,13 @@ typescript() {
   brew install deno
 
   # Prettier, StyleLint
-  brew install prettier
+  bun add -g prettier
+  bun add -g prettier-plugin-svelte prettier-plugin-tailwindcss prettier-plugin-astro prettier-plugin-java
   bun add -g stylelint postcss-html postcss-scss
   bun add -g stylelint-config-standard stylelint-config-standard-scss stylelint-config-html
+
+  # Export `Bun.js Binary` to the "Path"
+  echo 'export PATH="$HOME/.bun/bin:$PATH"' >>$HOME/.zshrc
 
   STYLELINT_LOCATION="$HOME/.bun/install/global"
 
