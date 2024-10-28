@@ -174,6 +174,7 @@
     "objects": "../../../../../../.jetbrains/custom-icons/singleton-folder",
     "artifact": "../../../../../../.jetbrains/custom-icons/artifact-folder",
     "artifacts": "../../../../../../.jetbrains/custom-icons/artifact-folder",
+    "security": "../../../../../../.jetbrains/custom-icons/security-folder",
     // .Net
     "record": "../../../../../../.jetbrains/custom-icons/record-folder",
     "records": "../../../../../../.jetbrains/custom-icons/record-folder",
