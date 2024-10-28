@@ -48,12 +48,22 @@ typescript() {
   brew tap oven-sh/bun
   brew install bun
 
+  # Deno
+  brew install deno
+
   # Prettier, StyleLint
   brew install prettier
   bun add -g stylelint postcss-html postcss-scss
+  bun add -g stylelint-config-standard stylelint-config-standard-scss stylelint-config-html
 
-  # Deno
-  brew install deno
+  STYLELINT_LOCATION="$HOME/.bun/install/global"
+
+  if test -d "$STYLELINT_LOCATION"; then
+    cd "$STYLELINT_LOCATION"
+    curl -sSL "https://raw.githubusercontent.com/skn437/kali/master/.project/editor.sh" | bash -s -- -s
+    curl -sSL "https://raw.githubusercontent.com/skn437/kali/master/.project/ignore.sh" | bash -s -- -s
+    cd "$HOME"
+  fi
 
   package_install "TypeScript"
 }
