@@ -905,6 +905,8 @@
   "css.validate": false,
   "scss.validate": false,
   "stylelint.enable": true,
+  "stylelint.stylelintPath": "/home/logno-atoshi/.bun/install/global/node_modules/stylelint",
+  "stylelint.configFile": "/home/logno-atoshi/.bun/install/global/.stylelintrc.yaml",
   "stylelint.validate": ["css", "postcss", "scss"],
   "[html]": {
     "editor.semanticHighlighting.enabled": true,
