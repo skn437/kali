@@ -1,6 +1,5 @@
 plugins:
   - "prettier-plugin-java"
-  - "prettier-plugin-tailwindcss"
 overrides:
   - files: "*.java"
     options:
