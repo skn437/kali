@@ -5,7 +5,6 @@ xmlWhitespaceSensitivity: "strict"
 plugins:
   - "prettier-plugin-java"
   - "@prettier/plugin-xml"
-  - "prettier-plugin-properties"
   - "prettier-plugin-toml"
 overrides:
   - files: "*.java"
@@ -15,10 +14,6 @@ overrides:
   - files: "*.xml"
     options:
       parser: "xml"
-
-  - files: "*.properties"
-    options:
-      parser: "properties"
 
   - files: "*.toml"
     options:
