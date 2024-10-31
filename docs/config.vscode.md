@@ -99,6 +99,7 @@
   "workbench.panel.opensMaximized": "always",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "material-product-icons",
+  "workbench.panel.showLabels": false,
   "material-icon-theme.folders.associations": {
     // Output
     "publish": "../../../../../../.jetbrains/custom-icons/publish-folder",
@@ -1023,6 +1024,34 @@
   },
   "gopls": {
     "ui.semanticTokens": false
+  },
+  "[java]": {
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "hyperproof.vscode-ext-prettier-java"
+  },
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-21",
+      "path": "/home/linuxbrew/.linuxbrew/opt/openjdk@21/libexec",
+      "default": true
+    }
+  ],
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "[gradle]": {
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscjava.vscode-gradle"
+  },
+  "[gradle-build]": {
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscjava.vscode-gradle"
   },
   "[typescript]": {
     "togglequotes.chars": ["\"", "'", "`"],
