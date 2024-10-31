@@ -1,6 +1,25 @@
+xmlQuoteAttributes: "double"
+xmlSelfClosingSpace: true
+xmlSortAttributesByKey: false
+xmlWhitespaceSensitivity: "strict"
 plugins:
   - "prettier-plugin-java"
+  - "@prettier/plugin-xml"
+  - "prettier-plugin-properties"
+  - "prettier-plugin-toml"
 overrides:
   - files: "*.java"
     options:
       parser: "java"
+
+  - files: "*.xml"
+    options:
+      parser: "xml"
+
+  - files: "*.properties"
+    options:
+      parser: "properties"
+
+  - files: "*.toml"
+    options:
+      parser: "toml"
