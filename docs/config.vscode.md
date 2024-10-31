@@ -100,6 +100,11 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "material-product-icons",
   "workbench.panel.showLabels": false,
+  "workbench.colorCustomizations": {
+    "[Default Dark Modern]": {
+      "gitDecoration.ignoredResourceForeground": "#434343"
+    }
+  },
   "material-icon-theme.folders.associations": {
     // Output
     "publish": "../../../../../../.jetbrains/custom-icons/publish-folder",
@@ -260,6 +265,12 @@
     "backup": "../../../../../../.jetbrains/custom-icons/archive-folder",
     "project": "../../../../../../.jetbrains/custom-icons/project-folder",
     ".project": "../../../../../../.jetbrains/custom-icons/project-folder",
+    "projects": "../../../../../../.jetbrains/custom-icons/project-folder",
+    ".projects": "../../../../../../.jetbrains/custom-icons/project-folder",
+    "workbench": "../../../../../../.jetbrains/custom-icons/project-folder",
+    ".workbench": "../../../../../../.jetbrains/custom-icons/project-folder",
+    "workbenchs": "../../../../../../.jetbrains/custom-icons/project-folder",
+    ".workbenchs": "../../../../../../.jetbrains/custom-icons/project-folder",
     ".vscode": "../../../../../../.jetbrains/custom-icons/vscode-folder",
     "icon": "../../../../../../.jetbrains/custom-icons/icon-folder",
     "icons": "../../../../../../.jetbrains/custom-icons/icon-folder",
@@ -1052,6 +1063,11 @@
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "vscjava.vscode-gradle"
+  },
+  "[gradle-kotlin-dsl]": {
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
   },
   "[typescript]": {
     "togglequotes.chars": ["\"", "'", "`"],

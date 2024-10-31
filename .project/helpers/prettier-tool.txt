@@ -5,15 +5,10 @@ xmlWhitespaceSensitivity: "strict"
 escapeNonLatin1: false
 keySeparator: "="
 plugins:
-  - "prettier-plugin-java"
   - "@prettier/plugin-xml"
   - "prettier-plugin-toml"
   - "prettier-plugin-properties"
 overrides:
-  - files: "*.java"
-    options:
-      parser: "java"
-
   - files: "*.xml"
     options:
       parser: "xml"
