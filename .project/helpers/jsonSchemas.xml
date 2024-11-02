@@ -53,6 +53,9 @@
                     <option name="path" value=".project/taskfile.yaml" />
                   </Item>
                   <Item>
+                    <option name="path" value=".workspace/taskfile.yaml" />
+                  </Item>
+                  <Item>
                     <option name="path" value="taskfile.yaml" />
                   </Item>
                   <Item>
