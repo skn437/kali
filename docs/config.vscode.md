@@ -95,7 +95,7 @@
   "prettier.jsxSingleQuote": false,
   "prettier.singleAttributePerLine": true,
   "prettier.prettierPath": "/home/linuxbrew/.linuxbrew/opt/prettier/libexec/lib/node_modules/prettier",
-  "workbench.colorTheme": "One dark sweet",
+  "workbench.colorTheme": "Default Dark Modern",
   "workbench.panel.defaultLocation": "right",
   "workbench.panel.opensMaximized": "always",
   "workbench.iconTheme": "material-icon-theme",
@@ -1192,6 +1192,7 @@
   "redhat.telemetry.enabled": true,
   "code-runner.executorMap": {
     "go": "cd $workspaceRoot && go run main.go",
+    "java": "cd $workspaceRoot && printf 'Use Java Extension To Run Java Instead! \n'",
     "javascript": "deno run",
     "rust": "cd $workspaceRoot && cargo run",
     "shellscript": "bash",
@@ -1204,7 +1205,9 @@
     "vite.config.ts": "cd $workspaceRoot && bun vite build",
     "astro.config.mjs": "cd $workspaceRoot && bun astro build",
     "go.mod": "cd $workspaceRoot && go build",
-    "pom.xml": "cd $workspaceRoot && mvn clean package"
+    "pom.xml": "cd $workspaceRoot && mvn clean package",
+    "build.gradle.kts": "cd $workspaceRoot && gradle clean build",
+    "settings.gradle.kts": "cd $workspaceRoot && gradle clean build"
   },
   "code-runner.executorMapByFileExtension": {
     ".svelte": "cd $workspaceRoot && bun vite dev",
