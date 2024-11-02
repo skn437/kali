@@ -95,7 +95,7 @@
   "prettier.jsxSingleQuote": false,
   "prettier.singleAttributePerLine": true,
   "prettier.prettierPath": "/home/linuxbrew/.linuxbrew/opt/prettier/libexec/lib/node_modules/prettier",
-  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.colorTheme": "One dark sweet",
   "workbench.panel.defaultLocation": "right",
   "workbench.panel.opensMaximized": "always",
   "workbench.iconTheme": "material-icon-theme",
@@ -104,6 +104,14 @@
   "workbench.colorCustomizations": {
     "[Default Dark Modern]": {
       "gitDecoration.ignoredResourceForeground": "#434343"
+    },
+    "[One dark sweet]": {
+      "gitDecoration.ignoredResourceForeground": "#434343"
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "[One dark sweet]": {
+      "keywords": "#5d70fb"
     }
   },
   "material-icon-theme.folders.associations": {
