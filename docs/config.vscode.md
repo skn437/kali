@@ -104,14 +104,6 @@
   "workbench.colorCustomizations": {
     "[Default Dark Modern]": {
       "gitDecoration.ignoredResourceForeground": "#434343"
-    },
-    "[One dark sweet]": {
-      "gitDecoration.ignoredResourceForeground": "#434343"
-    }
-  },
-  "editor.tokenColorCustomizations": {
-    "[One dark sweet]": {
-      "keywords": "#5d70fb"
     }
   },
   "material-icon-theme.folders.associations": {
@@ -933,9 +925,9 @@
   "scss.lint.duplicateProperties": "warning",
   "scss.lint.boxModel": "ignore",
   "scss.showErrors": true,
-  "css.validate": true,
-  "scss.validate": true,
-  "stylelint.enable": false,
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
   "stylelint.validate": ["css", "postcss", "scss"],
   "[html]": {
     "editor.semanticHighlighting.enabled": true,
