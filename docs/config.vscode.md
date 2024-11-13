@@ -104,6 +104,14 @@
   "workbench.colorCustomizations": {
     "[Default Dark Modern]": {
       "gitDecoration.ignoredResourceForeground": "#434343"
+    },
+    "[One dark sweet]": {
+      "gitDecoration.ignoredResourceForeground": "#434343"
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "[One dark sweet]": {
+      "keywords": "#5d70fb"
     }
   },
   "material-icon-theme.folders.associations": {
@@ -694,10 +702,16 @@
     "support/component.ts": "../../../../.jetbrains/custom-icons/cypress-setup",
     "support/component-index.html": "../../../../.jetbrains/custom-icons/cypress-html",
     "fixtures/example.json": "../../../../.jetbrains/custom-icons/cypress-json",
+    ".storybook/main.ts": "../../../../.jetbrains/custom-icons/storybook-config",
+    ".storybook/main.js": "../../../../.jetbrains/custom-icons/storybook-config",
+    ".storybook/preview.ts": "../../../../.jetbrains/custom-icons/storybook-config",
+    ".storybook/preview.js": "../../../../.jetbrains/custom-icons/storybook-config",
     "*.story.ts": "../../../../.jetbrains/custom-icons/storybook",
     "*.story.tsx": "../../../../.jetbrains/custom-icons/storybook",
+    "*.story.svelte": "../../../../.jetbrains/custom-icons/storybook",
     "*.stories.ts": "../../../../.jetbrains/custom-icons/storybook",
     "*.stories.tsx": "../../../../.jetbrains/custom-icons/storybook",
+    "*.stories.svelte": "../../../../.jetbrains/custom-icons/storybook",
     "graphql.schema.ts": "../../../../.jetbrains/custom-icons/graphql-codegen",
     "graphql.operation.ts": "../../../../.jetbrains/custom-icons/graphql-codegen",
     "graphql.resolver.ts": "../../../../.jetbrains/custom-icons/graphql-codegen",
