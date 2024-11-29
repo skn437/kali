@@ -52,7 +52,7 @@ typescript() {
   brew install deno
 
   # Prettier, StyleLint
-  brew install prettier
+  bun add -g prettier
   bun add -g stylelint postcss-html postcss-scss
   bun add -g stylelint-config-standard stylelint-config-standard-scss stylelint-config-html
 
@@ -63,8 +63,8 @@ typescript() {
 
   if test -d "$STYLELINT_LOCATION"; then
     cd "$STYLELINT_LOCATION"
-    curl -sSL "https://raw.githubusercontent.com/skn437/kali/master/.project/editor.sh" | bash -s -- -s
-    curl -sSL "https://raw.githubusercontent.com/skn437/kali/master/.project/ignore.sh" | bash -s -- -s
+    curl -sSL "https://raw.githubusercontent.com/skn437/kali/master/.project/editor.sh" | bash -s -- -ps
+    curl -sSL "https://raw.githubusercontent.com/skn437/kali/master/.project/ignore.sh" | bash -s -- -ps
     cd "$HOME"
   fi
 
