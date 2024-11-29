@@ -57,7 +57,7 @@ typescript() {
   bun add -g stylelint-config-standard stylelint-config-standard-scss stylelint-config-html
 
   # Export `Bun.js Binary` to the "Path"
-  # echo 'export PATH="$HOME/.bun/bin:$PATH"' >>$HOME/.zshrc
+  echo 'export PATH="$HOME/.bun/bin:$PATH"' >>$HOME/.zshrc
 
   STYLELINT_LOCATION="$HOME/.bun/install/global"
 
