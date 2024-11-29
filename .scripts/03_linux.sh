@@ -74,7 +74,6 @@ typescript() {
 java() {
   # Maven & Gradle: It automatically installs `OpenJDK` To its latest version
   brew install maven gradle
-  brew install openjdk@21
 
   # Export `Java Home` to the "Path"
   echo 'export JAVA_HOME="/home/linuxbrew/.linuxbrew/opt/openjdk/libexec"' >>$HOME/.zshrc
@@ -82,8 +81,11 @@ java() {
   # Add everything to the "Path"
   echo 'export PATH="$JAVA_HOME:$PATH"' >>$HOME/.zshrc
 
-  # Create a maven settings XML file
+  # Create a maven settings directory
   mkdir -p $HOME/.m2
+
+  # Create a gradle settings directory
+  mkdir -p $HOME/.gradle
 
   package_install "Java"
 }
@@ -125,9 +127,6 @@ go() {
 }
 
 csharp() {
-  # .Net Core
-  brew install dotnet
-
   # Export `.Net Root` to the "Path"
   echo 'export DOTNET_ROOT="$HOME/.dotnet"' >>$HOME/.zshrc
 
