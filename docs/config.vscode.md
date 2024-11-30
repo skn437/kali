@@ -95,7 +95,7 @@
   "prettier.jsxSingleQuote": false,
   "prettier.singleAttributePerLine": true,
   "prettier.prettierPath": "/home/linuxbrew/.linuxbrew/opt/prettier/libexec/lib/node_modules/prettier",
-  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.colorTheme": "One dark sweet",
   "workbench.panel.defaultLocation": "right",
   "workbench.panel.opensMaximized": "always",
   "workbench.iconTheme": "material-icon-theme",
@@ -1206,10 +1206,10 @@
   "code-runner.executorMap": {
     "go": "cd $workspaceRoot && go run main.go",
     "java": "cd $workspaceRoot && printf 'Use Java Extension To Run Java Instead! \n'",
-    "javascript": "deno run",
+    "javascript": "bun",
     "rust": "cd $workspaceRoot && cargo run",
     "shellscript": "bash",
-    "typescript": "deno run"
+    "typescript": "bun"
   },
   "code-runner.executorMapByGlob": {
     "Cargo.toml": "cd $workspaceRoot && cargo build",

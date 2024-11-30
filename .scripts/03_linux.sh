@@ -52,6 +52,7 @@ typescript() {
   brew install deno
 
   # Prettier, StyleLint
+  brew install prettier
   bun add -g prettier
   bun add -g stylelint postcss-html postcss-scss
   bun add -g stylelint-config-standard stylelint-config-standard-scss stylelint-config-html
@@ -75,11 +76,14 @@ java() {
   # Maven & Gradle: It automatically installs `OpenJDK` To its latest version
   brew install maven gradle
 
+  # Open JDK 21
+  brew install openjdk@21
+
   # Export `Java Home` to the "Path"
-  echo 'export JAVA_HOME="/home/linuxbrew/.linuxbrew/opt/openjdk/libexec"' >>$HOME/.zshrc
+  echo 'export JAVA_HOME="$HOME/.jdks/corretto-21.0.5"' >>$HOME/.zshrc
 
   # Add everything to the "Path"
-  echo 'export PATH="$JAVA_HOME:$PATH"' >>$HOME/.zshrc
+  echo 'export PATH="$JAVA_HOME/bin:$PATH"' >>$HOME/.zshrc
 
   # Create a maven settings directory
   mkdir -p $HOME/.m2
