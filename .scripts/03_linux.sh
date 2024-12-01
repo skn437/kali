@@ -112,7 +112,7 @@ kotlin() {
 }
 
 go() {
-  #Go
+  # Go
   brew install go
 
   # Export `Go Root` to the "Path"
@@ -131,6 +131,9 @@ go() {
 }
 
 csharp() {
+  # .Net
+  brew install dotnet
+
   # Export `.Net Root` to the "Path"
   echo 'export DOTNET_ROOT="$HOME/.dotnet"' >>$HOME/.zshrc
 
@@ -169,4 +172,4 @@ rust_init() {
 
 }
 
-brew_prepare && devtools && shellscript && typescript && java && message_broker && kotlin && go && csharp && csharp_init
+brew_prepare && devtools && c_cpp && shellscript && typescript && java && message_broker && kotlin && go && csharp && csharp_init
