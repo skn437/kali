@@ -50,6 +50,7 @@
     "**/node_modules/**": true,
     "**/npm-shrinkwrap.json": true,
     "**/obj/**": true,
+    "**/out/**": true,
     "**/package-lock.json": true,
     "**/pnpm-lock.yaml": true,
     "**/target/**": true,
@@ -95,7 +96,7 @@
   "prettier.jsxSingleQuote": false,
   "prettier.singleAttributePerLine": true,
   "prettier.prettierPath": "/home/linuxbrew/.linuxbrew/opt/prettier/libexec/lib/node_modules/prettier",
-  "workbench.colorTheme": "One dark sweet",
+  "workbench.colorTheme": "Default Dark Modern",
   "workbench.panel.defaultLocation": "right",
   "workbench.panel.opensMaximized": "always",
   "workbench.iconTheme": "material-icon-theme",
@@ -118,6 +119,7 @@
     // Output
     "publish": "../../../../../../.jetbrains/custom-icons/publish-folder",
     ".output": "../../../../../../.jetbrains/custom-icons/output-folder",
+    "out": "../../../../../../.jetbrains/custom-icons/output-folder",
     "build": "../../../../../../.jetbrains/custom-icons/build-folder",
     "bin": "../../../../../../.jetbrains/custom-icons/bin-folder",
     "obj": "../../../../../../.jetbrains/custom-icons/object-folder",
@@ -885,6 +887,8 @@
     "*.cpp": "../../../../.jetbrains/custom-icons/cpp",
     "main.cpp": "../../../../.jetbrains/custom-icons/cpp-main",
     "*.test.cpp": "../../../../.jetbrains/custom-icons/cmake-test",
+    "CMakeLists.txt": "../../../../.jetbrains/custom-icons/cmake",
+    "CMakePresets.json": "../../../../.jetbrains/custom-icons/cmake-preset",
     // Go
     "*.go": "../../../../.jetbrains/custom-icons/go",
     "go.mod": "../../../../.jetbrains/custom-icons/go-mod",
@@ -1071,6 +1075,12 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "xaver.clang-format"
   },
+  "[cmake]": {
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2
+  },
+  "cmake.options.statusBarVisibility": "icon",
+  "cmake.pinnedCommands": ["workbench.action.tasks.configureTaskRunner", "workbench.action.tasks.runTask"],
   "[java]": {
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.semanticHighlighting.enabled": true,
@@ -1216,8 +1226,8 @@
   },
   "redhat.telemetry.enabled": true,
   "code-runner.executorMap": {
-    "c": "cd $dir && clang $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "cpp": "cd $dir && clang++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "c": "cd $dir && mkdir -p .output && clang $fileName -o .output/$fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "cd $dir && mkdir -p .output && clang++ $fileName -o .output/$fileNameWithoutExt && $dir$fileNameWithoutExt",
     "go": "cd $workspaceRoot && go run main.go",
     "java": "cd $workspaceRoot && printf 'Use Java Extension To Run Java Instead! \n'",
     "javascript": "bun",
