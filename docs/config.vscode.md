@@ -105,14 +105,6 @@
   "workbench.colorCustomizations": {
     "[Default Dark Modern]": {
       "gitDecoration.ignoredResourceForeground": "#434343"
-    },
-    "[One dark sweet]": {
-      "gitDecoration.ignoredResourceForeground": "#434343"
-    }
-  },
-  "editor.tokenColorCustomizations": {
-    "[One dark sweet]": {
-      "keywords": "#5d70fb"
     }
   },
   "material-icon-theme.folders.associations": {
@@ -883,10 +875,11 @@
     // C & C++
     "*.c": "../../../../.jetbrains/custom-icons/c",
     "main.c": "../../../../.jetbrains/custom-icons/c-main",
-    "*.test.c": "../../../../.jetbrains/custom-icons/cmake-test",
+    "*_test.c": "../../../../.jetbrains/custom-icons/cmake-test",
     "*.cpp": "../../../../.jetbrains/custom-icons/cpp",
     "main.cpp": "../../../../.jetbrains/custom-icons/cpp-main",
-    "*.test.cpp": "../../../../.jetbrains/custom-icons/cmake-test",
+    "*_test.cpp": "../../../../.jetbrains/custom-icons/cmake-test",
+    "*_class.cpp": "../../../../.jetbrains/custom-icons/cpp-type",
     "CMakeLists.txt": "../../../../.jetbrains/custom-icons/cmake",
     "CMakePresets.json": "../../../../.jetbrains/custom-icons/cmake-preset",
     // Go
@@ -899,6 +892,7 @@
     "*.function.go": "../../../../.jetbrains/custom-icons/go-function",
     "env.go": "../../../../.jetbrains/custom-icons/env",
     "reader.go": "../../../../.jetbrains/custom-icons/stdio",
+    "stdio.go": "../../../../.jetbrains/custom-icons/stdio",
     "mutex.go": "../../../../.jetbrains/custom-icons/go-tool",
     "waitgroup.go": "../../../../.jetbrains/custom-icons/go-tool",
     "execution.go": "../../../../.jetbrains/custom-icons/go-tool",
@@ -909,10 +903,7 @@
     "*.blueprint.go": "../../../../.jetbrains/custom-icons/go-blueprint",
     "go.config.yaml": "../../../../.jetbrains/custom-icons/go-settings",
     ".goreleaser.yaml": "../../../../.jetbrains/custom-icons/go-release",
-    "*.test.go": "../../../../.jetbrains/custom-icons/go-test",
-    // Miscellaneous
-    "pre-commit": "Husky",
-    "pre-push": "Husky"
+    "*.test.go": "../../../../.jetbrains/custom-icons/go-test"
   },
   "[css]": {
     "editor.semanticHighlighting.enabled": true,
@@ -1077,7 +1068,8 @@
   },
   "[cmake]": {
     "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.formatOnSave": false
   },
   "cmake.options.statusBarVisibility": "icon",
   "cmake.pinnedCommands": ["workbench.action.tasks.configureTaskRunner", "workbench.action.tasks.runTask"],
@@ -1112,7 +1104,7 @@
   "[gradle-kotlin-dsl]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
   "[typescript]": {
     "togglequotes.chars": ["\"", "'", "`"],
@@ -1147,13 +1139,6 @@
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "svelte.enable-ts-plugin": true,
-  "[astro]": {
-    "togglequotes.chars": ["\"", "'", "`"],
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "astro-build.astro-vscode"
-  },
   "[svg]": {
     "editor.autoClosingBrackets": "always",
     "files.trimFinalNewlines": true,
@@ -1189,12 +1174,6 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[svx]": {
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "explorer.compactFolders": true,
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
@@ -1219,10 +1198,10 @@
     "go.mod": "go.sum",
     "Cargo.toml": "Cargo.lock",
     "next.config.mjs": "next-env.d.ts",
+    "next.config.ts": "next-env.d.ts",
     "app.html": "app.d.ts",
     "vite.config.ts": "vitest.setup.ts",
-    "jest.config.ts": "jest.setup.ts",
-    "*.razor": "${capture}.razor.scss, ${capture}.razor.css, ${capture}.razor.css.map"
+    "jest.config.ts": "jest.setup.ts"
   },
   "redhat.telemetry.enabled": true,
   "code-runner.executorMap": {
@@ -1238,41 +1217,26 @@
   "code-runner.executorMapByGlob": {
     "Cargo.toml": "cd $workspaceRoot && cargo build",
     "next.config.mjs": "cd $workspaceRoot && bun next build",
+    "next.config.ts": "cd $workspaceRoot && bun next build",
     "svelte.config.js": "cd $workspaceRoot && bun vite build",
     "vite.config.ts": "cd $workspaceRoot && bun vite build",
-    "astro.config.mjs": "cd $workspaceRoot && bun astro build",
     "go.mod": "cd $workspaceRoot && go build",
     "pom.xml": "cd $workspaceRoot && mvn clean package",
     "build.gradle.kts": "cd $workspaceRoot && gradle clean build",
     "settings.gradle.kts": "cd $workspaceRoot && gradle clean build"
   },
   "code-runner.executorMapByFileExtension": {
-    ".svelte": "cd $workspaceRoot && bun vite dev",
-    ".astro": "cd $workspaceRoot && bun astro dev",
-    ".csproj": "cd $dir && dotnet build",
-    ".csx": "csharp"
+    ".svelte": "cd $workspaceRoot && bun vite dev"
   },
   "code-runner.clearPreviousOutput": true,
   "code-runner.runInTerminal": false,
   "code-runner.defaultLanguage": "javascript",
   "emojisense.languages": {
-    "aspnetcorerazor": {
-      "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
-    },
-    "astro": {
-      "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
-    },
     "c": {
       "markupCompletionsEnabled": false,
       "emojiDecoratorsEnabled": false
     },
     "cpp": {
-      "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
-    },
-    "csharp": {
       "markupCompletionsEnabled": false,
       "emojiDecoratorsEnabled": false
     },
@@ -1332,10 +1296,6 @@
       "markupCompletionsEnabled": false,
       "emojiDecoratorsEnabled": false
     },
-    "svx": {
-      "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
-    },
     "toml": {
       "markupCompletionsEnabled": false,
       "emojiDecoratorsEnabled": false
@@ -1357,6 +1317,6 @@
       "emojiDecoratorsEnabled": false
     }
   },
-  "auto-close-tag.activationOnLanguage": ["ejs", "plaintext", "markdown", "mdx", "svx"]
+  "auto-close-tag.activationOnLanguage": ["ejs", "plaintext", "markdown", "mdx"]
 }
 ```

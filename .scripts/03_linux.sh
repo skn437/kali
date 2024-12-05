@@ -156,7 +156,7 @@ csharp_init() {
 
 rust() {
   # Rust
-  brew install rustup-init
+  brew install rustup
 
   # SCCache
   brew install sccache
