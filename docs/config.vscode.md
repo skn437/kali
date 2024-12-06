@@ -876,10 +876,11 @@
     "*.c": "../../../../.jetbrains/custom-icons/c",
     "main.c": "../../../../.jetbrains/custom-icons/c-main",
     "*_test.c": "../../../../.jetbrains/custom-icons/cmake-test",
+    "*.h": "../../../../.jetbrains/custom-icons/h",
     "*.cpp": "../../../../.jetbrains/custom-icons/cpp",
     "main.cpp": "../../../../.jetbrains/custom-icons/cpp-main",
     "*_test.cpp": "../../../../.jetbrains/custom-icons/cmake-test",
-    "*_class.cpp": "../../../../.jetbrains/custom-icons/cpp-type",
+    "*.hpp": "../../../../.jetbrains/custom-icons/hpp",
     "CMakeLists.txt": "../../../../.jetbrains/custom-icons/cmake",
     "CMakePresets.json": "../../../../.jetbrains/custom-icons/cmake-preset",
     // Go
