@@ -546,6 +546,7 @@
     "*.ServiceImpl.kt": "../../../../.jetbrains/custom-icons/spring-service-impl",
     "*.Controller.kt": "../../../../.jetbrains/custom-icons/spring-controller",
     "*.Configuration.kt": "../../../../.jetbrains/custom-icons/spring-configuration",
+    "*.Component.kt": "../../../../.jetbrains/custom-icons/spring-component",
     "*.Advice.kt": "../../../../.jetbrains/custom-icons/spring-controller-advice",
     "*.Property.kt": "../../../../.jetbrains/custom-icons/spring-property",
     "*.Repository.kt": "../../../../.jetbrains/custom-icons/spring-repository",
