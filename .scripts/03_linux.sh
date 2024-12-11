@@ -155,9 +155,6 @@ csharp_init() {
 }
 
 rust() {
-  # Rust
-  brew install rustup
-
   # SCCache
   brew install sccache
 
@@ -168,8 +165,7 @@ rust() {
 
 rust_init() {
   # Initialize Rust toolchains
-  gnome-terminal -- bash -c "printf 'Preparing to initialize rust... \n' && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && rustup-init; read -n 1 KEY"
-
+  gnome-terminal -- bash -c "printf 'Preparing to initialize rust... \n' && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh; read -n 1 KEY"
 }
 
 brew_prepare && devtools && c_cpp && shellscript && typescript && java && message_broker && kotlin && go && csharp && csharp_init

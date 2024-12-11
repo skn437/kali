@@ -142,6 +142,7 @@
     "generated": "../../../../../../.jetbrains/custom-icons/generator-folder",
     "nodes": "../../../../../../.jetbrains/custom-icons/nodes-folder",
     ".kotlin": "../../../../../../.jetbrains/custom-icons/kotlin-output-folder",
+    ".cmake": "../../../../../../.jetbrains/custom-icons/cmake-output-folder",
     // Database
     "mongo": "../../../../../../.jetbrains/custom-icons/mongo-folder",
     "neo4j": "../../../../../../.jetbrains/custom-icons/neo4j-folder",
@@ -370,7 +371,9 @@
     "NavigationBar": "../../../../../../.jetbrains/custom-icons/path-layout-folder",
     "BackgroundImage": "../../../../../../.jetbrains/custom-icons/path-general-folder",
     "ProgressBar": "../../../../../../.jetbrains/custom-icons/path-general-folder",
-    "ThemeSwitch": "../../../../../../.jetbrains/custom-icons/path-general-folder"
+    "ThemeSwitch": "../../../../../../.jetbrains/custom-icons/path-general-folder",
+    // C & C++
+    "CMakeFiles": "../../../../../../.jetbrains/custom-icons/cmake-folder"
   },
   "material-icon-theme.files.associations": {
     // .Env
@@ -882,8 +885,10 @@
     "main.cpp": "../../../../.jetbrains/custom-icons/cpp-main",
     "*_test.cpp": "../../../../.jetbrains/custom-icons/cmake-test",
     "*.hpp": "../../../../.jetbrains/custom-icons/hpp",
-    "CMakeLists.txt": "../../../../.jetbrains/custom-icons/cmake",
+    "*.cmake": "../../../../.jetbrains/custom-icons/cmake",
+    "CMakeLists.txt": "../../../../.jetbrains/custom-icons/cmake-list",
     "CMakePresets.json": "../../../../.jetbrains/custom-icons/cmake-preset",
+    "CMakeCache.txt": "../../../../.jetbrains/custom-icons/cmake-cache",
     // Go
     "*.go": "../../../../.jetbrains/custom-icons/go",
     "go.mod": "../../../../.jetbrains/custom-icons/go-mod",
