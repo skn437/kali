@@ -96,6 +96,9 @@
   "prettier.jsxSingleQuote": false,
   "prettier.singleAttributePerLine": true,
   "prettier.prettierPath": "/home/linuxbrew/.linuxbrew/opt/prettier/libexec/lib/node_modules/prettier",
+  "prettier.documentSelectors": [
+    "**/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts,html,css,scss,sass,json,yaml,md,mdx,graphql,graphqls,gql,vue,astro,svelte,properties,toml,xml,java,php}"
+  ],
   "workbench.colorTheme": "Default Dark Modern",
   "workbench.panel.defaultLocation": "right",
   "workbench.panel.opensMaximized": "always",
@@ -371,6 +374,7 @@
     "home": "../../../../../../.jetbrains/custom-icons/home-folder",
     "about": "../../../../../../.jetbrains/custom-icons/path-page-folder",
     "contact": "../../../../../../.jetbrains/custom-icons/path-page-folder",
+    "count": "../../../../../../.jetbrains/custom-icons/path-page-folder",
     "library": "../../../../../../.jetbrains/custom-icons/lib-folder",
     "[id]": "../../../../../../.jetbrains/custom-icons/path-id-folder",
     "[slug]": "../../../../../../.jetbrains/custom-icons/path-id-folder",
@@ -384,8 +388,26 @@
     "BackgroundImage": "../../../../../../.jetbrains/custom-icons/path-general-folder",
     "ProgressBar": "../../../../../../.jetbrains/custom-icons/path-general-folder",
     "ThemeSwitch": "../../../../../../.jetbrains/custom-icons/path-general-folder",
+    "PageMetaData": "../../../../../../.jetbrains/custom-icons/path-general-folder",
     // C & C++
-    "CMakeFiles": "../../../../../../.jetbrains/custom-icons/cmake-folder"
+    "CMakeFiles": "../../../../../../.jetbrains/custom-icons/cmake-folder",
+    // PHP
+    "php": "../../../../../../.jetbrains/custom-icons/php-folder",
+    "config": "../../../../../../.jetbrains/custom-icons/laravel-config-folder",
+    "vendor": "../../../../../../.jetbrains/custom-icons/laravel-vendor-folder",
+    "storage": "../../../../../../.jetbrains/custom-icons/laravel-storage-folder",
+    "database": "../../../../../../.jetbrains/custom-icons/database-folder",
+    "app/broadcasting": "../../../../../../.jetbrains/custom-icons/php-event-folder",
+    "app/events": "../../../../../../.jetbrains/custom-icons/php-event-folder",
+    "app/exceptions": "../../../../../../.jetbrains/custom-icons/php-event-folder",
+    "app/http": "../../../../../../.jetbrains/custom-icons/php-event-folder",
+    "app/listeners": "../../../../../../.jetbrains/custom-icons/php-event-folder",
+    "app/notifications": "../../../../../../.jetbrains/custom-icons/php-notification-folder",
+    "app/policies": "../../../../../../.jetbrains/custom-icons/php-notification-folder",
+    "app/providers": "../../../../../../.jetbrains/custom-icons/php-notification-folder",
+    "app/rules": "../../../../../../.jetbrains/custom-icons/php-rule-folder",
+    "app/console": "../../../../../../.jetbrains/custom-icons/php-console-folder",
+    "app/jobs": "../../../../../../.jetbrains/custom-icons/php-job-folder"
   },
   "material-icon-theme.files.associations": {
     // .Env
@@ -674,12 +696,15 @@
     "firebase.ts": "../../../../.jetbrains/custom-icons/firebase",
     "env/index.ts": "../../../../.jetbrains/custom-icons/env",
     "env.ts": "../../../../.jetbrains/custom-icons/env",
+    "icon.ts": "../../../../.jetbrains/custom-icons/icon",
+    "icon/index.ts": "../../../../.jetbrains/custom-icons/icon",
     "url/index.ts": "../../../../.jetbrains/custom-icons/url",
     "url.ts": "../../../../.jetbrains/custom-icons/url",
     "navigate/index.ts": "../../../../.jetbrains/custom-icons/routes",
     "navigate.ts": "../../../../.jetbrains/custom-icons/routes",
     "vite.config.ts": "../../../../.jetbrains/custom-icons/vite",
-    "vitest.setup.ts": "../../../../.jetbrains/custom-icons/vitest",
+    "vitest.config.ts": "../../../../.jetbrains/custom-icons/vitest",
+    "vitest.setup.ts": "../../../../.jetbrains/custom-icons/vitest-setup",
     "*.pipe.ts": "../../../../.jetbrains/custom-icons/pipeline",
     "trpc.ts": "../../../../.jetbrains/custom-icons/trpc",
     "t.ts": "../../../../.jetbrains/custom-icons/trpc-main",
@@ -925,7 +950,12 @@
     "*.blueprint.go": "../../../../.jetbrains/custom-icons/go-blueprint",
     "go.config.yaml": "../../../../.jetbrains/custom-icons/go-settings",
     ".goreleaser.yaml": "../../../../.jetbrains/custom-icons/go-release",
-    "*.test.go": "../../../../.jetbrains/custom-icons/go-test"
+    "*.test.go": "../../../../.jetbrains/custom-icons/go-test",
+    // PHP
+    "*.php": "../../../../.jetbrains/custom-icons/php",
+    "*.test.php": "../../../../.jetbrains/custom-icons/php-test",
+    "*.blade.php": "../../../../.jetbrains/custom-icons/laravel-blade",
+    "artisan": "../../../../.jetbrains/custom-icons/laravel"
   },
   "[css]": {
     "editor.semanticHighlighting.enabled": true,
@@ -1223,8 +1253,11 @@
     "next.config.mjs": "next-env.d.ts",
     "next.config.ts": "next-env.d.ts",
     "app.html": "app.d.ts",
-    "vite.config.ts": "vitest.setup.ts",
-    "jest.config.ts": "jest.setup.ts"
+    "svelte.config.js": ".env.development, .env.production",
+    "vitest.config.ts": "vitest.setup.ts",
+    "jest.config.ts": "jest.setup.ts",
+    "build.gradle.kts": "gradle.properties",
+    "composer.json": "composer.lock"
   },
   "redhat.telemetry.enabled": true,
   "code-runner.executorMap": {
@@ -1233,6 +1266,7 @@
     "go": "cd $workspaceRoot && go run main.go",
     "java": "cd $workspaceRoot && printf 'Use Java Extension To Run Java Instead! \n'",
     "javascript": "bun",
+    "php": "php",
     "rust": "cd $workspaceRoot && cargo run",
     "shellscript": "bash",
     "typescript": "bun"
@@ -1296,6 +1330,10 @@
       "emojiDecoratorsEnabled": false
     },
     "mdx": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "php": {
       "markupCompletionsEnabled": false,
       "emojiDecoratorsEnabled": false
     },

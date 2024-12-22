@@ -2,23 +2,19 @@ xmlQuoteAttributes: "double"
 xmlSelfClosingSpace: true
 xmlSortAttributesByKey: false
 xmlWhitespaceSensitivity: "strict"
-escapeNonLatin1: false
-keySeparator: "="
+phpVersion: "7.0"
+trailingCommaPHP: true
+braceStyle: "1tbs"
 
 plugins:
   - "@prettier/plugin-xml"
-  - "prettier-plugin-toml"
-  - "prettier-plugin-properties"
-  
+  - "@prettier/plugin-php"
+
 overrides:
   - files: "*.xml"
     options:
       parser: "xml"
 
-  - files: "*.toml"
+  - files: "*.php"
     options:
-      parser: "toml"
-
-  - files: "*.properties"
-    options:
-      parser: "properties"
+      parser: "php"

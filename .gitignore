@@ -119,3 +119,6 @@ bin
 # JetBrains IDE
 !.idea/**/*.tar.gz
 !.idea/**/*.zip
+
+# PHP
+composer.lock
