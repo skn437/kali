@@ -130,6 +130,13 @@ go() {
   package_install "Go"
 }
 
+php() {
+  # Composer: It automatically installs `PHP` to its latest version
+  brew install composer
+
+  package_install "PHP"
+}
+
 csharp() {
   # .Net
   brew install dotnet
@@ -168,4 +175,4 @@ rust_init() {
   gnome-terminal -- bash -c "printf 'Preparing to initialize rust... \n' && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh; read -n 1 KEY"
 }
 
-brew_prepare && devtools && c_cpp && shellscript && typescript && java && message_broker && kotlin && go && csharp && csharp_init
+brew_prepare && devtools && shellscript && typescript && java && message_broker && kotlin && go && php

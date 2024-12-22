@@ -1,20 +1,33 @@
+phpVersion: "7.0"
+trailingCommaPHP: true
+braceStyle: "1tbs"
 xmlQuoteAttributes: "double"
 xmlSelfClosingSpace: true
 xmlSortAttributesByKey: false
 xmlWhitespaceSensitivity: "strict"
-phpVersion: "7.0"
-trailingCommaPHP: true
-braceStyle: "1tbs"
+escapeNonLatin1: false
+keySeparator: "="
 
 plugins:
-  - "@prettier/plugin-xml"
   - "@prettier/plugin-php"
+  - "prettier-plugin-tailwindcss"
+  - "@prettier/plugin-xml"
+  - "prettier-plugin-toml"
+  - "prettier-plugin-properties"
 
 overrides:
+  - files: "*.php"
+    options:
+      parser: "php"
+
   - files: "*.xml"
     options:
       parser: "xml"
 
-  - files: "*.php"
+  - files: "*.toml"
     options:
-      parser: "php"
+      parser: "toml"
+
+  - files: "*.properties"
+    options:
+      parser: "properties"

@@ -1,8 +1,30 @@
+xmlQuoteAttributes: "double"
+xmlSelfClosingSpace: true
+xmlSortAttributesByKey: false
+xmlWhitespaceSensitivity: "strict"
+escapeNonLatin1: false
+keySeparator: "="
+
 plugins:
   - "prettier-plugin-svelte"
   - "prettier-plugin-tailwindcss"
+  - "@prettier/plugin-xml"
+  - "prettier-plugin-toml"
+  - "prettier-plugin-properties"
   
 overrides:
   - files: "*.svelte"
     options:
       parser: "svelte"
+
+  - files: "*.xml"
+    options:
+      parser: "xml"
+
+  - files: "*.toml"
+    options:
+      parser: "toml"
+
+  - files: "*.properties"
+    options:
+      parser: "properties"

@@ -14,7 +14,7 @@ bluetooth() {
 
 jetbrains() {
   # Intellij Idea Ultimate & Rider
-  echo 'export PATH="$HOME/.intellij-idea/bin:$HOME/.rider/bin:$PATH"' >>$HOME/.zshrc
+  echo 'export PATH="$HOME/.intellij-idea/bin:$HOME/.php-storm/bin:$PATH"' >>$HOME/.zshrc
 
   message "'JetBrains IDE' Configured In Path"
 }

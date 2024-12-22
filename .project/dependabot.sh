@@ -40,7 +40,7 @@ dependabot_config() {
   printf "'Dependabot Config File' Added! ✅"
 }
 
-PACKAGE_ARRAY=("npm" "gradle" "maven" "docker" "cargo" "nuget" "gomod" "pip")
+PACKAGE_ARRAY=("npm" "gradle" "maven" "docker" "cargo" "nuget" "gomod" "pip" "composer")
 
 package_error_message() {
   printf "Specify a valid package manager: "

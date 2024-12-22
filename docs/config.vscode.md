@@ -389,6 +389,7 @@
     "ProgressBar": "../../../../../../.jetbrains/custom-icons/path-general-folder",
     "ThemeSwitch": "../../../../../../.jetbrains/custom-icons/path-general-folder",
     "PageMetaData": "../../../../../../.jetbrains/custom-icons/path-general-folder",
+    "PageTitle": "../../../../../../.jetbrains/custom-icons/path-general-folder",
     // C & C++
     "CMakeFiles": "../../../../../../.jetbrains/custom-icons/cmake-folder",
     // PHP
@@ -954,8 +955,11 @@
     // PHP
     "*.php": "../../../../.jetbrains/custom-icons/php",
     "*.test.php": "../../../../.jetbrains/custom-icons/php-test",
+    "phpunit.xml": "../../../../.jetbrains/custom-icons/php-unit",
     "*.blade.php": "../../../../.jetbrains/custom-icons/laravel-blade",
-    "artisan": "../../../../.jetbrains/custom-icons/laravel"
+    "artisan": "../../../../.jetbrains/custom-icons/laravel",
+    "composer.json": "../../../../.jetbrains/custom-icons/composer",
+    "composer.lock": "../../../../.jetbrains/custom-icons/composer-lock"
   },
   "[css]": {
     "editor.semanticHighlighting.enabled": true,
@@ -1106,25 +1110,15 @@
   "gopls": {
     "ui.semanticTokens": false
   },
-  "[c]": {
+  "[php]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "xaver.clang-format"
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
   },
-  "[cpp]": {
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "xaver.clang-format"
-  },
-  "[cmake]": {
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": false
-  },
-  "cmake.options.statusBarVisibility": "icon",
-  "cmake.pinnedCommands": ["workbench.action.tasks.configureTaskRunner", "workbench.action.tasks.runTask"],
+  "php.validate.enable": true,
+  "php.validate.executablePath": "/home/linuxbrew/.linuxbrew/bin/php",
+  "php.validate.run": "onType",
   "[java]": {
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.semanticHighlighting.enabled": true,
