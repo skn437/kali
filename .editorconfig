@@ -56,7 +56,7 @@ indent_size = 2
 indent_size = 2
 
 # Rust Files
-[*.{rs,lock}]
+[*.rs]
 indent_size = 2
 
 # Go Files
@@ -67,8 +67,8 @@ indent_size = 2
 [*.{py,ipynb}]
 indent_size = 2
 
-# IML, JSON, Properties, TOML, XAML, XML, YAML Files
-[*.{iml,json,properties,toml,xaml,xml,yaml}]
+# IML, JSON, Properties, TOML, XAML, XML, YAML, YML Files
+[*.{iml,json,properties,toml,xaml,xml,yaml,yml}]
 indent_size = 2
 
 # Ignore Files
@@ -79,8 +79,8 @@ indent_size = 2
 [Dockerfile]
 indent_size = 2
 
-# Shell Script, Text, Log Files
-[*.{sh,txt,log}]
+# Shell Script, Text, Log, Lock Files
+[*.{sh,txt,log,lock}]
 indent_size = 2
 
 # HTML, CSS, Sass, SCSS, Markdown, MDX, MDSveX Files
@@ -93,6 +93,10 @@ indent_size = 2
 
 # Svelte, Vue, Astro Files
 [*.{svelte,vue,astro}]
+indent_size = 2
+
+# PHP Files
+[*.php]
 indent_size = 2
 
 # C# XML Project Files

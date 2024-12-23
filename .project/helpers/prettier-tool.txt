@@ -9,7 +9,7 @@ plugins:
   - "@prettier/plugin-xml"
   - "prettier-plugin-toml"
   - "prettier-plugin-properties"
-  
+
 overrides:
   - files: "*.xml"
     options:

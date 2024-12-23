@@ -33,18 +33,26 @@
     "**/.idea/**": true,
     "**/.next/**": true,
     "**/.output/**": true,
+    "**/.phpactor.json": true,
+    "**/.phpunit.cache": true,
+    "**/.phpunit.result.cache": true,
     "**/.svelte-kit/**": true,
     "**/*.sln": true,
     "**/app.d.ts": true,
+    "**/auth.json": true,
     "**/bin/**": true,
     "**/build/**": true,
     "**/bun.lockb": true,
+    "**/cache/**": true,
     "**/Cargo.lock": true,
+    "**/composer.lock": true,
     "**/coverage/**": true,
     "**/deno.lock": true,
     "**/dist/**": true,
     "**/go.sum": true,
     "**/graphql.d.ts": true,
+    "**/Homestead.json": true,
+    "**/Homestead.yaml": true,
     "**/LICENSE*": true,
     "**/next-env.d.ts": true,
     "**/node_modules/**": true,
@@ -53,7 +61,10 @@
     "**/out/**": true,
     "**/package-lock.json": true,
     "**/pnpm-lock.yaml": true,
+    "**/public/hot/**": true,
+    "**/storage/**": true,
     "**/target/**": true,
+    "**/vendor/**": true,
     "**/wwwroot/**": true,
     "**/yarn.lock": true
   },
@@ -1009,6 +1020,7 @@
   },
   "html.format.indentInnerHtml": true,
   "[cypher]": {
+    "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": false,
     "editor.defaultFormatter": "jakeboone02.cypher-query-language"
@@ -1023,11 +1035,13 @@
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "[ignore]": {
+    "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "[properties]": {
+    "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "foxundermoon.shell-format"
@@ -1113,8 +1127,7 @@
   "[php]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+    "editor.formatOnSave": false
   },
   "php.validate.enable": true,
   "php.validate.executablePath": "/home/linuxbrew/.linuxbrew/bin/php",
