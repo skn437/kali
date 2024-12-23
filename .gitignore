@@ -122,7 +122,14 @@ bin
 
 # PHP
 composer.lock
+.phpactor.json
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+.phpunit.cache
+public/hot
+public/storage
+storage/*.key
+storage/pail
 vendor
-storage
-ssr
-cache

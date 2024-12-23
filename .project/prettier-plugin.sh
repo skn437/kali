@@ -36,6 +36,8 @@ prettier_plugin() {
   # Prettier Formatter file
   PRETTIER_FORMAT=".prettierrc.yaml"
 
+  printf "\n" >>"./${PRETTIER_FORMAT}"
+
   curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/.project/helpers/prettier-${PRETTIER_PLUGIN}.txt" >>"./${PRETTIER_FORMAT}"
 
   message "Prettier Plugin Config File"
