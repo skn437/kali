@@ -122,3 +122,7 @@ bin
 
 # PHP
 composer.lock
+vendor
+storage
+ssr
+cache

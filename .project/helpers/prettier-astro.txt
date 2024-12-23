@@ -1,30 +1,9 @@
-xmlQuoteAttributes: "double"
-xmlSelfClosingSpace: true
-xmlSortAttributesByKey: false
-xmlWhitespaceSensitivity: "strict"
-escapeNonLatin1: false
-keySeparator: "="
 
 plugins:
   - "prettier-plugin-astro"
   - "prettier-plugin-tailwindcss"
-  - "@prettier/plugin-xml"
-  - "prettier-plugin-toml"
-  - "prettier-plugin-properties"
   
 overrides:
   - files: "*.astro"
     options:
       parser: "astro"
-
-  - files: "*.xml"
-    options:
-      parser: "xml"
-
-  - files: "*.toml"
-    options:
-      parser: "toml"
-
-  - files: "*.properties"
-    options:
-      parser: "properties"

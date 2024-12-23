@@ -134,6 +134,12 @@ php() {
   # Composer: It automatically installs `PHP` to its latest version
   brew install composer
 
+  # Install "Laravel"
+  composer global require laravel/installer
+
+  # Add "Composer" global packages to the "Path"
+  echo 'export PATH="$HOME/.config/composer/vendor/bin:$PATH"' >>$HOME/.zshrc
+
   package_install "PHP"
 }
 
@@ -175,4 +181,4 @@ rust_init() {
   gnome-terminal -- bash -c "printf 'Preparing to initialize rust... \n' && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh; read -n 1 KEY"
 }
 
-brew_prepare && devtools && shellscript && typescript && java && message_broker && kotlin && go && php
+brew_prepare && devtools && c_cpp && shellscript && typescript && java && message_broker && kotlin && go && php

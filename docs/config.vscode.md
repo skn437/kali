@@ -96,9 +96,6 @@
   "prettier.jsxSingleQuote": false,
   "prettier.singleAttributePerLine": true,
   "prettier.prettierPath": "/home/linuxbrew/.linuxbrew/opt/prettier/libexec/lib/node_modules/prettier",
-  "prettier.documentSelectors": [
-    "**/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts,html,css,scss,sass,json,yaml,md,mdx,graphql,graphqls,gql,vue,astro,svelte,properties,toml,xml,java,php}"
-  ],
   "workbench.colorTheme": "Default Dark Modern",
   "workbench.panel.defaultLocation": "right",
   "workbench.panel.opensMaximized": "always",
@@ -298,6 +295,7 @@
     "paths": "../../../../../../.jetbrains/custom-icons/path-folder",
     ".git": "../../../../../../.jetbrains/custom-icons/git-folder",
     "global": "../../../../../../.jetbrains/custom-icons/global-folder",
+    "private": "../../../../../../.jetbrains/custom-icons/private-folder",
     // Python
     "python": "../../../../../../.jetbrains/custom-icons/py-folder",
     "analysis": "../../../../../../.jetbrains/custom-icons/analysis-folder",
@@ -398,6 +396,7 @@
     "vendor": "../../../../../../.jetbrains/custom-icons/laravel-vendor-folder",
     "storage": "../../../../../../.jetbrains/custom-icons/laravel-storage-folder",
     "database": "../../../../../../.jetbrains/custom-icons/database-folder",
+    "app/actions": "../../../../../../.jetbrains/custom-icons/php-event-folder",
     "app/broadcasting": "../../../../../../.jetbrains/custom-icons/php-event-folder",
     "app/events": "../../../../../../.jetbrains/custom-icons/php-event-folder",
     "app/exceptions": "../../../../../../.jetbrains/custom-icons/php-event-folder",
@@ -954,6 +953,7 @@
     "*.test.go": "../../../../.jetbrains/custom-icons/go-test",
     // PHP
     "*.php": "../../../../.jetbrains/custom-icons/php",
+    "index.php": "../../../../.jetbrains/custom-icons/php-elephant",
     "*.test.php": "../../../../.jetbrains/custom-icons/php-test",
     "phpunit.xml": "../../../../.jetbrains/custom-icons/php-unit",
     "*.blade.php": "../../../../.jetbrains/custom-icons/laravel-blade",
