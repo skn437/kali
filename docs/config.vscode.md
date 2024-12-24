@@ -38,6 +38,7 @@
     "**/.phpunit.result.cache": true,
     "**/.svelte-kit/**": true,
     "**/*.sln": true,
+    "**/*.sqlite": true,
     "**/app.d.ts": true,
     "**/auth.json": true,
     "**/bin/**": true,
@@ -62,6 +63,7 @@
     "**/package-lock.json": true,
     "**/pnpm-lock.yaml": true,
     "**/public/hot/**": true,
+    "**/ssr/**": true,
     "**/storage/**": true,
     "**/target/**": true,
     "**/vendor/**": true,
@@ -85,14 +87,7 @@
   "editor.stickyScroll.enabled": true,
   "editor.semanticHighlighting.enabled": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "liveServer.settings.donotShowInfoMsg": true,
-  "liveServer.settings.https": {
-    "enable": false,
-    "cert": "",
-    "key": "",
-    "passphrase": ""
-  },
-  "liveServer.settings.port": 5500,
+  "livePreview.portNumber": 5000,
   "prettier.printWidth": 120,
   "prettier.tabWidth": 2,
   "prettier.useTabs": false,
@@ -127,6 +122,7 @@
     "bin": "../../../../../../.jetbrains/custom-icons/bin-folder",
     "obj": "../../../../../../.jetbrains/custom-icons/object-folder",
     "target": "../../../../../../.jetbrains/custom-icons/target-folder",
+    "logs": "../../../../../../.jetbrains/custom-icons/log-folder",
     ".logs": "../../../../../../.jetbrains/custom-icons/log-folder",
     ".idea": "../../../../../../.jetbrains/custom-icons/intellij-folder",
     ".idea/dictionaries": "../../../../../../.jetbrains/custom-icons/intellij-dict-folder",
@@ -270,6 +266,7 @@
     "src": "../../../../../../.jetbrains/custom-icons/source-folder",
     "test": "../../../../../../.jetbrains/custom-icons/test-folder",
     "tests": "../../../../../../.jetbrains/custom-icons/test-folder",
+    "testing": "../../../../../../.jetbrains/custom-icons/test-folder",
     "api": "../../../../../../.jetbrains/custom-icons/api-folder",
     "json": "../../../../../../.jetbrains/custom-icons/json-folder",
     "rest": "../../../../../../.jetbrains/custom-icons/rest-folder",
@@ -418,7 +415,27 @@
     "app/providers": "../../../../../../.jetbrains/custom-icons/php-notification-folder",
     "app/rules": "../../../../../../.jetbrains/custom-icons/php-rule-folder",
     "app/console": "../../../../../../.jetbrains/custom-icons/php-console-folder",
-    "app/jobs": "../../../../../../.jetbrains/custom-icons/php-job-folder"
+    "app/jobs": "../../../../../../.jetbrains/custom-icons/php-job-folder",
+    "framework": "../../../../../../.jetbrains/custom-icons/framework-folder",
+    "frameworks": "../../../../../../.jetbrains/custom-icons/framework-folder",
+    "auth": "../../../../../../.jetbrains/custom-icons/auth-folder",
+    "admin": "../../../../../../.jetbrains/custom-icons/auth-folder",
+    "feature": "../../../../../../.jetbrains/custom-icons/feature-folder",
+    "features": "../../../../../../.jetbrains/custom-icons/feature-folder",
+    "profile": "../../../../../../.jetbrains/custom-icons/profile-folder",
+    "profiles": "../../../../../../.jetbrains/custom-icons/profile-folder",
+    "ssr": "../../../../../../.jetbrains/custom-icons/ssr-folder",
+    "middleware": "../../../../../../.jetbrains/custom-icons/middleware-folder",
+    "middlewares": "../../../../../../.jetbrains/custom-icons/middleware-folder",
+    "request": "../../../../../../.jetbrains/custom-icons/request-folder",
+    "requests": "../../../../../../.jetbrains/custom-icons/request-folder",
+    // SQL
+    "seeder": "../../../../../../.jetbrains/custom-icons/seeder-folder",
+    "seeders": "../../../../../../.jetbrains/custom-icons/seeder-folder",
+    "migration": "../../../../../../.jetbrains/custom-icons/migration-folder",
+    "migrations": "../../../../../../.jetbrains/custom-icons/migration-folder",
+    "factory": "../../../../../../.jetbrains/custom-icons/factory-folder",
+    "factories": "../../../../../../.jetbrains/custom-icons/factory-folder"
   },
   "material-icon-theme.files.associations": {
     // .Env
@@ -970,7 +987,10 @@
     "*.blade.php": "../../../../.jetbrains/custom-icons/laravel-blade",
     "artisan": "../../../../.jetbrains/custom-icons/laravel",
     "composer.json": "../../../../.jetbrains/custom-icons/composer",
-    "composer.lock": "../../../../.jetbrains/custom-icons/composer-lock"
+    "composer.lock": "../../../../.jetbrains/custom-icons/composer-lock",
+    ".htaccess": "../../../../.jetbrains/custom-icons/htaccess",
+    // SQL
+    "*.sqlite": "../../../../.jetbrains/custom-icons/sqlite"
   },
   "[css]": {
     "editor.semanticHighlighting.enabled": true,
@@ -1127,7 +1147,8 @@
   "[php]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
   },
   "php.validate.enable": true,
   "php.validate.executablePath": "/home/linuxbrew/.linuxbrew/bin/php",
@@ -1385,6 +1406,6 @@
       "emojiDecoratorsEnabled": false
     }
   },
-  "auto-close-tag.activationOnLanguage": ["ejs", "plaintext", "markdown", "mdx"]
+  "auto-close-tag.activationOnLanguage": ["ejs", "plaintext", "markdown", "mdx", "php"]
 }
 ```

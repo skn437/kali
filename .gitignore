@@ -133,3 +133,4 @@ public/storage
 storage/*.key
 storage/pail
 vendor
+ssr

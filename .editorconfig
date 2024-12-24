@@ -96,7 +96,15 @@ indent_size = 2
 indent_size = 2
 
 # PHP Files
-[*.php]
+[*.{php,phtml}]
+indent_size = 2
+
+# Laravel Artisan File
+[artisan]
+indent_size = 2
+
+# HTAccess File
+[.htaccess]
 indent_size = 2
 
 # C# XML Project Files
