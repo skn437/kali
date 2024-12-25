@@ -20,7 +20,8 @@
     "*plays.yaml": "ansible",
     "LICENSE": "plaintext",
     "LICENSE-MIT": "plaintext",
-    "LICENSE-APACHE": "plaintext"
+    "LICENSE-APACHE": "plaintext",
+    "phpstan.neon": "yaml"
   },
   "files.readonlyInclude": {
     ".git/**": true,
@@ -989,6 +990,7 @@
     "composer.json": "../../../../.jetbrains/custom-icons/composer",
     "composer.lock": "../../../../.jetbrains/custom-icons/composer-lock",
     ".htaccess": "../../../../.jetbrains/custom-icons/htaccess",
+    "phpstan.neon": "../../../../.jetbrains/custom-icons/php-stan",
     // SQL
     "*.sqlite": "../../../../.jetbrains/custom-icons/sqlite"
   },

@@ -1,0 +1,88 @@
+parameters:
+  phpVersion:
+    min: 80304 # PHP 8.3.4
+
+  fileExtensions:
+    - php
+
+  parallel:
+    jobSize: 20
+    minimumNumberOfJobsPerProcess: 2
+    maximumNumberOfProcesses: 32
+    processTimeout: 60.0
+
+  includes:
+    - vendor/phpstan/phpstan-strict-rules/rules.neon
+    - vendor/larastan/larastan/extension.neon
+    - vendor/phpstan/phpstan-phpunit/extension.neon
+    - vendor/phpstan/phpstan-phpunit/rules.neon
+    - vendor/phpstan/phpstan-doctrine/extension.neon
+    - vendor/phpstan/phpstan-doctrine/rules.neon
+
+  paths:
+    - app/
+    - bootstrap/
+    - config/
+    - database/
+    - public/
+    - resources/
+    - routes/
+    - tests/
+    - artisan
+
+  excludePaths:
+    - storage/*
+    - vendor/*
+
+  # Rules
+  level: 10
+  customRulesetUsed: true
+  checkTooWideReturnTypesInProtectedAndPublicMethods: true
+  checkUninitializedProperties: true
+  rememberPossiblyImpureFunctionValues: true
+  checkImplicitMixed: true
+  checkBenevolentUnionTypes: true
+  reportPossiblyNonexistentGeneralArrayOffset: true
+  reportPossiblyNonexistentConstantArrayOffset: true
+  reportAlwaysTrueInLastCondition: true
+  reportAnyTypeWideningInVarTag: true
+  checkMissingOverrideMethodAttribute: true
+  checkMissingCallableSignature: true
+  editorUrl: "idea://open?file=%%file%%&line=%%line%%"
+  inferPrivatePropertyTypeFromConstructor: true
+  treatPhpDocTypesAsCertain: true
+  tipsOfTheDay: true
+  errorFormat: "yaml"
+  additionalConstructors: []
+
+  exceptions:
+    reportUncheckedExceptionDeadCatch: true
+    implicitThrows: true
+
+    check:
+      missingCheckedExceptionInThrows: true
+      tooWideThrowType: true
+
+  typeAliases:
+    Name: "string"
+    NameResolver: "callable(): string"
+    NameOrResolver: "Name|NameResolver"
+
+  # PHPStan Strict Rules
+  strictRules:
+    allRules: true
+
+  # Larastan
+  noModelMake: true
+  noUnnecessaryCollectionCall: true
+  checkModelProperties: false
+  checkOctaneCompatibility: false
+  checkUnusedViews: true
+  noEnvCallsOutsideOfConfig: true
+  checkModelAppends: true
+
+  # PHPStan Doctrine
+  doctrine:
+    reportDynamicQueryBuilders: true
+    reportUnknownTypes: true
+    literalString: true

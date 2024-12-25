@@ -134,11 +134,17 @@ php() {
   # Composer: It automatically installs `PHP` to its latest version
   brew install composer
 
-  # Install "Laravel"
+  # Laravel
   composer global require laravel/installer
 
   # Add "Composer" global packages to the "Path"
   echo 'export PATH="$HOME/.config/composer/vendor/bin:$PATH"' >>$HOME/.zshrc
+
+  # XDebugger
+  pecl install xdebug
+
+  # PHPStan
+  brew install phpstan
 
   package_install "PHP"
 }
