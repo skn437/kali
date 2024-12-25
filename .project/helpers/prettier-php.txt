@@ -1,4 +1,4 @@
-phpVersion: "7.0"
+phpVersion: "8.2"
 trailingCommaPHP: true
 braceStyle: "1tbs"
 xmlQuoteAttributes: "double"

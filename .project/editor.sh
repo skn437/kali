@@ -7,8 +7,9 @@ LINUX="kali"
 GET_RUSTFMT=false
 GET_PRETTIER=false
 GET_STYLELINT=false
+GET_PHPSTAN=false
 
-while getopts "rps" OPTION; do
+while getopts "rpsl" OPTION; do
   case "${OPTION}" in
   r)
     GET_RUSTFMT=true
@@ -19,8 +20,11 @@ while getopts "rps" OPTION; do
   s)
     GET_STYLELINT=true
     ;;
+  l)
+    GET_PHPSTAN=true
+    ;;
   ?)
-    printf "Script Usage: %s \n" "bash (script) [-r] [-p] [-s]"
+    printf "Script Usage: %s \n" "bash (script) [-r] [-p] [-s] [-l]"
     exit 1
     ;;
   esac
@@ -68,6 +72,15 @@ stylelint() {
   message "Stylelint Config File"
 }
 
+phpstan() {
+  # PHPStan Config file
+  PHPSTAN_CONFIG="phpstan.neon"
+
+  curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/${PHPSTAN_CONFIG}" >"./${PHPSTAN_CONFIG}"
+
+  message "PHPStan Config File"
+}
+
 editor_config
 
 if "${GET_RUSTFMT}"; then
@@ -80,4 +93,8 @@ fi
 
 if "${GET_STYLELINT}"; then
   stylelint
+fi
+
+if "${GET_PHPSTAN}"; then
+  phpstan
 fi
