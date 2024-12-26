@@ -34,7 +34,7 @@ parameters:
     - storage/*
     - vendor/*
 
-  # Rules
+  # General Rules
   level: 10
   customRulesetUsed: true
   checkTooWideReturnTypesInProtectedAndPublicMethods: true
@@ -55,6 +55,7 @@ parameters:
   errorFormat: "yaml"
   additionalConstructors: []
 
+  # Exceptions
   exceptions:
     reportUncheckedExceptionDeadCatch: true
     implicitThrows: true
@@ -63,6 +64,7 @@ parameters:
       missingCheckedExceptionInThrows: true
       tooWideThrowType: true
 
+  # Custom Type Definitions
   typeAliases:
     Name: "string"
     NameResolver: "callable(): string"
