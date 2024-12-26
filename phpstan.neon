@@ -1,6 +1,6 @@
 parameters:
   phpVersion:
-    min: 80304 # PHP 8.3.4
+    min: 80315 # PHP 8.3.15
 
   fileExtensions:
     - php
