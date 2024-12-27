@@ -1,7 +1,4 @@
 parameters:
-  phpVersion:
-    min: 80315 # PHP 8.3.15
-
   fileExtensions:
     - php
 
@@ -10,14 +7,6 @@ parameters:
     minimumNumberOfJobsPerProcess: 2
     maximumNumberOfProcesses: 32
     processTimeout: 60.0
-
-  includes:
-    - vendor/phpstan/phpstan-strict-rules/rules.neon
-    - vendor/larastan/larastan/extension.neon
-    - vendor/phpstan/phpstan-phpunit/extension.neon
-    - vendor/phpstan/phpstan-phpunit/rules.neon
-    - vendor/phpstan/phpstan-doctrine/extension.neon
-    - vendor/phpstan/phpstan-doctrine/rules.neon
 
   paths:
     - app/
@@ -48,7 +37,7 @@ parameters:
   reportAnyTypeWideningInVarTag: true
   checkMissingOverrideMethodAttribute: true
   checkMissingCallableSignature: true
-  editorUrl: "idea://open?file=%%file%%&line=%%line%%"
+  editorUrl: "vscode://file/%%file%%:%%line%%"
   inferPrivatePropertyTypeFromConstructor: true
   treatPhpDocTypesAsCertain: true
   tipsOfTheDay: true
@@ -70,21 +59,29 @@ parameters:
     NameResolver: "callable(): string"
     NameOrResolver: "Name|NameResolver"
 
-  # PHPStan Strict Rules
-  strictRules:
-    allRules: true
+  # includes:
+  #   - vendor/phpstan/phpstan-strict-rules/rules.neon
+  #   - vendor/larastan/larastan/extension.neon
+  #   - vendor/phpstan/phpstan-phpunit/extension.neon
+  #   - vendor/phpstan/phpstan-phpunit/rules.neon
+  #   - vendor/phpstan/phpstan-doctrine/extension.neon
+  #   - vendor/phpstan/phpstan-doctrine/rules.neon
 
-  # Larastan
-  noModelMake: true
-  noUnnecessaryCollectionCall: true
-  checkModelProperties: false
-  checkOctaneCompatibility: false
-  checkUnusedViews: true
-  noEnvCallsOutsideOfConfig: true
-  checkModelAppends: true
+  # # PHPStan Strict Rules
+  # strictRules:
+  #   allRules: true
 
-  # PHPStan Doctrine
-  doctrine:
-    reportDynamicQueryBuilders: true
-    reportUnknownTypes: true
-    literalString: true
+  # # Larastan
+  # noModelMake: true
+  # noUnnecessaryCollectionCall: true
+  # checkModelProperties: false
+  # checkOctaneCompatibility: false
+  # checkUnusedViews: true
+  # noEnvCallsOutsideOfConfig: true
+  # checkModelAppends: true
+
+  # # PHPStan Doctrine
+  # doctrine:
+  #   reportDynamicQueryBuilders: true
+  #   reportUnknownTypes: true
+  #   literalString: true

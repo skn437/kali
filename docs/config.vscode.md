@@ -1157,6 +1157,10 @@
   "php.validate.enable": true,
   "php.validate.executablePath": "/home/linuxbrew/.linuxbrew/bin/php",
   "php.validate.run": "onType",
+  "phpstan.binPath": "/home/linuxbrew/.linuxbrew/bin/phpstan",
+  "phpstan.configFile": "phpstan.neon",
+  "phpstan.showTypeOnHover": true,
+  "phpstan.showProgress": true,
   "[java]": {
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.semanticHighlighting.enabled": true,
