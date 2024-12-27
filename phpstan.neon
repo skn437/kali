@@ -41,7 +41,7 @@ parameters:
   inferPrivatePropertyTypeFromConstructor: true
   treatPhpDocTypesAsCertain: true
   tipsOfTheDay: true
-  errorFormat: "yaml"
+  errorFormat: "json"
   additionalConstructors: []
 
   # Exceptions
