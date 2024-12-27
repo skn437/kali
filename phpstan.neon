@@ -23,9 +23,25 @@ parameters:
     - storage/*
     - vendor/*
 
-  # General Rules
+  # Rules
   level: 10
   customRulesetUsed: true
+
+  ## Stricter Analysis 1 ++
+  polluteScopeWithLoopInitialAssignments: false
+  polluteScopeWithAlwaysIterableForeach: false
+  polluteScopeWithBlock: false
+  checkExplicitMixedMissingReturn: true
+  checkFunctionNameCase: true
+  checkInternalClassCaseSensitivity: true
+  reportMaybesInMethodSignatures: true
+  reportMaybesInPropertyPhpDocTypes: true
+  reportStaticMethodSignatures: true
+  checkDynamicProperties: true
+  reportWrongPhpDocTypeInVarTag: true
+  ## Stricter Analysis 1 --
+
+  ## Stricter Analysis 2 ++
   checkTooWideReturnTypesInProtectedAndPublicMethods: true
   checkUninitializedProperties: true
   rememberPossiblyImpureFunctionValues: true
@@ -36,6 +52,8 @@ parameters:
   reportAlwaysTrueInLastCondition: true
   reportAnyTypeWideningInVarTag: true
   checkMissingOverrideMethodAttribute: true
+  ## Stricter Analysis 2 --
+
   checkMissingCallableSignature: true
   editorUrl: "vscode://file/%%file%%:%%line%%"
   inferPrivatePropertyTypeFromConstructor: true
