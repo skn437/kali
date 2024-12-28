@@ -1,3 +1,11 @@
+includes:
+  - vendor/phpstan/phpstan-strict-rules/rules.neon
+  - vendor/larastan/larastan/extension.neon
+  - vendor/phpstan/phpstan-phpunit/extension.neon
+  - vendor/phpstan/phpstan-phpunit/rules.neon
+  - vendor/phpstan/phpstan-doctrine/extension.neon
+  - vendor/phpstan/phpstan-doctrine/rules.neon
+
 parameters:
   fileExtensions:
     - php
@@ -27,21 +35,7 @@ parameters:
   level: 10
   customRulesetUsed: true
 
-  ## Stricter Analysis 1 ++
-  polluteScopeWithLoopInitialAssignments: false
-  polluteScopeWithAlwaysIterableForeach: false
-  polluteScopeWithBlock: false
-  checkExplicitMixedMissingReturn: true
-  checkFunctionNameCase: true
-  checkInternalClassCaseSensitivity: true
-  reportMaybesInMethodSignatures: true
-  reportMaybesInPropertyPhpDocTypes: true
-  reportStaticMethodSignatures: true
-  checkDynamicProperties: true
-  reportWrongPhpDocTypeInVarTag: true
-  ## Stricter Analysis 1 --
-
-  ## Stricter Analysis 2 ++
+  ## Stricter Analysis
   checkTooWideReturnTypesInProtectedAndPublicMethods: true
   checkUninitializedProperties: true
   rememberPossiblyImpureFunctionValues: true
@@ -52,8 +46,8 @@ parameters:
   reportAlwaysTrueInLastCondition: true
   reportAnyTypeWideningInVarTag: true
   checkMissingOverrideMethodAttribute: true
-  ## Stricter Analysis 2 --
 
+  ## Misc
   checkMissingCallableSignature: true
   editorUrl: "vscode://file/%%file%%:%%line%%"
   inferPrivatePropertyTypeFromConstructor: true
@@ -77,29 +71,21 @@ parameters:
     NameResolver: "callable(): string"
     NameOrResolver: "Name|NameResolver"
 
-  # includes:
-  #   - vendor/phpstan/phpstan-strict-rules/rules.neon
-  #   - vendor/larastan/larastan/extension.neon
-  #   - vendor/phpstan/phpstan-phpunit/extension.neon
-  #   - vendor/phpstan/phpstan-phpunit/rules.neon
-  #   - vendor/phpstan/phpstan-doctrine/extension.neon
-  #   - vendor/phpstan/phpstan-doctrine/rules.neon
+  # PHPStan Strict Rules
+  strictRules:
+    allRules: true
 
-  # # PHPStan Strict Rules
-  # strictRules:
-  #   allRules: true
+  # Larastan
+  noModelMake: true
+  noUnnecessaryCollectionCall: true
+  checkModelProperties: false
+  checkOctaneCompatibility: false
+  checkUnusedViews: true
+  noEnvCallsOutsideOfConfig: true
+  checkModelAppends: true
 
-  # # Larastan
-  # noModelMake: true
-  # noUnnecessaryCollectionCall: true
-  # checkModelProperties: false
-  # checkOctaneCompatibility: false
-  # checkUnusedViews: true
-  # noEnvCallsOutsideOfConfig: true
-  # checkModelAppends: true
-
-  # # PHPStan Doctrine
-  # doctrine:
-  #   reportDynamicQueryBuilders: true
-  #   reportUnknownTypes: true
-  #   literalString: true
+  # PHPStan Doctrine
+  doctrine:
+    reportDynamicQueryBuilders: true
+    reportUnknownTypes: true
+    literalString: true
