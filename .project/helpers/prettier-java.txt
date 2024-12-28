@@ -1,7 +1,10 @@
+# XML
 xmlQuoteAttributes: "double"
 xmlSelfClosingSpace: true
 xmlSortAttributesByKey: false
 xmlWhitespaceSensitivity: "strict"
+
+# Properties
 escapeNonLatin1: false
 keySeparator: "="
 

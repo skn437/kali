@@ -8,7 +8,8 @@
     "javascript": "javascriptreact",
     "typescript": "typescriptreact",
     "postcss": "css",
-    "ejs": "html"
+    "ejs": "html",
+    "blade": "html"
   },
   "files.associations": {
     "*.css": "tailwindcss",
@@ -430,6 +431,7 @@
     "middlewares": "../../../../../../.jetbrains/custom-icons/middleware-folder",
     "request": "../../../../../../.jetbrains/custom-icons/request-folder",
     "requests": "../../../../../../.jetbrains/custom-icons/request-folder",
+    "livewire": "../../../../../../.jetbrains/custom-icons/livewire-folder",
     // SQL
     "seeder": "../../../../../../.jetbrains/custom-icons/seeder-folder",
     "seeders": "../../../../../../.jetbrains/custom-icons/seeder-folder",
@@ -993,6 +995,8 @@
     "composer.lock": "../../../../.jetbrains/custom-icons/composer-lock",
     ".htaccess": "../../../../.jetbrains/custom-icons/htaccess",
     "phpstan.neon": "../../../../.jetbrains/custom-icons/php-stan",
+    ".bladeformatterrc.json": "../../../../.jetbrains/custom-icons/laravel-format",
+    ".bladeignore": "../../../../.jetbrains/custom-icons/laravel-ignore",
     // SQL
     "*.sqlite": "../../../../.jetbrains/custom-icons/sqlite"
   },
@@ -1161,6 +1165,24 @@
   "phpstan.configFile": "phpstan.neon",
   "phpstan.showTypeOnHover": true,
   "phpstan.showProgress": true,
+  "artisan.php.location": "/home/linuxbrew/.linuxbrew/bin/php",
+  "[blade]": {
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+  },
+  "bladeFormatter.format.indentSize": 2,
+  "bladeFormatter.format.wrapAttributes": "aligned-multiple",
+  "bladeFormatter.format.wrapLineLength": 120,
+  "bladeFormatter.format.wrapAttributesMinAttrs": 2,
+  "bladeFormatter.format.indentInnerHtml": true,
+  "bladeFormatter.format.useTabs": false,
+  "bladeFormatter.format.sortTailwindcssClasses": true,
+  "bladeFormatter.format.sortHtmlAttributes": "none",
+  "bladeFormatter.format.noMultipleEmptyLines": true,
+  "bladeFormatter.format.noPhpSyntaxCheck": false,
+  "bladeFormatter.format.noSingleQuote": true,
   "[java]": {
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.semanticHighlighting.enabled": true,
@@ -1293,7 +1315,8 @@
     "vitest.config.ts": "vitest.setup.ts",
     "jest.config.ts": "jest.setup.ts",
     "build.gradle.kts": "gradle.properties",
-    "composer.json": "composer.lock"
+    "composer.json": "composer.lock",
+    ".bladeformatterrc.json": ".bladeignore"
   },
   "redhat.telemetry.enabled": true,
   "code-runner.executorMap": {
@@ -1325,6 +1348,10 @@
   "code-runner.runInTerminal": false,
   "code-runner.defaultLanguage": "javascript",
   "emojisense.languages": {
+    "blade": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
     "c": {
       "markupCompletionsEnabled": false,
       "emojiDecoratorsEnabled": false
@@ -1414,6 +1441,6 @@
       "emojiDecoratorsEnabled": false
     }
   },
-  "auto-close-tag.activationOnLanguage": ["ejs", "plaintext", "markdown", "mdx", "php"]
+  "auto-close-tag.activationOnLanguage": ["ejs", "plaintext", "markdown", "mdx", "php", "blade"]
 }
 ```
