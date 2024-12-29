@@ -1174,7 +1174,7 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
   },
   "php.validate.enable": true,
   "php.validate.executablePath": "/home/linuxbrew/.linuxbrew/bin/php",
@@ -1183,11 +1183,12 @@
   "phpstan.configFile": "phpstan.neon",
   "phpstan.showTypeOnHover": true,
   "phpstan.showProgress": true,
+  "phpstan.enableStatusBar": true,
   "[blade]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
   },
   "[java]": {
     "editor.suggest.snippetsPreventQuickSuggestions": false,
