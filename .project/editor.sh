@@ -8,9 +8,8 @@ GET_RUSTFMT=false
 GET_PRETTIER=false
 GET_STYLELINT=false
 GET_PHPSTAN=false
-GET_BLADE_FORMATTER=false
 
-while getopts "rpslb" OPTION; do
+while getopts "rpsl" OPTION; do
   case "${OPTION}" in
   r)
     GET_RUSTFMT=true
@@ -24,11 +23,8 @@ while getopts "rpslb" OPTION; do
   l)
     GET_PHPSTAN=true
     ;;
-  b)
-    GET_BLADE_FORMATTER=true
-    ;;
   ?)
-    printf "Script Usage: %s \n" "bash (script) [-r] [-p] [-s] [-l] [-b]"
+    printf "Script Usage: %s \n" "bash (script) [-r] [-p] [-s] [-l]"
     exit 1
     ;;
   esac
@@ -63,8 +59,4 @@ fi
 
 if "${GET_PHPSTAN}"; then
   config_builder "phpstan.neon" "PHPStan"
-fi
-
-if "${GET_BLADE_FORMATTER}"; then
-  config_builder ".bladeformatterrc.json" "Blade Formatter"
 fi

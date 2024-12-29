@@ -6,9 +6,8 @@ GET_DOCKER_IGNORE=false
 GET_PRETTIER_IGNORE=false
 GET_ESLINT_IGNORE=false
 GET_STYLELINT_IGNORE=false
-GET_BLADE_IGNORE=false
 
-while getopts "dpesb" OPTION; do
+while getopts "dpes" OPTION; do
   case "${OPTION}" in
   d)
     GET_DOCKER_IGNORE=true
@@ -22,11 +21,8 @@ while getopts "dpesb" OPTION; do
   s)
     GET_STYLELINT_IGNORE=true
     ;;
-  b)
-    GET_BLADE_IGNORE=true
-    ;;
   ?)
-    printf "Script Usage: %s \n" "bash (script) [-d] [-p] [-e] [-s] [-b]"
+    printf "Script Usage: %s \n" "bash (script) [-d] [-p] [-e] [-s]"
     exit 1
     ;;
   esac
@@ -34,7 +30,7 @@ done
 
 LINUX="kali"
 
-IGNORE_FILES_ARRAY=(".gitignore" ".dockerignore" ".prettierignore" ".eslintignore" ".stylelintignore" ".bladeignore")
+IGNORE_FILES_ARRAY=(".gitignore" ".dockerignore" ".prettierignore" ".eslintignore" ".stylelintignore")
 
 TEMPORARY_PATH="$HOME/.shell-lib"
 
@@ -104,13 +100,6 @@ stylelint_ignore() {
   message "StyleLint Ignore File"
 }
 
-blade_ignore() {
-  # Blade Ignore
-  update_ignore "5p" "./${IGNORE_FILES_ARRAY[5]}"
-
-  message "Blade Ignore File"
-}
-
 git_ignore
 
 if "${GET_DOCKER_IGNORE}"; then
@@ -127,10 +116,6 @@ fi
 
 if "${GET_STYLELINT_IGNORE}"; then
   stylelint_ignore
-fi
-
-if "${GET_BLADE_IGNORE}"; then
-  blade_ignore
 fi
 
 rm "${TEMPORARY_GIT_IGNORE_TEXT}"

@@ -3,16 +3,6 @@ phpVersion: "8.2"
 trailingCommaPHP: true
 braceStyle: "1tbs"
 
-# Blade
-wrapAttributes: "aligned-multiple"
-wrapAttributesMinAttrs: 2
-sortTailwindcssClasses: true
-sortHtmlAttributes: "none"
-noPhpSyntaxCheck: false
-indentInnerHtml: true
-extraLiners: "body,script,link,meta"
-componentPrefix: "x-,livewire:" 
-
 # XML
 xmlQuoteAttributes: "double"
 xmlSelfClosingSpace: true
@@ -25,9 +15,9 @@ keySeparator: "="
 
 plugins:
   - "@prettier/plugin-php"
-  - "@shufo/prettier-plugin-blade"
+  - "prettier-plugin-blade"
+  - "prettier-plugin-tailwindcss"
   - "@prettier/plugin-xml"
-  - "prettier-plugin-toml"
   - "prettier-plugin-properties"
 
 overrides:
@@ -42,10 +32,6 @@ overrides:
   - files: "*.xml"
     options:
       parser: "xml"
-
-  - files: "*.toml"
-    options:
-      parser: "toml"
 
   - files: "*.properties"
     options:
