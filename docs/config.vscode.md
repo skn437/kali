@@ -89,6 +89,11 @@
   "editor.stickyScroll.enabled": true,
   "editor.semanticHighlighting.enabled": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "on",
+    "strings": "on"
+  },
   "livePreview.portNumber": 5000,
   "prettier.printWidth": 120,
   "prettier.tabWidth": 2,
@@ -718,7 +723,9 @@
     "*.type.ts": "../../../../.jetbrains/custom-icons/ts-type",
     "*.test.ts": "../../../../.jetbrains/custom-icons/ts-test",
     "*.spec.ts": "../../../../.jetbrains/custom-icons/ts-test",
+    "postcss.config.js": "../../../../.jetbrains/custom-icons/postcss",
     "postcss.config.mjs": "../../../../.jetbrains/custom-icons/postcss",
+    "postcss.config.ts": "../../../../.jetbrains/custom-icons/postcss",
     "tailwind.config.ts": "../../../../.jetbrains/custom-icons/tailwindcss",
     "jest.config.ts": "../../../../.jetbrains/custom-icons/jest-config",
     "jest.setup.ts": "../../../../.jetbrains/custom-icons/jest-setup",
@@ -1018,6 +1025,17 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "tailwind-fold.foldStyle": "QUOTES",
+  "tailwind-fold.supportedLanguages": [
+    "html",
+    "typescriptreact",
+    "javascriptreact",
+    "typescript",
+    "javascript",
+    "svelte",
+    "markdown",
+    "php",
+    "blade"
+  ],
   "[postcss]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
@@ -1156,7 +1174,7 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "php.validate.enable": true,
   "php.validate.executablePath": "/home/linuxbrew/.linuxbrew/bin/php",
@@ -1165,24 +1183,12 @@
   "phpstan.configFile": "phpstan.neon",
   "phpstan.showTypeOnHover": true,
   "phpstan.showProgress": true,
-  "artisan.php.location": "/home/linuxbrew/.linuxbrew/bin/php",
   "[blade]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "bladeFormatter.format.indentSize": 2,
-  "bladeFormatter.format.wrapAttributes": "aligned-multiple",
-  "bladeFormatter.format.wrapLineLength": 120,
-  "bladeFormatter.format.wrapAttributesMinAttrs": 2,
-  "bladeFormatter.format.indentInnerHtml": true,
-  "bladeFormatter.format.useTabs": false,
-  "bladeFormatter.format.sortTailwindcssClasses": true,
-  "bladeFormatter.format.sortHtmlAttributes": "none",
-  "bladeFormatter.format.noMultipleEmptyLines": true,
-  "bladeFormatter.format.noPhpSyntaxCheck": false,
-  "bladeFormatter.format.noSingleQuote": true,
   "[java]": {
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.semanticHighlighting.enabled": true,
@@ -1315,8 +1321,7 @@
     "vitest.config.ts": "vitest.setup.ts",
     "jest.config.ts": "jest.setup.ts",
     "build.gradle.kts": "gradle.properties",
-    "composer.json": "composer.lock",
-    ".bladeformatterrc.json": ".bladeignore"
+    "composer.json": "composer.lock"
   },
   "redhat.telemetry.enabled": true,
   "code-runner.executorMap": {
@@ -1342,7 +1347,8 @@
     "settings.gradle.kts": "cd $workspaceRoot && gradle clean build"
   },
   "code-runner.executorMapByFileExtension": {
-    ".svelte": "cd $workspaceRoot && bun vite dev"
+    ".svelte": "cd $workspaceRoot && bun vite dev",
+    ".blade.php": "cd $workspaceRoot && composer run dev"
   },
   "code-runner.clearPreviousOutput": true,
   "code-runner.runInTerminal": false,
@@ -1381,6 +1387,10 @@
       "emojiDecoratorsEnabled": false
     },
     "javascript": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "javascriptreact": {
       "markupCompletionsEnabled": false,
       "emojiDecoratorsEnabled": false
     },
