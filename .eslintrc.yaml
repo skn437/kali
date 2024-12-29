@@ -26,10 +26,11 @@ env:
   es2024: true
 
 rules:
+  semi: "error"
   no-shadow:
     - "off"
     - builtinGlobals: true
-      hoist: all
+      hoist: "all"
 
 overrides:
   - files:
@@ -38,12 +39,11 @@ overrides:
       - "*.cjs"
       - "*.jsx"
     rules:
-      semi: error
       no-unused-vars:
-        - error
-        - args: all
+        - "error"
+        - args: "all"
           argsIgnorePattern: "^_"
-          caughtErrors: all
+          caughtErrors: "all"
           caughtErrorsIgnorePattern: "^_"
           destructuredArrayIgnorePattern: "^_"
           varsIgnorePattern: "^_"
@@ -55,20 +55,19 @@ overrides:
       - "*.cts"
       - "*.tsx"
     rules:
-      "@typescript-eslint/semi": error
-      "@typescript-eslint/explicit-function-return-type": error
-      "@typescript-eslint/no-explicit-any": error
+      "@typescript-eslint/explicit-function-return-type": "error"
+      "@typescript-eslint/no-explicit-any": "error"
       "@typescript-eslint/no-shadow": "off"
-      "@typescript-eslint/no-empty-object-type": error
+      "@typescript-eslint/no-empty-object-type": "error"
       "@typescript-eslint/no-inferrable-types":
         - "off"
         - ignoreParameters: true
           ignoreProperties: true
       "@typescript-eslint/no-unused-vars":
-        - error
-        - args: all
+        - "error"
+        - args: "all"
           argsIgnorePattern: "^_"
-          caughtErrors: all
+          caughtErrors: "all"
           caughtErrorsIgnorePattern: "^_"
           destructuredArrayIgnorePattern: "^_"
           varsIgnorePattern: "^_"
