@@ -1056,15 +1056,13 @@
   },
   "tailwind-fold.foldStyle": "QUOTES",
   "tailwind-fold.supportedLanguages": [
+    "blade",
     "html",
-    "typescriptreact",
     "javascriptreact",
-    "typescript",
-    "javascript",
-    "svelte",
     "markdown",
     "php",
-    "blade"
+    "svelte",
+    "typescriptreact"
   ],
   "[postcss]": {
     "editor.semanticHighlighting.enabled": true,
@@ -1088,6 +1086,8 @@
   "scss.validate": false,
   "stylelint.enable": true,
   "stylelint.validate": ["css", "postcss", "scss"],
+  "cssVariables.lookupFiles": ["**/*.css", "**/*.scss", "**/*.sass"],
+  "cssVariables.languages": ["blade", "css", "html", "javascriptreact", "php", "scss", "svelte", "typescriptreact"],
   "[html]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
