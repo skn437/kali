@@ -154,9 +154,6 @@ php() {
 
   cd "$HOME"
 
-  # Blade Formatter
-  bun add -g blade-formatter
-
   package_install "PHP"
 }
 
