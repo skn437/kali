@@ -1034,6 +1034,12 @@
     "Providers/AppServiceProvider.php": "../../../../.jetbrains/custom-icons/php-provider",
     "Providers/VoltServiceProvider.php": "../../../../.jetbrains/custom-icons/php-provider",
     "layouts/app.blade.php": "../../../../.jetbrains/custom-icons/laravel-layout",
+    "Models/User.php": "../../../../.jetbrains/custom-icons/php-model",
+    "Interfaces/IUser.php": "../../../../.jetbrains/custom-icons/php-interface",
+    "Controllers/Controller.php": "../../../../.jetbrains/custom-icons/php-controller",
+    "Livewire/Count.php": "../../../../.jetbrains/custom-icons/php-state",
+    "Actions/Logout.php": "../../../../.jetbrains/custom-icons/php-livewire",
+    "Forms/LoginForm.php": "../../../../.jetbrains/custom-icons/php-livewire",
     // SQL
     "*.sqlite": "../../../../.jetbrains/custom-icons/sqlite"
   },
