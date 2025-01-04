@@ -245,6 +245,7 @@
     ".github/workflows": "../../../../../../.jetbrains/custom-icons/github-workflows-folder",
     "dependabot": "../../../../../../.jetbrains/custom-icons/dependabot-folder",
     "webservices": "../../../../../../.jetbrains/custom-icons/webservice-folder",
+    ".webservices": "../../../../../../.jetbrains/custom-icons/webservice-folder",
     "hub": "../../../../../../.jetbrains/custom-icons/docker-hub-folder",
     "docker": "../../../../../../.jetbrains/custom-icons/docker-folder",
     "kubernetes": "../../../../../../.jetbrains/custom-icons/kubernetes-folder",
@@ -454,6 +455,7 @@
   "material-icon-theme.files.associations": {
     // .Env
     ".env.docker": "../../../../.jetbrains/custom-icons/docker-env",
+    ".env.kubernetes": "../../../../.jetbrains/custom-icons/kubernetes-env",
     ".env.neo4j": "../../../../.jetbrains/custom-icons/neo4j-env",
     ".env.redis": "../../../../.jetbrains/custom-icons/redis-env",
     ".env.mongo": "../../../../.jetbrains/custom-icons/mongo-env",
@@ -1208,67 +1210,6 @@
   },
   "gopls": {
     "ui.semanticTokens": false
-  },
-  "[php]": {
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "php.validate.enable": true,
-  "php.validate.executablePath": "/home/linuxbrew/.linuxbrew/bin/php",
-  "php.validate.run": "onType",
-  "php.suggest.basic": false,
-  "phpserver.ip": "localhost",
-  "phpserver.port": 7000,
-  "phpserver.autoOpenOnReload": true,
-  "phpserver.browser": "opera",
-  "phpstan.enabled": true,
-  "phpstan.binPath": "/home/linuxbrew/.linuxbrew/bin/phpstan",
-  "phpstan.configFile": "phpstan.neon",
-  "phpstan.showTypeOnHover": false,
-  "phpstan.enableStatusBar": true,
-  "intelephense.environment.phpVersion": "8.4.2",
-  "alpine-intellisense.settings.languageScopes": "html,php,blade",
-  "voltage.suppressErrors": false,
-  "[blade]": {
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[java]": {
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "hyperproof.vscode-ext-prettier-java"
-  },
-  "java.configuration.runtimes": [
-    {
-      "name": "JavaSE-21",
-      "path": "/home/linuxbrew/.linuxbrew/opt/openjdk@21/libexec",
-      "default": true
-    }
-  ],
-  "java.compile.nullAnalysis.mode": "automatic",
-  "java.configuration.updateBuildConfiguration": "automatic",
-  "[gradle]": {
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "vscjava.vscode-gradle"
-  },
-  "[gradle-build]": {
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "vscjava.vscode-gradle"
-  },
-  "[gradle-kotlin-dsl]": {
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": false
   },
   "[typescript]": {
     "togglequotes.chars": ["\"", "'", "`"],

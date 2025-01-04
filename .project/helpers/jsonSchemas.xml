@@ -53,6 +53,12 @@
                     <option name="path" value=".project/taskfile.yaml" />
                   </Item>
                   <Item>
+                    <option name="path" value=".webservices/docker/taskfile.yaml" />
+                  </Item>
+                  <Item>
+                    <option name="path" value=".webservices/kubernetes/taskfile.yaml" />
+                  </Item>
+                  <Item>
                     <option name="path" value=".workspace/taskfile.yaml" />
                   </Item>
                   <Item>
