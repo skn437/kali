@@ -139,6 +139,7 @@
     ".idea/jsLinters": "../../../../../../.jetbrains/custom-icons/intellij-linter-folder",
     ".idea/stylesheetLinters": "../../../../../../.jetbrains/custom-icons/intellij-stylelinter-folder",
     ".idea/modules": "../../../../../../.jetbrains/custom-icons/intellij-module-folder",
+    ".idea/dataSources": "../../../../../../.jetbrains/custom-icons/intellij-data-folder",
     ".apidocs": "../../../../../../.jetbrains/custom-icons/apidocs-folder",
     ".husky/_": "../../../../../../.jetbrains/custom-icons/husky-folder",
     ".codegen": "../../../../../../.jetbrains/custom-icons/codegen-folder",
@@ -414,6 +415,8 @@
     "vendor": "../../../../../../.jetbrains/custom-icons/laravel-vendor-folder",
     "vendor/laravel": "../../../../../../.jetbrains/custom-icons/laravel-vendor-content-folder",
     "storage": "../../../../../../.jetbrains/custom-icons/laravel-storage-folder",
+    "components/detectives": "../../../../../../.jetbrains/custom-icons/laravel-component-folder",
+    "views/detectives": "../../../../../../.jetbrains/custom-icons/laravel-view-folder",
     "database": "../../../../../../.jetbrains/custom-icons/database-folder",
     "app/actions": "../../../../../../.jetbrains/custom-icons/php-event-folder",
     "app/broadcasting": "../../../../../../.jetbrains/custom-icons/php-event-folder",
@@ -447,6 +450,8 @@
     "includes": "../../../../../../.jetbrains/custom-icons/include-folder",
     "partial": "../../../../../../.jetbrains/custom-icons/include-folder",
     "partials": "../../../../../../.jetbrains/custom-icons/include-folder",
+    "pail": "../../../../../../.jetbrains/custom-icons/pail-folder",
+    "pails": "../../../../../../.jetbrains/custom-icons/pail-folder",
     // SQL
     "seeder": "../../../../../../.jetbrains/custom-icons/seeder-folder",
     "seeders": "../../../../../../.jetbrains/custom-icons/seeder-folder",
@@ -515,6 +520,8 @@
     ".idea/bun.xml": "../../../../.jetbrains/custom-icons/intellij-config",
     ".idea/compiler.xml": "../../../../.jetbrains/custom-icons/intellij-config",
     ".idea/deno.xml": "../../../../.jetbrains/custom-icons/intellij-config",
+    ".idea/dataSources.local.xml": "../../../../.jetbrains/custom-icons/intellij-config",
+    ".idea/dataSources.xml": "../../../../.jetbrains/custom-icons/intellij-config",
     ".idea/encodings.xml": "../../../../.jetbrains/custom-icons/intellij-config",
     ".idea/git_toolbox_blame.xml": "../../../../.jetbrains/custom-icons/intellij-config",
     ".idea/gradle.xml": "../../../../.jetbrains/custom-icons/intellij-config",
@@ -1054,6 +1061,7 @@
     "Livewire/Count.php": "../../../../.jetbrains/custom-icons/php-state",
     "Actions/Logout.php": "../../../../.jetbrains/custom-icons/php-livewire",
     "Forms/LoginForm.php": "../../../../.jetbrains/custom-icons/php-livewire",
+    "*.pail": "../../../../.jetbrains/custom-icons/pail",
     // SQL
     "*.sqlite": "../../../../.jetbrains/custom-icons/sqlite"
   },
