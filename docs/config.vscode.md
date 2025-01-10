@@ -94,6 +94,17 @@
     "comments": "on",
     "strings": "on"
   },
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.panel.defaultLocation": "right",
+  "workbench.panel.opensMaximized": "always",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.panel.showLabels": false,
+  "workbench.colorCustomizations": {
+    "[Default Dark Modern]": {
+      "gitDecoration.ignoredResourceForeground": "#434343"
+    }
+  },
   "livePreview.portNumber": 5000,
   "prettier.printWidth": 120,
   "prettier.tabWidth": 2,
@@ -109,17 +120,6 @@
   "prettier.jsxSingleQuote": false,
   "prettier.singleAttributePerLine": true,
   "prettier.prettierPath": "/home/linuxbrew/.linuxbrew/opt/prettier/libexec/lib/node_modules/prettier",
-  "workbench.colorTheme": "Default Dark Modern",
-  "workbench.panel.defaultLocation": "right",
-  "workbench.panel.opensMaximized": "always",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.productIconTheme": "material-product-icons",
-  "workbench.panel.showLabels": false,
-  "workbench.colorCustomizations": {
-    "[Default Dark Modern]": {
-      "gitDecoration.ignoredResourceForeground": "#434343"
-    }
-  },
   "material-icon-theme.folders.associations": {
     // Output
     "publish": "../../../../../../.jetbrains/custom-icons/publish-folder",
@@ -1227,6 +1227,35 @@
   },
   "gopls": {
     "ui.semanticTokens": false
+  },
+  "[php]": {
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+  },
+  "php.executablePath": "/home/linuxbrew/.linuxbrew/bin/php",
+  "php.version": "8.4",
+  "php.validate.enable": true,
+  "php.validate.executablePath": "/home/linuxbrew/.linuxbrew/bin/php",
+  "php.validate.run": "onType",
+  "php.suggest.basic": false,
+  "phpserver.ip": "localhost",
+  "phpserver.port": 7000,
+  "phpserver.autoOpenOnReload": true,
+  "phpserver.browser": "opera",
+  "phpstan.enabled": true,
+  "phpstan.binPath": "/home/linuxbrew/.linuxbrew/bin/phpstan",
+  "phpstan.configFile": "phpstan.neon",
+  "phpstan.showTypeOnHover": false,
+  "phpstan.enableStatusBar": true,
+  "alpine-intellisense.settings.languageScopes": "html,php,blade",
+  "voltage.suppressErrors": false,
+  "[blade]": {
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "togglequotes.chars": ["\"", "'", "`"],
