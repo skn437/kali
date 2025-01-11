@@ -49,7 +49,7 @@ parameters:
 
   ## Misc
   checkMissingCallableSignature: true
-  editorUrl: "phpstorm://open?file=%%file%%&line=%%line%%"
+  editorUrl: "vscode://file/%%file%%:%%line%%"
   inferPrivatePropertyTypeFromConstructor: true
   treatPhpDocTypesAsCertain: true
   tipsOfTheDay: true
