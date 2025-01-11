@@ -8,8 +8,7 @@
     "javascript": "javascriptreact",
     "typescript": "typescriptreact",
     "postcss": "css",
-    "ejs": "html",
-    "blade": "html"
+    "ejs": "html"
   },
   "files.associations": {
     "*.css": "tailwindcss",
@@ -1225,12 +1224,12 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
   },
-  "php.executablePath": "/home/linuxbrew/.linuxbrew/bin/php",
-  "php.version": "8.4",
   "php.validate.enable": true,
   "php.validate.executablePath": "/home/linuxbrew/.linuxbrew/bin/php",
   "php.validate.run": "onType",
   "php.suggest.basic": false,
+  "php.executablePath": "/home/linuxbrew/.linuxbrew/bin/php",
+  "php.version": "8.4",
   "phpserver.ip": "localhost",
   "phpserver.port": 7000,
   "phpserver.autoOpenOnReload": true,
@@ -1241,13 +1240,13 @@
   "phpstan.showTypeOnHover": false,
   "phpstan.enableStatusBar": true,
   "alpine-intellisense.settings.languageScopes": "html,php,blade",
-  "voltage.suppressErrors": false,
   "[blade]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "onecentlin.laravel-blade"
   },
+  "blade.format.enable": true,
   "[typescript]": {
     "togglequotes.chars": ["\"", "'", "`"],
     "editor.semanticHighlighting.enabled": true,
@@ -1343,7 +1342,7 @@
     "jest.config.ts": "jest.setup.ts",
     "build.gradle.kts": "gradle.properties",
     "composer.json": "composer.lock",
-    "artisan": ".env*",
+    "artisan": ".env, .env.example",
     "*.sqlite": "${capture}.${extname}-*",
     "*.db": "${capture}.${extname}-*",
     "*.sqlite3": "${capture}.${extname}-*",
