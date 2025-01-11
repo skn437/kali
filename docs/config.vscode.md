@@ -1130,9 +1130,6 @@
     "editor.defaultFormatter": "jakeboone02.cypher-query-language"
   },
   "[dockerfile]": {
-    "editor.quickSuggestions": {
-      "strings": true
-    },
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
@@ -1158,9 +1155,6 @@
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "[json]": {
-    "editor.quickSuggestions": {
-      "strings": true
-    },
     "editor.suggest.insertMode": "replace",
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
@@ -1180,6 +1174,8 @@
     "editor.defaultFormatter": "bodil.prettier-toml"
   },
   "evenBetterToml.schema.enabled": true,
+  "evenBetterToml.formatter.allowedBlankLines": 1,
+  "evenBetterToml.formatter.columnWidth": 1,
   "[xml]": {
     "editor.autoClosingBrackets": "never",
     "files.trimFinalNewlines": true,
@@ -1192,11 +1188,6 @@
     "editor.insertSpaces": true,
     "editor.autoIndent": "keep",
     "diffEditor.ignoreTrimWhitespace": false,
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": false,
-      "strings": true
-    },
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
@@ -1304,11 +1295,6 @@
     "editor.unicodeHighlight.invisibleCharacters": false,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.wordWrap": "on",
-    "editor.quickSuggestions": {
-      "comments": "off",
-      "strings": "off",
-      "other": "off"
-    },
     "togglequotes.chars": ["\"", "'", "`"],
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
@@ -1356,7 +1342,14 @@
     "vitest.config.ts": "vitest.setup.ts",
     "jest.config.ts": "jest.setup.ts",
     "build.gradle.kts": "gradle.properties",
-    "composer.json": "composer.lock"
+    "composer.json": "composer.lock",
+    "artisan": ".env*",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
   },
   "redhat.telemetry.enabled": true,
   "code-runner.executorMap": {
