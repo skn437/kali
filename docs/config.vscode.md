@@ -8,7 +8,8 @@
     "javascript": "javascriptreact",
     "typescript": "typescriptreact",
     "postcss": "css",
-    "ejs": "html"
+    "ejs": "html",
+    "blade": "html"
   },
   "files.associations": {
     "*.css": "tailwindcss",
@@ -21,7 +22,8 @@
     "LICENSE": "plaintext",
     "LICENSE-MIT": "plaintext",
     "LICENSE-APACHE": "plaintext",
-    "phpstan.neon": "yaml"
+    "phpstan.neon": "yaml",
+    "*.blade.php": "php"
   },
   "files.readonlyInclude": {
     ".git/**": true,
@@ -93,7 +95,7 @@
     "comments": "on",
     "strings": "on"
   },
-  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.colorTheme": "Dark Plus Moon light",
   "workbench.panel.defaultLocation": "right",
   "workbench.panel.opensMaximized": "always",
   "workbench.iconTheme": "material-icon-theme",
@@ -1240,13 +1242,7 @@
   "phpstan.showTypeOnHover": false,
   "phpstan.enableStatusBar": true,
   "alpine-intellisense.settings.languageScopes": "html,php,blade",
-  "[blade]": {
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "onecentlin.laravel-blade"
-  },
-  "blade.format.enable": true,
+  "voltage.suppressErrors": true,
   "[typescript]": {
     "togglequotes.chars": ["\"", "'", "`"],
     "editor.semanticHighlighting.enabled": true,
