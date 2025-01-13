@@ -1155,6 +1155,7 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
+  "shellformat.path": "/home/linuxbrew/.linuxbrew/bin/shfmt",
   "[json]": {
     "editor.suggest.insertMode": "replace",
     "editor.semanticHighlighting.enabled": true,
