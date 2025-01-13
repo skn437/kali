@@ -37,6 +37,9 @@ shellscript() {
   # SHFMT
   brew install shfmt
 
+  # Shell Check
+  brew install shellcheck
+
   package_install "Shell Script"
 }
 
@@ -58,7 +61,7 @@ typescript() {
   bun add -g stylelint-config-standard stylelint-config-standard-scss stylelint-config-html
 
   # Export `Bun.js Binary` to the "Path"
-  echo 'export PATH="$HOME/.bun/bin:$PATH"' >>$HOME/.zshrc
+  echo 'export PATH="$HOME/.bun/bin:$PATH"' >>"$HOME/.zshrc"
 
   STYLELINT_LOCATION="$HOME/.bun/install/global"
 
@@ -80,16 +83,16 @@ java() {
   brew install openjdk@21
 
   # Export `Java Home` to the "Path"
-  echo 'export JAVA_HOME="$HOME/.jdks/corretto-21.0.5"' >>$HOME/.zshrc
+  echo 'export JAVA_HOME="$HOME/.jdks/corretto-21.0.5"' >>"$HOME/.zshrc"
 
   # Add everything to the "Path"
-  echo 'export PATH="$JAVA_HOME/bin:$PATH"' >>$HOME/.zshrc
+  echo 'export PATH="$JAVA_HOME/bin:$PATH"' >>"$HOME/.zshrc"
 
   # Create a maven settings directory
-  mkdir -p $HOME/.m2
+  mkdir -p "$HOME/.m2"
 
   # Create a gradle settings directory
-  mkdir -p $HOME/.gradle
+  mkdir -p "$HOME/.gradle"
 
   package_install "Java"
 }
@@ -116,10 +119,10 @@ go() {
   brew install go
 
   # Export `Go Root` to the "Path"
-  echo 'export GOROOT="/home/linuxbrew/.linuxbrew/opt/go/libexec"' >>$HOME/.zshrc
+  echo 'export GOROOT="/home/linuxbrew/.linuxbrew/opt/go/libexec"' >>"$HOME/.zshrc"
 
   # Add everything to the "Path"
-  echo 'export PATH="$GOROOT:$PATH"' >>$HOME/.zshrc
+  echo 'export PATH="$GOROOT:$PATH"' >>"$HOME/.zshrc"
 
   # Go tools
   brew install gopls delve staticcheck
@@ -138,7 +141,7 @@ php() {
   composer global require laravel/installer
 
   # Add "Composer" global packages to the "Path"
-  echo 'export PATH="$HOME/.config/composer/vendor/bin:$PATH"' >>$HOME/.zshrc
+  echo 'export PATH="$HOME/.config/composer/vendor/bin:$PATH"' >>"$HOME/.zshrc"
 
   # XDebugger
   pecl install xdebug
@@ -162,16 +165,16 @@ csharp() {
   brew install dotnet
 
   # Export `.Net Root` to the "Path"
-  echo 'export DOTNET_ROOT="$HOME/.dotnet"' >>$HOME/.zshrc
+  echo 'export DOTNET_ROOT="$HOME/.dotnet"' >>"$HOME/.zshrc"
 
   # .Net Mono
   brew install mono
 
   # Export `Mono GAC Prefix` to the "Path"
-  echo 'export MONO_GAC_PREFIX="/home/linuxbrew/.linuxbrew"' >>$HOME/.zshrc
+  echo 'export MONO_GAC_PREFIX="/home/linuxbrew/.linuxbrew"' >>"$HOME/.zshrc"
 
   # Add everything to the "Path"
-  echo 'export PATH="$DOTNET_ROOT:$MONO_GAC_PREFIX:$PATH"' >>$HOME/.zshrc
+  echo 'export PATH="$DOTNET_ROOT:$MONO_GAC_PREFIX:$PATH"' >>"$HOME/.zshrc"
 
   package_install "C#"
 }
@@ -185,7 +188,7 @@ rust() {
   # SCCache
   brew install sccache
 
-  echo 'export PATH="$HOME/.cargo/bin:$PATH"' >>$HOME/.zshrc
+  echo 'export PATH="$HOME/.cargo/bin:$PATH"' >>"$HOME/.zshrc"
 
   package_install "Rust"
 }

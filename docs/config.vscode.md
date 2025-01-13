@@ -1156,6 +1156,7 @@
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "shellformat.path": "/home/linuxbrew/.linuxbrew/bin/shfmt",
+  "shellcheck.executablePath": "/home/linuxbrew/.linuxbrew/bin/shellcheck",
   "[json]": {
     "editor.suggest.insertMode": "replace",
     "editor.semanticHighlighting.enabled": true,
