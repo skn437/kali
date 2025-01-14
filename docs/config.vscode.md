@@ -29,6 +29,7 @@
     ".git/**": true,
     "**/_/**": true,
     "**/.apidocs/**": true,
+    "**/.bin/**": true,
     "**/.cache/**": true,
     "**/.codegen/**": true,
     "**/.gen/**": true,
@@ -1064,7 +1065,9 @@
     "Forms/LoginForm.php": "../../../../.jetbrains/custom-icons/php-livewire",
     "*.pail": "../../../../.jetbrains/custom-icons/pail",
     // SQL
-    "*.sqlite": "../../../../.jetbrains/custom-icons/sqlite"
+    "*.sqlite": "../../../../.jetbrains/custom-icons/sqlite",
+    // NGINX
+    "nginx.conf": "../../../../.jetbrains/custom-icons/nginx"
   },
   "[css]": {
     "editor.semanticHighlighting.enabled": true,
@@ -1245,6 +1248,12 @@
   "phpstan.enableStatusBar": true,
   "alpine-intellisense.settings.languageScopes": "html,php,blade",
   "voltage.suppressErrors": true,
+  "[nginx]": {
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "AaaaronZhou.nginx-config-formatter-vscode-extension"
+  },
   "[typescript]": {
     "togglequotes.chars": ["\"", "'", "`"],
     "editor.semanticHighlighting.enabled": true,
