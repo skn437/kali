@@ -8,8 +8,7 @@
     "javascript": "javascriptreact",
     "typescript": "typescriptreact",
     "postcss": "css",
-    "ejs": "html",
-    "blade": "html"
+    "ejs": "html"
   },
   "files.associations": {
     "*.css": "tailwindcss",
@@ -22,8 +21,7 @@
     "LICENSE": "plaintext",
     "LICENSE-MIT": "plaintext",
     "LICENSE-APACHE": "plaintext",
-    "phpstan.neon": "yaml",
-    "*.blade.php": "php"
+    "phpstan.neon": "yaml"
   },
   "files.readonlyInclude": {
     ".git/**": true,
@@ -1247,7 +1245,13 @@
   "phpstan.showTypeOnHover": false,
   "phpstan.enableStatusBar": true,
   "alpine-intellisense.settings.languageScopes": "html,php,blade",
-  "voltage.suppressErrors": true,
+  "[blade]": {
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "onecentlin.laravel-blade"
+  },
+  "blade.format.enable": true,
   "[nginx]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
