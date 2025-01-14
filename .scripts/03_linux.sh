@@ -11,6 +11,9 @@ package_install() {
 }
 
 devtools() {
+  # NGINX
+  brew install nginx
+
   # Fastfetch
   brew install fastfetch
 

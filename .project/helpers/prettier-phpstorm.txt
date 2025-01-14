@@ -9,11 +9,17 @@ xmlSelfClosingSpace: true
 xmlSortAttributesByKey: false
 xmlWhitespaceSensitivity: "strict"
 
+# Properties
+escapeNonLatin1: false
+keySeparator: "="
+
 plugins:
   - "@prettier/plugin-php"
   - "prettier-plugin-blade"
   - "prettier-plugin-tailwindcss"
   - "@prettier/plugin-xml"
+  - "prettier-plugin-properties"
+  - "prettier-plugin-toml"
 
 overrides:
   - files: "*.php"
@@ -27,3 +33,11 @@ overrides:
   - files: "*.xml"
     options:
       parser: "xml"
+
+  - files: "*.properties"
+    options:
+      parser: "properties"
+
+  - files: "*.toml"
+    options:
+      parser: "toml"
