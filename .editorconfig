@@ -75,6 +75,14 @@ indent_size = 2
 [.*ignore]
 indent_size = 2
 
+# Env (Secret) Files
+[.env]
+indent_size = 2
+
+# Env (General) Files
+[.env.*]
+indent_size = 2
+
 # Docker File
 [Dockerfile]
 indent_size = 2
@@ -83,8 +91,8 @@ indent_size = 2
 [*.sh]
 indent_size = 2
 
-# Text, Log, Lock Files
-[*.{txt,log,lock}]
+# Text, Log, Lock, Pail Files
+[*.{txt,log,lock,pail}]
 indent_size = 2
 
 # HTML, CSS, Sass, SCSS, Markdown, MDX, MDSveX Files

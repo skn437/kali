@@ -1252,6 +1252,7 @@
     "editor.defaultFormatter": "onecentlin.laravel-blade"
   },
   "blade.format.enable": true,
+  "database-client.autoSync": true,
   "[nginx]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
