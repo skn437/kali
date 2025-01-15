@@ -11,9 +11,6 @@ package_install() {
 }
 
 devtools() {
-  # NGINX
-  brew install nginx
-
   # Fastfetch
   brew install fastfetch
 
@@ -91,6 +88,9 @@ java() {
   # Add everything to the "Path"
   echo 'export PATH="$JAVA_HOME/bin:$PATH"' >>"$HOME/.zshrc"
 
+  # Create a JDK directory
+  mkdir -p "$HOME/.jdks"
+
   # Create a maven settings directory
   mkdir -p "$HOME/.m2"
 
@@ -136,6 +136,16 @@ go() {
   package_install "Go"
 }
 
+server_engine() {
+  # NGINX
+  brew install nginx
+
+  # Turso DB
+  brew install tursodatabase/tap/turso
+
+  package_install "Server Engine"
+}
+
 php() {
   # Composer: It automatically installs `PHP` to its latest version
   brew install composer
@@ -163,6 +173,20 @@ php() {
   package_install "PHP"
 }
 
+rust() {
+  # SCCache
+  brew install sccache
+
+  echo 'export PATH="$HOME/.cargo/bin:$PATH"' >>"$HOME/.zshrc"
+
+  package_install "Rust"
+}
+
+rust_init() {
+  # Initialize Rust toolchains
+  gnome-terminal -- bash -c "printf 'Preparing to initialize rust... \n' && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh; read -n 1 KEY"
+}
+
 csharp() {
   # .Net
   brew install dotnet
@@ -179,6 +203,9 @@ csharp() {
   # Add everything to the "Path"
   echo 'export PATH="$DOTNET_ROOT:$MONO_GAC_PREFIX:$PATH"' >>"$HOME/.zshrc"
 
+  # Create a .Net directory
+  mkdir -p "$HOME/.dotnet"
+
   package_install "C#"
 }
 
@@ -187,18 +214,4 @@ csharp_init() {
   gnome-terminal -- bash -c "printf 'Preparing to initialize csharp... \n' && sudo rm -rfv /usr/share/dotnet; read -n 1 KEY"
 }
 
-rust() {
-  # SCCache
-  brew install sccache
-
-  echo 'export PATH="$HOME/.cargo/bin:$PATH"' >>"$HOME/.zshrc"
-
-  package_install "Rust"
-}
-
-rust_init() {
-  # Initialize Rust toolchains
-  gnome-terminal -- bash -c "printf 'Preparing to initialize rust... \n' && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh; read -n 1 KEY"
-}
-
-brew_prepare && devtools && c_cpp && shellscript && typescript && java && message_broker && kotlin && go && php
+brew_prepare && devtools && c_cpp && shellscript && typescript && java && message_broker && kotlin && go && server_engine && php
