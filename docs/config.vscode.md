@@ -746,6 +746,7 @@
     "*.mts": "../../../../.jetbrains/custom-icons/ts",
     "index.ts": "../../../../.jetbrains/custom-icons/source",
     "main.ts": "../../../../.jetbrains/custom-icons/ts-main",
+    "app.ts": "../../../../.jetbrains/custom-icons/ts-main",
     "*.type.ts": "../../../../.jetbrains/custom-icons/ts-type",
     "*.test.ts": "../../../../.jetbrains/custom-icons/ts-test",
     "*.spec.ts": "../../../../.jetbrains/custom-icons/ts-test",
@@ -1062,6 +1063,8 @@
     "Actions/Logout.php": "../../../../.jetbrains/custom-icons/php-livewire",
     "Forms/LoginForm.php": "../../../../.jetbrains/custom-icons/php-livewire",
     "*.pail": "../../../../.jetbrains/custom-icons/pail",
+    "manifest.json": "../../../../.jetbrains/custom-icons/manifest",
+    "manifest-ssr.json": "../../../../.jetbrains/custom-icons/manifest",
     // SQL
     "*.sqlite": "../../../../.jetbrains/custom-icons/sqlite",
     // NGINX
