@@ -9,6 +9,7 @@ rules:
 overrides:
   - files:
       - "*.html"
+      - "*.php"
       - "*.vue"
       - "*.astro"
       - "*.svelte"

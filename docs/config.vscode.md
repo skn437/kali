@@ -1062,6 +1062,8 @@
     "Livewire/Count.php": "../../../../.jetbrains/custom-icons/php-state",
     "Actions/Logout.php": "../../../../.jetbrains/custom-icons/php-livewire",
     "Forms/LoginForm.php": "../../../../.jetbrains/custom-icons/php-livewire",
+    "Feature/ExampleTest.php": "../../../../.jetbrains/custom-icons/php-test",
+    "Unit/ExampleTest.php": "../../../../.jetbrains/custom-icons/php-test",
     "*.pail": "../../../../.jetbrains/custom-icons/pail",
     "manifest.json": "../../../../.jetbrains/custom-icons/manifest",
     "manifest-ssr.json": "../../../../.jetbrains/custom-icons/manifest",
@@ -1386,14 +1388,15 @@
     "go.mod": "cd $workspaceRoot && go build",
     "pom.xml": "cd $workspaceRoot && mvn clean package",
     "build.gradle.kts": "cd $workspaceRoot && gradle clean build",
-    "settings.gradle.kts": "cd $workspaceRoot && gradle clean build"
+    "settings.gradle.kts": "cd $workspaceRoot && gradle clean build",
+    "composer.json": "cd $workspaceRoot && composer run dev",
+    "*.blade.php": "cd $workspaceRoot && composer run dev"
   },
   "code-runner.executorMapByFileExtension": {
-    ".svelte": "cd $workspaceRoot && bun vite dev",
-    ".blade.php": "cd $workspaceRoot && composer run dev"
+    ".svelte": "cd $workspaceRoot && bun vite dev"
   },
   "code-runner.clearPreviousOutput": true,
-  "code-runner.runInTerminal": false,
+  "code-runner.runInTerminal": true,
   "code-runner.defaultLanguage": "javascript",
   "emojisense.languages": {
     "blade": {
