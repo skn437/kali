@@ -732,6 +732,7 @@
     ".prettierrc.json": "../../../../.jetbrains/custom-icons/prettier",
     ".prettierrc.yaml": "../../../../.jetbrains/custom-icons/prettier",
     ".prettierignore": "../../../../.jetbrains/custom-icons/prettier-ignore",
+    "bun.lock": "../../../../.jetbrains/custom-icons/bun-lock",
     "bun.lockb": "../../../../.jetbrains/custom-icons/bun-lock",
     "bunfig.toml": "../../../../.jetbrains/custom-icons/bun",
     "*.js": "../../../../.jetbrains/custom-icons/js",
@@ -1038,6 +1039,7 @@
     "config/cache.php": "../../../../.jetbrains/custom-icons/php-config",
     "config/database.php": "../../../../.jetbrains/custom-icons/php-config",
     "config/filesystems.php": "../../../../.jetbrains/custom-icons/php-config",
+    "config/livewire.php": "../../../../.jetbrains/custom-icons/php-config",
     "config/logging.php": "../../../../.jetbrains/custom-icons/php-config",
     "config/mail.php": "../../../../.jetbrains/custom-icons/php-config",
     "config/queue.php": "../../../../.jetbrains/custom-icons/php-config",
@@ -1056,6 +1058,11 @@
     "Providers/VoltServiceProvider.php": "../../../../.jetbrains/custom-icons/php-provider",
     "components/meta.blade.php": "../../../../.jetbrains/custom-icons/laravel-component",
     "layouts/app.blade.php": "../../../../.jetbrains/custom-icons/laravel-layout",
+    "layouts/guest.blade.php": "../../../../.jetbrains/custom-icons/laravel-layout",
+    "components/AppLayout.php": "../../../../.jetbrains/custom-icons/php-layout",
+    "components/GuestLayout.php": "../../../../.jetbrains/custom-icons/php-layout",
+    "Actions/AuthAction.php": "../../../../.jetbrains/custom-icons/php-action",
+    "Requests/UpdateUserRequest.php": "../../../../.jetbrains/custom-icons/php-request",
     "Models/User.php": "../../../../.jetbrains/custom-icons/php-model",
     "Interfaces/IUser.php": "../../../../.jetbrains/custom-icons/php-interface",
     "Controllers/Controller.php": "../../../../.jetbrains/custom-icons/php-controller",
@@ -1263,6 +1270,11 @@
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "AaaaronZhou.nginx-config-formatter-vscode-extension"
+  },
+  "[apacheconf]": {
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": false
   },
   "[typescript]": {
     "togglequotes.chars": ["\"", "'", "`"],
@@ -1496,6 +1508,6 @@
       "emojiDecoratorsEnabled": false
     }
   },
-  "auto-close-tag.activationOnLanguage": ["ejs", "plaintext", "markdown", "mdx", "php", "blade"]
+  "auto-close-tag.activationOnLanguage": ["ejs", "plaintext", "markdown", "mdx", "php", "blade", "apacheconf"]
 }
 ```
