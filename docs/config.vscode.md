@@ -21,7 +21,9 @@
     "LICENSE": "plaintext",
     "LICENSE-MIT": "plaintext",
     "LICENSE-APACHE": "plaintext",
-    "phpstan.neon": "yaml"
+    "phpstan.neon": "yaml",
+    "bun.lock": "jsonl",
+    "composer.lock": "jsonl"
   },
   "files.readonlyInclude": {
     ".git/**": true,
@@ -45,6 +47,7 @@
     "**/auth.json": true,
     "**/bin/**": true,
     "**/build/**": true,
+    "**/bun.lock": true,
     "**/bun.lockb": true,
     "**/cache/**": true,
     "**/Cargo.lock": true,
@@ -458,7 +461,9 @@
     "migration": "../../../../../../.jetbrains/custom-icons/migration-folder",
     "migrations": "../../../../../../.jetbrains/custom-icons/migration-folder",
     "factory": "../../../../../../.jetbrains/custom-icons/factory-folder",
-    "factories": "../../../../../../.jetbrains/custom-icons/factory-folder"
+    "factories": "../../../../../../.jetbrains/custom-icons/factory-folder",
+    // Robots
+    "robots": "../../../../../../.jetbrains/custom-icons/robots-folder"
   },
   "material-icon-theme.files.associations": {
     // .Env
@@ -1068,6 +1073,8 @@
     "Livewire/Count.php": "../../../../.jetbrains/custom-icons/php-state",
     "Actions/Logout.php": "../../../../.jetbrains/custom-icons/php-livewire",
     "Forms/LoginForm.php": "../../../../.jetbrains/custom-icons/php-livewire",
+    "tests/Pest.php": "../../../../.jetbrains/custom-icons/php-pest",
+    "tests/TestCase.php": "../../../../.jetbrains/custom-icons/php-pest",
     "Feature/ExampleTest.php": "../../../../.jetbrains/custom-icons/php-test",
     "Unit/ExampleTest.php": "../../../../.jetbrains/custom-icons/php-test",
     "*.pail": "../../../../.jetbrains/custom-icons/pail",
@@ -1076,7 +1083,9 @@
     // SQL
     "*.sqlite": "../../../../.jetbrains/custom-icons/sqlite",
     // NGINX
-    "nginx.conf": "../../../../.jetbrains/custom-icons/nginx"
+    "nginx.conf": "../../../../.jetbrains/custom-icons/nginx",
+    // Robots
+    "robots.txt": "../../../../.jetbrains/custom-icons/robots"
   },
   "[css]": {
     "editor.semanticHighlighting.enabled": true,
@@ -1270,6 +1279,12 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "AaaaronZhou.nginx-config-formatter-vscode-extension"
   },
+  "[robots-txt]": {
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "darian-benam.vscode-robots-dot-txt-support"
+  },
   "[apacheconf]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
@@ -1347,7 +1362,7 @@
     "*.jsx": "${capture}.js",
     "*.tsx": "${capture}.ts",
     "tsconfig.json": "tsconfig.*.json",
-    "package.json": "package-lock.json, npm-shrinkwrap.json, yarn.lock, pnpm-lock.yaml, pnpm-workspace.yaml, bun.lockb, deno.lock",
+    "package.json": "package-lock.json, npm-shrinkwrap.json, yarn.lock, pnpm-lock.yaml, pnpm-workspace.yaml, bun.lock, bun.lockb, deno.lock",
     "deno.json": "deno.lock",
     ".eslintrc.json": ".eslintignore",
     ".eslintrc.yaml": ".eslintignore",
