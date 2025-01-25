@@ -162,14 +162,6 @@ php() {
   # PHPStan
   brew install phpstan
 
-  PHPSTAN_CONFIG_LOCATION="$HOME/.config/composer"
-
-  cd "$PHPSTAN_CONFIG_LOCATION"
-
-  curl -sSL "https://raw.githubusercontent.com/skn437/kali/master/.project/editor.sh" | bash -s -- -l
-
-  cd "$HOME"
-
   package_install "PHP"
 }
 
