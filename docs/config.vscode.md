@@ -1133,9 +1133,19 @@
   "css.validate": false,
   "scss.validate": false,
   "stylelint.enable": true,
-  "stylelint.validate": ["css", "postcss", "scss"],
+  "stylelint.validate": ["css", "postcss", "scss", "tailwindcss"],
   "cssVariables.lookupFiles": ["**/*.css", "**/*.scss", "**/*.sass"],
-  "cssVariables.languages": ["blade", "css", "html", "javascriptreact", "php", "scss", "svelte", "typescriptreact"],
+  "cssVariables.languages": [
+    "blade",
+    "css",
+    "html",
+    "javascriptreact",
+    "php",
+    "scss",
+    "svelte",
+    "tailwindcss",
+    "typescriptreact"
+  ],
   "[html]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
