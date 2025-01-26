@@ -10,19 +10,6 @@ package_install() {
   printf "'%s' Installed! ✅ \n" "$1"
 }
 
-devtools() {
-  # Fastfetch
-  brew install fastfetch
-
-  # YQ & XMLStarlet
-  brew install yq xmlstarlet
-
-  # Dive
-  brew install dive
-
-  package_install "Devtools"
-}
-
 c_cpp() {
   # Clang/LLVM
   brew install llvm
@@ -100,13 +87,6 @@ java() {
   package_install "Java"
 }
 
-message_broker() {
-  # Kafka: It automatically installs `Zookeeper` to its latest version
-  brew install kafka
-
-  package_install "Message Broker"
-}
-
 kotlin() {
   # Kotlin
   brew install kotlin
@@ -134,16 +114,6 @@ go() {
   brew install go-task lefthook goreleaser
 
   package_install "Go"
-}
-
-server_engine() {
-  # NGINX
-  brew install nginx
-
-  # Turso DB
-  brew install tursodatabase/tap/turso
-
-  package_install "Server Engine"
 }
 
 php() {
@@ -206,4 +176,4 @@ csharp_init() {
   gnome-terminal -- bash -c "printf 'Preparing to initialize csharp... \n' && sudo rm -rfv /usr/share/dotnet; read -n 1 KEY"
 }
 
-brew_prepare && devtools && c_cpp && shellscript && typescript && java && message_broker && kotlin && go && server_engine && php
+brew_prepare && c_cpp && shellscript && typescript && java && kotlin && go && php
