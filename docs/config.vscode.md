@@ -1530,6 +1530,7 @@
       "emojiDecoratorsEnabled": false
     }
   },
-  "auto-close-tag.activationOnLanguage": ["ejs", "plaintext", "markdown", "mdx", "php", "blade", "apacheconf"]
+  "auto-close-tag.activationOnLanguage": ["ejs", "plaintext", "markdown", "mdx", "php", "blade", "apacheconf"],
+  "podmanager.podmanPath": "/usr/bin/podman"
 }
 ```
