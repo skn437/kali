@@ -2,6 +2,10 @@
 
 set -e
 
+apt_prepare() {
+  sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
+}
+
 brew_prepare() {
   brew update && brew upgrade && brew autoremove && brew cleanup
 }
@@ -22,16 +26,15 @@ server_engine() {
 
 container_engine() {
   # Podman
-  brew install podman
+  sudo apt install -y podman
 
   # Podman Compose
   brew install podman-compose
 
+  # Export Podman to Path
+  echo 'export PATH="/usr/bin:$PATH"' >>"$HOME/.zshrc"
+
   package_install "Container Engine"
 }
 
-container_engine_init() {
-  gnome-terminal -- bash -c "brew services start podman; read -n 1 KEY"
-}
-
-brew_prepare && server_engine && container_engine && container_engine_init
+apt_prepare && brew_prepare && server_engine && container_engine
