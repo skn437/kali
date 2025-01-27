@@ -70,13 +70,10 @@ java() {
   brew install openjdk@21
 
   # Export `Java Home` to the "Path"
-  echo 'export JAVA_HOME="$HOME/.jdks/corretto-21.0.5"' >>"$HOME/.zshrc"
+  echo 'export JAVA_HOME="/home/linuxbrew/.linuxbrew/opt/openjdk@21/libexec"' >>"$HOME/.zshrc"
 
   # Add everything to the "Path"
   echo 'export PATH="$JAVA_HOME/bin:$PATH"' >>"$HOME/.zshrc"
-
-  # Create a JDK directory
-  mkdir -p "$HOME/.jdks"
 
   # Create a maven settings directory
   mkdir -p "$HOME/.m2"
@@ -147,33 +144,6 @@ rust() {
 rust_init() {
   # Initialize Rust toolchains
   gnome-terminal -- bash -c "printf 'Preparing to initialize rust... \n' && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh; read -n 1 KEY"
-}
-
-csharp() {
-  # .Net
-  brew install dotnet
-
-  # Export `.Net Root` to the "Path"
-  echo 'export DOTNET_ROOT="$HOME/.dotnet"' >>"$HOME/.zshrc"
-
-  # .Net Mono
-  brew install mono
-
-  # Export `Mono GAC Prefix` to the "Path"
-  echo 'export MONO_GAC_PREFIX="/home/linuxbrew/.linuxbrew"' >>"$HOME/.zshrc"
-
-  # Add everything to the "Path"
-  echo 'export PATH="$DOTNET_ROOT:$MONO_GAC_PREFIX:$PATH"' >>"$HOME/.zshrc"
-
-  # Create a .Net directory
-  mkdir -p "$HOME/.dotnet"
-
-  package_install "C#"
-}
-
-csharp_init() {
-  # Delete Existing .Net (If Present)
-  gnome-terminal -- bash -c "printf 'Preparing to initialize csharp... \n' && sudo rm -rfv /usr/share/dotnet; read -n 1 KEY"
 }
 
 brew_prepare && c_cpp && shellscript && typescript && java && kotlin && go && php

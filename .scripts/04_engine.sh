@@ -31,9 +31,6 @@ container_engine() {
   # Podman Compose
   brew install podman-compose
 
-  # Export Podman to Path
-  echo 'export PATH="/usr/bin:$PATH"' >>"$HOME/.zshrc"
-
   package_install "Container Engine"
 }
 
