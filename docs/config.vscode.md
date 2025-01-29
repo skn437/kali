@@ -572,7 +572,7 @@
     "app.css": "../../../../.jetbrains/custom-icons/tailwindcss-global",
     "theme.css": "../../../../.jetbrains/custom-icons/tailwindcss-util",
     "font.css": "../../../../.jetbrains/custom-icons/tailwindcss-util",
-    "url.css": "../../../../.jetbrains/custom-icons/tailwindcss-util",
+    "url.css": "../../../../.jetbrains/custom-icons/tailwindcss-url",
     "*.svg": "../../../../.jetbrains/custom-icons/svg",
     "*.page.svg": "../../../../.jetbrains/custom-icons/svg-page",
     "favicon.svg": "../../../../.jetbrains/custom-icons/svg-favicon",
