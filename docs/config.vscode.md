@@ -92,6 +92,8 @@
     "comments": "on",
     "strings": "on"
   },
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
   "workbench.colorTheme": "Dark Plus Moon light",
   "workbench.panel.defaultLocation": "right",
   "workbench.panel.opensMaximized": "always",
@@ -1281,39 +1283,6 @@
     "editor.defaultFormatter": "darian-benam.vscode-robots-dot-txt-support"
   },
   "[apacheconf]": {
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": false
-  },
-  "[java]": {
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "RudraPatel.prettier-plugin-java-vscode"
-  },
-  "java.configuration.runtimes": [
-    {
-      "name": "JavaSE-21",
-      "path": "/home/linuxbrew/.linuxbrew/opt/openjdk@21/libexec",
-      "default": true
-    }
-  ],
-  "java.compile.nullAnalysis.mode": "automatic",
-  "java.configuration.updateBuildConfiguration": "automatic",
-  "[gradle]": {
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "vscjava.vscode-gradle"
-  },
-  "[gradle-build]": {
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "vscjava.vscode-gradle"
-  },
-  "[gradle-kotlin-dsl]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": false
