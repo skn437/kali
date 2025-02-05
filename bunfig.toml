@@ -15,3 +15,9 @@ root = "./tests"
 coverage = true
 coverageThreshold = { line = 0.7, function = 0.8, statement = 0.9 }
 coverageSkipTestFiles = false
+
+[run]
+# equivalent to `bun --bun` for all `bun run` commands
+bun = true
+# default settings `system` in Linux & MacOS
+shell = "system"
