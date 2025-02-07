@@ -1074,7 +1074,8 @@
     "Controllers/Controller.php": "../../../../.jetbrains/custom-icons/php-controller",
     "Traits/PageTrait.php": "../../../../.jetbrains/custom-icons/php-trait",
     "Enums/Language.php": "../../../../.jetbrains/custom-icons/php-enum",
-    "Classes/Route.php": "../../../../.jetbrains/custom-icons/php-class",
+    "Enums/Icon.php": "../../../../.jetbrains/custom-icons/php-enum",
+    "Classes/Navigation.php": "../../../../.jetbrains/custom-icons/php-class",
     "Livewire/Count.php": "../../../../.jetbrains/custom-icons/php-state",
     "Pages/Home.php": "../../../../.jetbrains/custom-icons/php-state",
     "Actions/Logout.php": "../../../../.jetbrains/custom-icons/php-livewire",
@@ -1404,6 +1405,7 @@
     "java": "cd $workspaceRoot && printf 'Use Java Extension To Run Java Instead! \n'",
     "javascript": "bun",
     "php": "php",
+    "python": "python",
     "rust": "cd $workspaceRoot && cargo run",
     "shellscript": "bash",
     "typescript": "bun"
@@ -1485,6 +1487,10 @@
       "emojiDecoratorsEnabled": false
     },
     "plaintext": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "python": {
       "markupCompletionsEnabled": false,
       "emojiDecoratorsEnabled": false
     },
