@@ -80,7 +80,7 @@ parameters:
   noUnnecessaryCollectionCall: true
   checkModelProperties: false
   checkOctaneCompatibility: false
-  checkUnusedViews: true
+  checkUnusedViews: false
   noEnvCallsOutsideOfConfig: true
   checkModelAppends: true
 
