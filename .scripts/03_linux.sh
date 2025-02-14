@@ -142,8 +142,8 @@ rust() {
 }
 
 rust_init() {
-  # Initialize Rust toolchains
-  gnome-terminal -- bash -c "printf 'Preparing to initialize rust... \n' && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh; read -n 1 KEY"
+  # Initialize Rust toolchains & Rust Owl
+  gnome-terminal -- bash -c "printf 'Preparing to initialize rust... \n' && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && curl -L 'https://github.com/cordx56/rustowl/releases/download/v0.1.1/install.sh' | sh; read -n 1 KEY"
 }
 
 brew_prepare && c_cpp && shellscript && typescript && java && kotlin && go && php
