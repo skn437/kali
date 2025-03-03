@@ -20,7 +20,15 @@ devtools() {
   # Dive
   brew install dive
 
+  # Package Config
+  brew install pkgconf
+
   package_install "Devtools"
+}
+
+rust_owl() {
+  # Install Rust Owl
+  gnome-terminal -- bash -c "printf 'Preparing to initialize rust owl... \n' && curl -L 'https://github.com/cordx56/rustowl/releases/latest/download/install.sh' | sh && echo 'Rust Owl Installed!'; read -n 1 KEY"
 }
 
 message_broker() {
@@ -30,4 +38,4 @@ message_broker() {
   package_install "Message Broker"
 }
 
-brew_prepare && devtools && message_broker
+brew_prepare && devtools && rust_owl && message_broker
