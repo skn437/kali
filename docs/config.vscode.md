@@ -40,6 +40,7 @@
     "**/.phpunit.cache": true,
     "**/.phpunit.result.cache": true,
     "**/.svelte-kit/**": true,
+    "**/.tuono/**": true,
     "**/*.lock": true,
     "**/*.sln": true,
     "**/*.sqlite": true,
@@ -853,6 +854,7 @@
     "[...id].astro": "../../../../.jetbrains/custom-icons/astro-dynamic-id",
     "astro.config.mjs": "../../../../.jetbrains/custom-icons/astro-config",
     "src/env.d.ts": "../../../../.jetbrains/custom-icons/astro-definition",
+    "tuono.config.ts": "../../../../.jetbrains/custom-icons/tuono",
     // Rust
     "*.rs": "../../../../.jetbrains/custom-icons/rust",
     "main.rs": "../../../../.jetbrains/custom-icons/rust-main",
@@ -881,6 +883,7 @@
     "rustenv.toml": "../../../../.jetbrains/custom-icons/rust-env",
     "application.rs": "../../../../.jetbrains/custom-icons/rust-app",
     "root.rs": "../../../../.jetbrains/custom-icons/rust-root",
+    "index.rs": "../../../../.jetbrains/custom-icons/rust-root",
     // Webservices/DevOps
     ".dockerignore": "../../../../.jetbrains/custom-icons/docker-ignore",
     "Dockerfile": "../../../../.jetbrains/custom-icons/docker-file",

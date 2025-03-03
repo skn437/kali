@@ -91,9 +91,12 @@ apidocs
 HELP.md
 .gradle
 
-# Cargo
+# Rust Cargo
 target
 Cargo.lock
+
+# Tuono
+.tuono
 
 # C/C++
 output
