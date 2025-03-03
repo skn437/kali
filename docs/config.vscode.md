@@ -1297,6 +1297,12 @@
     "editor.tabSize": 2,
     "editor.formatOnSave": false
   },
+  "[rust]": {
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "statiolake.vscode-rustfmt"
+  },
   "[typescript]": {
     "togglequotes.chars": ["\"", "'", "`"],
     "editor.semanticHighlighting.enabled": true,
@@ -1534,7 +1540,6 @@
       "emojiDecoratorsEnabled": false
     }
   },
-  "auto-close-tag.activationOnLanguage": ["ejs", "plaintext", "markdown", "mdx", "php", "blade", "apacheconf"],
-  "podmanager.podmanPath": "/usr/bin/podman"
+  "auto-close-tag.activationOnLanguage": ["ejs", "plaintext", "markdown", "mdx", "php", "blade", "apacheconf"]
 }
 ```
