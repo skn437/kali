@@ -2,10 +2,6 @@
 
 set -e
 
-apt_prepare() {
-  sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
-}
-
 brew_prepare() {
   brew update && brew upgrade && brew autoremove && brew cleanup
 }
@@ -24,14 +20,4 @@ server_engine() {
   package_install "Server Engine"
 }
 
-container_engine() {
-  # Podman
-  sudo apt install -y podman
-
-  # Podman Compose
-  brew install podman-compose
-
-  package_install "Container Engine"
-}
-
-apt_prepare && brew_prepare && server_engine && container_engine
+brew_prepare && server_engine
