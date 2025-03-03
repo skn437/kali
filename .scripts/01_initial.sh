@@ -14,14 +14,14 @@ bluetooth() {
 
 jetbrains() {
   # Intellij Idea Ultimate & Rider
-  echo 'export PATH="$HOME/.intellij-idea/bin:$HOME/.php-storm/bin:$PATH"' >>$HOME/.zshrc
+  echo 'export PATH="$HOME/.intellij-idea/bin:$HOME/.php-storm/bin:$PATH"' >>"$HOME/.zshrc"
 
   message "'JetBrains IDE' Configured In Path"
 }
 
 desktop() {
   # Postman & Neo4j
-  echo 'export PATH="$HOME/.postman-desktop/app:$HOME/.neo4j-desktop:$PATH"' >>$HOME/.zshrc
+  echo 'export PATH="$HOME/.postman-desktop/app:$HOME/.neo4j-desktop:$PATH"' >>"$HOME/.zshrc"
 
   message "'Desktop App' Configured In Path"
 }
