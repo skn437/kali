@@ -159,6 +159,7 @@
     "nodes": "../../../../../../.jetbrains/custom-icons/nodes-folder",
     ".kotlin": "../../../../../../.jetbrains/custom-icons/kotlin-output-folder",
     ".cmake": "../../../../../../.jetbrains/custom-icons/cmake-output-folder",
+    ".tuono": "../../../../../../.jetbrains/custom-icons/tuono-folder",
     // Database
     "mongo": "../../../../../../.jetbrains/custom-icons/mongo-folder",
     "neo4j": "../../../../../../.jetbrains/custom-icons/neo4j-folder",
@@ -855,6 +856,8 @@
     "astro.config.mjs": "../../../../.jetbrains/custom-icons/astro-config",
     "src/env.d.ts": "../../../../.jetbrains/custom-icons/astro-definition",
     "tuono.config.ts": "../../../../.jetbrains/custom-icons/tuono",
+    "server": "../../../../.jetbrains/custom-icons/elysia",
+    "elysia": "../../../../.jetbrains/custom-icons/elysia",
     // Rust
     "*.rs": "../../../../.jetbrains/custom-icons/rust",
     "main.rs": "../../../../.jetbrains/custom-icons/rust-main",
@@ -1322,6 +1325,12 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "typescriptExplorer.typeTree.selection.enable": true,
+  "typescriptExplorer.typeTree.view.show.baseClass": true,
+  "typescriptExplorer.typeTree.view.show.typeParameters": true,
+  "typescriptExplorer.typeTree.view.icons.enable": true,
+  "typescriptExplorer.typeTree.view.icons.colors.enable": true,
+  "typescriptExplorer.typeTree.readonly.enable": true,
   "[javascript]": {
     "editor.maxTokenizationLineLength": 2500,
     "togglequotes.chars": ["\"", "'", "`"],
@@ -1331,6 +1340,14 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascriptreact]": {
+    "editor.maxTokenizationLineLength": 2500,
+    "togglequotes.chars": ["\"", "'", "`"],
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[svelte]": {
     "togglequotes.chars": ["\"", "'", "`"],
     "editor.semanticHighlighting.enabled": true,
@@ -1543,6 +1560,18 @@
       "emojiDecoratorsEnabled": false
     }
   },
-  "auto-close-tag.activationOnLanguage": ["ejs", "plaintext", "markdown", "mdx", "php", "blade", "apacheconf"]
+  "auto-close-tag.activationOnLanguage": [
+    "ejs",
+    "plaintext",
+    "markdown",
+    "mdx",
+    "php",
+    "blade",
+    "apacheconf",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ]
 }
 ```

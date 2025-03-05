@@ -11,7 +11,7 @@ saveTextLockfile = true
 save = true
 
 [test]
-root = "./tests"
+root = "./src"
 coverage = true
 coverageThreshold = { line = 0.7, function = 0.8, statement = 0.9 }
 coverageSkipTestFiles = false
