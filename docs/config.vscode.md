@@ -78,6 +78,13 @@
   "terminal.integrated.defaultProfile.linux": "zsh",
   "terminal.integrated.env.linux": {},
   "terminal.integrated.fontFamily": "Firacode Nerd Font",
+  "terminal.integrated.suggest.quickSuggestions": {
+    "commands": "off",
+    "arguments": "off",
+    "unknown": "off"
+  },
+  "terminal.integrated.suggest.suggestOnTriggerCharacters": false,
+  "terminal.integrated.suggest.inlineSuggestion": "off",
   "editor.fontFamily": "'Firacode Nerd Font'",
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
@@ -1325,12 +1332,6 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "typescriptExplorer.typeTree.selection.enable": true,
-  "typescriptExplorer.typeTree.view.show.baseClass": true,
-  "typescriptExplorer.typeTree.view.show.typeParameters": true,
-  "typescriptExplorer.typeTree.view.icons.enable": true,
-  "typescriptExplorer.typeTree.view.icons.colors.enable": true,
-  "typescriptExplorer.typeTree.readonly.enable": true,
   "[javascript]": {
     "editor.maxTokenizationLineLength": 2500,
     "togglequotes.chars": ["\"", "'", "`"],
