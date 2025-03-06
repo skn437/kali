@@ -21,6 +21,3 @@ coverageSkipTestFiles = false
 bun = true
 # default settings `system` in Linux & MacOS
 shell = "system"
-
-[serve.static]
-plugins = ["bun-plugin-tailwind"]
