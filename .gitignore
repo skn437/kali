@@ -11,15 +11,18 @@
 
 # Compiled Output
 dist
+.dist
 tmp
 out-tsc
 build
+.build
 
 # Node.js
 node_modules
 
 # Logs
 logs
+.logs
 *.log
 npm-debug.log*
 pnpm-debug.log*
@@ -27,7 +30,6 @@ pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
-.logs
 
 # Others
 **/*.trace
@@ -51,6 +53,7 @@ bun.lockb
 # Next.js
 .next
 out
+.out
 .swc
 next-env.d.ts
 
@@ -62,6 +65,7 @@ cypress/screenshots
 .vercel
 
 # Vite
+output
 .output
 
 # Svelte-Kit
@@ -99,12 +103,13 @@ Cargo.lock
 .tuono
 
 # C/C++
-output
 .cache
 
 # C#
 obj
+.obj
 bin
+.bin
 
 # Blazor
 **/*.razor.css
