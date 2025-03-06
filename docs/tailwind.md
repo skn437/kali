@@ -5,4 +5,5 @@
 > ```zsh
 > bun add -D tailwindcss @tailwindcss/typography
 > bun add -D cally daisyui
+> bun add -D bun-plugin-tailwind
 > ```
