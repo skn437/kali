@@ -3,6 +3,6 @@
 ## Tailwind CSS config file plugins
 
 > ```zsh
-> bun add -D @tailwindcss/typography
-> bun add -D daisyui
+> bun add -D tailwindcss @tailwindcss/typography
+> bun add -D cally daisyui
 > ```

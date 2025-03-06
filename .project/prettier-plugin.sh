@@ -23,7 +23,7 @@ message() {
 }
 
 # Prettier Plugin array
-PRETTIER_PLUGIN_ARRAY=("svelte" "astro" "java" "tool" "php" "phpstorm")
+PRETTIER_PLUGIN_ARRAY=("svelte" "astro" "java" "tool" "php" "phpstorm" "basic")
 
 plugin_error_message() {
   printf "Specify a valid prettier plugin: "
