@@ -23,6 +23,9 @@ devtools() {
   # Package Config
   brew install pkgconf
 
+  # Watchman
+  brew install watchman
+
   package_install "Devtools"
 }
 

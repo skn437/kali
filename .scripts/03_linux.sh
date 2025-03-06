@@ -41,11 +41,12 @@ typescript() {
   # Deno
   brew install deno
 
-  # Prettier, StyleLint
+  # Prettier, StyleLint, Concurrently
   brew install prettier
   bun add -g prettier
   bun add -g stylelint postcss-html postcss-scss
   bun add -g stylelint-config-standard stylelint-config-standard-scss stylelint-config-html
+  bun add -g concurrently
 
   # Export `Bun.js Binary` to the "Path"
   echo 'export PATH="$HOME/.bun/bin:$PATH"' >>"$HOME/.zshrc"
