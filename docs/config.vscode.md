@@ -1215,6 +1215,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "html.format.indentInnerHtml": true,
+  "alpine-intellisense.settings.languageScopes": "html,javascript,javascriptreact,typescript,typescriptreact,php,blade",
   "[cypher]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
@@ -1299,35 +1300,6 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[php]": {
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
-  },
-  "php.validate.enable": true,
-  "php.validate.executablePath": "/home/linuxbrew/.linuxbrew/bin/php",
-  "php.validate.run": "onType",
-  "php.suggest.basic": false,
-  "php.executablePath": "/home/linuxbrew/.linuxbrew/bin/php",
-  "php.version": "8.4",
-  "phpserver.ip": "localhost",
-  "phpserver.port": 7000,
-  "phpserver.autoOpenOnReload": true,
-  "phpserver.browser": "opera",
-  "phpstan.enabled": true,
-  "phpstan.binPath": "/home/linuxbrew/.linuxbrew/bin/phpstan",
-  "phpstan.configFile": "phpstan.neon",
-  "phpstan.showTypeOnHover": false,
-  "phpstan.enableStatusBar": true,
-  "alpine-intellisense.settings.languageScopes": "html,php,blade",
-  "[blade]": {
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "onecentlin.laravel-blade"
-  },
-  "blade.format.enable": true,
   "database-client.autoSync": true,
   "[nginx]": {
     "editor.semanticHighlighting.enabled": true,
@@ -1340,11 +1312,6 @@
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "darian-benam.vscode-robots-dot-txt-support"
-  },
-  "[apacheconf]": {
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": false
   },
   "[rust]": {
     "editor.semanticHighlighting.enabled": true,
