@@ -822,7 +822,7 @@
     "*.config.ts": "../../../../.jetbrains/custom-icons/ts-option",
     "*.style.ts": "../../../../.jetbrains/custom-icons/ts-style",
     "*.class.ts": "../../../../.jetbrains/custom-icons/ts-class",
-    "*.controller.ts": "../../../../.jetbrains/custom-icons/ts-native",
+    "*.controller.ts": "../../../../.jetbrains/custom-icons/ts-query",
     "styles/font.ts": "../../../../.jetbrains/custom-icons/ts-font",
     "next.config.mjs": "../../../../.jetbrains/custom-icons/next",
     "middleware.ts": "../../../../.jetbrains/custom-icons/next-middleware",
@@ -1445,6 +1445,7 @@
     "typescript": "bun"
   },
   "code-runner.executorMapByGlob": {
+    "*.d.ts": "cd $workspaceRoot && printf 'Cannot Run TypeScript Type Definition File! \n'",
     "Cargo.toml": "cd $workspaceRoot && cargo build",
     "next.config.mjs": "cd $workspaceRoot && bun next build",
     "next.config.ts": "cd $workspaceRoot && bun next build",

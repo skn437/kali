@@ -114,6 +114,19 @@ go() {
   package_install "Go"
 }
 
+rust() {
+  # Initialize Rust Toolchains
+  gnome-terminal -- bash -c "printf 'Preparing to initialize rust... \n' && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && echo 'Rust Installed!'; read -n 1 KEY"
+
+  # SCCache
+  brew install sccache
+
+  # Add "Rust Binaries" to the "Path"
+  echo 'export PATH="$HOME/.cargo/bin:$PATH"' >>"$HOME/.zshrc"
+
+  package_install "Rust"
+}
+
 php() {
   # Composer: It automatically installs `PHP` to its latest version
   brew install composer
@@ -133,17 +146,4 @@ php() {
   package_install "PHP"
 }
 
-rust() {
-  # Initialize Rust Toolchains
-  gnome-terminal -- bash -c "printf 'Preparing to initialize rust... \n' && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && echo 'Rust Installed!'; read -n 1 KEY"
-
-  # SCCache
-  brew install sccache
-
-  # Add "Rust Binaries" to the "Path"
-  echo 'export PATH="$HOME/.cargo/bin:$PATH"' >>"$HOME/.zshrc"
-
-  package_install "Rust"
-}
-
-brew_prepare && c_cpp && shellscript && typescript && java && kotlin && go && php && rust
+brew_prepare && c_cpp && shellscript && typescript && java && kotlin && go && rust

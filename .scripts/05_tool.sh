@@ -34,11 +34,4 @@ rust_owl() {
   gnome-terminal -- bash -c "printf 'Preparing to initialize rust owl... \n' && curl -L 'https://github.com/cordx56/rustowl/releases/latest/download/install.sh' | sh && echo 'Rust Owl Installed!'; read -n 1 KEY"
 }
 
-message_broker() {
-  # Kafka: It automatically installs `Zookeeper` to its latest version
-  brew install kafka
-
-  package_install "Message Broker"
-}
-
-brew_prepare && devtools && rust_owl && message_broker
+brew_prepare && devtools && rust_owl
