@@ -17,6 +17,9 @@ server_engine() {
   # Turso DB
   brew install tursodatabase/tap/turso
 
+  # Kafka: It automatically installs `Zookeeper` to its latest version
+  brew install kafka
+
   package_install "Server Engine"
 }
 
