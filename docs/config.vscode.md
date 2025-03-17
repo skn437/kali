@@ -332,6 +332,7 @@
     ".git": "../../../../../../.jetbrains/custom-icons/git-folder",
     "global": "../../../../../../.jetbrains/custom-icons/global-folder",
     "private": "../../../../../../.jetbrains/custom-icons/private-folder",
+    "meta": "../../../../../../.jetbrains/custom-icons/meta-folder",
     // Python
     "python": "../../../../../../.jetbrains/custom-icons/py-folder",
     "analysis": "../../../../../../.jetbrains/custom-icons/analysis-folder",
@@ -1130,6 +1131,7 @@
     "manifest.json": "../../../../.jetbrains/custom-icons/manifest",
     "manifest-ssr.json": "../../../../.jetbrains/custom-icons/manifest",
     // SQL
+    "*.sql": "../../../../.jetbrains/custom-icons/sqlite",
     "*.sqlite": "../../../../.jetbrains/custom-icons/sqlite",
     // NGINX
     "nginx.conf": "../../../../.jetbrains/custom-icons/nginx",
@@ -1308,6 +1310,12 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "database-client.autoSync": true,
+  "[sql]": {
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+  },
   "[nginx]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
