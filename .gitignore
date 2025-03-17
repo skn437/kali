@@ -50,6 +50,9 @@ bun.lockb
 # Typescript
 *.tsbuildinfo
 
+# Drizzle ORM
+.drizzle
+
 # Next.js
 .next
 out
