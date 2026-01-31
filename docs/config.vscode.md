@@ -1172,6 +1172,7 @@
   "tailwindCSS.lint.cssConflict": "warning",
   "tailwind-fold.foldStyle": "QUOTES",
   "tailwind-fold.supportedLanguages": [
+    "astro",
     "blade",
     "html",
     "javascript",
@@ -1206,6 +1207,7 @@
   "stylelint.validate": ["css", "postcss", "scss"],
   "cssVariables.lookupFiles": ["**/*.css", "**/*.scss", "**/*.sass"],
   "cssVariables.languages": [
+    "astro",
     "blade",
     "css",
     "html",
@@ -1226,7 +1228,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "html.format.indentInnerHtml": true,
-  "alpine-intellisense.settings.languageScopes": "html,javascript,javascriptreact,typescript,typescriptreact,php,blade",
+  "alpine-intellisense.settings.languageScopes": "astro,html,javascript,javascriptreact,typescript,typescriptreact,php,blade",
   "[cypher]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
@@ -1369,6 +1371,12 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[astro]": {
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "astro-build.astro-vscode",
+  },
   "[svelte]": {
     "togglequotes.chars": ["\"", "'", "`"],
     "editor.semanticHighlighting.enabled": true,
@@ -1438,6 +1446,8 @@
     "app.html": "app.d.ts",
     "svelte.config.js": ".env.development, .env.production",
     "vitest.config.ts": "vitest.setup.ts",
+    "astro.config.mjs": ".env.development, .env.production",
+    "astro.config.ts": ".env.development, .env.production",
     "jest.config.ts": "jest.setup.ts",
     "build.gradle.kts": "gradle.properties",
     "composer.json": "composer.lock",
@@ -1469,6 +1479,8 @@
     "next.config.ts": "cd $workspaceRoot && bun next build",
     "svelte.config.js": "cd $workspaceRoot && bun vite build",
     "vite.config.ts": "cd $workspaceRoot && bun vite build",
+    "astro.config.mjs": "cd $workspaceRoot && bun astro build",
+    "astro.config.ts": "cd $workspaceRoot && bun astro build",
     "go.mod": "cd $workspaceRoot && go build",
     "pom.xml": "cd $workspaceRoot && mvn clean package",
     "build.gradle.kts": "cd $workspaceRoot && gradle clean build",
@@ -1477,12 +1489,17 @@
     "*.blade.php": "cd $workspaceRoot && composer run dev"
   },
   "code-runner.executorMapByFileExtension": {
-    ".svelte": "cd $workspaceRoot && bun vite dev"
+    ".svelte": "cd $workspaceRoot && bun vite dev",
+    ".astro": "cd $workspaceRoot && bun astro dev",
   },
   "code-runner.clearPreviousOutput": true,
   "code-runner.runInTerminal": true,
   "code-runner.defaultLanguage": "javascript",
   "emojisense.languages": {
+    "astro": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false,
+    },
     "blade": {
       "markupCompletionsEnabled": false,
       "emojiDecoratorsEnabled": false
