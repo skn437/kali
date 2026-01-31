@@ -885,6 +885,7 @@
     "[...slug].astro": "../../../../.jetbrains/custom-icons/astro-dynamic-id",
     "[...id].astro": "../../../../.jetbrains/custom-icons/astro-dynamic-id",
     "astro.config.mjs": "../../../../.jetbrains/custom-icons/astro-config",
+    "astro.config.ts": "../../../../.jetbrains/custom-icons/astro-config",
     "src/env.d.ts": "../../../../.jetbrains/custom-icons/astro-definition",
     "tuono.config.ts": "../../../../.jetbrains/custom-icons/tuono",
     "server": "../../../../.jetbrains/custom-icons/elysia",
