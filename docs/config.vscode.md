@@ -1377,6 +1377,8 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "astro-build.astro-vscode",
   },
+  "astro.content-intellisense": true,
+  "astro.updateImportsOnFileMove.enabled": true,
   "[svelte]": {
     "togglequotes.chars": ["\"", "'", "`"],
     "editor.semanticHighlighting.enabled": true,
