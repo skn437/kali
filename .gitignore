@@ -74,6 +74,9 @@ output
 # Svelte-Kit
 .svelte-kit
 
+# Astro
+.astro
+
 # Test
 coverage
 
