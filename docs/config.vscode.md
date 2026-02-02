@@ -369,6 +369,7 @@
     "styles": "../../../../../../.jetbrains/custom-icons/style-folder",
     "cypress": "../../../../../../.jetbrains/custom-icons/cypress-folder",
     "server": "../../../../../../.jetbrains/custom-icons/server-folder",
+    "backend": "../../../../../../.jetbrains/custom-icons/server-folder",
     "client": "../../../../../../.jetbrains/custom-icons/client-folder",
     "stores": "../../../../../../.jetbrains/custom-icons/store-folder",
     "navigation": "../../../../../../.jetbrains/custom-icons/routes-folder",
