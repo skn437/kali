@@ -27,7 +27,9 @@
   "files.readonlyInclude": {
     ".git/**": true,
     "**/_/**": true,
+    "**/_astro/**": true,
     "**/.apidocs/**": true,
+    "**/.astro/**": true,
     "**/.bin/**": true,
     "**/.cache/**": true,
     "**/.codegen/**": true,
@@ -171,6 +173,8 @@
     ".dist": "../../../../../../.jetbrains/custom-icons/dist-folder",
     ".svelte": "../../../../../../.jetbrains/custom-icons/svelte-folder",
     ".svelte-kit": "../../../../../../.jetbrains/custom-icons/svelte-folder",
+    ".astro": "../../../../../../.jetbrains/custom-icons/astro-folder",
+    "_astro": "../../../../../../.jetbrains/custom-icons/astro-folder",
     ".gen": "../../../../../../.jetbrains/custom-icons/generator-folder",
     "generated": "../../../../../../.jetbrains/custom-icons/generator-folder",
     "nodes": "../../../../../../.jetbrains/custom-icons/nodes-folder",
