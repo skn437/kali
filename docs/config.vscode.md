@@ -391,6 +391,7 @@
     "pages": "../../../../../../.jetbrains/custom-icons/page-folder",
     "layout": "../../../../../../.jetbrains/custom-icons/layout-folder",
     "layouts": "../../../../../../.jetbrains/custom-icons/layout-folder",
+    ".app": "../../../../../../.jetbrains/custom-icons/app-folder",
     "app": "../../../../../../.jetbrains/custom-icons/app-folder",
     "apps": "../../../../../../.jetbrains/custom-icons/app-folder",
     "lib": "../../../../../../.jetbrains/custom-icons/lib-folder",
