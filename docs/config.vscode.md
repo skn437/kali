@@ -348,6 +348,7 @@
     "pkg": "../../../../../../.jetbrains/custom-icons/package-folder",
     "pkgs": "../../../../../../.jetbrains/custom-icons/package-folder",
     // JavaScript & TypeScript
+    ".publish": "../../../../../../.jetbrains/custom-icons/publish-folder",
     "node_modules": "../../../../../../.jetbrains/custom-icons/node-folder",
     "node_modules/typescript": "../../../../../../.jetbrains/custom-icons/node-content-folder",
     "blog": "../../../../../../.jetbrains/custom-icons/blog-folder",
