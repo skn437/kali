@@ -141,7 +141,6 @@
   "material-icon-theme.folders.associations": {
     // Output
     "publish": "../../../../../../.jetbrains/custom-icons/publish-folder",
-    ".publish": "../../../../../../.jetbrains/custom-icons/publish-folder",
     ".output": "../../../../../../.jetbrains/custom-icons/output-folder",
     "out": "../../../../../../.jetbrains/custom-icons/output-folder",
     ".out": "../../../../../../.jetbrains/custom-icons/output-folder",
@@ -350,6 +349,7 @@
     "pkg": "../../../../../../.jetbrains/custom-icons/package-folder",
     "pkgs": "../../../../../../.jetbrains/custom-icons/package-folder",
     // JavaScript & TypeScript
+    ".publish": "../../../../../../.jetbrains/custom-icons/publish-folder",
     "node_modules": "../../../../../../.jetbrains/custom-icons/node-folder",
     "node_modules/typescript": "../../../../../../.jetbrains/custom-icons/node-content-folder",
     "blog": "../../../../../../.jetbrains/custom-icons/blog-folder",
