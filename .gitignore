@@ -76,6 +76,7 @@ output
 
 # Astro
 .astro
+public/assets
 
 # Test
 coverage
