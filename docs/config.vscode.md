@@ -72,6 +72,7 @@
     "**/out/**": true,
     "**/package-lock.json": true,
     "**/pnpm-lock.yaml": true,
+    "**/public/assets/**": true,
     "**/public/hot/**": true,
     "**/ssr/**": true,
     "**/storage/**": true,
