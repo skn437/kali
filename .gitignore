@@ -61,8 +61,8 @@ out
 next-env.d.ts
 
 # Cypress
-cypress/videos
-cypress/screenshots
+cypress/videos/
+cypress/screenshots/
 
 # Vercel
 .vercel
@@ -76,7 +76,7 @@ output
 
 # Astro
 .astro
-public/assets
+public/assets/
 
 # Test
 coverage
@@ -88,11 +88,11 @@ storybook-static
 test-results
 playwright-report
 blob-report
-playwright/.cache
-playwright/.auth
+playwright/.cache/
+playwright/.auth/
 
 # Husky
-.husky/_
+.husky/_/
 
 # Java
 apidocs
@@ -151,9 +151,9 @@ Homestead.json
 Homestead.yaml
 auth.json
 .phpunit.cache
-public/hot
-public/storage
+public/hot/
+public/storage/
 storage/*.key
-storage/pail
+storage/pail/
 vendor
 ssr
