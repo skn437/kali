@@ -611,6 +611,8 @@
     "*.page.svg": "../../../../.jetbrains/custom-icons/svg-page",
     "favicon.svg": "../../../../.jetbrains/custom-icons/svg-favicon",
     "*.ttf": "../../../../.jetbrains/custom-icons/font",
+    "*.woff": "../../../../.jetbrains/custom-icons/font",
+    "*.woff2": "../../../../.jetbrains/custom-icons/font",
     "*.png": "../../../../.jetbrains/custom-icons/image",
     "*.jpg": "../../../../.jetbrains/custom-icons/image",
     "*.jpeg": "../../../../.jetbrains/custom-icons/image",
