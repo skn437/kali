@@ -1,5 +1,5 @@
 pre-commit:
-  parallel: true
+  parallel: false
   commands:
     cmd1:
       run: printf "Pre-Commit Command1! \n"
@@ -7,7 +7,7 @@ pre-commit:
       run: printf "Pre-Commit Command2! \n"
 
 pre-push:
-  parallel: true
+  parallel: false
   commands:
     cmd1:
       run: printf "Pre-Push Command1! \n"
