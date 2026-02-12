@@ -539,6 +539,7 @@
     "settings.json": "../../../../.jetbrains/custom-icons/settings",
     "extensions.json": "../../../../.jetbrains/custom-icons/plugin",
     "launch.json": "../../../../.jetbrains/custom-icons/debug",
+    "vercel.json": "../../../../.jetbrains/custom-icons/vercel",
     ".gitignore": "../../../../.jetbrains/custom-icons/git-ignore",
     ".gitkeep": "../../../../.jetbrains/custom-icons/git-keep",
     "*.pdf": "../../../../.jetbrains/custom-icons/pdf",
