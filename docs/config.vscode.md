@@ -339,6 +339,8 @@
     "global": "../../../../../../.jetbrains/custom-icons/global-folder",
     "private": "../../../../../../.jetbrains/custom-icons/private-folder",
     "meta": "../../../../../../.jetbrains/custom-icons/meta-folder",
+    ".vercel": "../../../../../../.jetbrains/custom-icons/vercel-folder",
+    "vercel": "../../../../../../.jetbrains/custom-icons/vercel-folder",
     // Python
     "python": "../../../../../../.jetbrains/custom-icons/py-folder",
     "analysis": "../../../../../../.jetbrains/custom-icons/analysis-folder",
