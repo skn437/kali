@@ -1295,7 +1295,8 @@
   "json.schemaDownload.enable": true,
   "json.schemas": [
     {
-      "https://json.schemastore.org/omnisharp.json": ["omnisharp.json"]
+      "https://json.schemastore.org/omnisharp.json": ["omnisharp.json"],
+      "https://openapi.vercel.sh/vercel.json": ["vercel.json"]
     }
   ],
   "[toml]": {
