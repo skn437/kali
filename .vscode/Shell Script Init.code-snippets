@@ -1,12 +1,17 @@
 {
   "Shell Script: Init": {
     "prefix": "init-shell",
-    "body": ["#!/usr/bin/bash", "", "set -e", "", "# shellcheck disable=SC1090", "source \"\\$1\"", "", "$0"],
-    "description": "Shell Script: Init",
+    "body": ["#!/usr/bin/bash", "", "set -e", "", "# shellcheck disable=SC1091", "source \"WRITE_HERE\"", "", "$0"],
+    "description": "Initializes Shell Script with general template",
   },
-  "Shell Script: Init: Printf": {
+  "Shell Script: Init: Variable": {
+    "prefix": "init-shell-var",
+    "body": ["#!/usr/bin/bash", "", "set -e", "", "# shellcheck disable=SC1090", "source \"\\$1\"", "", "$0"],
+    "description": "Initializes Shell Script with general template and 'source' taking a variable",
+  },
+  "Shell Script: Printf": {
     "prefix": "printf-shell",
     "body": ["printf \"$0 \\n\""],
-    "description": "Shell Script: Init: Printf",
+    "description": "Invokes 'printf' function with general template",
   },
 }
