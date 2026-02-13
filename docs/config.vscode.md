@@ -539,7 +539,6 @@
     "settings.json": "../../../../.jetbrains/custom-icons/settings",
     "extensions.json": "../../../../.jetbrains/custom-icons/plugin",
     "launch.json": "../../../../.jetbrains/custom-icons/debug",
-    "vercel.json": "../../../../.jetbrains/custom-icons/vercel",
     ".gitignore": "../../../../.jetbrains/custom-icons/git-ignore",
     ".gitkeep": "../../../../.jetbrains/custom-icons/git-keep",
     "*.pdf": "../../../../.jetbrains/custom-icons/pdf",
@@ -779,6 +778,8 @@
     "bun.lock": "../../../../.jetbrains/custom-icons/bun-lock",
     "bun.lockb": "../../../../.jetbrains/custom-icons/bun-lock",
     "bunfig.toml": "../../../../.jetbrains/custom-icons/bun",
+    "vercel.json": "../../../../.jetbrains/custom-icons/vercel",
+    "vercel.ts": "../../../../.jetbrains/custom-icons/vercel",
     "*.js": "../../../../.jetbrains/custom-icons/js",
     "*.cjs": "../../../../.jetbrains/custom-icons/js",
     "*.mjs": "../../../../.jetbrains/custom-icons/js",
@@ -1397,7 +1398,7 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "astro-build.astro-vscode",
+    "editor.defaultFormatter": "astro-build.astro-vscode"
   },
   "astro.content-intellisense": true,
   "astro.updateImportsOnFileMove.enabled": true,
@@ -1514,7 +1515,7 @@
   },
   "code-runner.executorMapByFileExtension": {
     ".svelte": "cd $workspaceRoot && bun vite dev",
-    ".astro": "cd $workspaceRoot && bun astro dev",
+    ".astro": "cd $workspaceRoot && bun astro dev"
   },
   "code-runner.clearPreviousOutput": true,
   "code-runner.runInTerminal": true,
@@ -1522,7 +1523,7 @@
   "emojisense.languages": {
     "astro": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "blade": {
       "markupCompletionsEnabled": false,
