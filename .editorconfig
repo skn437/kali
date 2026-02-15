@@ -119,10 +119,6 @@ indent_size = 2
 [.htaccess]
 indent_size = 2
 
-# C, C++ Files
-[*.{c,cpp}]
-indent_size = 2
-
 # C# XML Project Files
 [*.csproj]
 indent_size = 2
@@ -795,3 +791,7 @@ resharper_razor_always_use_end_of_line_brace_style = true
 resharper_razor_remove_this_qualifier = false
 ### `@inherits` & `@model` Directive
 resharper_razor_prefer_qualified_reference = true
+
+# C, C++ Files
+[*.{c,cpp}]
+indent_size = 2
