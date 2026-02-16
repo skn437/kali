@@ -606,6 +606,7 @@
     "_tailwind.scss": "../../../../.jetbrains/custom-icons/sass-util",
     "tailwind.css": "../../../../.jetbrains/custom-icons/tailwindcss-init",
     "app.css": "../../../../.jetbrains/custom-icons/tailwindcss-global",
+    "utility.css": "../../../../.jetbrains/custom-icons/tailwindcss-util",
     "theme.css": "../../../../.jetbrains/custom-icons/tailwindcss-util",
     "font.css": "../../../../.jetbrains/custom-icons/tailwindcss-util",
     "url.css": "../../../../.jetbrains/custom-icons/tailwindcss-url",
