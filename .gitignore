@@ -104,8 +104,6 @@ apidocs
 # GraphQL
 .gen
 .codegen
-**/schema/schema.d.ts
-**/schema/schema.graphql
 
 # Spring Boot
 HELP.md
