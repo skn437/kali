@@ -96,7 +96,7 @@ indent_size = 2
 indent_size = 2
 
 # HTML, CSS, Sass, SCSS, Markdown, MDX, PostCSS, MDSveX Files
-[*.{html,css,sass,scss,md,mdx,pcss,postcss,svx}]
+[*.{html,css,sass,scss,md,mdoc,mdx,pcss,postcss,svx}]
 indent_size = 2
 
 # TypeScript, JavaScript Files

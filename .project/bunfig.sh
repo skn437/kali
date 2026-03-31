@@ -13,6 +13,7 @@ bunfig() {
     printf "'Bun Config' Added! ✅ \n"
   else
     printf "'package.json' File Absent! ❌ \n"
+
     exit 1
   fi
 }

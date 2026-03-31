@@ -8,7 +8,7 @@
     "javascript": "javascriptreact",
     "typescript": "typescriptreact",
     "postcss": "css",
-    "ejs": "html",
+    "ejs": "html"
   },
   "files.associations": {
     "*.css": "tailwindcss",
@@ -22,7 +22,7 @@
     "LICENSE-MIT": "plaintext",
     "LICENSE-APACHE": "plaintext",
     "phpstan.neon": "yaml",
-    "*.lock": "jsonl",
+    "*.lock": "jsonl"
   },
   "files.readonlyInclude": {
     ".git/**": true,
@@ -80,7 +80,7 @@
     "**/storage/**": true,
     "**/target/**": true,
     "**/vendor/**": true,
-    "**/wwwroot/**": true,
+    "**/wwwroot/**": true
   },
   "git.defaultBranchName": "master",
   "git.autorefresh": true,
@@ -92,7 +92,7 @@
   "terminal.integrated.suggest.quickSuggestions": {
     "commands": "off",
     "arguments": "off",
-    "unknown": "off",
+    "unknown": "off"
   },
   "terminal.integrated.suggest.suggestOnTriggerCharacters": false,
   "terminal.integrated.suggest.inlineSuggestion": "off",
@@ -109,7 +109,7 @@
   "editor.quickSuggestions": {
     "other": "on",
     "comments": "on",
-    "strings": "on",
+    "strings": "on"
   },
   "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": "on",
@@ -121,9 +121,9 @@
   "workbench.productIconTheme": "material-product-icons",
   "workbench.panel.showLabels": false,
   "workbench.colorCustomizations": {
-    "[Default Dark Modern]": {
-      "gitDecoration.ignoredResourceForeground": "#434343",
-    },
+    "[Dark Modern]": {
+      "gitDecoration.ignoredResourceForeground": "#434343"
+    }
   },
   "workbench.secondarySideBar.defaultVisibility": "visible",
   "livePreview.portNumber": 5000,
@@ -189,10 +189,15 @@
     ".tuono": "../../../../../../.jetbrains/custom-icons/tuono-folder",
     "_render.func": "../../../../../../.jetbrains/custom-icons/output-folder",
     "_functions": "../../../../../../.jetbrains/custom-icons/function-folder",
+    "_middleware.func": "../../../../../../.jetbrains/custom-icons/middleware-folder",
     // Database
     "mongo": "../../../../../../.jetbrains/custom-icons/mongo-folder",
     "neo4j": "../../../../../../.jetbrains/custom-icons/neo4j-folder",
     "redis": "../../../../../../.jetbrains/custom-icons/redis-folder",
+    "turso": "../../../../../../.jetbrains/custom-icons/turso-folder",
+    "firebase": "../../../../../../.jetbrains/custom-icons/firebase-folder",
+    "drizzle": "../../../../../../.jetbrains/custom-icons/drizzle-folder",
+    ".drizzle": "../../../../../../.jetbrains/custom-icons/drizzle-folder",
     // Java, Kotlin & Spring Boot
     "java": "../../../../../../.jetbrains/custom-icons/java-folder",
     "main": "../../../../../../.jetbrains/custom-icons/main-folder",
@@ -395,9 +400,6 @@
     "trpc": "../../../../../../.jetbrains/custom-icons/trpc-folder",
     "fixtures": "../../../../../../.jetbrains/custom-icons/fixture-folder",
     "support": "../../../../../../.jetbrains/custom-icons/support-folder",
-    "firebase": "../../../../../../.jetbrains/custom-icons/firebase-folder",
-    "drizzle": "../../../../../../.jetbrains/custom-icons/drizzle-folder",
-    ".drizzle": "../../../../../../.jetbrains/custom-icons/drizzle-folder",
     "page": "../../../../../../.jetbrains/custom-icons/page-folder",
     "pages": "../../../../../../.jetbrains/custom-icons/page-folder",
     "layout": "../../../../../../.jetbrains/custom-icons/layout-folder",
@@ -502,7 +504,7 @@
     "factory": "../../../../../../.jetbrains/custom-icons/factory-folder",
     "factories": "../../../../../../.jetbrains/custom-icons/factory-folder",
     // Robots
-    "robots": "../../../../../../.jetbrains/custom-icons/robots-folder",
+    "robots": "../../../../../../.jetbrains/custom-icons/robots-folder"
   },
   "material-icon-theme.files.associations": {
     // .Env
@@ -527,6 +529,8 @@
     ".editorconfig": "../../../../.jetbrains/custom-icons/editorconfig",
     "*.mmd": "../../../../.jetbrains/custom-icons/mermaid",
     "*.mermaid": "../../../../.jetbrains/custom-icons/mermaid",
+    "*.mdoc": "../../../../.jetbrains/custom-icons/markdoc",
+    "markdoc.config.json": "../../../../.jetbrains/custom-icons/markdoc-config-json",
     "*.svx": "../../../../.jetbrains/custom-icons/mdsvex",
     "*.md": "../../../../.jetbrains/custom-icons/markdown",
     "*.mdx": "../../../../.jetbrains/custom-icons/markdownx",
@@ -545,6 +549,8 @@
     "*.iml": "../../../../.jetbrains/custom-icons/iml",
     "*.yaml": "../../../../.jetbrains/custom-icons/yaml",
     "*.json": "../../../../.jetbrains/custom-icons/json",
+    "config.json": "../../../../.jetbrains/custom-icons/json-config",
+    ".vc-config.json": "../../../../.jetbrains/custom-icons/json-config",
     "settings.json": "../../../../.jetbrains/custom-icons/settings",
     "extensions.json": "../../../../.jetbrains/custom-icons/plugin",
     "launch.json": "../../../../.jetbrains/custom-icons/debug",
@@ -790,6 +796,8 @@
     "bunfig.toml": "../../../../.jetbrains/custom-icons/bun",
     "vercel.json": "../../../../.jetbrains/custom-icons/vercel",
     "vercel.ts": "../../../../.jetbrains/custom-icons/vercel",
+    "markdoc.config.ts": "../../../../.jetbrains/custom-icons/markdoc-config-ts",
+    "markdoc.config.mjs": "../../../../.jetbrains/custom-icons/markdoc-config-ts",
     "*.js": "../../../../.jetbrains/custom-icons/js",
     "*.cjs": "../../../../.jetbrains/custom-icons/js",
     "*.mjs": "../../../../.jetbrains/custom-icons/js",
@@ -860,7 +868,6 @@
     "drizzle.config.ts": "../../../../.jetbrains/custom-icons/drizzle",
     "styles/font.ts": "../../../../.jetbrains/custom-icons/ts-font",
     "next.config.mjs": "../../../../.jetbrains/custom-icons/next",
-    "middleware.ts": "../../../../.jetbrains/custom-icons/next-middleware",
     "next-env.d.ts": "../../../../.jetbrains/custom-icons/next-env",
     "*.test.tsx": "../../../../.jetbrains/custom-icons/ts-test",
     "*.spec.tsx": "../../../../.jetbrains/custom-icons/ts-test",
@@ -914,12 +921,16 @@
     "astro.config.ts": "../../../../.jetbrains/custom-icons/astro-config",
     "*.txt.ts": "../../../../.jetbrains/custom-icons/ts-query",
     "*.js.ts": "../../../../.jetbrains/custom-icons/ts-query",
+    "*.json.ts": "../../../../.jetbrains/custom-icons/ts-query",
     "*.jpg.ts": "../../../../.jetbrains/custom-icons/ts-query",
     "*.jpeg.ts": "../../../../.jetbrains/custom-icons/ts-query",
     "*.png.ts": "../../../../.jetbrains/custom-icons/ts-query",
     "*.svg.ts": "../../../../.jetbrains/custom-icons/ts-query",
     "*.xml.ts": "../../../../.jetbrains/custom-icons/ts-query",
-    "src/env.d.ts": "../../../../.jetbrains/custom-icons/astro-definition",
+    "entry.mjs": "../../../../.jetbrains/custom-icons/node-entry",
+    "middleware.mjs": "../../../../.jetbrains/custom-icons/node-middleware",
+    "virtual_astro_middleware.mjs": "../../../../.jetbrains/custom-icons/node-middleware",
+    "middleware.ts": "../../../../.jetbrains/custom-icons/node-middleware",
     "tuono.config.ts": "../../../../.jetbrains/custom-icons/tuono",
     "server": "../../../../.jetbrains/custom-icons/elysia",
     "elysia": "../../../../.jetbrains/custom-icons/elysia",
@@ -1170,14 +1181,19 @@
     "*.sqlite": "../../../../.jetbrains/custom-icons/sqlite",
     // NGINX
     "nginx.conf": "../../../../.jetbrains/custom-icons/nginx",
-    // Robots
+    // Robots & Sitemaps
     "robots.txt": "../../../../.jetbrains/custom-icons/robots",
+    "sitemap-index.xml": "../../../../.jetbrains/custom-icons/sitemap",
+    "sitemap-0.xml": "../../../../.jetbrains/custom-icons/sitemap",
+    "sitemap-1.xml": "../../../../.jetbrains/custom-icons/sitemap",
+    "sitemap-2.xml": "../../../../.jetbrains/custom-icons/sitemap",
+    "sitemap-3.xml": "../../../../.jetbrains/custom-icons/sitemap"
   },
   "[css]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "css.lint.float": "warning",
   "css.lint.duplicateProperties": "warning",
@@ -1188,7 +1204,7 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.colorDecorators": true,
@@ -1214,19 +1230,19 @@
     "php",
     "svelte",
     "typescript",
-    "typescriptreact",
+    "typescriptreact"
   ],
   "[postcss]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[scss]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "scss.lint.important": "warning",
   "scss.lint.float": "warning",
@@ -1252,13 +1268,13 @@
     "svelte",
     "tailwindcss",
     "typescript",
-    "typescriptreact",
+    "typescriptreact"
   ],
   "[html]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "html.format.indentInnerHtml": true,
   "alpine-intellisense.settings.languageScopes": "astro,html,javascript,javascriptreact,typescript,typescriptreact,php,blade",
@@ -1266,26 +1282,26 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "lumirelle.shell-format-rev",
+    "editor.defaultFormatter": "lumirelle.shell-format-rev"
   },
   "[ignore]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "lumirelle.shell-format-rev",
+    "editor.defaultFormatter": "lumirelle.shell-format-rev"
   },
   "[properties]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "lumirelle.shell-format-rev",
+    "editor.defaultFormatter": "lumirelle.shell-format-rev"
   },
   "[shellscript]": {
     "files.eol": "\n",
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "lumirelle.shell-format-rev",
+    "editor.defaultFormatter": "lumirelle.shell-format-rev"
   },
   "shellformat.path": "/home/linuxbrew/.linuxbrew/bin/shfmt",
   "shellcheck.executablePath": "/home/linuxbrew/.linuxbrew/bin/shellcheck",
@@ -1294,20 +1310,20 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "json.schemaDownload.enable": true,
   "json.schemas": [
     {
       "https://json.schemastore.org/omnisharp.json": ["omnisharp.json"],
-      "https://openapi.vercel.sh/vercel.json": ["vercel.json"],
-    },
+      "https://openapi.vercel.sh/vercel.json": ["vercel.json"]
+    }
   ],
   "[toml]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "bodil.prettier-toml",
+    "editor.defaultFormatter": "bodil.prettier-toml"
   },
   "evenBetterToml.schema.enabled": true,
   "evenBetterToml.formatter.allowedBlankLines": 1,
@@ -1318,7 +1334,7 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "DotJoshJohnson.xml",
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
   },
   "[yaml]": {
     "editor.insertSpaces": true,
@@ -1327,51 +1343,51 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "yaml.schemas": {
     "https://taskfile.dev/schema.json": ["taskfile.yaml"],
     "kubernetes": ["*.deployment.yaml", "*.statefulset.yaml"],
-    "https://json.schemastore.org/lefthook.json": ["lefthook.yaml"],
+    "https://json.schemastore.org/lefthook.json": ["lefthook.yaml"]
   },
   "yaml.schemaStore.enable": true,
   "[graphql]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "database-client.autoSync": true,
   "[sql]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode",
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
   },
   "[nginx]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "AaaaronZhou.nginx-config-formatter-vscode-extension",
+    "editor.defaultFormatter": "AaaaronZhou.nginx-config-formatter-vscode-extension"
   },
   "[robots-txt]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "darian-benam.vscode-robots-dot-txt-support",
+    "editor.defaultFormatter": "darian-benam.vscode-robots-dot-txt-support"
   },
   "[rust]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "statiolake.vscode-rustfmt",
+    "editor.defaultFormatter": "statiolake.vscode-rustfmt"
   },
   "[typescript]": {
     "togglequotes.chars": ["\"", "'", "`"],
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "js/ts.tsdk.path": "/home/linuxbrew/.linuxbrew/opt/typescript/libexec/lib/node_modules/typescript/lib",
   "js/ts.updateImportsOnFileMove.enabled": "always",
@@ -1380,7 +1396,7 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.maxTokenizationLineLength": 2500,
@@ -1388,7 +1404,7 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
     "editor.maxTokenizationLineLength": 2500,
@@ -1396,13 +1412,13 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[astro]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "astro-build.astro-vscode",
+    "editor.defaultFormatter": "astro-build.astro-vscode"
   },
   "astro.content-intellisense": true,
   "astro.updateImportsOnFileMove.enabled": true,
@@ -1411,7 +1427,7 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "svelte.svelte-vscode",
+    "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "svelte.enable-ts-plugin": true,
   "[svg]": {
@@ -1420,7 +1436,7 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "jock.svg",
+    "editor.defaultFormatter": "jock.svg"
   },
   "svg.preview.mode": "svg",
   "[markdown]": {
@@ -1432,17 +1448,23 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "markdownlint.config": {
     "MD010": false,
-    "MD033": false,
+    "MD033": false
+  },
+  "[markdoc]": {
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "stripe.markdoc-language-support"
   },
   "[mdx]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "explorer.compactFolders": true,
   "explorer.fileNesting.enabled": true,
@@ -1477,6 +1499,8 @@
     "vitest.config.ts": "vitest.setup.ts",
     "astro.config.mjs": ".env, .env.development, .env.production",
     "astro.config.ts": ".env, .env.development, .env.production",
+    "markdoc.config.ts": "markdoc.config.json",
+    "markdoc.config.mjs": "markdoc.config.json",
     "jest.config.ts": "jest.setup.ts",
     "build.gradle.kts": "gradle.properties",
     "composer.json": "composer.lock",
@@ -1486,7 +1510,7 @@
     "*.sqlite3": "${capture}.${extname}-*",
     "*.db3": "${capture}.${extname}-*",
     "*.sdb": "${capture}.${extname}-*",
-    "*.s3db": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
   },
   "redhat.telemetry.enabled": true,
   "code-runner.executorMap": {
@@ -1499,7 +1523,7 @@
     "python": "python",
     "rust": "cd $workspaceRoot && cargo run",
     "shellscript": "bash",
-    "typescript": "bun",
+    "typescript": "bun"
   },
   "code-runner.executorMapByGlob": {
     "*.d.ts": "cd $workspaceRoot && printf 'Cannot Run TypeScript Type Definition File! \n'",
@@ -1515,11 +1539,11 @@
     "build.gradle.kts": "cd $workspaceRoot && gradle clean build",
     "settings.gradle.kts": "cd $workspaceRoot && gradle clean build",
     "composer.json": "cd $workspaceRoot && composer run dev",
-    "*.blade.php": "cd $workspaceRoot && composer run dev",
+    "*.blade.php": "cd $workspaceRoot && composer run dev"
   },
   "code-runner.executorMapByFileExtension": {
     ".svelte": "cd $workspaceRoot && bun vite dev",
-    ".astro": "cd $workspaceRoot && bun astro dev",
+    ".astro": "cd $workspaceRoot && bun astro dev"
   },
   "code-runner.clearPreviousOutput": true,
   "code-runner.runInTerminal": true,
@@ -1527,113 +1551,118 @@
   "emojisense.languages": {
     "astro": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "blade": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "c": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "cpp": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "ejs": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "git-commit": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "go": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "html": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "java": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "javascript": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "javascriptreact": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "json": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "markdown": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "markdoc": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "mdx": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "php": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "plaintext": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "python": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "rust": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "shellscript": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "svelte": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "svg": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "toml": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "typescript": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "typescriptreact": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "xml": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "yaml": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
-    },
+      "emojiDecoratorsEnabled": false
+    }
   },
   "auto-close-tag.activationOnLanguage": [
     "ejs",
     "plaintext",
     "markdown",
+    "markdoc",
     "mdx",
     "php",
     "blade",
@@ -1641,10 +1670,10 @@
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact",
+    "typescriptreact"
   ],
   "gitlens.advanced.messages": {
-    "suppressCreatePullRequestPrompt": true,
-  },
+    "suppressCreatePullRequestPrompt": true
+  }
 }
 ```

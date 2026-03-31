@@ -40,12 +40,12 @@ lerna-debug.log*
 **/*.bun
 
 # Deno, PNPM, NPM, YARN & Bun Lock Files
-deno.lock
-pnpm-lock.yaml
-package-lock.json
-yarn.lock
-bun.lock
-bun.lockb
+# deno.lock
+# pnpm-lock.yaml
+# package-lock.json
+# yarn.lock
+# bun.lock
+# bun.lockb
 
 # Typescript
 *.tsbuildinfo
