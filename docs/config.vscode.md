@@ -8,7 +8,7 @@
     "javascript": "javascriptreact",
     "typescript": "typescriptreact",
     "postcss": "css",
-    "ejs": "html"
+    "ejs": "html",
   },
   "files.associations": {
     "*.css": "tailwindcss",
@@ -22,7 +22,7 @@
     "LICENSE-MIT": "plaintext",
     "LICENSE-APACHE": "plaintext",
     "phpstan.neon": "yaml",
-    "*.lock": "jsonl"
+    "*.lock": "jsonl",
   },
   "files.readonlyInclude": {
     ".git/**": true,
@@ -80,19 +80,19 @@
     "**/storage/**": true,
     "**/target/**": true,
     "**/vendor/**": true,
-    "**/wwwroot/**": true
+    "**/wwwroot/**": true,
   },
   "git.defaultBranchName": "master",
   "git.autorefresh": true,
-  "window.zoomLevel": 1.0,
+  "window.zoomLevel": 0.7,
   "files.eol": "\n",
-  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.linux": "bash",
   "terminal.integrated.env.linux": {},
   "terminal.integrated.fontFamily": "Firacode Nerd Font",
   "terminal.integrated.suggest.quickSuggestions": {
     "commands": "off",
     "arguments": "off",
-    "unknown": "off"
+    "unknown": "off",
   },
   "terminal.integrated.suggest.suggestOnTriggerCharacters": false,
   "terminal.integrated.suggest.inlineSuggestion": "off",
@@ -109,12 +109,12 @@
   "editor.quickSuggestions": {
     "other": "on",
     "comments": "on",
-    "strings": "on"
+    "strings": "on",
   },
   "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.colorDecorators": true,
-  "workbench.colorTheme": "Dark Plus Moon light",
+  "workbench.colorTheme": "Dark Modern",
   "workbench.panel.defaultLocation": "right",
   "workbench.panel.opensMaximized": "always",
   "workbench.iconTheme": "material-icon-theme",
@@ -122,9 +122,10 @@
   "workbench.panel.showLabels": false,
   "workbench.colorCustomizations": {
     "[Default Dark Modern]": {
-      "gitDecoration.ignoredResourceForeground": "#434343"
-    }
+      "gitDecoration.ignoredResourceForeground": "#434343",
+    },
   },
+  "workbench.secondarySideBar.defaultVisibility": "visible",
   "livePreview.portNumber": 5000,
   "prettier.printWidth": 120,
   "prettier.tabWidth": 2,
@@ -501,7 +502,7 @@
     "factory": "../../../../../../.jetbrains/custom-icons/factory-folder",
     "factories": "../../../../../../.jetbrains/custom-icons/factory-folder",
     // Robots
-    "robots": "../../../../../../.jetbrains/custom-icons/robots-folder"
+    "robots": "../../../../../../.jetbrains/custom-icons/robots-folder",
   },
   "material-icon-theme.files.associations": {
     // .Env
@@ -1170,13 +1171,13 @@
     // NGINX
     "nginx.conf": "../../../../.jetbrains/custom-icons/nginx",
     // Robots
-    "robots.txt": "../../../../.jetbrains/custom-icons/robots"
+    "robots.txt": "../../../../.jetbrains/custom-icons/robots",
   },
   "[css]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "css.lint.float": "warning",
   "css.lint.duplicateProperties": "warning",
@@ -1187,7 +1188,7 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.colorDecorators": true,
@@ -1213,19 +1214,19 @@
     "php",
     "svelte",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
   ],
   "[postcss]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[scss]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "scss.lint.important": "warning",
   "scss.lint.float": "warning",
@@ -1251,46 +1252,40 @@
     "svelte",
     "tailwindcss",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
   ],
   "[html]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "html.format.indentInnerHtml": true,
   "alpine-intellisense.settings.languageScopes": "astro,html,javascript,javascriptreact,typescript,typescriptreact,php,blade",
-  "[cypher]": {
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": "jakeboone02.cypher-query-language"
-  },
   "[dockerfile]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+    "editor.defaultFormatter": "lumirelle.shell-format-rev",
   },
   "[ignore]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+    "editor.defaultFormatter": "lumirelle.shell-format-rev",
   },
   "[properties]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+    "editor.defaultFormatter": "lumirelle.shell-format-rev",
   },
   "[shellscript]": {
     "files.eol": "\n",
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+    "editor.defaultFormatter": "lumirelle.shell-format-rev",
   },
   "shellformat.path": "/home/linuxbrew/.linuxbrew/bin/shfmt",
   "shellcheck.executablePath": "/home/linuxbrew/.linuxbrew/bin/shellcheck",
@@ -1299,20 +1294,20 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "json.schemaDownload.enable": true,
   "json.schemas": [
     {
       "https://json.schemastore.org/omnisharp.json": ["omnisharp.json"],
-      "https://openapi.vercel.sh/vercel.json": ["vercel.json"]
-    }
+      "https://openapi.vercel.sh/vercel.json": ["vercel.json"],
+    },
   ],
   "[toml]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "bodil.prettier-toml"
+    "editor.defaultFormatter": "bodil.prettier-toml",
   },
   "evenBetterToml.schema.enabled": true,
   "evenBetterToml.formatter.allowedBlankLines": 1,
@@ -1323,7 +1318,7 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "DotJoshJohnson.xml"
+    "editor.defaultFormatter": "DotJoshJohnson.xml",
   },
   "[yaml]": {
     "editor.insertSpaces": true,
@@ -1332,60 +1327,60 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "yaml.schemas": {
     "https://taskfile.dev/schema.json": ["taskfile.yaml"],
     "kubernetes": ["*.deployment.yaml", "*.statefulset.yaml"],
-    "https://json.schemastore.org/lefthook.json": ["lefthook.yaml"]
+    "https://json.schemastore.org/lefthook.json": ["lefthook.yaml"],
   },
   "yaml.schemaStore.enable": true,
   "[graphql]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "database-client.autoSync": true,
   "[sql]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode",
   },
   "[nginx]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "AaaaronZhou.nginx-config-formatter-vscode-extension"
+    "editor.defaultFormatter": "AaaaronZhou.nginx-config-formatter-vscode-extension",
   },
   "[robots-txt]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "darian-benam.vscode-robots-dot-txt-support"
+    "editor.defaultFormatter": "darian-benam.vscode-robots-dot-txt-support",
   },
   "[rust]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "statiolake.vscode-rustfmt"
+    "editor.defaultFormatter": "statiolake.vscode-rustfmt",
   },
   "[typescript]": {
     "togglequotes.chars": ["\"", "'", "`"],
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
-  "typescript.tsdk": "/home/linuxbrew/.linuxbrew/opt/typescript/libexec/lib/node_modules/typescript/lib",
-  "typescript.updateImportsOnFileMove.enabled": "always",
+  "js/ts.tsdk.path": "/home/linuxbrew/.linuxbrew/opt/typescript/libexec/lib/node_modules/typescript/lib",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
   "[typescriptreact]": {
     "togglequotes.chars": ["\"", "'", "`"],
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[javascript]": {
     "editor.maxTokenizationLineLength": 2500,
@@ -1393,22 +1388,21 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
-  "javascript.updateImportsOnFileMove.enabled": "always",
   "[javascriptreact]": {
     "editor.maxTokenizationLineLength": 2500,
     "togglequotes.chars": ["\"", "'", "`"],
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[astro]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "astro-build.astro-vscode"
+    "editor.defaultFormatter": "astro-build.astro-vscode",
   },
   "astro.content-intellisense": true,
   "astro.updateImportsOnFileMove.enabled": true,
@@ -1417,7 +1411,7 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "svelte.svelte-vscode"
+    "editor.defaultFormatter": "svelte.svelte-vscode",
   },
   "svelte.enable-ts-plugin": true,
   "[svg]": {
@@ -1426,7 +1420,7 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "jock.svg"
+    "editor.defaultFormatter": "jock.svg",
   },
   "svg.preview.mode": "svg",
   "[markdown]": {
@@ -1438,17 +1432,17 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "markdownlint.config": {
     "MD010": false,
-    "MD033": false
+    "MD033": false,
   },
   "[mdx]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "explorer.compactFolders": true,
   "explorer.fileNesting.enabled": true,
@@ -1460,7 +1454,7 @@
     "*.jsx": "${capture}.js",
     "*.tsx": "${capture}.ts",
     "tsconfig.json": "tsconfig.*.json",
-    "package.json": "package-lock.json, npm-shrinkwrap.json, yarn.lock, pnpm-lock.yaml, pnpm-workspace.yaml, bun.lock, bun.lockb, deno.lock",
+    "package.json": "package-lock.json, .npmrc, .npmignore, npm-shrinkwrap.json, yarn.lock, pnpm-lock.yaml, pnpm-workspace.yaml, bun.lock, bun.lockb, bunfig.toml, deno.lock",
     "deno.json": "deno.lock",
     ".eslintrc.json": ".eslintignore",
     ".eslintrc.yaml": ".eslintignore",
@@ -1492,7 +1486,7 @@
     "*.sqlite3": "${capture}.${extname}-*",
     "*.db3": "${capture}.${extname}-*",
     "*.sdb": "${capture}.${extname}-*",
-    "*.s3db": "${capture}.${extname}-*"
+    "*.s3db": "${capture}.${extname}-*",
   },
   "redhat.telemetry.enabled": true,
   "code-runner.executorMap": {
@@ -1505,7 +1499,7 @@
     "python": "python",
     "rust": "cd $workspaceRoot && cargo run",
     "shellscript": "bash",
-    "typescript": "bun"
+    "typescript": "bun",
   },
   "code-runner.executorMapByGlob": {
     "*.d.ts": "cd $workspaceRoot && printf 'Cannot Run TypeScript Type Definition File! \n'",
@@ -1521,11 +1515,11 @@
     "build.gradle.kts": "cd $workspaceRoot && gradle clean build",
     "settings.gradle.kts": "cd $workspaceRoot && gradle clean build",
     "composer.json": "cd $workspaceRoot && composer run dev",
-    "*.blade.php": "cd $workspaceRoot && composer run dev"
+    "*.blade.php": "cd $workspaceRoot && composer run dev",
   },
   "code-runner.executorMapByFileExtension": {
     ".svelte": "cd $workspaceRoot && bun vite dev",
-    ".astro": "cd $workspaceRoot && bun astro dev"
+    ".astro": "cd $workspaceRoot && bun astro dev",
   },
   "code-runner.clearPreviousOutput": true,
   "code-runner.runInTerminal": true,
@@ -1533,108 +1527,108 @@
   "emojisense.languages": {
     "astro": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "blade": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "c": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "cpp": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "ejs": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "git-commit": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "go": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "html": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "java": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "javascript": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "javascriptreact": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "json": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "markdown": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "mdx": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "php": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "plaintext": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "python": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "rust": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "shellscript": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "svelte": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "svg": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "toml": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "typescript": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "typescriptreact": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "xml": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+      "emojiDecoratorsEnabled": false,
     },
     "yaml": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
-    }
+      "emojiDecoratorsEnabled": false,
+    },
   },
   "auto-close-tag.activationOnLanguage": [
     "ejs",
@@ -1647,7 +1641,10 @@
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
-  ]
+    "typescriptreact",
+  ],
+  "gitlens.advanced.messages": {
+    "suppressCreatePullRequestPrompt": true,
+  },
 }
 ```
