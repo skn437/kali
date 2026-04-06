@@ -298,6 +298,8 @@
     "taskfile": "../../../../../../.jetbrains/custom-icons/taskfile-folder",
     "taskfiles": "../../../../../../.jetbrains/custom-icons/taskfile-folder",
     // VS Code
+    "constant": "../../../../../../.jetbrains/custom-icons/constant-folder",
+    "constants": "../../../../../../.jetbrains/custom-icons/constant-folder",
     "session": "../../../../../../.jetbrains/custom-icons/session-folder",
     "sessions": "../../../../../../.jetbrains/custom-icons/session-folder",
     "language": "../../../../../../.jetbrains/custom-icons/language-folder",
@@ -1282,26 +1284,26 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "lumirelle.shell-format-rev"
+    "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "[ignore]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "lumirelle.shell-format-rev"
+    "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "[properties]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "lumirelle.shell-format-rev"
+    "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "[shellscript]": {
     "files.eol": "\n",
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "lumirelle.shell-format-rev"
+    "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "shellformat.path": "/home/linuxbrew/.linuxbrew/bin/shfmt",
   "shellcheck.executablePath": "/home/linuxbrew/.linuxbrew/bin/shellcheck",
@@ -1667,9 +1669,7 @@
     "php",
     "blade",
     "apacheconf",
-    "javascript",
     "javascriptreact",
-    "typescript",
     "typescriptreact"
   ],
   "gitlens.advanced.messages": {
