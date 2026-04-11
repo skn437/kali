@@ -2,6 +2,10 @@
 
 set -e
 
+usage_instruction_message() {
+  printf "Script Usage: %s \n" "bash (script) [-p package-manager] [-s schedule-interval]"
+}
+
 DEPENDABOT=""
 
 while getopts "p:" OPTION; do
@@ -10,7 +14,21 @@ while getopts "p:" OPTION; do
     DEPENDABOT="${OPTARG}"
     ;;
   ?)
-    printf "Script Usage: %s \n" "bash (script) [-p package-manager]"
+    usage_instruction_message
+    exit 1
+    ;;
+  esac
+done
+
+SCHEDULE=""
+
+while getopts "s:" OPTION; do
+  case "${OPTION}" in
+  s)
+    SCHEDULE="${OPTARG}"
+    ;;
+  ?)
+    usage_instruction_message
     exit 1
     ;;
   esac
@@ -28,7 +46,8 @@ dependabot_config() {
 
   curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/.project/helpers/${DEPENDABOT_FILE}.txt" >"${DEPENDABOT_CONFIG_FILE}"
 
-  READ_CONFIG="$(cat ${DEPENDABOT_CONFIG_FILE} | sed s/package-manager/${DEPENDABOT}/)"
+  READ_CONFIG_INITIAL="$(cat /"${DEPENDABOT_CONFIG_FILE}/" | sed s/package-manager//"${DEPENDABOT}/"/)"
+  READ_CONFIG="$(echo /"${READ_CONFIG_INITIAL}/" | sed s/schedule-interval//"${SCHEDULE}/"/)"
 
   GITHUB_DIRECTORY="./.github"
   mkdir -p "${GITHUB_DIRECTORY}"
@@ -40,24 +59,37 @@ dependabot_config() {
   printf "'Dependabot Config File' Added! ✅"
 }
 
-PACKAGE_ARRAY=("npm" "gradle" "maven" "docker" "cargo" "nuget" "gomod" "pip" "composer")
-
-package_error_message() {
-  printf "Specify a valid package manager: "
-  printf "'%s' " "${PACKAGE_ARRAY[@]}"
+error_message() {
+  printf "Specify a valid %s: " "$1"
+  printf "'%s' " "$2"
   printf "\n"
-  exit 1
 }
 
+PACKAGE_ARRAY=("npm" "gradle" "maven" "docker" "cargo" "nuget" "gomod" "pip" "composer")
+
+SCHEDULE_INTERVAL_ARRAY=("daily" "weekly" "monthly" "quarterly" "semiannually" "yearly")
+
 if test "${DEPENDABOT}" == ""; then
-  package_error_message
+  error_message "package manager" "${PACKAGE_ARRAY[@]}"
+  exit 1
+fi
+
+if test "${SCHEDULE}" == ""; then
+  error_message "schedule interval" "${SCHEDULE_INTERVAL_ARRAY[@]}"
+  exit 1
 fi
 
 for element in "${PACKAGE_ARRAY[@]}"; do
   if test "${DEPENDABOT}" == "${element}"; then
-    dependabot_config
-    exit
+    for item in "${SCHEDULE_INTERVAL_ARRAY[@]}"; do
+      if test "${SCHEDULE}" == "${item}"; then
+        dependabot_config
+        exit
+      fi
+    done
   fi
 done
 
-package_error_message
+error_message "package manager" "${PACKAGE_ARRAY[@]}"
+error_message "schedule interval" "${SCHEDULE_INTERVAL_ARRAY[@]}"
+exit 1
