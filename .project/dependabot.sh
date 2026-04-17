@@ -3,7 +3,7 @@
 set -e
 
 usage_instruction_message() {
-  printf "Script Usage: %s \n" "bash (script) [-p package-manager] [-s schedule-interval]"
+  printf "Script Usage: %s \n" "bash (script) [-p package-manager] [-i schedule-interval]"
 }
 
 DEPENDABOT=""
@@ -22,9 +22,9 @@ done
 
 SCHEDULE=""
 
-while getopts "s:" OPTION; do
+while getopts "i:" OPTION; do
   case "${OPTION}" in
-  s)
+  i)
     SCHEDULE="${OPTARG}"
     ;;
   ?)
