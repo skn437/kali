@@ -38,7 +38,7 @@ dependabot_config() {
 
   READ_CONFIG_INITIAL="$(cat ${DEPENDABOT_CONFIG_FILE} | sed s/package-manager/${DEPENDABOT}/)"
   echo "${READ_CONFIG_INITIAL}" >"${DEPENDABOT_CONFIG_FILE}"
-  READ_CONFIG="$(echo ${DEPENDABOT_CONFIG_FILE} | sed s/schedule-interval/${SCHEDULE}/)"
+  READ_CONFIG="$(cat ${DEPENDABOT_CONFIG_FILE} | sed s/schedule-interval/${SCHEDULE}/)"
 
   GITHUB_DIRECTORY="./.github"
   mkdir -p "${GITHUB_DIRECTORY}"
