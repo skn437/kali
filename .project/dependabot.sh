@@ -7,23 +7,13 @@ usage_instruction_message() {
 }
 
 DEPENDABOT=""
+SCHEDULE=""
 
-while getopts "p:" OPTION; do
+while getopts "p:i:" OPTION; do
   case "${OPTION}" in
   p)
     DEPENDABOT="${OPTARG}"
     ;;
-  ?)
-    usage_instruction_message
-    exit 1
-    ;;
-  esac
-done
-
-SCHEDULE=""
-
-while getopts "i:" OPTION; do
-  case "${OPTION}" in
   i)
     SCHEDULE="${OPTARG}"
     ;;
