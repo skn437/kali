@@ -34,31 +34,22 @@ typescript() {
   # TypeScript: It automatically installs `Node` & `Python` to their latest versions
   brew install typescript
 
+  # Node.js 24
+  brew install node@24
+
+  # Export `Node.js 24` Binary to the "Path"
+  echo 'export PATH="/home/linuxbrew/.linuxbrew/opt/node@24/bin:$PATH"' >>"$HOME/.zshrc"
+
   # Bun.js
   brew tap oven-sh/bun
   brew install bun
 
-  # Deno
-  brew install deno
-
-  # Prettier, StyleLint, Concurrently
-  brew install prettier
-  bun add -g prettier
-  bun add -g stylelint postcss-html postcss-scss
-  bun add -g stylelint-config-standard stylelint-config-standard-scss stylelint-config-html
-  bun add -g concurrently
-
   # Export `Bun.js Binary` to the "Path"
   echo 'export PATH="$HOME/.bun/bin:$PATH"' >>"$HOME/.zshrc"
 
-  STYLELINT_LOCATION="$HOME/.bun/install/global"
-
-  if test -d "$STYLELINT_LOCATION"; then
-    cd "$STYLELINT_LOCATION"
-    curl -sSL "https://raw.githubusercontent.com/skn437/kali/master/.project/editor.sh" | bash -s -- -ps
-    curl -sSL "https://raw.githubusercontent.com/skn437/kali/master/.project/ignore.sh" | bash -s -- -ps
-    cd "$HOME"
-  fi
+  # Prettier, Concurrently
+  brew install prettier
+  bun add -g concurrently
 
   package_install "TypeScript"
 }
@@ -125,25 +116,6 @@ rust() {
   echo 'export PATH="$HOME/.cargo/bin:$PATH"' >>"$HOME/.zshrc"
 
   package_install "Rust"
-}
-
-php() {
-  # Composer: It automatically installs `PHP` to its latest version
-  brew install composer
-
-  # Laravel
-  composer global require laravel/installer
-
-  # Add "Composer" global packages to the "Path"
-  echo 'export PATH="$HOME/.config/composer/vendor/bin:$PATH"' >>"$HOME/.zshrc"
-
-  # XDebugger
-  pecl install xdebug
-
-  # PHPStan
-  brew install phpstan
-
-  package_install "PHP"
 }
 
 brew_prepare && c_cpp && shellscript && typescript && java && kotlin && go && rust
