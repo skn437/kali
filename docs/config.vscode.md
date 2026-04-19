@@ -798,6 +798,7 @@
     "bunfig.toml": "../../../../.jetbrains/custom-icons/bun",
     "vercel.json": "../../../../.jetbrains/custom-icons/vercel",
     "vercel.ts": "../../../../.jetbrains/custom-icons/vercel",
+    "render.yaml": "../../../../.jetbrains/custom-icons/render",
     "markdoc.config.ts": "../../../../.jetbrains/custom-icons/markdoc-config-ts",
     "markdoc.config.mjs": "../../../../.jetbrains/custom-icons/markdoc-config-ts",
     "*.js": "../../../../.jetbrains/custom-icons/js",
@@ -1314,6 +1315,8 @@
   "json.schemaDownload.enable": true,
   "json.schemas": [
     {
+      "https://www.schemastore.org/eslintrc.json": ["eslintrc.json"],
+      "https://www.schemastore.org/package.json": ["package.json"],
       "https://json.schemastore.org/omnisharp.json": ["omnisharp.json"],
       "https://openapi.vercel.sh/vercel.json": ["vercel.json"]
     }

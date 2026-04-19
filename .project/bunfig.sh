@@ -9,11 +9,9 @@ bunfig() {
 
   if test -f "./package.json"; then
     curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/${BUN_CONFIG}" >"./${BUN_CONFIG}"
-
     printf "'Bun Config' Added! ✅ \n"
   else
     printf "'package.json' File Absent! ❌ \n"
-
     exit 1
   fi
 }

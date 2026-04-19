@@ -29,9 +29,15 @@ devtools() {
   package_install "Devtools"
 }
 
-rust_owl() {
-  # Install Rust Owl
-  gnome-terminal -- bash -c "printf 'Preparing to initialize rust owl... \n' && curl -L 'https://github.com/cordx56/rustowl/releases/latest/download/install.sh' | sh && echo 'Rust Owl Installed!'; read -n 1 KEY"
+rust_tools() {
+  # Cargo Binstall
+  brew install cargo-binstall
+
+  # Rust Owl
+  cargo binstall rustowl
+
+  # Trunk
+  brew install trunk
 }
 
-brew_prepare && devtools && rust_owl
+brew_prepare && devtools && rust_tools
