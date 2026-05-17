@@ -1,0 +1,241 @@
+# Exclude a variety of commonly ignored directories.
+exclude = [
+  ".bzr",
+  ".direnv",
+  ".eggs",
+  ".git",
+  ".git-rewrite",
+  ".hg",
+  ".ipynb_checkpoints",
+  ".mypy_cache",
+  ".nox",
+  ".pants.d",
+  ".pyenv",
+  ".pytest_cache",
+  ".pytype",
+  ".ruff_cache",
+  ".svn",
+  ".tox",
+  ".venv",
+  ".vscode",
+  "__pypackages__",
+  "_build",
+  "buck-out",
+  "build",
+  "dist",
+  "node_modules",
+  "site-packages",
+  "venv",
+]
+# Include File Types
+include = ["*.py", "*.pyi", "**/pyproject.toml"]
+# Same as Black.
+line-length = 100
+indent-width = 2
+# Assume Python 3.12
+target-version = "py312"
+# Jupyter Notebook Inclusion
+extend-include = ["*.ipynb"]
+# Allow imports relative to the "src" and "test" directories.
+src = ["src", "test"]
+# Ignores files and folders mentioned in .gitignore
+respect-gitignore = true
+# Enumerate all fixed violations.
+show-fixes = true
+# Automatic Fixes
+fix = false
+
+[lint]
+# Enable Pyflakes (`F`) and a subset of the pycodestyle (`E`)  codes by default.
+# Unlike Flake8, Ruff doesn't enable pycodestyle warnings (`W`) or
+# McCabe complexity (`C901`) by default.
+select = ["E4", "E7", "E9", "F"]
+ignore = []
+# Avoid automatically removing unused imports in __init__.py files
+ignore-init-module-imports = true
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+# A list of task tags to recognize (e.g., "TODO", "FIXME", "XXX")
+task-tags = ["TODO", "FIXME", "XXX"]
+
+[lint.flake8-annotations]
+# Whether to suppress `ANN401` for dynamically typed `*args` and `**kwargs` arguments
+allow-star-arg-any = true
+# Whether to suppress `ANN*` rules for any declaration that hasn't been typed at all
+ignore-fully-untyped = false
+# Whether to allow the omission of a return type hint for `__init__` if at least one argument is annotated
+mypy-init-return = true
+# Whether to suppress `ANN000-level` violations for arguments matching the "dummy" variable regex (like _)
+suppress-dummy-args = false
+# Whether to suppress `ANN200-level` violations for functions
+suppress-none-returning = false
+
+[lint.flake8-comprehensions]
+# Allow dict calls that make use of keyword arguments (e.g., dict(a=1, b=2))
+allow-dict-calls-with-keyword-arguments = true
+
+[lint.flake8-errmsg]
+# Maximum string length for string literals in exception messages
+max-string-length = 20
+
+[lint.flake8-gettext]
+# The function names to consider as internationalization calls
+function-names = ["_", "gettext", "ngettext"]
+extend-function-names = ["ugettetxt"]
+
+[lint.flake8-implicit-str-concat]
+# Whether to allow implicit string concatenations for multiline strings
+allow-multiline = false
+
+[lint.flake8-import-conventions.aliases]
+# Declare the default aliases
+altair = "alt"
+matplotlib = "mpl"
+"matplotlib.pyplot" = "plt"
+numpy = "np"
+pandas = "pd"
+seaborn = "sns"
+tensorflow = "tf"
+tkinter = "tk"
+holoviews = "hv"
+panel = "pn"
+"plotly.express" = "px"
+polars = "pl"
+pyarrow = "pa"
+
+[lint.flake8-import-conventions.extend-aliases]
+# Declare a custom alias for the `matplotlib` module.
+"dask.dataframe" = "dd"
+scipy = "sp"
+
+[lint.flake8-pytest-style]
+# Boolean flag specifying whether @pytest.fixture() without parameters should have parentheses
+fixture-parentheses = true
+# Boolean flag specifying whether `@pytest.mark.foo()` without parameters should have parentheses
+mark-parentheses = true
+# Expected type for multiple argument names in `@pytest.mark.parametrize`
+parametrize-names-type = "tuple"
+# Expected type for each row of values in `@pytest.mark.parametrize` in case of multiple parameters
+parametrize-values-row-type = "tuple"
+# Expected type for the list of values rows in `@pytest.mark.parametrize`
+parametrize-values-type = "tuple"
+
+[lint.flake8-quotes]
+# Whether to avoid using single quotes if a string contains single quotes, or vice-versa with double quotes
+avoid-escape = true
+docstring-quotes = "double"
+inline-quotes = "double"
+multiline-quotes = "double"
+
+[lint.flake8-type-checking]
+# Add quotes around type annotations, if doing so would allow
+# an import to be moved into a type-checking block.
+quote-annotations = false
+strict = true
+
+[lint.flake8-unused-arguments]
+# Allows unused variadic arguments, like *args and **kwargs
+ignore-variadic-names = true
+
+[lint.isort]
+# Sort imports taking into account case sensitivity
+case-sensitive = true
+# Combines `as imports` on the same line
+combine-as-imports = true
+# Force `import from` statements with multiple members and at least one alias (e.g., import A as B) to wrap such that every line contains exactly one member.
+force-wrap-aliases = true
+# place `import from` imports before straight imports when sorting
+from-first = false
+# Sorts `imports` by their string length rather than alphabetical order
+length-sort = false
+# Sorts `import from` by their string length rather than alphabetical order
+length-sort-straight = false
+# Use a single blank line after each import block for value `1`, `2` for double line, `-1` for none
+lines-after-imports = -1
+# Use a single line between direct and from import for value `1`, `0` for none
+lines-between-types = 0
+# Separates standard library and third-party imports
+no-sections = false
+# Orders imports by type, which is determined by case, in addition to alphabetically
+order-by-type = true
+# Places "closer" imports (fewer . characters, most local) before "further" imports (more . characters, least local), or vice versa
+relative-imports-order = "closest-to-furthest"
+# Add the specified import line to all files
+required-imports = []
+# Override in which order the sections should be output. Can be used to move custom sections
+section-order = [
+  "future",
+  "standard-library",
+  "first-party",
+  "local-folder",
+  "third-party"
+]
+# If a comma is placed after the last member in a multi-line import, then the imports will never be folded into one line
+split-on-trailing-comma = true
+
+[lint.isort.sections]
+# Group all Django imports into a separate section.
+"django" = ["django"]
+
+[lint.pycodestyle]
+# Whether line-length violations (E501) should be triggered for comments starting with task-tags (by default: ["TODO", "FIXME", and "XXX"])
+ignore-overlong-task-comments = false
+# The maximum line length to allow for `line-too-long` violations within documentation
+max-doc-length = 100
+# The maximum line length to allow for `line-too-long` violations
+max-line-length = 100
+
+[lint.pydocstyle]
+# Use Google-style docstrings.
+convention = "google"
+
+[lint.pylint]
+# Constant types to ignore when used as "magic values"
+allow-magic-value-types = ["int", "float", "str", "bytes", "complex"]
+# Maximum number of arguments allowed for a function or method definition
+max-args = 5
+# Maximum number of Boolean expressions allowed within a single if statement
+max-bool-expr = 5
+# Maximum number of branches allowed for a function or method body
+max-branches = 12
+# Maximum number of local variables allowed for a function or method body
+max-locals = 15
+# Maximum number of nested blocks allowed within a function or method body
+max-nested-blocks = 5
+# Maximum number of positional arguments allowed for a function or method definition
+max-positional-args = 3
+# Maximum number of public methods allowed for a class
+max-public-methods = 20
+# Maximum number of return statements allowed for a function or method body
+max-returns = 6
+# Maximum number of statements allowed for a function or method body
+max-statements = 50
+
+[lint.pyupgrade]
+# Preserve types, even if a file imports `from __future__ import annotations`.
+keep-runtime-typing = false
+
+[format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "lf"
+# Enable auto-formatting of code examples in docstrings. Markdown,
+# reStructuredText code/literal blocks and doctests are all supported.
+#
+# This is currently disabled by default, but it is planned for this
+# to be opt-out in the future.
+docstring-code-format = true
+# Set the line length limit used when formatting code snippets in
+# docstrings.
+#
+# This only has an effect when the `docstring-code-format` setting is
+# enabled.
+docstring-code-line-length = "dynamic"
