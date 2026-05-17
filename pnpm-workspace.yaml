@@ -1,0 +1,43 @@
+# Dependency Resolution
+minimumReleaseAge: 1440 # Minutes
+minimumReleaseAgeStrict: true
+
+# Node-Modules Settings
+modulesCacheMaxAge: 10080 # Minutes
+dlxCacheMaxAge: 1440 # Minutes
+
+# Lockfile Settings
+lockfile: true
+preferFrozenLockfile: true
+
+# Request Settings
+fetchRetries: 2
+fetchRetryFactor: 10
+fetchRetryMintimeout: 10000 # Milli-seconds
+fetchRetryMaxtimeout: 60000 # Milli-seconds
+fetchTimeout: 60000 # Milli-seconds
+
+# Peer Dependency Settings
+autoInstallPeers: true
+strictPeerDependencies: false
+resolvePeersFromWorkspaceRoot: true
+
+# CLI Settings
+color: auto
+loglevel: info
+recursiveInstall: true
+
+# Build Settings
+ignoreScripts: false
+verifyDepsBeforeRun: install
+strictDepBuilds: true
+allowBuilds:
+  cypress: true
+  esbuild: true
+  sharp: true
+
+# Other Settings
+savePrefix: "^"
+tag: latest
+updateNotifier: true
+resolutionMode: highest

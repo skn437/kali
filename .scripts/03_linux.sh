@@ -40,16 +40,19 @@ typescript() {
   # Export `Node.js 24` Binary to the "Path"
   echo 'export PATH="/home/linuxbrew/.linuxbrew/opt/node@24/bin:$PATH"' >>"$HOME/.zshrc"
 
+  # Link `Node.js 24`
+  brew link --overwrite node@24
+
+  # PNPM, Prettier, Concurrently
+  brew install pnpm prettier
+  npm install -g concurrently
+
   # Bun.js
   brew tap oven-sh/bun
   brew install bun
 
   # Export `Bun.js Binary` to the "Path"
   echo 'export PATH="$HOME/.bun/bin:$PATH"' >>"$HOME/.zshrc"
-
-  # Prettier, Concurrently
-  brew install prettier
-  bun add -g concurrently
 
   package_install "TypeScript"
 }
@@ -64,8 +67,11 @@ java() {
   # Export `Java Home` to the "Path"
   echo 'export JAVA_HOME="/home/linuxbrew/.linuxbrew/opt/openjdk@21/libexec"' >>"$HOME/.zshrc"
 
-  # Add everything to the "Path"
+  # Add `Open JDK 21` to the "Path"
   echo 'export PATH="$JAVA_HOME/bin:$PATH"' >>"$HOME/.zshrc"
+
+  # Link `Open JDK 21`
+  brew link --overwrite openjdk@21
 
   # Create a maven settings directory
   mkdir -p "$HOME/.m2"
