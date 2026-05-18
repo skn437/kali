@@ -111,6 +111,14 @@ go() {
   package_install "Go"
 }
 
+python() {
+  # PyLint
+  brew install pylint
+
+  # Black Formatter
+  brew install black
+}
+
 rust() {
   # Initialize Rust Toolchains
   gnome-terminal -- bash -c "printf 'Preparing to initialize rust... \n' && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && echo 'Rust Installed!'; read -n 1 KEY"
@@ -124,4 +132,4 @@ rust() {
   package_install "Rust"
 }
 
-brew_prepare && c_cpp && shellscript && typescript && java && kotlin && go && rust
+brew_prepare && c_cpp && shellscript && typescript && java && kotlin && go && python && rust

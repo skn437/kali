@@ -84,6 +84,9 @@
   },
   "git.defaultBranchName": "master",
   "git.autorefresh": true,
+  "gitlens.advanced.messages": {
+    "suppressCreatePullRequestPrompt": true
+  },
   "window.zoomLevel": 0.7,
   "files.eol": "\n",
   "terminal.integrated.defaultProfile.linux": "bash",
@@ -284,6 +287,7 @@
     "webservices": "../../../../../../.jetbrains/custom-icons/webservice-folder",
     ".webservices": "../../../../../../.jetbrains/custom-icons/webservice-folder",
     "hub": "../../../../../../.jetbrains/custom-icons/docker-hub-folder",
+    ".docker": "../../../../../../.jetbrains/custom-icons/docker-folder",
     "docker": "../../../../../../.jetbrains/custom-icons/docker-folder",
     "kubernetes": "../../../../../../.jetbrains/custom-icons/kubernetes-folder",
     "graphql": "../../../../../../.jetbrains/custom-icons/graphql-folder",
@@ -356,6 +360,7 @@
     "vercel": "../../../../../../.jetbrains/custom-icons/vercel-folder",
     // Python
     "python": "../../../../../../.jetbrains/custom-icons/py-folder",
+    ".venv": "../../../../../../.jetbrains/custom-icons/py-alt-folder",
     "analysis": "../../../../../../.jetbrains/custom-icons/analysis-folder",
     "csv": "../../../../../../.jetbrains/custom-icons/csv-folder",
     "jupyter": "../../../../../../.jetbrains/custom-icons/jupyter-folder",
@@ -1075,7 +1080,7 @@
     "Pipfile": "../../../../.jetbrains/custom-icons/pip",
     "Pipfile.lock": "../../../../.jetbrains/custom-icons/pip-lock",
     "ruff.toml": "../../../../.jetbrains/custom-icons/py-settings",
-    ".ruff.toml": "../../../../.jetbrains/custom-icons/py-settings",
+    "pyproject.toml": "../../../../.jetbrains/custom-icons/py-settings",
     "*.csv": "../../../../.jetbrains/custom-icons/csv",
     // C & C++
     "*.c": "../../../../.jetbrains/custom-icons/c",
@@ -1378,6 +1383,17 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "darian-benam.vscode-robots-dot-txt-support"
   },
+  "[python]": {
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.analysis.typeCheckingMode": "strict",
+  "black-formatter.path": ["/home/linuxbrew/.linuxbrew/bin/black"],
+  "black-formatter.interpreter": ["/home/linuxbrew/.linuxbrew/bin/python3"],
+  "pylint.path": ["/home/linuxbrew/.linuxbrew/bin/pylint"],
+  "pylint.interpreter": ["/home/linuxbrew/.linuxbrew/bin/python3"],
   "[rust]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
@@ -1522,7 +1538,7 @@
     "java": "cd $workspaceRoot && printf 'Use Java Extension To Run Java Instead! \n'",
     "javascript": "bun",
     "php": "php",
-    "python": "python",
+    "python": "python3",
     "rust": "cd $workspaceRoot && cargo run",
     "shellscript": "bash",
     "typescript": "bun"
@@ -1530,12 +1546,12 @@
   "code-runner.executorMapByGlob": {
     "*.d.ts": "cd $workspaceRoot && printf 'Cannot Run TypeScript Type Definition File! \n'",
     "Cargo.toml": "cd $workspaceRoot && cargo build",
-    "next.config.mjs": "cd $workspaceRoot && bun next build",
-    "next.config.ts": "cd $workspaceRoot && bun next build",
-    "svelte.config.js": "cd $workspaceRoot && bun vite build",
-    "vite.config.ts": "cd $workspaceRoot && bun vite build",
-    "astro.config.mjs": "cd $workspaceRoot && bun astro build",
-    "astro.config.ts": "cd $workspaceRoot && bun astro build",
+    "next.config.mjs": "cd $workspaceRoot && pnpm run build",
+    "next.config.ts": "cd $workspaceRoot && pnpm run build",
+    "svelte.config.js": "cd $workspaceRoot && pnpm run build",
+    "vite.config.ts": "cd $workspaceRoot && pnpm run build",
+    "astro.config.mjs": "cd $workspaceRoot && pnpm run build",
+    "astro.config.ts": "cd $workspaceRoot && pnpm run build",
     "go.mod": "cd $workspaceRoot && go build",
     "pom.xml": "cd $workspaceRoot && mvn clean package",
     "build.gradle.kts": "cd $workspaceRoot && gradle clean build",
@@ -1544,8 +1560,8 @@
     "*.blade.php": "cd $workspaceRoot && composer run dev"
   },
   "code-runner.executorMapByFileExtension": {
-    ".svelte": "cd $workspaceRoot && bun vite dev",
-    ".astro": "cd $workspaceRoot && bun astro dev"
+    ".svelte": "cd $workspaceRoot && pnpm run dev",
+    ".astro": "cd $workspaceRoot && pnpm run dev"
   },
   "code-runner.clearPreviousOutput": true,
   "code-runner.runInTerminal": true,
@@ -1671,9 +1687,6 @@
     "apacheconf",
     "javascriptreact",
     "typescriptreact"
-  ],
-  "gitlens.advanced.messages": {
-    "suppressCreatePullRequestPrompt": true
-  }
+  ]
 }
 ```
