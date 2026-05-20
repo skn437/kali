@@ -22,7 +22,8 @@
     "LICENSE-MIT": "plaintext",
     "LICENSE-APACHE": "plaintext",
     "phpstan.neon": "yaml",
-    "*.lock": "jsonl"
+    "*.lock": "jsonl",
+    "uv.lock": "toml"
   },
   "files.readonlyInclude": {
     ".git/**": true,
@@ -45,6 +46,7 @@
     "**/.obj/**": true,
     "**/.out/**": true,
     "**/.output/**": true,
+    "**/.venv/**": true,
     "**/.phpactor.json": true,
     "**/.phpunit.cache": true,
     "**/.phpunit.result.cache": true,
@@ -360,10 +362,13 @@
     "vercel": "../../../../../../.jetbrains/custom-icons/vercel-folder",
     // Python
     "python": "../../../../../../.jetbrains/custom-icons/py-folder",
-    ".venv": "../../../../../../.jetbrains/custom-icons/py-alt-folder",
+    "python3.14": "../../../../../../.jetbrains/custom-icons/py-folder",
+    "__pycache__": "../../../../../../.jetbrains/custom-icons/py-cache-folder",
+    ".venv": "../../../../../../.jetbrains/custom-icons/py-venv-folder",
     "analysis": "../../../../../../.jetbrains/custom-icons/analysis-folder",
     "csv": "../../../../../../.jetbrains/custom-icons/csv-folder",
     "jupyter": "../../../../../../.jetbrains/custom-icons/jupyter-folder",
+    "site-packages": "../../../../../../.jetbrains/custom-icons/package-folder",
     // Go
     "package": "../../../../../../.jetbrains/custom-icons/package-folder",
     "packages": "../../../../../../.jetbrains/custom-icons/package-folder",
@@ -416,6 +421,7 @@
     "apps": "../../../../../../.jetbrains/custom-icons/app-folder",
     "lib": "../../../../../../.jetbrains/custom-icons/lib-folder",
     "libs": "../../../../../../.jetbrains/custom-icons/lib-folder",
+    "lib64": "../../../../../../.jetbrains/custom-icons/lib-folder",
     "animation": "../../../../../../.jetbrains/custom-icons/animation-folder",
     "animations": "../../../../../../.jetbrains/custom-icons/animation-folder",
     "public": "../../../../../../.jetbrains/custom-icons/public-folder",
@@ -1079,8 +1085,11 @@
     "__init__.py": "../../../../.jetbrains/custom-icons/py-init",
     "Pipfile": "../../../../.jetbrains/custom-icons/pip",
     "Pipfile.lock": "../../../../.jetbrains/custom-icons/pip-lock",
-    "ruff.toml": "../../../../.jetbrains/custom-icons/py-settings",
-    "pyproject.toml": "../../../../.jetbrains/custom-icons/py-settings",
+    ".ruff.toml": "../../../../.jetbrains/custom-icons/py-ruff",
+    "ruff.toml": "../../../../.jetbrains/custom-icons/py-ruff",
+    "pyproject.toml": "../../../../.jetbrains/custom-icons/py-project",
+    ".python-version": "../../../../.jetbrains/custom-icons/py-version",
+    "uv.lock": "../../../../.jetbrains/custom-icons/py-uv-lock",
     "*.csv": "../../../../.jetbrains/custom-icons/csv",
     // C & C++
     "*.c": "../../../../.jetbrains/custom-icons/c",
@@ -1385,15 +1394,22 @@
   },
   "[python]": {
     "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
+    "editor.tabSize": 4,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
   },
   "python.analysis.typeCheckingMode": "strict",
-  "black-formatter.path": ["/home/linuxbrew/.linuxbrew/bin/black"],
-  "black-formatter.interpreter": ["/home/linuxbrew/.linuxbrew/bin/python3"],
   "pylint.path": ["/home/linuxbrew/.linuxbrew/bin/pylint"],
   "pylint.interpreter": ["/home/linuxbrew/.linuxbrew/bin/python3"],
+  "notebook.formatOnSave.enabled": true,
+  "notebook.codeActionsOnSave": {
+    "notebook.source.fixAll.ruff": "explicit",
+    "notebook.source.organizeImports.ruff": "explicit"
+  },
   "[rust]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
@@ -1521,6 +1537,7 @@
     "markdoc.config.mjs": "markdoc.config.json",
     "jest.config.ts": "jest.setup.ts",
     "build.gradle.kts": "gradle.properties",
+    "pyproject.toml": "uv.lock, .python-version",
     "composer.json": "composer.lock",
     "artisan": ".env, .env.development, .env.production, .env.local",
     "*.sqlite": "${capture}.${extname}-*",
