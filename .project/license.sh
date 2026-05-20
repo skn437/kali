@@ -7,7 +7,7 @@ LINUX="kali"
 GET_APACHE=false
 
 while getopts "a" OPTION; do
-  case "${OPTION}" in
+  case "$OPTION" in
   a)
     GET_APACHE=true
     ;;
@@ -18,26 +18,16 @@ while getopts "a" OPTION; do
   esac
 done
 
-message() {
-  printf "'%s' Added! ✅ \n" "$1"
+license_builder() {
+  LICENSE_FILE="$1"
+
+  curl -sSL "https://raw.githubusercontent.com/skn437/$LINUX/master/.project/helpers/$LICENSE_FILE" >"./LICENSE"
+
+  printf "'%s' Added! ✅ \n" "$2"
 }
 
-mit() {
-  # MIT License
-  curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/.project/helpers/LICENSE-MIT" >"./LICENSE"
-
-  message "MIT License File"
-}
-
-apache() {
-  # Apache 2.0 License
-  curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/.project/helpers/LICENSE-APACHE" >"./LICENSE"
-
-  message "Apache 2.0 License File"
-}
-
-if "${GET_APACHE}"; then
-  apache
+if "$GET_APACHE"; then
+  license_builder "LICENSE-APACHE" "Apache 2.0 License File"
 else
-  mit
+  license_builder "LICENSE-MIT" "MIT License File"
 fi

@@ -36,19 +36,19 @@ prettier_plugin() {
   # Prettier Formatter file
   PRETTIER_FORMAT=".prettierrc.yaml"
 
-  printf "\n" >>"./${PRETTIER_FORMAT}"
+  printf "\n" >>"./$PRETTIER_FORMAT"
 
-  curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/.project/helpers/prettier-${PRETTIER_PLUGIN}.txt" >>"./${PRETTIER_FORMAT}"
+  curl -sSL "https://raw.githubusercontent.com/skn437/$LINUX/master/.project/helpers/prettier-$PRETTIER_PLUGIN.txt" >>"./$PRETTIER_FORMAT"
 
   message "Prettier Plugin Config File"
 }
 
-if test "$PRETTIER_PLUGIN" == ""; then
+if [[ "$PRETTIER_PLUGIN" == "" ]]; then
   plugin_error_message
 fi
 
 for element in "${PRETTIER_PLUGIN_ARRAY[@]}"; do
-  if test "$PRETTIER_PLUGIN" == "$element"; then
+  if [[ "$PRETTIER_PLUGIN" == "$element" ]]; then
     prettier_plugin
     exit
   fi

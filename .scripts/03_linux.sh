@@ -112,11 +112,14 @@ go() {
 }
 
 python() {
+  # UV
+  brew install uv
+
+  # Ruff
+  brew install ruff
+
   # PyLint
   brew install pylint
-
-  # Black Formatter
-  brew install black
 }
 
 rust() {

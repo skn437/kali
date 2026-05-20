@@ -113,8 +113,17 @@ HELP.md
 target
 Cargo.lock
 
-# Tuono
+# Rust Tuono
 .tuono
+
+# Python
+__pycache__/
+*.py[oc]
+wheels/
+*.egg-info
+
+# Python Virtual Environment
+.venv
 
 # C/C++
 .cache
