@@ -65,7 +65,7 @@ indent_size = 2
 
 # Python Files
 [*.{py,ipynb}]
-indent_size = 2
+indent_size = 4
 
 # NGINX, IML, JSON, Neon, Properties, TOML, XAML, XML, YAML, YML Files
 [*.{conf,iml,json,neon,properties,toml,xaml,xml,yaml,yml}]

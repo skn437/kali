@@ -6,8 +6,8 @@ LINUX="kali"
 
 GET_LEFTHOOK=false
 
-while getopts "tl" OPTION; do
-  case "${OPTION}" in
+while getopts "l" OPTION; do
+  case "$OPTION" in
   l)
     GET_LEFTHOOK=true
     ;;
@@ -18,32 +18,17 @@ while getopts "tl" OPTION; do
   esac
 done
 
-message() {
-  printf "'%s' Added! ✅ \n" "$1"
+config_builder() {
+  CONFIG_FILE="$1"
+
+  curl -sSL "https://raw.githubusercontent.com/skn437/$LINUX/master/$CONFIG_FILE" >"./$CONFIG_FILE"
+
+  printf "'%s' Added! ✅ \n" "$2"
 }
 
-taskfile() {
-  # Task file
-  TASKFILE="taskfile.yaml"
-  TASKFILE_ENV=".env.task"
+config_builder "taskfile.yaml" "Task File"
+config_builder ".env.task" "Task File Env File"
 
-  curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/${TASKFILE}" >"./${TASKFILE}"
-  curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/${TASKFILE_ENV}" >"./${TASKFILE_ENV}"
-
-  message "Task File"
-}
-
-lefthook() {
-  # Lefthook file
-  LEFTHOOK="lefthook.yaml"
-
-  curl -sSL "https://raw.githubusercontent.com/skn437/${LINUX}/master/${LEFTHOOK}" >"./${LEFTHOOK}"
-
-  message "Lefthook File"
-}
-
-taskfile
-
-if "${GET_LEFTHOOK}"; then
-  lefthook
+if "$GET_LEFTHOOK"; then
+  config_builder "lefthook.yaml" "Lefthook File"
 fi
