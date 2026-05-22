@@ -23,6 +23,7 @@
     "LICENSE-APACHE": "plaintext",
     "phpstan.neon": "yaml",
     "*.lock": "jsonl",
+    "Cargo.lock": "toml",
     "uv.lock": "toml"
   },
   "files.readonlyInclude": {
@@ -1085,11 +1086,11 @@
     "__init__.py": "../../../../.jetbrains/custom-icons/py-init",
     "Pipfile": "../../../../.jetbrains/custom-icons/pip",
     "Pipfile.lock": "../../../../.jetbrains/custom-icons/pip-lock",
-    ".ruff.toml": "../../../../.jetbrains/custom-icons/py-ruff",
-    "ruff.toml": "../../../../.jetbrains/custom-icons/py-ruff",
+    ".ruff.toml": "../../../../.jetbrains/custom-icons/uv-ruff",
+    "ruff.toml": "../../../../.jetbrains/custom-icons/uv-ruff",
     "pyproject.toml": "../../../../.jetbrains/custom-icons/py-project",
     ".python-version": "../../../../.jetbrains/custom-icons/py-version",
-    "uv.lock": "../../../../.jetbrains/custom-icons/py-uv-lock",
+    "uv.lock": "../../../../.jetbrains/custom-icons/uv-lock",
     "*.csv": "../../../../.jetbrains/custom-icons/csv",
     // C & C++
     "*.c": "../../../../.jetbrains/custom-icons/c",

@@ -111,7 +111,7 @@ HELP.md
 
 # Rust Cargo
 target
-Cargo.lock
+# Cargo.lock
 
 # Rust Tuono
 .tuono
@@ -121,6 +121,7 @@ __pycache__/
 *.py[oc]
 wheels/
 *.egg-info
+# uv.lock
 
 # Python Virtual Environment
 .venv
