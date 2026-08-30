@@ -3,7 +3,7 @@
 set -e
 
 brew_prepare() {
-  brew update && brew upgrade && brew autoremove && brew cleanup
+  brew update && brew upgrade -y && brew autoremove && brew cleanup
 }
 
 package_install() {
@@ -48,6 +48,7 @@ typescript() {
   npm install -g concurrently
 
   # Bun.js
+  brew trust --formula oven-sh/bun/bun
   brew tap oven-sh/bun
   brew install bun
 

@@ -8,8 +8,9 @@ GET_RUFF=false
 GET_STYLELINT=false
 GET_PHPSTAN=false
 GET_ESLINT=false
+GET_MARKDOWN_LINT=false
 
-while getopts "rpfsle" OPTION; do
+while getopts "rpfslem" OPTION; do
   case "${OPTION}" in
   r)
     GET_RUSTFMT=true
@@ -29,8 +30,11 @@ while getopts "rpfsle" OPTION; do
   e)
     GET_ESLINT=true
     ;;
+  m)
+    GET_MARKDOWN_LINT=true
+    ;;
   ?)
-    printf "Script Usage: %s \n" "bash (script) [-r] [-p] [f] [-s] [-l] [-e]"
+    printf "Script Usage: %s \n" "bash (script) [-r] [-p] [f] [-s] [-l] [-e] [-m]"
     exit 1
     ;;
   esac
@@ -71,4 +75,8 @@ fi
 
 if "$GET_ESLINT"; then
   config_builder ".eslintrc.yaml" "ESLint"
+fi
+
+if "$GET_MARKDOWN_LINT"; then
+  config_builder ".markdownlint.yaml" "Markdown Lint"
 fi

@@ -3,7 +3,7 @@
 set -e
 
 brew_prepare() {
-  brew update && brew upgrade && brew autoremove && brew cleanup
+  brew update && brew upgrade -y && brew autoremove && brew cleanup
 }
 
 package_install() {
@@ -15,6 +15,7 @@ server_engine() {
   brew install nginx
 
   # Turso DB
+  brew trust --formula tursodatabase/tap/turso
   brew install tursodatabase/tap/turso
 
   # Kafka: It automatically installs `Zookeeper` to its latest version

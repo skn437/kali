@@ -127,9 +127,7 @@
   "workbench.productIconTheme": "material-product-icons",
   "workbench.panel.showLabels": false,
   "workbench.colorCustomizations": {
-    "[Dark Modern]": {
-      "gitDecoration.ignoredResourceForeground": "#434343"
-    }
+    "gitDecoration.ignoredResourceForeground": "#434343"
   },
   "workbench.secondarySideBar.defaultVisibility": "visible",
   "livePreview.portNumber": 5000,
@@ -326,6 +324,7 @@
     "rest": "../../../../../../.jetbrains/custom-icons/rest-folder",
     "best/skn": "../../../../../../.jetbrains/custom-icons/skn-folder",
     "skn": "../../../../../../.jetbrains/custom-icons/skn-folder",
+    ".docs": "../../../../../../.jetbrains/custom-icons/docs-folder",
     "docs": "../../../../../../.jetbrains/custom-icons/docs-folder",
     "message": "../../../../../../.jetbrains/custom-icons/message-folder",
     "header": "../../../../../../.jetbrains/custom-icons/header-folder",
@@ -547,6 +546,9 @@
     "markdoc.config.json": "../../../../.jetbrains/custom-icons/markdoc-config-json",
     "*.svx": "../../../../.jetbrains/custom-icons/mdsvex",
     "*.md": "../../../../.jetbrains/custom-icons/markdown",
+    ".markdownlint.yml": "../../../../.jetbrains/custom-icons/markdown-lint",
+    ".markdownlint.yaml": "../../../../.jetbrains/custom-icons/markdown-lint",
+    ".markdownlint.json": "../../../../.jetbrains/custom-icons/markdown-lint",
     "*.mdx": "../../../../.jetbrains/custom-icons/markdownx",
     "README.md": "../../../../.jetbrains/custom-icons/readme",
     "CODE_OF_CONDUCT.md": "../../../../.jetbrains/custom-icons/conduct",
@@ -974,6 +976,7 @@
     "message.rs": "../../../../.jetbrains/custom-icons/letter-close",
     "gui": "../../../../.jetbrains/custom-icons/shell-cli",
     "interface": "../../../../.jetbrains/custom-icons/shell-cli",
+    "rust-cli-app": "../../../../.jetbrains/custom-icons/shell-cli",
     "Cargo.toml": "../../../../.jetbrains/custom-icons/cargo",
     "Cargo.lock": "../../../../.jetbrains/custom-icons/cargo-lock",
     "rustfmt.toml": "../../../../.jetbrains/custom-icons/rust-format",
@@ -1368,6 +1371,14 @@
     "https://json.schemastore.org/lefthook.json": ["lefthook.yaml"]
   },
   "yaml.schemaStore.enable": true,
+  "yaml.disableSchemaDetection": [
+    "**/.github/workflows/*.yml",
+    "**/.github/workflows/*.yaml",
+    "**/.gitea/workflows/*.yml",
+    "**/.gitea/workflows/*.yaml",
+    "**/.forgejo/workflows/*.yml",
+    "**/.forgejo/workflows/*.yaml"
+  ],
   "[graphql]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
@@ -1424,8 +1435,9 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "js/ts.tsdk.path": "/home/linuxbrew/.linuxbrew/opt/typescript/libexec/lib/node_modules/typescript/lib",
+  "js/ts.tsdk.path": "/home/linuxbrew/.linuxbrew/opt/typescript/libexec/lib/node_modules/typescript",
   "js/ts.updateImportsOnFileMove.enabled": "always",
+  "js/ts.experimental.useTsgo": true,
   "[typescriptreact]": {
     "togglequotes.chars": ["\"", "'", "`"],
     "editor.semanticHighlighting.enabled": true,
@@ -1485,10 +1497,7 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "markdownlint.config": {
-    "MD010": false,
-    "MD033": false
-  },
+  "markdownlint.appliesTo": "allFiles",
   "[markdoc]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 2,
@@ -1537,7 +1546,8 @@
     "markdoc.config.ts": "markdoc.config.json",
     "markdoc.config.mjs": "markdoc.config.json",
     "jest.config.ts": "jest.setup.ts",
-    "build.gradle.kts": "gradle.properties",
+    "build.gradle.kts": "gradle.properties, settings.gradle.kts",
+    "build.gradle": "gradle.properties, settings.gradle",
     "pyproject.toml": "uv.lock, .python-version",
     "composer.json": "composer.lock",
     "artisan": ".env, .env.development, .env.production, .env.local",
@@ -1555,6 +1565,7 @@
     "go": "cd $workspaceRoot && go run main.go",
     "java": "cd $workspaceRoot && printf 'Use Java Extension To Run Java Instead! \n'",
     "javascript": "bun",
+    "kotlin": "cd $workspaceRoot && printf 'Hello! \n'",
     "php": "php",
     "python": "python3",
     "rust": "cd $workspaceRoot && cargo run",
@@ -1633,6 +1644,10 @@
       "markupCompletionsEnabled": false,
       "emojiDecoratorsEnabled": false
     },
+    "kotlin": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
     "markdown": {
       "markupCompletionsEnabled": false,
       "emojiDecoratorsEnabled": false
@@ -1705,6 +1720,7 @@
     "apacheconf",
     "javascriptreact",
     "typescriptreact"
-  ]
+  ],
+  "todo-tree.ripgrep.ripgrep": "/home/linuxbrew/.linuxbrew/bin/rg"
 }
 ```
