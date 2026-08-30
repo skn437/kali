@@ -3,7 +3,7 @@
 set -e
 
 brew_prepare() {
-  brew update && brew upgrade && brew autoremove && brew cleanup
+  brew update && brew upgrade -y && brew autoremove && brew cleanup
 }
 
 package_install() {
@@ -25,6 +25,9 @@ devtools() {
 
   # Watchman
   brew install watchman
+
+  #RipGrep
+  brew install ripgrep
 
   package_install "Devtools"
 }

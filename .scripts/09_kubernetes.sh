@@ -3,7 +3,7 @@
 set -e
 
 brew_prepare() {
-  brew update && brew upgrade && brew autoremove && brew cleanup
+  brew update && brew upgrade -y && brew autoremove && brew cleanup
 }
 
 kubernetes() {
