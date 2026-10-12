@@ -62,17 +62,20 @@ java() {
   # Maven & Gradle: It automatically installs `OpenJDK` To its latest version
   brew install maven gradle
 
-  # Open JDK 21
-  brew install openjdk@21
+  # Open JDK 25
+  brew install openjdk@25
 
   # Export `Java Home` to the "Path"
-  echo 'export JAVA_HOME="/home/linuxbrew/.linuxbrew/opt/openjdk@21/libexec"' >>"$HOME/.zshrc"
+  echo 'export JAVA_HOME="/home/linuxbrew/.linuxbrew/opt/openjdk@25/libexec"' >>"$HOME/.zshrc"
 
-  # Add `Open JDK 21` to the "Path"
+  # Add `Open JDK 25` to the "Path"
   echo 'export PATH="$JAVA_HOME/bin:$PATH"' >>"$HOME/.zshrc"
 
-  # Link `Open JDK 21`
-  brew link --overwrite openjdk@21
+  # Link `Open JDK 25`
+  brew link --overwrite openjdk@25
+
+  # Make Compiler To Find `Open JDK 25`
+  export CPPFLAGS=-I/home/linuxbrew/.linuxbrew/opt/openjdk@25/include
 
   # Create a maven settings directory
   mkdir -p "$HOME/.m2"
